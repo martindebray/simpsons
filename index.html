@@ -13,26 +13,18 @@
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#audience">Audience</a></li>          
-          <li><a href="#characters">Characters</a></li>
-          <li><a href="#facts">Facts</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#/audience">Audience</a></li>          
+          <li><a href="#/characters">Characters</a></li>
+          <li><a href="#/facts">Facts</a></li>
+          <li><a href="#/about">About</a></li>
         </ul>
       </nav>
     </menu>
 
-    <section id="audience">
+    <section id="content">
   
     </section>
-    <section id="characters">
-  
-    </section>
-    <section id="facts">
-  
-    </section>
-    <section id="about">
-  
-    </section>
+
 
   <!-- === Références aux Frameworks === -->
   <script src="libs/jquery.js"></script><!--V 1.10.2 -->
@@ -41,6 +33,51 @@
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <script>
+
+  // Views
+
+  var Home = Backbone.View.extend({
+      el:'#content',
+      render: function(){
+        this.$el.html('Home Page');
+      }
+  });
+
+  var Audience = Backbone.View.extend({
+      el:'#content',
+      render: function(){
+        this.$el.html('audience and rating by seasons');
+      }
+  });
+
+  var Characters = Backbone.View.extend({
+      el:'#content',
+      render: function(){
+        this.$el.html('Characters\' List');
+      }
+  });
+
+  var Facts = Backbone.View.extend({
+      el:'#content',
+      render: function(){
+        this.$el.html('Funny Facts');
+      }
+  });
+
+  var About = Backbone.View.extend({
+      el:'#content',
+      render: function(){
+        this.$el.html('Give us data');
+      }
+  });
+
+  // Créatin des Views
+
+  var HomeView =  new Home();
+  var AudienceView =  new Audience();
+  var CharactersView =  new Characters(); 
+  var FactsView =  new Facts();
+  var AboutView =  new About();
 
   // Routeur
 
@@ -60,11 +97,13 @@
 
     router.on('route:home', function(){ // effets home page
       // déclencheur de l'action
+      HomeView.render();
       console.log("On est sur la home page");
     });
 
     router.on('route:audience', function(){ // effets audience page
       // déclencheur de l'action
+      AudienceView.render();
       console.log("On est sur la audience page de toutes les saisons");
     });
 
@@ -75,6 +114,7 @@
 
     router.on('route:characters', function(){ // effets characters page
       // déclencheur de l'action
+      CharactersView.render();
       console.log("On est sur la page de tous les personnages");
     });
 
@@ -85,15 +125,18 @@
 
     router.on('route:facts', function(){ // effets facts page
       // déclencheur de l'action
+      FactsView.render();
       console.log("On est sur la facts page");
     });
 
     router.on('route:about', function(){ // effets about page
       // déclencheur de l'action
+      AboutView.render();
       console.log("On est sur la about page");
     });
 
     Backbone.history.start();
+
 
 
 

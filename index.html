@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Simpsons Museum</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <menu id="menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#audience">Audience</a></li>          
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#facts">Facts</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </menu>
+
+    <section id="audience">
+  
+    </section>
+    <section id="characters">
+  
+    </section>
+    <section id="facts">
+  
+    </section>
+    <section id="about">
+  
+    </section>
+
+  <!-- === Références aux Frameworks === -->
+  <script src="libs/jquery.js"></script><!--V 1.10.2 -->
+  <script src="libs/underscore.js"></script><!--V 1.5.2 -->
+  <script src="libs/backbone.js"></script><!--V 1.1.0 --> 
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+  <script>
+
+  // Routeur
+
+    var Router = Backbone.Router.extend({
+      routes:{
+        '':'home', // la home
+        'audience': 'audience', // #audience 
+        'audience/:season': 'audience/season', // #audience/season
+        'characters':'characters', // #characters   
+        'characters/:name':'characters/name', // #characters/name
+        'facts':'facts', // #facts 
+        'about':'about' // #about      
+      }
+    });
+
+    var router = new Router(); // création d'un routeur
+
+    router.on('route:home', function(){ // effets home page
+      // déclencheur de l'action
+      console.log("On est sur la home page");
+    });
+
+    router.on('route:audience', function(){ // effets audience page
+      // déclencheur de l'action
+      console.log("On est sur la audience page de toutes les saisons");
+    });
+
+    router.on('route:audience/seasons', function(season){ // effets audience page
+      // déclencheur de l'action
+      console.log("On est sur la audience page seasons numero "+season);
+    });
+
+    router.on('route:characters', function(){ // effets characters page
+      // déclencheur de l'action
+      console.log("On est sur la page de tous les personnages");
+    });
+
+    router.on('route:characters/name', function(name){ // effets characters page
+      // déclencheur de l'action
+      console.log("On est sur la page character de "+name);
+    });
+
+    router.on('route:facts', function(){ // effets facts page
+      // déclencheur de l'action
+      console.log("On est sur la facts page");
+    });
+
+    router.on('route:about', function(){ // effets about page
+      // déclencheur de l'action
+      console.log("On est sur la about page");
+    });
+
+    Backbone.history.start();
+
+
+
+
+
+  </script>
+  </body>
+</html>
+
+

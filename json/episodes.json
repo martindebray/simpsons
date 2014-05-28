@@ -1,0 +1,4470 @@
+{
+"seasons": [
+[
+  {
+    "number":1,
+    "season":1,
+    "episode":1,
+    "productioncode":"7G08",
+    "airdate":"12/17/89",
+    "title":"Simpsons Roasting on an Open Fire"
+  },
+  {
+    "number":2,
+    "season":1,
+    "episode":2,
+    "productioncode":"7G02",
+    "airdate":"01/14/90",
+    "title":"Bart the Genius"
+  },
+  {
+    "number":3,
+    "season":1,
+    "episode":3,
+    "productioncode":"7G03",
+    "airdate":"01/21/90",
+    "title":"Homer's Odyssey"
+  },
+  {
+    "number":4,
+    "season":1,
+    "episode":4,
+    "productioncode":"7G04",
+    "airdate":"01/28/90",
+    "title":"There's No Disgrace Like Home"
+  },
+  {
+    "number":5,
+    "season":1,
+    "episode":5,
+    "productioncode":"7G05",
+    "airdate":"02/04/90",
+    "title":"Bart the General"
+  },
+  {
+    "number":6,
+    "season":1,
+    "episode":6,
+    "productioncode":"7G06",
+    "airdate":"02/11/90",
+    "title":"Moaning Lisa"
+  },
+  {
+    "number":7,
+    "season":1,
+    "episode":7,
+    "productioncode":"7G09",
+    "airdate":"02/18/90",
+    "title":"The Call of the Simpsons"
+  },
+  {
+    "number":8,
+    "season":1,
+    "episode":8,
+    "productioncode":"7G07",
+    "airdate":"02/25/90",
+    "title":"The Telltale Head"
+  },
+  {
+    "number":9,
+    "season":1,
+    "episode":9,
+    "productioncode":"7G11",
+    "airdate":"03/18/90",
+    "title":"Life on the Fast Lane"
+  },
+  {
+    "number":10,
+    "season":1,
+    "episode":10,
+    "productioncode":"7G10",
+    "airdate":"03/25/90",
+    "title":"Homer's Night Out"
+  },
+  {
+    "number":11,
+    "season":1,
+    "episode":11,
+    "productioncode":"7G13",
+    "airdate":"04/15/90",
+    "title":"The Crepes of Wrath"
+  },
+  {
+    "number":12,
+    "season":1,
+    "episode":12,
+    "productioncode":"7G12",
+    "airdate":"04/29/90",
+    "title":"Krusty Gets Busted"
+  },
+  {
+    "number":13,
+    "season":1,
+    "episode":13,
+    "productioncode":"7G01",
+    "airdate":"05/13/90",
+    "title":"Some Enchanted Evening"
+  },
+  {
+    "number":14,
+    "season":2,
+    "episode":1,
+    "productioncode":"7F03",
+    "airdate":"10/11/90",
+    "title":"Bart Gets an F"
+  }
+],
+[
+  {
+    "number":15,
+    "season":2,
+    "episode":2,
+    "productioncode":"7F02",
+    "airdate":"10/18/90",
+    "title":"Simpson and Delilah"
+  },
+  {
+    "number":16,
+    "season":2,
+    "episode":3,
+    "productioncode":"7F04",
+    "airdate":"10/25/90",
+    "title":"Treehouse of Horror"
+  },
+  {
+    "number":17,
+    "season":2,
+    "episode":4,
+    "productioncode":"7F01",
+    "airdate":"11/01/90",
+    "title":"Two Cars in Every Garage and Three Eyes on Every Fish"
+  },
+  {
+    "number":18,
+    "season":2,
+    "episode":5,
+    "productioncode":"7F05",
+    "airdate":"11/08/90",
+    "title":"Dancin' Homer"
+  },
+  {
+    "number":19,
+    "season":2,
+    "episode":6,
+    "productioncode":"7F08",
+    "airdate":"11/15/90",
+    "title":"Dead Putting Society"
+  },
+  {
+    "number":20,
+    "season":2,
+    "episode":7,
+    "productioncode":"7F07",
+    "airdate":"11/22/90",
+    "title":"Bart vs. Thanksgiving"
+  },
+  {
+    "number":21,
+    "season":2,
+    "episode":8,
+    "productioncode":"7F06",
+    "airdate":"12/06/90",
+    "title":"Bart the Daredevil"
+  },
+  {
+    "number":22,
+    "season":2,
+    "episode":9,
+    "productioncode":"7F09",
+    "airdate":"12/20/90",
+    "title":"Itchy & Scratchy & Marge"
+  },
+  {
+    "number":23,
+    "season":2,
+    "episode":10,
+    "productioncode":"7F10",
+    "airdate":"01/10/91",
+    "title":"Bart Gets Hit by a Car"
+  },
+  {
+    "number":24,
+    "season":2,
+    "episode":11,
+    "productioncode":"7F11",
+    "airdate":"01/24/91",
+    "title":"One Fish"
+  },
+  {
+    "number":25,
+    "season":2,
+    "episode":12,
+    "productioncode":"7F12",
+    "airdate":"01/31/91",
+    "title":"The Way We Was"
+  },
+  {
+    "number":26,
+    "season":2,
+    "episode":13,
+    "productioncode":"7F13",
+    "airdate":"02/07/91",
+    "title":"Homer vs. Lisa and the Eighth Commandment"
+  },
+  {
+    "number":27,
+    "season":2,
+    "episode":14,
+    "productioncode":"7F15",
+    "airdate":"02/14/91",
+    "title":"Principal Charming"
+  },
+  {
+    "number":28,
+    "season":2,
+    "episode":15,
+    "productioncode":"7F16",
+    "airdate":"02/21/91",
+    "title":"Oh Brother"
+  },
+  {
+    "number":29,
+    "season":2,
+    "episode":16,
+    "productioncode":"7F14",
+    "airdate":"03/07/91",
+    "title":"Bart's Dog Gets an F"
+  },
+  {
+    "number":30,
+    "season":2,
+    "episode":17,
+    "productioncode":"7F17",
+    "airdate":"03/28/91",
+    "title":"Old Money"
+  },
+  {
+    "number":31,
+    "season":2,
+    "episode":18,
+    "productioncode":"7F18",
+    "airdate":"04/11/91",
+    "title":"Brush With Greatness"
+  },
+  {
+    "number":32,
+    "season":2,
+    "episode":19,
+    "productioncode":"7F19",
+    "airdate":"04/25/91",
+    "title":"Lisa's Substitute"
+  },
+  {
+    "number":33,
+    "season":2,
+    "episode":20,
+    "productioncode":"7F20",
+    "airdate":"05/02/91",
+    "title":"The War of the Simpsons"
+  },
+  {
+    "number":34,
+    "season":2,
+    "episode":21,
+    "productioncode":"7F21",
+    "airdate":"05/09/91",
+    "title":"Three Men and a Comic Book"
+  },
+  {
+    "number":35,
+    "season":2,
+    "episode":22,
+    "productioncode":"7F22",
+    "airdate":"07/11/91",
+    "title":"Blood Feud"
+  }
+],
+[
+  {
+    "number":36,
+    "season":3,
+    "episode":1,
+    "productioncode":"7F24",
+    "airdate":"09/19/91",
+    "title":"Stark Raving Dad"
+  },
+  {
+    "number":37,
+    "season":3,
+    "episode":2,
+    "productioncode":"8F01",
+    "airdate":"09/26/91",
+    "title":"Mr. Lisa Goes to Washington"
+  },
+  {
+    "number":38,
+    "season":3,
+    "episode":3,
+    "productioncode":"7F23",
+    "airdate":"10/03/91",
+    "title":"When Flanders Failed"
+  },
+  {
+    "number":39,
+    "season":3,
+    "episode":4,
+    "productioncode":"8F03",
+    "airdate":"10/10/91",
+    "title":"Bart the Murderer"
+  },
+  {
+    "number":40,
+    "season":3,
+    "episode":5,
+    "productioncode":"8F04",
+    "airdate":"10/17/91",
+    "title":"Homer Defined"
+  },
+  {
+    "number":41,
+    "season":3,
+    "episode":6,
+    "productioncode":"8F05",
+    "airdate":"10/24/91",
+    "title":"Like Father Like Clown"
+  },
+  {
+    "number":42,
+    "season":3,
+    "episode":7,
+    "productioncode":"8F02",
+    "airdate":"10/31/91",
+    "title":"Treehouse of Horror II"
+  },
+  {
+    "number":43,
+    "season":3,
+    "episode":8,
+    "productioncode":"8F06",
+    "airdate":"11/07/91",
+    "title":"Lisa's Pony"
+  },
+  {
+    "number":44,
+    "season":3,
+    "episode":9,
+    "productioncode":"8F07",
+    "airdate":"11/14/91",
+    "title":"Saturdays of Thunder"
+  },
+  {
+    "number":45,
+    "season":3,
+    "episode":10,
+    "productioncode":"8F08",
+    "airdate":"11/21/91",
+    "title":"Flaming Moe's"
+  },
+  {
+    "number":46,
+    "season":3,
+    "episode":11,
+    "productioncode":"8F09",
+    "airdate":"12/05/91",
+    "title":"Burns Verkaufen der Kraftwerk"
+  },
+  {
+    "number":47,
+    "season":3,
+    "episode":12,
+    "productioncode":"8F10",
+    "airdate":"12/26/91",
+    "title":"I Married Marge"
+  },
+  {
+    "number":48,
+    "season":3,
+    "episode":13,
+    "productioncode":"8F11",
+    "airdate":"01/09/92",
+    "title":"Radio Bart"
+  },
+  {
+    "number":49,
+    "season":3,
+    "episode":14,
+    "productioncode":"8F12",
+    "airdate":"01/23/92",
+    "title":"Lisa the Greek"
+  },
+  {
+    "number":50,
+    "season":3,
+    "episode":15,
+    "productioncode":"8F14",
+    "airdate":"02/06/92",
+    "title":"Homer Alone"
+  },
+  {
+    "number":51,
+    "season":3,
+    "episode":16,
+    "productioncode":"8F16",
+    "airdate":"02/13/92",
+    "title":"Bart the Lover"
+  },
+  {
+    "number":52,
+    "season":3,
+    "episode":17,
+    "productioncode":"8F13",
+    "airdate":"02/20/92",
+    "title":"Homer at the Bat"
+  },
+  {
+    "number":53,
+    "season":3,
+    "episode":18,
+    "productioncode":"8F15",
+    "airdate":"02/27/92",
+    "title":"Separate Vocations"
+  },
+  {
+    "number":54,
+    "season":3,
+    "episode":19,
+    "productioncode":"8F17",
+    "airdate":"03/12/92",
+    "title":"Dog of Death"
+  },
+  {
+    "number":55,
+    "season":3,
+    "episode":20,
+    "productioncode":"8F19",
+    "airdate":"03/26/92",
+    "title":"Colonel Homer"
+  },
+  {
+    "number":56,
+    "season":3,
+    "episode":21,
+    "productioncode":"8F20",
+    "airdate":"04/09/92",
+    "title":"Black Widower"
+  },
+  {
+    "number":57,
+    "season":3,
+    "episode":22,
+    "productioncode":"8F21",
+    "airdate":"04/23/92",
+    "title":"The Otto Show"
+  },
+  {
+    "number":58,
+    "season":3,
+    "episode":23,
+    "productioncode":"8F22",
+    "airdate":"05/07/92",
+    "title":"Bart's Friend Falls in Love"
+  },
+  {
+    "number":59,
+    "season":3,
+    "episode":24,
+    "productioncode":"8F23",
+    "airdate":"08/27/92",
+    "title":"Brother"
+  }
+],
+[
+  {
+    "number":60,
+    "season":4,
+    "episode":1,
+    "productioncode":"8F24",
+    "airdate":"09/24/92",
+    "title":"Kamp Krusty"
+  },
+  {
+    "number":61,
+    "season":4,
+    "episode":2,
+    "productioncode":"8F18",
+    "airdate":"10/01/92",
+    "title":"A Streetcar Named Marge"
+  },
+  {
+    "number":62,
+    "season":4,
+    "episode":3,
+    "productioncode":"9F01",
+    "airdate":"10/08/92",
+    "title":"Homer the Heretic"
+  },
+  {
+    "number":63,
+    "season":4,
+    "episode":4,
+    "productioncode":"9F02",
+    "airdate":"10/15/92",
+    "title":"Lisa the Beauty Queen"
+  },
+  {
+    "number":64,
+    "season":4,
+    "episode":5,
+    "productioncode":"9F04",
+    "airdate":"10/29/92",
+    "title":"Treehouse of Horror III"
+  },
+  {
+    "number":65,
+    "season":4,
+    "episode":6,
+    "productioncode":"9F03",
+    "airdate":"11/03/92",
+    "title":"Itchy & Scratchy: The Movie"
+  },
+  {
+    "number":66,
+    "season":4,
+    "episode":7,
+    "productioncode":"9F05",
+    "airdate":"11/05/92",
+    "title":"Marge Gets a Job"
+  },
+  {
+    "number":67,
+    "season":4,
+    "episode":8,
+    "productioncode":"9F06",
+    "airdate":"11/12/92",
+    "title":"The New Kid on the Block"
+  },
+  {
+    "number":68,
+    "season":4,
+    "episode":9,
+    "productioncode":"9F07",
+    "airdate":"11/19/92",
+    "title":"Mr. Plow"
+  },
+  {
+    "number":69,
+    "season":4,
+    "episode":10,
+    "productioncode":"9F08",
+    "airdate":"12/03/92",
+    "title":"Lisa's First Word"
+  },
+  {
+    "number":70,
+    "season":4,
+    "episode":11,
+    "productioncode":"9F09",
+    "airdate":"12/17/92",
+    "title":"Homer's Triple Bypass"
+  },
+  {
+    "number":71,
+    "season":4,
+    "episode":12,
+    "productioncode":"9F10",
+    "airdate":"01/14/93",
+    "title":"Marge vs. the Monorail"
+  },
+  {
+    "number":72,
+    "season":4,
+    "episode":13,
+    "productioncode":"9F11",
+    "airdate":"01/21/93",
+    "title":"Selma's Choice"
+  },
+  {
+    "number":73,
+    "season":4,
+    "episode":14,
+    "productioncode":"9F12",
+    "airdate":"02/04/93",
+    "title":"Brother From the Same Planet"
+  },
+  {
+    "number":74,
+    "season":4,
+    "episode":15,
+    "productioncode":"9F13",
+    "airdate":"02/11/93",
+    "title":"I Love Lisa"
+  },
+  {
+    "number":75,
+    "season":4,
+    "episode":16,
+    "productioncode":"9F14",
+    "airdate":"02/18/93",
+    "title":"Duffless"
+  },
+  {
+    "number":76,
+    "season":4,
+    "episode":17,
+    "productioncode":"9F15",
+    "airdate":"03/11/93",
+    "title":"Last Exit to Springfield"
+  },
+  {
+    "number":77,
+    "season":4,
+    "episode":18,
+    "productioncode":"9F17",
+    "airdate":"04/01/93",
+    "title":"So It's Come to This: A Simpsons Clip Show"
+  },
+  {
+    "number":78,
+    "season":4,
+    "episode":19,
+    "productioncode":"9F16",
+    "airdate":"04/15/93",
+    "title":"The Front"
+  },
+  {
+    "number":79,
+    "season":4,
+    "episode":20,
+    "productioncode":"9F18",
+    "airdate":"04/29/93",
+    "title":"Whacking Day"
+  },
+  {
+    "number":80,
+    "season":4,
+    "episode":21,
+    "productioncode":"9F20",
+    "airdate":"05/06/93",
+    "title":"Marge in Chains"
+  },
+  {
+    "number":81,
+    "season":4,
+    "episode":22,
+    "productioncode":"9F19",
+    "airdate":"05/13/93",
+    "title":"Krusty Gets Kancelled"
+  }
+],
+[
+  {
+    "number":82,
+    "season":5,
+    "episode":1,
+    "productioncode":"9F21",
+    "airdate":"09/30/93",
+    "title":"Homer's Barbershop Quartet"
+  },
+  {
+    "number":83,
+    "season":5,
+    "episode":2,
+    "productioncode":"9F22",
+    "airdate":"10/07/93",
+    "title":"Cape Feare"
+  },
+  {
+    "number":84,
+    "season":5,
+    "episode":3,
+    "productioncode":"1F02",
+    "airdate":"10/14/93",
+    "title":"Homer Goes to College"
+  },
+  {
+    "number":85,
+    "season":5,
+    "episode":4,
+    "productioncode":"1F01",
+    "airdate":"10/21/93",
+    "title":"Rosebud"
+  },
+  {
+    "number":86,
+    "season":5,
+    "episode":5,
+    "productioncode":"1F04",
+    "airdate":"10/28/93",
+    "title":"Treehouse of Horror IV"
+  },
+  {
+    "number":87,
+    "season":5,
+    "episode":6,
+    "productioncode":"1F03",
+    "airdate":"11/04/93",
+    "title":"Marge on the Lam"
+  },
+  {
+    "number":88,
+    "season":5,
+    "episode":7,
+    "productioncode":"1F05",
+    "airdate":"11/11/93",
+    "title":"Bart's Inner Child"
+  },
+  {
+    "number":89,
+    "season":5,
+    "episode":8,
+    "productioncode":"1F06",
+    "airdate":"11/18/93",
+    "title":"Boy-Scoutz 'n the Hood"
+  },
+  {
+    "number":90,
+    "season":5,
+    "episode":9,
+    "productioncode":"1F07",
+    "airdate":"12/09/93",
+    "title":"The Last Temptation of Homer"
+  },
+  {
+    "number":91,
+    "season":5,
+    "episode":10,
+    "productioncode":"1F08",
+    "airdate":"12/16/93",
+    "title":"$pringfield (Or"
+  },
+  {
+    "number":92,
+    "season":5,
+    "episode":11,
+    "productioncode":"1F09",
+    "airdate":"01/06/94",
+    "title":"Homer the Vigilante"
+  },
+  {
+    "number":93,
+    "season":5,
+    "episode":12,
+    "productioncode":"1F11",
+    "airdate":"02/03/94",
+    "title":"Bart Gets Famous"
+  },
+  {
+    "number":94,
+    "season":5,
+    "episode":13,
+    "productioncode":"1F10",
+    "airdate":"02/10/94",
+    "title":"Homer and Apu"
+  },
+  {
+    "number":95,
+    "season":5,
+    "episode":14,
+    "productioncode":"1F12",
+    "airdate":"02/17/94",
+    "title":"Lisa vs. Malibu Stacy"
+  },
+  {
+    "number":96,
+    "season":5,
+    "episode":15,
+    "productioncode":"1F13",
+    "airdate":"02/24/94",
+    "title":"Deep Space Homer"
+  },
+  {
+    "number":97,
+    "season":5,
+    "episode":16,
+    "productioncode":"1F14",
+    "airdate":"03/17/94",
+    "title":"Homer Loves Flanders"
+  },
+  {
+    "number":98,
+    "season":5,
+    "episode":17,
+    "productioncode":"1F15",
+    "airdate":"03/31/94",
+    "title":"Bart Gets an Elephant"
+  },
+  {
+    "number":99,
+    "season":5,
+    "episode":18,
+    "productioncode":"1F16",
+    "airdate":"04/14/94",
+    "title":"Burns' Heir"
+  },
+  {
+    "number":100,
+    "season":5,
+    "episode":19,
+    "productioncode":"1F18",
+    "airdate":"04/28/94",
+    "title":"Sweet Seymour Skinner's Baadasssss Song"
+  },
+  {
+    "number":101,
+    "season":5,
+    "episode":20,
+    "productioncode":"1F19",
+    "airdate":"05/05/94",
+    "title":"The Boy Who Knew Too Much"
+  },
+  {
+    "number":102,
+    "season":5,
+    "episode":21,
+    "productioncode":"1F21",
+    "airdate":"05/12/94",
+    "title":"Lady Bouvier's Lover"
+  },
+  {
+    "number":103,
+    "season":5,
+    "episode":22,
+    "productioncode":"1F20",
+    "airdate":"05/19/94",
+    "title":"Secrets of a Successful Marriage"
+  }
+],
+[
+  {
+    "number":104,
+    "season":6,
+    "episode":1,
+    "productioncode":"1F22",
+    "airdate":"09/04/94",
+    "title":"Bart of Darkness"
+  },
+  {
+    "number":105,
+    "season":6,
+    "episode":2,
+    "productioncode":"1F17",
+    "airdate":"09/11/94",
+    "title":"Lisa's Rival"
+  },
+  {
+    "number":106,
+    "season":6,
+    "episode":3,
+    "productioncode":"2F33",
+    "airdate":"09/25/94",
+    "title":"Another Simpsons Clip Show"
+  },
+  {
+    "number":107,
+    "season":6,
+    "episode":4,
+    "productioncode":"2F01",
+    "airdate":"10/02/94",
+    "title":"Itchy & Scratchy Land"
+  },
+  {
+    "number":108,
+    "season":6,
+    "episode":5,
+    "productioncode":"2F02",
+    "airdate":"10/09/94",
+    "title":"Sideshow Bob Roberts"
+  },
+  {
+    "number":109,
+    "season":6,
+    "episode":6,
+    "productioncode":"2F03",
+    "airdate":"10/30/94",
+    "title":"Treehouse of Horror V"
+  },
+  {
+    "number":110,
+    "season":6,
+    "episode":7,
+    "productioncode":"2F04",
+    "airdate":"11/06/94",
+    "title":"Bart's Girlfriend"
+  },
+  {
+    "number":111,
+    "season":6,
+    "episode":8,
+    "productioncode":"2F05",
+    "airdate":"11/13/94",
+    "title":"Lisa on Ice"
+  },
+  {
+    "number":112,
+    "season":6,
+    "episode":9,
+    "productioncode":"2F06",
+    "airdate":"11/27/94",
+    "title":"Homer Badman"
+  },
+  {
+    "number":113,
+    "season":6,
+    "episode":10,
+    "productioncode":"2F07",
+    "airdate":"12/04/94",
+    "title":"Grandpa vs. Sexual Inadequacy"
+  },
+  {
+    "number":114,
+    "season":6,
+    "episode":11,
+    "productioncode":"2F08",
+    "airdate":"12/18/94",
+    "title":"Fear of Flying"
+  },
+  {
+    "number":115,
+    "season":6,
+    "episode":12,
+    "productioncode":"2F09",
+    "airdate":"01/08/95",
+    "title":"Homer the Great"
+  },
+  {
+    "number":116,
+    "season":6,
+    "episode":13,
+    "productioncode":"2F10",
+    "airdate":"01/22/95",
+    "title":"And Maggie Makes Three"
+  },
+  {
+    "number":117,
+    "season":6,
+    "episode":14,
+    "productioncode":"2F11",
+    "airdate":"02/05/95",
+    "title":"Bart's Comet"
+  },
+  {
+    "number":118,
+    "season":6,
+    "episode":15,
+    "productioncode":"2F12",
+    "airdate":"02/12/95",
+    "title":"Homie the Clown"
+  },
+  {
+    "number":119,
+    "season":6,
+    "episode":16,
+    "productioncode":"2F13",
+    "airdate":"02/19/95",
+    "title":"Bart vs. Australia"
+  },
+  {
+    "number":120,
+    "season":6,
+    "episode":17,
+    "productioncode":"2F14",
+    "airdate":"02/26/95",
+    "title":"Homer vs. Patty and Selma"
+  },
+  {
+    "number":121,
+    "season":6,
+    "episode":18,
+    "productioncode":"2F31",
+    "airdate":"03/05/95",
+    "title":"A Star is Burns"
+  },
+  {
+    "number":122,
+    "season":6,
+    "episode":19,
+    "productioncode":"2F15",
+    "airdate":"03/19/95",
+    "title":"Lisa's Wedding"
+  },
+  {
+    "number":123,
+    "season":6,
+    "episode":20,
+    "productioncode":"2F18",
+    "airdate":"04/09/95",
+    "title":"Two Dozen and One Greyhounds"
+  },
+  {
+    "number":124,
+    "season":6,
+    "episode":21,
+    "productioncode":"2F19",
+    "airdate":"04/16/95",
+    "title":"The PTA Disbands"
+  },
+  {
+    "number":125,
+    "season":6,
+    "episode":22,
+    "productioncode":"2F32",
+    "airdate":"04/30/95",
+    "title":"Round Springfield"
+  },
+  {
+    "number":126,
+    "season":6,
+    "episode":23,
+    "productioncode":"2F21",
+    "airdate":"05/07/95",
+    "title":"The Springfield Connection"
+  },
+  {
+    "number":127,
+    "season":6,
+    "episode":24,
+    "productioncode":"2F22",
+    "airdate":"05/14/95",
+    "title":"Lemon of Troy"
+  },
+  {
+    "number":128,
+    "season":6,
+    "episode":25,
+    "productioncode":"2F16",
+    "airdate":"05/21/95",
+    "title":"Who Shot Mr. Burns? (1)"
+  }
+],
+[
+  {
+    "number":129,
+    "season":7,
+    "episode":1,
+    "productioncode":"2F20",
+    "airdate":"09/17/95",
+    "title":"Who Shot Mr. Burns? (2)"
+  },
+  {
+    "number":130,
+    "season":7,
+    "episode":2,
+    "productioncode":"2F17",
+    "airdate":"09/24/95",
+    "title":"Radioactive Man"
+  },
+  {
+    "number":131,
+    "season":7,
+    "episode":3,
+    "productioncode":"3F01",
+    "airdate":"10/01/95",
+    "title":"Home Sweet Homediddly-Dum-Doodily"
+  },
+  {
+    "number":132,
+    "season":7,
+    "episode":4,
+    "productioncode":"3F02",
+    "airdate":"10/08/95",
+    "title":"Bart Sells His Soul"
+  },
+  {
+    "number":133,
+    "season":7,
+    "episode":5,
+    "productioncode":"3F03",
+    "airdate":"10/15/95",
+    "title":"Lisa the Vegetarian"
+  },
+  {
+    "number":134,
+    "season":7,
+    "episode":6,
+    "productioncode":"3F04",
+    "airdate":"10/29/95",
+    "title":"Treehouse of Horror VI"
+  },
+  {
+    "number":135,
+    "season":7,
+    "episode":7,
+    "productioncode":"3F05",
+    "airdate":"11/05/95",
+    "title":"King-Size Homer"
+  },
+  {
+    "number":136,
+    "season":7,
+    "episode":8,
+    "productioncode":"3F06",
+    "airdate":"11/19/95",
+    "title":"Mother Simpson"
+  },
+  {
+    "number":137,
+    "season":7,
+    "episode":9,
+    "productioncode":"3F08",
+    "airdate":"11/26/95",
+    "title":"Sideshow Bob's Last Gleaming"
+  },
+  {
+    "number":138,
+    "season":7,
+    "episode":10,
+    "productioncode":"3F31",
+    "airdate":"12/03/95",
+    "title":"The Simpsons 138th Episode Spectacular"
+  },
+  {
+    "number":139,
+    "season":7,
+    "episode":11,
+    "productioncode":"3F07",
+    "airdate":"12/17/95",
+    "title":"Marge Be Not Proud"
+  },
+  {
+    "number":140,
+    "season":7,
+    "episode":12,
+    "productioncode":"3F10",
+    "airdate":"01/07/96",
+    "title":"Team Homer"
+  },
+  {
+    "number":141,
+    "season":7,
+    "episode":13,
+    "productioncode":"3F09",
+    "airdate":"01/14/96",
+    "title":"Two Bad Neighbors"
+  },
+  {
+    "number":142,
+    "season":7,
+    "episode":14,
+    "productioncode":"3F11",
+    "airdate":"02/04/96",
+    "title":"Scenes From the Class Struggle in Springfield"
+  },
+  {
+    "number":143,
+    "season":7,
+    "episode":15,
+    "productioncode":"3F12",
+    "airdate":"02/11/96",
+    "title":"Bart the Fink"
+  },
+  {
+    "number":144,
+    "season":7,
+    "episode":16,
+    "productioncode":"3F13",
+    "airdate":"02/18/96",
+    "title":"Lisa the Iconoclast"
+  },
+  {
+    "number":145,
+    "season":7,
+    "episode":17,
+    "productioncode":"3F14",
+    "airdate":"02/25/96",
+    "title":"Homer the Smithers"
+  },
+  {
+    "number":146,
+    "season":7,
+    "episode":18,
+    "productioncode":"3F16",
+    "airdate":"03/17/96",
+    "title":"The Day the Violence Died"
+  },
+  {
+    "number":147,
+    "season":7,
+    "episode":19,
+    "productioncode":"3F15",
+    "airdate":"03/24/96",
+    "title":"A Fish Called Selma"
+  },
+  {
+    "number":148,
+    "season":7,
+    "episode":20,
+    "productioncode":"3F17",
+    "airdate":"03/31/96",
+    "title":"Bart on the Road"
+  },
+  {
+    "number":149,
+    "season":7,
+    "episode":21,
+    "productioncode":"3F18",
+    "airdate":"04/14/96",
+    "title":"22 Short Films About Springfield"
+  },
+  {
+    "number":150,
+    "season":7,
+    "episode":22,
+    "productioncode":"3F19",
+    "airdate":"04/28/96",
+    "title":"Raging Abe Simpson and His Grumbling Grandson in \"The Curse of the Flying Hellfish\""
+  },
+  {
+    "number":151,
+    "season":7,
+    "episode":23,
+    "productioncode":"3F20",
+    "airdate":"05/05/96",
+    "title":"Much Apu About Nothing"
+  },
+  {
+    "number":152,
+    "season":7,
+    "episode":24,
+    "productioncode":"3F21",
+    "airdate":"05/19/96",
+    "title":"Homerpalooza"
+  },
+  {
+    "number":153,
+    "season":7,
+    "episode":25,
+    "productioncode":"3F22",
+    "airdate":"05/19/96",
+    "title":"Summer of 4 ft. 2"
+  }
+],
+[
+  {
+    "number":154,
+    "season":8,
+    "episode":1,
+    "productioncode":"4F02",
+    "airdate":"10/27/96",
+    "title":"Treehouse of Horror VII"
+  },
+  {
+    "number":155,
+    "season":8,
+    "episode":2,
+    "productioncode":"3F23",
+    "airdate":"11/03/96",
+    "title":"You Only Move Twice"
+  },
+  {
+    "number":156,
+    "season":8,
+    "episode":3,
+    "productioncode":"4F03",
+    "airdate":"11/10/96",
+    "title":"The Homer They Fall"
+  },
+  {
+    "number":157,
+    "season":8,
+    "episode":4,
+    "productioncode":"4F05",
+    "airdate":"11/17/96",
+    "title":"Burns"
+  },
+  {
+    "number":158,
+    "season":8,
+    "episode":5,
+    "productioncode":"4F06",
+    "airdate":"11/24/96",
+    "title":"Bart After Dark"
+  },
+  {
+    "number":159,
+    "season":8,
+    "episode":6,
+    "productioncode":"4F04",
+    "airdate":"12/01/96",
+    "title":"A Milhouse Divided"
+  },
+  {
+    "number":160,
+    "season":8,
+    "episode":7,
+    "productioncode":"4F01",
+    "airdate":"12/15/96",
+    "title":"Lisa's Date With Density"
+  },
+  {
+    "number":161,
+    "season":8,
+    "episode":8,
+    "productioncode":"4F07",
+    "airdate":"12/29/96",
+    "title":"Hurricane Neddy"
+  },
+  {
+    "number":162,
+    "season":8,
+    "episode":9,
+    "productioncode":"3F24",
+    "airdate":"01/05/97",
+    "title":"El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)"
+  },
+  {
+    "number":163,
+    "season":8,
+    "episode":10,
+    "productioncode":"3G01",
+    "airdate":"01/12/97",
+    "title":"The Springfield Files"
+  },
+  {
+    "number":164,
+    "season":8,
+    "episode":11,
+    "productioncode":"4F08",
+    "airdate":"01/19/97",
+    "title":"The Twisted World of Marge Simpson"
+  },
+  {
+    "number":165,
+    "season":8,
+    "episode":12,
+    "productioncode":"4F10",
+    "airdate":"02/02/97",
+    "title":"Mountain of Madness"
+  },
+  {
+    "number":166,
+    "season":8,
+    "episode":13,
+    "productioncode":"3G03",
+    "airdate":"02/07/97",
+    "title":"Simpsoncalifragilisticexpiala (Annoyed Grunt) cious"
+  },
+  {
+    "number":167,
+    "season":8,
+    "episode":14,
+    "productioncode":"4F12",
+    "airdate":"02/09/97",
+    "title":"The Itchy & Scratchy & Poochie Show"
+  },
+  {
+    "number":168,
+    "season":8,
+    "episode":15,
+    "productioncode":"4F11",
+    "airdate":"02/16/97",
+    "title":"Homer's Phobia"
+  },
+  {
+    "number":169,
+    "season":8,
+    "episode":16,
+    "productioncode":"4F14",
+    "airdate":"02/23/97",
+    "title":"Brother From Another Series"
+  },
+  {
+    "number":170,
+    "season":8,
+    "episode":17,
+    "productioncode":"4F13",
+    "airdate":"03/02/97",
+    "title":"My Sister"
+  },
+  {
+    "number":171,
+    "season":8,
+    "episode":18,
+    "productioncode":"4F15",
+    "airdate":"03/16/97",
+    "title":"Homer vs. the Eighteenth Amendment"
+  },
+  {
+    "number":172,
+    "season":8,
+    "episode":19,
+    "productioncode":"4F09",
+    "airdate":"04/06/97",
+    "title":"Grade School Confidential"
+  },
+  {
+    "number":173,
+    "season":8,
+    "episode":20,
+    "productioncode":"4F16",
+    "airdate":"04/13/97",
+    "title":"The Canine Mutiny"
+  },
+  {
+    "number":174,
+    "season":8,
+    "episode":21,
+    "productioncode":"4F17",
+    "airdate":"04/20/97",
+    "title":"The Old Man and Lisa"
+  },
+  {
+    "number":175,
+    "season":8,
+    "episode":22,
+    "productioncode":"4F18",
+    "airdate":"04/27/97",
+    "title":"In Marge We Trust"
+  },
+  {
+    "number":176,
+    "season":8,
+    "episode":23,
+    "productioncode":"4F19",
+    "airdate":"05/04/97",
+    "title":"Homer's Enemy"
+  },
+  {
+    "number":177,
+    "season":8,
+    "episode":24,
+    "productioncode":"4F20",
+    "airdate":"05/11/97",
+    "title":"The Simpsons Spin-Off Showcase"
+  },
+  {
+    "number":178,
+    "season":8,
+    "episode":25,
+    "productioncode":"4F21",
+    "airdate":"05/18/97",
+    "title":"The Secret War of Lisa Simpson"
+  }
+],
+[
+  {
+    "number":179,
+    "season":9,
+    "episode":1,
+    "productioncode":"4F22",
+    "airdate":"09/21/97",
+    "title":"The City of New York vs. Homer Simpson"
+  },
+  {
+    "number":180,
+    "season":9,
+    "episode":2,
+    "productioncode":"4F23",
+    "airdate":"09/28/97",
+    "title":"The Principal and the Pauper"
+  },
+  {
+    "number":181,
+    "season":9,
+    "episode":3,
+    "productioncode":"3G02",
+    "airdate":"10/19/97",
+    "title":"Lisa's Sax"
+  },
+  {
+    "number":182,
+    "season":9,
+    "episode":4,
+    "productioncode":"5F02",
+    "airdate":"10/26/97",
+    "title":"Treehouse of Horror VIII"
+  },
+  {
+    "number":183,
+    "season":9,
+    "episode":5,
+    "productioncode":"5F01",
+    "airdate":"11/02/97",
+    "title":"The Cartridge Family"
+  },
+  {
+    "number":184,
+    "season":9,
+    "episode":6,
+    "productioncode":"5F03",
+    "airdate":"11/09/97",
+    "title":"Bart Star"
+  },
+  {
+    "number":185,
+    "season":9,
+    "episode":7,
+    "productioncode":"5F04",
+    "airdate":"11/16/97",
+    "title":"The Two Mrs. Nahasapeemapetilons"
+  },
+  {
+    "number":186,
+    "season":9,
+    "episode":8,
+    "productioncode":"5F05",
+    "airdate":"11/23/97",
+    "title":"Lisa the Skeptic"
+  },
+  {
+    "number":187,
+    "season":9,
+    "episode":9,
+    "productioncode":"5F06",
+    "airdate":"12/07/97",
+    "title":"Realty Bites"
+  },
+  {
+    "number":188,
+    "season":9,
+    "episode":10,
+    "productioncode":"5F07",
+    "airdate":"12/21/97",
+    "title":"Miracle on Evergreen Terrace"
+  },
+  {
+    "number":189,
+    "season":9,
+    "episode":11,
+    "productioncode":"5F24",
+    "airdate":"01/04/98",
+    "title":"All Singing"
+  },
+  {
+    "number":190,
+    "season":9,
+    "episode":12,
+    "productioncode":"5F08",
+    "airdate":"01/11/98",
+    "title":"Bart Carny"
+  },
+  {
+    "number":191,
+    "season":9,
+    "episode":13,
+    "productioncode":"5F23",
+    "airdate":"02/08/98",
+    "title":"The Joy of Sect"
+  },
+  {
+    "number":192,
+    "season":9,
+    "episode":14,
+    "productioncode":"5F11",
+    "airdate":"02/15/98",
+    "title":"Das Bus"
+  },
+  {
+    "number":193,
+    "season":9,
+    "episode":15,
+    "productioncode":"5F10",
+    "airdate":"02/22/98",
+    "title":"The Last Temptation of Krusty"
+  },
+  {
+    "number":194,
+    "season":9,
+    "episode":16,
+    "productioncode":"5F12",
+    "airdate":"03/01/98",
+    "title":"Dumbbell Indemnity"
+  },
+  {
+    "number":195,
+    "season":9,
+    "episode":17,
+    "productioncode":"4F24",
+    "airdate":"03/08/98",
+    "title":"Lisa the Simpson"
+  },
+  {
+    "number":196,
+    "season":9,
+    "episode":18,
+    "productioncode":"5F13",
+    "airdate":"03/22/98",
+    "title":"This Little Wiggy"
+  },
+  {
+    "number":197,
+    "season":9,
+    "episode":19,
+    "productioncode":"3G04",
+    "airdate":"03/29/98",
+    "title":"Simpson Tide"
+  },
+  {
+    "number":198,
+    "season":9,
+    "episode":20,
+    "productioncode":"5F14",
+    "airdate":"04/05/98",
+    "title":"The Trouble With Trillions"
+  },
+  {
+    "number":199,
+    "season":9,
+    "episode":21,
+    "productioncode":"5F15",
+    "airdate":"04/19/98",
+    "title":"Girly Edition"
+  },
+  {
+    "number":200,
+    "season":9,
+    "episode":22,
+    "productioncode":"5F09",
+    "airdate":"04/26/98",
+    "title":"Trash of the Titans"
+  },
+  {
+    "number":201,
+    "season":9,
+    "episode":23,
+    "productioncode":"5F16",
+    "airdate":"05/03/98",
+    "title":"King of the Hill"
+  },
+  {
+    "number":202,
+    "season":9,
+    "episode":24,
+    "productioncode":"5F17",
+    "airdate":"05/10/98",
+    "title":"Lost Our Lisa"
+  },
+  {
+    "number":203,
+    "season":9,
+    "episode":25,
+    "productioncode":"5F18",
+    "airdate":"05/17/98",
+    "title":"Natural Born Kissers"
+  }
+],
+[
+  {
+    "number":204,
+    "season":10,
+    "episode":1,
+    "productioncode":"5F20",
+    "airdate":"08/23/98",
+    "title":"Lard of the Dance"
+  },
+  {
+    "number":205,
+    "season":10,
+    "episode":2,
+    "productioncode":"5F21",
+    "airdate":"09/20/98",
+    "title":"The Wizard of Evergreen Terrace"
+  },
+  {
+    "number":206,
+    "season":10,
+    "episode":3,
+    "productioncode":"5F22",
+    "airdate":"09/27/98",
+    "title":"Bart the Mother"
+  },
+  {
+    "number":207,
+    "season":10,
+    "episode":4,
+    "productioncode":"AABF01",
+    "airdate":"10/25/98",
+    "title":"Treehouse of Horror IX"
+  },
+  {
+    "number":208,
+    "season":10,
+    "episode":5,
+    "productioncode":"5F19",
+    "airdate":"11/08/98",
+    "title":"When You Dish Upon a Star"
+  },
+  {
+    "number":209,
+    "season":10,
+    "episode":6,
+    "productioncode":"AABF02",
+    "airdate":"11/15/98",
+    "title":"D'Oh-in' in the Wind"
+  },
+  {
+    "number":210,
+    "season":10,
+    "episode":7,
+    "productioncode":"AABF03",
+    "airdate":"11/22/98",
+    "title":"Lisa Gets an \"A\""
+  },
+  {
+    "number":211,
+    "season":10,
+    "episode":8,
+    "productioncode":"AABF04",
+    "airdate":"12/06/98",
+    "title":"Homer Simpson in: \"Kidney Trouble\""
+  },
+  {
+    "number":212,
+    "season":10,
+    "episode":9,
+    "productioncode":"AABF05",
+    "airdate":"12/20/98",
+    "title":"Mayored to the Mob"
+  },
+  {
+    "number":213,
+    "season":10,
+    "episode":10,
+    "productioncode":"AABF06",
+    "airdate":"01/10/99",
+    "title":"Viva Ned Flanders"
+  },
+  {
+    "number":214,
+    "season":10,
+    "episode":11,
+    "productioncode":"AABF07",
+    "airdate":"01/17/99",
+    "title":"Wild Barts Can't Be Broken"
+  },
+  {
+    "number":215,
+    "season":10,
+    "episode":12,
+    "productioncode":"AABF08",
+    "airdate":"01/31/99",
+    "title":"Sunday"
+  },
+  {
+    "number":216,
+    "season":10,
+    "episode":13,
+    "productioncode":"AABF09",
+    "airdate":"02/07/99",
+    "title":"Homer to the Max"
+  },
+  {
+    "number":217,
+    "season":10,
+    "episode":14,
+    "productioncode":"AABF11",
+    "airdate":"02/14/99",
+    "title":"I'm With Cupid"
+  },
+  {
+    "number":218,
+    "season":10,
+    "episode":15,
+    "productioncode":"AABF10",
+    "airdate":"02/21/99",
+    "title":"Marge Simpson in: \"Screaming Yellow Honkers\""
+  },
+  {
+    "number":219,
+    "season":10,
+    "episode":16,
+    "productioncode":"AABF12",
+    "airdate":"02/28/99",
+    "title":"Make Room For Lisa"
+  },
+  {
+    "number":220,
+    "season":10,
+    "episode":17,
+    "productioncode":"AABF13",
+    "airdate":"03/28/99",
+    "title":"Maximum Homerdrive"
+  },
+  {
+    "number":221,
+    "season":10,
+    "episode":18,
+    "productioncode":"AABF14",
+    "airdate":"04/04/99",
+    "title":"Simpsons Bible Stories"
+  },
+  {
+    "number":222,
+    "season":10,
+    "episode":19,
+    "productioncode":"AABF15",
+    "airdate":"04/11/99",
+    "title":"Mom and Pop Art"
+  },
+  {
+    "number":223,
+    "season":10,
+    "episode":20,
+    "productioncode":"AABF16",
+    "airdate":"04/25/99",
+    "title":"The Old Man and the \"C\" Student"
+  },
+  {
+    "number":224,
+    "season":10,
+    "episode":21,
+    "productioncode":"AABF17",
+    "airdate":"05/02/99",
+    "title":"Monty Can't Buy Me Love"
+  },
+  {
+    "number":225,
+    "season":10,
+    "episode":22,
+    "productioncode":"AABF18",
+    "airdate":"05/09/99",
+    "title":"They Saved Lisa's Brain"
+  },
+  {
+    "number":226,
+    "season":10,
+    "episode":23,
+    "productioncode":"AABF20",
+    "airdate":"05/16/99",
+    "title":"30 Minutes Over Tokyo"
+  }
+],
+[
+  {
+    "number":227,
+    "season":11,
+    "episode":1,
+    "productioncode":"AABF23",
+    "airdate":"09/26/99",
+    "title":"Beyond Blunderdome"
+  },
+  {
+    "number":228,
+    "season":11,
+    "episode":2,
+    "productioncode":"AABF22",
+    "airdate":"10/03/99",
+    "title":"Brother's Little Helper"
+  },
+  {
+    "number":229,
+    "season":11,
+    "episode":3,
+    "productioncode":"AABF21",
+    "airdate":"10/24/99",
+    "title":"Guess Who's Coming to Criticize Dinner"
+  },
+  {
+    "number":230,
+    "season":11,
+    "episode":4,
+    "productioncode":"BABF01",
+    "airdate":"10/31/99",
+    "title":"Treehouse of Horror X"
+  },
+  {
+    "number":231,
+    "season":11,
+    "episode":5,
+    "productioncode":"AABF19",
+    "airdate":"11/07/99",
+    "title":"E-I-E-I-(Annoyed Grunt)"
+  },
+  {
+    "number":232,
+    "season":11,
+    "episode":6,
+    "productioncode":"BABF02",
+    "airdate":"11/14/99",
+    "title":"Hello Gutter"
+  },
+  {
+    "number":233,
+    "season":11,
+    "episode":7,
+    "productioncode":"BABF03",
+    "airdate":"11/21/99",
+    "title":"Eight Misbehavin"
+  },
+  {
+    "number":234,
+    "season":11,
+    "episode":8,
+    "productioncode":"BABF05",
+    "airdate":"11/28/99",
+    "title":"Take My Wife"
+  },
+  {
+    "number":235,
+    "season":11,
+    "episode":9,
+    "productioncode":"BABF07",
+    "airdate":"12/19/99",
+    "title":"Grift of the Magi"
+  },
+  {
+    "number":236,
+    "season":11,
+    "episode":10,
+    "productioncode":"BABF04",
+    "airdate":"01/09/00",
+    "title":"Little Big Mom"
+  },
+  {
+    "number":237,
+    "season":11,
+    "episode":11,
+    "productioncode":"BABF06",
+    "airdate":"01/16/00",
+    "title":"Faith Off"
+  },
+  {
+    "number":238,
+    "season":11,
+    "episode":12,
+    "productioncode":"BABF08",
+    "airdate":"01/23/00",
+    "title":"The Mansion Family"
+  },
+  {
+    "number":239,
+    "season":11,
+    "episode":13,
+    "productioncode":"BABF09",
+    "airdate":"02/06/00",
+    "title":"Saddlesore Galactica"
+  },
+  {
+    "number":240,
+    "season":11,
+    "episode":14,
+    "productioncode":"BABF10",
+    "airdate":"02/13/00",
+    "title":"Alone Again Natura-Diddily"
+  },
+  {
+    "number":241,
+    "season":11,
+    "episode":15,
+    "productioncode":"BABF11",
+    "airdate":"02/20/00",
+    "title":"Missionary Impossible"
+  },
+  {
+    "number":242,
+    "season":11,
+    "episode":16,
+    "productioncode":"BABF12",
+    "airdate":"02/27/00",
+    "title":"Pygmoelian"
+  },
+  {
+    "number":243,
+    "season":11,
+    "episode":17,
+    "productioncode":"BABF13",
+    "airdate":"03/19/00",
+    "title":"Bart to the Future"
+  },
+  {
+    "number":244,
+    "season":11,
+    "episode":18,
+    "productioncode":"BABF14",
+    "airdate":"04/09/00",
+    "title":"Days of Wine and D'Ohses"
+  },
+  {
+    "number":245,
+    "season":11,
+    "episode":19,
+    "productioncode":"BABF16",
+    "airdate":"04/30/00",
+    "title":"Kill the Alligator and Run"
+  },
+  {
+    "number":246,
+    "season":11,
+    "episode":20,
+    "productioncode":"BABF15",
+    "airdate":"05/07/00",
+    "title":"Last Tap Dance in Springfield"
+  },
+  {
+    "number":247,
+    "season":11,
+    "episode":21,
+    "productioncode":"BABF18",
+    "airdate":"05/14/00",
+    "title":"It's a Mad"
+  },
+  {
+    "number":248,
+    "season":11,
+    "episode":22,
+    "productioncode":"BABF19",
+    "airdate":"05/21/00",
+    "title":"Behind the Laughter"
+  }
+],
+[
+  {
+    "number":249,
+    "season":12,
+    "episode":1,
+    "productioncode":"BABF21",
+    "airdate":"11/01/00",
+    "title":"Treehouse of Horror XI"
+  },
+  {
+    "number":250,
+    "season":12,
+    "episode":2,
+    "productioncode":"BABF20",
+    "airdate":"11/05/00",
+    "title":"A Tale of Two Springfields"
+  },
+  {
+    "number":251,
+    "season":12,
+    "episode":3,
+    "productioncode":"BABF17",
+    "airdate":"11/12/00",
+    "title":"Insane Clown Poppy"
+  },
+  {
+    "number":252,
+    "season":12,
+    "episode":4,
+    "productioncode":"CABF01",
+    "airdate":"11/19/00",
+    "title":"Lisa the Treehugger"
+  },
+  {
+    "number":253,
+    "season":12,
+    "episode":5,
+    "productioncode":"CABF04",
+    "airdate":"11/26/00",
+    "title":"Homer vs. Dignity"
+  },
+  {
+    "number":254,
+    "season":12,
+    "episode":6,
+    "productioncode":"CABF02",
+    "airdate":"12/03/00",
+    "title":"The Computer Wore Menace Shoes"
+  },
+  {
+    "number":255,
+    "season":12,
+    "episode":7,
+    "productioncode":"CABF03",
+    "airdate":"12/10/00",
+    "title":"The Great Money Caper"
+  },
+  {
+    "number":256,
+    "season":12,
+    "episode":8,
+    "productioncode":"CABF06",
+    "airdate":"12/17/00",
+    "title":"Skinner's Sense of Snow"
+  },
+  {
+    "number":257,
+    "season":12,
+    "episode":9,
+    "productioncode":"BABF22",
+    "airdate":"01/07/01",
+    "title":"HOMR"
+  },
+  {
+    "number":258,
+    "season":12,
+    "episode":10,
+    "productioncode":"CABF05",
+    "airdate":"01/14/01",
+    "title":"Pokeymom"
+  },
+  {
+    "number":259,
+    "season":12,
+    "episode":11,
+    "productioncode":"CABF08",
+    "airdate":"02/04/01",
+    "title":"Worst Episode Ever"
+  },
+  {
+    "number":260,
+    "season":12,
+    "episode":12,
+    "productioncode":"CABF07",
+    "airdate":"02/11/01",
+    "title":"Tennis the Menace"
+  },
+  {
+    "number":261,
+    "season":12,
+    "episode":13,
+    "productioncode":"CABF10",
+    "airdate":"02/18/01",
+    "title":"Day of the Jackanapes"
+  },
+  {
+    "number":262,
+    "season":12,
+    "episode":14,
+    "productioncode":"CABF12",
+    "airdate":"02/25/01",
+    "title":"New Kids on the Blecch"
+  },
+  {
+    "number":263,
+    "season":12,
+    "episode":15,
+    "productioncode":"CABF09",
+    "airdate":"03/04/01",
+    "title":"Hungry Hungry Homer"
+  },
+  {
+    "number":264,
+    "season":12,
+    "episode":16,
+    "productioncode":"CABF11",
+    "airdate":"03/11/01",
+    "title":"Bye Bye Nerdy"
+  },
+  {
+    "number":265,
+    "season":12,
+    "episode":17,
+    "productioncode":"CABF13",
+    "airdate":"04/01/01",
+    "title":"Simpsons Safari"
+  },
+  {
+    "number":266,
+    "season":12,
+    "episode":18,
+    "productioncode":"CABF14",
+    "airdate":"04/29/01",
+    "title":"Trilogy of Error"
+  },
+  {
+    "number":267,
+    "season":12,
+    "episode":19,
+    "productioncode":"CABF15",
+    "airdate":"05/06/01",
+    "title":"I'm Goin' to Praise Land"
+  },
+  {
+    "number":268,
+    "season":12,
+    "episode":20,
+    "productioncode":"CABF16",
+    "airdate":"05/13/01",
+    "title":"Children of a Lesser Clod"
+  },
+  {
+    "number":269,
+    "season":12,
+    "episode":21,
+    "productioncode":"CABF17",
+    "airdate":"05/20/01",
+    "title":"Simpsons Tall Tales"
+  }
+],
+[
+  {
+    "number":270,
+    "season":13,
+    "episode":1,
+    "productioncode":"CABF19",
+    "airdate":"11/06/01",
+    "title":"Treehouse of Horror XII"
+  },
+  {
+    "number":271,
+    "season":13,
+    "episode":2,
+    "productioncode":"CABF22",
+    "airdate":"11/11/01",
+    "title":"The Parent Rap"
+  },
+  {
+    "number":272,
+    "season":13,
+    "episode":3,
+    "productioncode":"CABF20",
+    "airdate":"11/18/01",
+    "title":"Homer the Moe"
+  },
+  {
+    "number":273,
+    "season":13,
+    "episode":4,
+    "productioncode":"CABF18",
+    "airdate":"12/02/01",
+    "title":"Hunka Hunka Burns in Love"
+  },
+  {
+    "number":274,
+    "season":13,
+    "episode":5,
+    "productioncode":"CABF21",
+    "airdate":"12/09/01",
+    "title":"The Blunder Years"
+  },
+  {
+    "number":275,
+    "season":13,
+    "episode":6,
+    "productioncode":"DABF02",
+    "airdate":"12/16/01",
+    "title":"She of Little Faith"
+  },
+  {
+    "number":276,
+    "season":13,
+    "episode":7,
+    "productioncode":"DABF01",
+    "airdate":"01/06/02",
+    "title":"Brawl in the Family"
+  },
+  {
+    "number":277,
+    "season":13,
+    "episode":8,
+    "productioncode":"DABF03",
+    "airdate":"01/20/02",
+    "title":"Sweets and Sour Marge"
+  },
+  {
+    "number":278,
+    "season":13,
+    "episode":9,
+    "productioncode":"DABF05",
+    "airdate":"01/27/02",
+    "title":"Jaws Wired Shut"
+  },
+  {
+    "number":279,
+    "season":13,
+    "episode":10,
+    "productioncode":"DABF04",
+    "airdate":"02/10/02",
+    "title":"Half-12ent Proposal"
+  },
+  {
+    "number":280,
+    "season":13,
+    "episode":11,
+    "productioncode":"DABF06",
+    "airdate":"02/17/02",
+    "title":"The Bart Wants What It Wants"
+  },
+  {
+    "number":281,
+    "season":13,
+    "episode":12,
+    "productioncode":"DABF07",
+    "airdate":"02/24/02",
+    "title":"The Lastest Gun in the West"
+  },
+  {
+    "number":282,
+    "season":13,
+    "episode":13,
+    "productioncode":"DABF09",
+    "airdate":"03/10/02",
+    "title":"The Old Man and the Key"
+  },
+  {
+    "number":283,
+    "season":13,
+    "episode":14,
+    "productioncode":"DABF08",
+    "airdate":"03/17/02",
+    "title":"Tales From the Public Domain"
+  },
+  {
+    "number":284,
+    "season":13,
+    "episode":15,
+    "productioncode":"DABF10",
+    "airdate":"03/31/02",
+    "title":"Blame it on Lisa"
+  },
+  {
+    "number":285,
+    "season":13,
+    "episode":16,
+    "productioncode":"DABF11",
+    "airdate":"04/07/02",
+    "title":"Weekend at Burnsies"
+  },
+  {
+    "number":286,
+    "season":13,
+    "episode":17,
+    "productioncode":"DABF12",
+    "airdate":"04/21/02",
+    "title":"Gump Roast"
+  },
+  {
+    "number":287,
+    "season":13,
+    "episode":18,
+    "productioncode":"DABF13",
+    "airdate":"04/28/02",
+    "title":"I am Furious Yellow"
+  },
+  {
+    "number":288,
+    "season":13,
+    "episode":19,
+    "productioncode":"DABF14",
+    "airdate":"05/05/02",
+    "title":"The Sweetest Apu"
+  },
+  {
+    "number":289,
+    "season":13,
+    "episode":20,
+    "productioncode":"DABF15",
+    "airdate":"05/12/02",
+    "title":"Little Girl in the Big Ten"
+  },
+  {
+    "number":290,
+    "season":13,
+    "episode":21,
+    "productioncode":"DABF16",
+    "airdate":"05/19/02",
+    "title":"Frying Game"
+  },
+  {
+    "number":291,
+    "season":13,
+    "episode":22,
+    "productioncode":"DABF17",
+    "airdate":"05/22/02",
+    "title":"Papa's Got a Brand New Badge"
+  }
+],
+[
+  {
+    "number":292,
+    "season":14,
+    "episode":1,
+    "productioncode":"DABF19",
+    "airdate":"11/03/02",
+    "title":"Treehouse of Horror XIII"
+  },
+  {
+    "number":293,
+    "season":14,
+    "episode":2,
+    "productioncode":"DABF22",
+    "airdate":"11/10/02",
+    "title":"How I Spent My Strummer Vacation"
+  },
+  {
+    "number":294,
+    "season":14,
+    "episode":3,
+    "productioncode":"DABF20",
+    "airdate":"11/17/02",
+    "title":"Bart vs. Lisa vs. 3rd Grade"
+  },
+  {
+    "number":295,
+    "season":14,
+    "episode":4,
+    "productioncode":"DABF18",
+    "airdate":"11/24/02",
+    "title":"Large Marge"
+  },
+  {
+    "number":296,
+    "season":14,
+    "episode":5,
+    "productioncode":"DABF21",
+    "airdate":"12/01/02",
+    "title":"Helter Shelter"
+  },
+  {
+    "number":297,
+    "season":14,
+    "episode":6,
+    "productioncode":"EABF01",
+    "airdate":"12/15/02",
+    "title":"The Great Louse Detective"
+  },
+  {
+    "number":298,
+    "season":14,
+    "episode":7,
+    "productioncode":"EABF02",
+    "airdate":"01/05/03",
+    "title":"Special Edna (a.k.a. Love And Marking)"
+  },
+  {
+    "number":299,
+    "season":14,
+    "episode":8,
+    "productioncode":"EABF03",
+    "airdate":"01/12/03",
+    "title":"The Dad Who Knew Too Little"
+  },
+  {
+    "number":300,
+    "season":14,
+    "episode":9,
+    "productioncode":"EABF04",
+    "airdate":"02/02/03",
+    "title":"The Strong Arms of the Ma"
+  },
+  {
+    "number":301,
+    "season":14,
+    "episode":10,
+    "productioncode":"EABF06",
+    "airdate":"02/09/03",
+    "title":"Pray Anything"
+  },
+  {
+    "number":302,
+    "season":14,
+    "episode":11,
+    "productioncode":"EABF05",
+    "airdate":"02/16/03",
+    "title":"Barting Over"
+  },
+  {
+    "number":303,
+    "season":14,
+    "episode":12,
+    "productioncode":"EABF07",
+    "airdate":"02/16/03",
+    "title":"I'm Spelling As Fast As I Can"
+  },
+  {
+    "number":304,
+    "season":14,
+    "episode":13,
+    "productioncode":"EABF08",
+    "airdate":"03/02/03",
+    "title":"A Star is Born Again"
+  },
+  {
+    "number":305,
+    "season":14,
+    "episode":14,
+    "productioncode":"EABF09",
+    "airdate":"03/09/03",
+    "title":"Mr. Spritz Goes to Washington"
+  },
+  {
+    "number":306,
+    "season":14,
+    "episode":15,
+    "productioncode":"EABF10",
+    "airdate":"03/16/03",
+    "title":"C. E. D'oh"
+  },
+  {
+    "number":307,
+    "season":14,
+    "episode":16,
+    "productioncode":"EABF11",
+    "airdate":"03/30/03",
+    "title":"'Scuse Me While I Miss the Sky"
+  },
+  {
+    "number":308,
+    "season":14,
+    "episode":17,
+    "productioncode":"EABF12",
+    "airdate":"04/13/03",
+    "title":"Three Gays of the Condo"
+  },
+  {
+    "number":309,
+    "season":14,
+    "episode":18,
+    "productioncode":"EABF13",
+    "airdate":"04/27/03",
+    "title":"Dude"
+  },
+  {
+    "number":310,
+    "season":14,
+    "episode":19,
+    "productioncode":"EABF14",
+    "airdate":"05/04/03",
+    "title":"Old Yeller-Belly"
+  },
+  {
+    "number":311,
+    "season":14,
+    "episode":20,
+    "productioncode":"EABF15",
+    "airdate":"05/11/03",
+    "title":"Brake My Wife"
+  },
+  {
+    "number":312,
+    "season":14,
+    "episode":21,
+    "productioncode":"EABF16",
+    "airdate":"05/18/03",
+    "title":"The Bart of War"
+  },
+  {
+    "number":313,
+    "season":14,
+    "episode":22,
+    "productioncode":"EABF17",
+    "airdate":"05/18/03",
+    "title":"Moe Baby Blues"
+  }
+],
+[
+  {
+    "number":314,
+    "season":15,
+    "episode":1,
+    "productioncode":"EABF21",
+    "airdate":"11/02/03",
+    "title":"Treehouse of Horror XIV"
+  },
+  {
+    "number":315,
+    "season":15,
+    "episode":2,
+    "productioncode":"EABF18",
+    "airdate":"11/09/03",
+    "title":"My Mother the Carjacker"
+  },
+  {
+    "number":316,
+    "season":15,
+    "episode":3,
+    "productioncode":"EABF20",
+    "airdate":"11/16/03",
+    "title":"The President Wore Pearls"
+  },
+  {
+    "number":317,
+    "season":15,
+    "episode":4,
+    "productioncode":"EABF22",
+    "airdate":"11/23/03",
+    "title":"The Regina Monologues"
+  },
+  {
+    "number":318,
+    "season":15,
+    "episode":5,
+    "productioncode":"EABF19",
+    "airdate":"11/30/03",
+    "title":"The Fat and the Furriest"
+  },
+  {
+    "number":319,
+    "season":15,
+    "episode":6,
+    "productioncode":"FABF01",
+    "airdate":"12/07/03",
+    "title":"Today I am a Clown"
+  },
+  {
+    "number":320,
+    "season":15,
+    "episode":7,
+    "productioncode":"FABF02",
+    "airdate":"12/14/03",
+    "title":"'Tis the Fifteenth Season"
+  },
+  {
+    "number":321,
+    "season":15,
+    "episode":8,
+    "productioncode":"FABF03",
+    "airdate":"01/04/04",
+    "title":"Marge vs. Singles"
+  },
+  {
+    "number":322,
+    "season":15,
+    "episode":9,
+    "productioncode":"FABF04",
+    "airdate":"01/11/04",
+    "title":"I"
+  },
+  {
+    "number":323,
+    "season":15,
+    "episode":10,
+    "productioncode":"FABF05",
+    "airdate":"01/25/04",
+    "title":"Diatribe of a Mad Housewife"
+  },
+  {
+    "number":324,
+    "season":15,
+    "episode":11,
+    "productioncode":"FABF06",
+    "airdate":"02/08/04",
+    "title":"Margical History Tour"
+  },
+  {
+    "number":325,
+    "season":15,
+    "episode":12,
+    "productioncode":"FABF07",
+    "airdate":"02/15/04",
+    "title":"Milhouse Doesn't Live Here Anymore"
+  },
+  {
+    "number":326,
+    "season":15,
+    "episode":13,
+    "productioncode":"FABF09",
+    "airdate":"02/22/04",
+    "title":"Smart & Smarter"
+  },
+  {
+    "number":327,
+    "season":15,
+    "episode":14,
+    "productioncode":"FABF08",
+    "airdate":"03/14/04",
+    "title":"The Ziff Who Came to Dinner"
+  },
+  {
+    "number":328,
+    "season":15,
+    "episode":15,
+    "productioncode":"FABF10",
+    "airdate":"03/21/04",
+    "title":"Co-Dependent's Day"
+  },
+  {
+    "number":329,
+    "season":15,
+    "episode":16,
+    "productioncode":"FABF11",
+    "airdate":"03/28/04",
+    "title":"Wandering Juvie"
+  },
+  {
+    "number":330,
+    "season":15,
+    "episode":17,
+    "productioncode":"FABF12",
+    "airdate":"04/18/04",
+    "title":"My Big Fat Geek Wedding"
+  },
+  {
+    "number":331,
+    "season":15,
+    "episode":18,
+    "productioncode":"FABF14",
+    "airdate":"04/25/04",
+    "title":"Catch 'Em If You Can"
+  },
+  {
+    "number":332,
+    "season":15,
+    "episode":19,
+    "productioncode":"FABF15",
+    "airdate":"05/02/04",
+    "title":"Simple Simpson"
+  },
+  {
+    "number":333,
+    "season":15,
+    "episode":20,
+    "productioncode":"FABF13",
+    "airdate":"05/09/04",
+    "title":"The Way We Weren't"
+  },
+  {
+    "number":334,
+    "season":15,
+    "episode":21,
+    "productioncode":"FABF17",
+    "airdate":"05/16/04",
+    "title":"Bart-Mangled Banner"
+  },
+  {
+    "number":335,
+    "season":15,
+    "episode":22,
+    "productioncode":"FABF18",
+    "airdate":"05/23/04",
+    "title":"Fraudcast News"
+  }
+],
+[
+  {
+    "number":336,
+    "season":16,
+    "episode":1,
+    "productioncode":"FABF23",
+    "airdate":"11/07/04",
+    "title":"Treehouse of Horror XV"
+  },
+  {
+    "number":337,
+    "season":16,
+    "episode":2,
+    "productioncode":"FABF20",
+    "airdate":"11/14/04",
+    "title":"All's Fair in Oven War"
+  },
+  {
+    "number":338,
+    "season":16,
+    "episode":3,
+    "productioncode":"FABF19",
+    "airdate":"11/21/04",
+    "title":"Sleeping With the Enemy"
+  },
+  {
+    "number":339,
+    "season":16,
+    "episode":4,
+    "productioncode":"FABF22",
+    "airdate":"12/05/04",
+    "title":"She Used to Be My Girl"
+  },
+  {
+    "number":340,
+    "season":16,
+    "episode":5,
+    "productioncode":"FABF21",
+    "airdate":"12/12/04",
+    "title":"Fat Man and Little Boy"
+  },
+  {
+    "number":341,
+    "season":16,
+    "episode":6,
+    "productioncode":"FABF16",
+    "airdate":"01/16/05",
+    "title":"Midnight Rx"
+  },
+  {
+    "number":342,
+    "season":16,
+    "episode":7,
+    "productioncode":"GABF01",
+    "airdate":"01/30/05",
+    "title":"Mommie Beerest"
+  },
+  {
+    "number":343,
+    "season":16,
+    "episode":8,
+    "productioncode":"GABF02",
+    "airdate":"02/06/05",
+    "title":"Homer and Ned's Hail Mary Pass"
+  },
+  {
+    "number":344,
+    "season":16,
+    "episode":9,
+    "productioncode":"GABF03",
+    "airdate":"02/13/05",
+    "title":"Pranksta Rap"
+  },
+  {
+    "number":345,
+    "season":16,
+    "episode":10,
+    "productioncode":"GABF04",
+    "airdate":"02/20/05",
+    "title":"There's Something About Marrying"
+  },
+  {
+    "number":346,
+    "season":16,
+    "episode":11,
+    "productioncode":"GABF05",
+    "airdate":"03/06/05",
+    "title":"On a Clear Day I Can't See My Sister"
+  },
+  {
+    "number":347,
+    "season":16,
+    "episode":12,
+    "productioncode":"GABF06",
+    "airdate":"03/13/05",
+    "title":"Goo Goo Gai Pan"
+  },
+  {
+    "number":348,
+    "season":16,
+    "episode":13,
+    "productioncode":"GABF07",
+    "airdate":"03/20/05",
+    "title":"Mobile Homer"
+  },
+  {
+    "number":349,
+    "season":16,
+    "episode":14,
+    "productioncode":"GABF08",
+    "airdate":"04/03/05",
+    "title":"The Seven-Beer Snitch"
+  },
+  {
+    "number":350,
+    "season":16,
+    "episode":15,
+    "productioncode":"GABF12",
+    "airdate":"04/17/05",
+    "title":"Future-Drama"
+  },
+  {
+    "number":351,
+    "season":16,
+    "episode":16,
+    "productioncode":"GABF10",
+    "airdate":"05/01/05",
+    "title":"Don't Fear the Roofer"
+  },
+  {
+    "number":352,
+    "season":16,
+    "episode":17,
+    "productioncode":"GABF11",
+    "airdate":"05/01/05",
+    "title":"The Heartbroke Kid"
+  },
+  {
+    "number":353,
+    "season":16,
+    "episode":18,
+    "productioncode":"GABF13",
+    "airdate":"05/08/05",
+    "title":"A Star is Torn"
+  },
+  {
+    "number":354,
+    "season":16,
+    "episode":19,
+    "productioncode":"GABF14",
+    "airdate":"05/08/05",
+    "title":"Thank God It's Doomsday"
+  },
+  {
+    "number":355,
+    "season":16,
+    "episode":20,
+    "productioncode":"GABF15",
+    "airdate":"05/15/05",
+    "title":"Home Away From Homer"
+  },
+  {
+    "number":356,
+    "season":16,
+    "episode":21,
+    "productioncode":"GABF09",
+    "airdate":"05/15/05",
+    "title":"Father"
+  }
+],
+[
+  {
+    "number":357,
+    "season":17,
+    "episode":1,
+    "productioncode":"GABF18",
+    "airdate":"09/11/05",
+    "title":"Bonfire of the Manatees"
+  },
+  {
+    "number":358,
+    "season":17,
+    "episode":2,
+    "productioncode":"GABF16",
+    "airdate":"09/18/05",
+    "title":"The Girl Who Slept Too Little"
+  },
+  {
+    "number":359,
+    "season":17,
+    "episode":3,
+    "productioncode":"GABF19",
+    "airdate":"09/25/05",
+    "title":"Milhouse of Sand and Fog"
+  },
+  {
+    "number":360,
+    "season":17,
+    "episode":4,
+    "productioncode":"GABF17",
+    "airdate":"11/06/05",
+    "title":"Treehouse of Horror XVI"
+  },
+  {
+    "number":361,
+    "season":17,
+    "episode":5,
+    "productioncode":"GABF20",
+    "airdate":"11/13/05",
+    "title":"Marge's Son Poisoning"
+  },
+  {
+    "number":362,
+    "season":17,
+    "episode":6,
+    "productioncode":"GABF21",
+    "airdate":"11/20/05",
+    "title":"See Homer Run"
+  },
+  {
+    "number":363,
+    "season":17,
+    "episode":7,
+    "productioncode":"GABF22",
+    "airdate":"11/27/05",
+    "title":"The Last of the Red Hat Mamas"
+  },
+  {
+    "number":364,
+    "season":17,
+    "episode":8,
+    "productioncode":"HABF02",
+    "airdate":"12/11/05",
+    "title":"The Italian Bob"
+  },
+  {
+    "number":365,
+    "season":17,
+    "episode":9,
+    "productioncode":"HABF01",
+    "airdate":"12/18/05",
+    "title":"Simpson Christmas Stories"
+  },
+  {
+    "number":366,
+    "season":17,
+    "episode":10,
+    "productioncode":"HABF03",
+    "airdate":"01/08/06",
+    "title":"Homer's Paternity Coot"
+  },
+  {
+    "number":367,
+    "season":17,
+    "episode":11,
+    "productioncode":"HABF04",
+    "airdate":"01/29/06",
+    "title":"We're on the Road to D'oh-where"
+  },
+  {
+    "number":368,
+    "season":17,
+    "episode":12,
+    "productioncode":"HABF05",
+    "airdate":"02/26/06",
+    "title":"My Fair Laddy"
+  },
+  {
+    "number":369,
+    "season":17,
+    "episode":13,
+    "productioncode":"HABF06",
+    "airdate":"03/12/06",
+    "title":"The Seemingly Never-Ending Story"
+  },
+  {
+    "number":370,
+    "season":17,
+    "episode":14,
+    "productioncode":"HABF07",
+    "airdate":"03/19/06",
+    "title":"Bart Has Two Mommies"
+  },
+  {
+    "number":371,
+    "season":17,
+    "episode":15,
+    "productioncode":"HABF08",
+    "airdate":"03/26/06",
+    "title":"Homer Simpson"
+  },
+  {
+    "number":372,
+    "season":17,
+    "episode":16,
+    "productioncode":"HABF09",
+    "airdate":"04/02/06",
+    "title":"Million Dollar Abie"
+  },
+  {
+    "number":373,
+    "season":17,
+    "episode":17,
+    "productioncode":"HABF10",
+    "airdate":"04/09/06",
+    "title":"Kiss Kiss Bang Bangalore"
+  },
+  {
+    "number":374,
+    "season":17,
+    "episode":18,
+    "productioncode":"HABF11",
+    "airdate":"04/23/06",
+    "title":"The Wettest Stories Ever Told"
+  },
+  {
+    "number":375,
+    "season":17,
+    "episode":19,
+    "productioncode":"HABF12",
+    "airdate":"04/30/06",
+    "title":"Girls Just Want to Have Sums"
+  },
+  {
+    "number":376,
+    "season":17,
+    "episode":20,
+    "productioncode":"HABF13",
+    "airdate":"05/07/06",
+    "title":"Regarding Margie"
+  },
+  {
+    "number":377,
+    "season":17,
+    "episode":21,
+    "productioncode":"HABF14",
+    "airdate":"05/14/06",
+    "title":"The Monkey Suit"
+  },
+  {
+    "number":378,
+    "season":17,
+    "episode":22,
+    "productioncode":"HABF16",
+    "airdate":"05/21/06",
+    "title":"Marge and Homer Turn a Couple Play"
+  }
+],
+[
+  {
+    "number":379,
+    "season":18,
+    "episode":1,
+    "productioncode":"HABF15",
+    "airdate":"09/10/06",
+    "title":"The Mook"
+  },
+  {
+    "number":380,
+    "season":18,
+    "episode":2,
+    "productioncode":"HABF18",
+    "airdate":"09/17/06",
+    "title":"Jazzy and the Pussycats"
+  },
+  {
+    "number":381,
+    "season":18,
+    "episode":3,
+    "productioncode":"HABF20",
+    "airdate":"09/24/06",
+    "title":"Please Homer"
+  },
+  {
+    "number":382,
+    "season":18,
+    "episode":4,
+    "productioncode":"HABF17",
+    "airdate":"11/05/06",
+    "title":"Treehouse of Horror XVII"
+  },
+  {
+    "number":383,
+    "season":18,
+    "episode":5,
+    "productioncode":"HABF21",
+    "airdate":"11/12/06",
+    "title":"GI (Annoyed Grunt)"
+  },
+  {
+    "number":384,
+    "season":18,
+    "episode":6,
+    "productioncode":"HABF19",
+    "airdate":"11/19/06",
+    "title":"Moe 'N' a Lisa"
+  },
+  {
+    "number":385,
+    "season":18,
+    "episode":7,
+    "productioncode":"HABF22",
+    "airdate":"11/26/06",
+    "title":"Ice Cream of Margie (With the Light Blue Hair)"
+  },
+  {
+    "number":386,
+    "season":18,
+    "episode":8,
+    "productioncode":"JABF02",
+    "airdate":"12/10/06",
+    "title":"The Haw-Hawed Couple"
+  },
+  {
+    "number":387,
+    "season":18,
+    "episode":9,
+    "productioncode":"JABF01",
+    "airdate":"12/17/06",
+    "title":"Kill Gil (Parts I & II)"
+  },
+  {
+    "number":388,
+    "season":18,
+    "episode":10,
+    "productioncode":"JABF03",
+    "airdate":"01/07/07",
+    "title":"The Wife Aquatic"
+  },
+  {
+    "number":389,
+    "season":18,
+    "episode":11,
+    "productioncode":"JABF05",
+    "airdate":"01/28/07",
+    "title":"Revenge is a Dish Best Served Three Times"
+  },
+  {
+    "number":390,
+    "season":18,
+    "episode":12,
+    "productioncode":"JABF04",
+    "airdate":"02/11/07",
+    "title":"Little Big Girl"
+  },
+  {
+    "number":391,
+    "season":18,
+    "episode":13,
+    "productioncode":"JABF07",
+    "airdate":"02/18/07",
+    "title":"Springfield Up"
+  },
+  {
+    "number":392,
+    "season":18,
+    "episode":14,
+    "productioncode":"JABF09",
+    "airdate":"03/04/07",
+    "title":"Yokel Chords"
+  },
+  {
+    "number":393,
+    "season":18,
+    "episode":15,
+    "productioncode":"JABF08",
+    "airdate":"03/11/07",
+    "title":"Rome-old and Juli-eh"
+  },
+  {
+    "number":394,
+    "season":18,
+    "episode":16,
+    "productioncode":"JABF06",
+    "airdate":"03/25/07",
+    "title":"Homerazzi"
+  },
+  {
+    "number":395,
+    "season":18,
+    "episode":17,
+    "productioncode":"JABF10",
+    "airdate":"04/22/07",
+    "title":"Marge Gamer"
+  },
+  {
+    "number":396,
+    "season":18,
+    "episode":18,
+    "productioncode":"JABF11",
+    "airdate":"04/29/07",
+    "title":"The Boys of Bummer"
+  },
+  {
+    "number":397,
+    "season":18,
+    "episode":19,
+    "productioncode":"JABF13",
+    "airdate":"05/06/07",
+    "title":"Crook and Ladder"
+  },
+  {
+    "number":398,
+    "season":18,
+    "episode":20,
+    "productioncode":"JABF12",
+    "airdate":"05/13/07",
+    "title":"Stop Or My Dog Will Shoot"
+  },
+  {
+    "number":399,
+    "season":18,
+    "episode":21,
+    "productioncode":"JABF14",
+    "airdate":"05/20/07",
+    "title":"24 Minutes"
+  },
+  {
+    "number":400,
+    "season":18,
+    "episode":22,
+    "productioncode":"JABF15",
+    "airdate":"05/20/07",
+    "title":"You Kent Always Say What You Want"
+  }
+],
+[
+  {
+    "number":401,
+    "season":19,
+    "episode":1,
+    "productioncode":"JABF20",
+    "airdate":"09/23/07",
+    "title":"He Loves To Fly And He D'ohs"
+  },
+  {
+    "number":402,
+    "season":19,
+    "episode":2,
+    "productioncode":"JABF18",
+    "airdate":"09/30/07",
+    "title":"Homer of Seville"
+  },
+  {
+    "number":403,
+    "season":19,
+    "episode":3,
+    "productioncode":"JABF21",
+    "airdate":"10/07/07",
+    "title":"Midnight Towboy"
+  },
+  {
+    "number":404,
+    "season":19,
+    "episode":4,
+    "productioncode":"JABF19",
+    "airdate":"10/14/07",
+    "title":"I Don't Wanna Know Why the Caged Bird Sings"
+  },
+  {
+    "number":405,
+    "season":19,
+    "episode":5,
+    "productioncode":"JABF16",
+    "airdate":"11/04/07",
+    "title":"Treehouse of Horror XVIII"
+  },
+  {
+    "number":406,
+    "season":19,
+    "episode":6,
+    "productioncode":"JABF22",
+    "airdate":"11/11/07",
+    "title":"Little Orphan Millie"
+  },
+  {
+    "number":407,
+    "season":19,
+    "episode":7,
+    "productioncode":"JABF17",
+    "airdate":"11/18/07",
+    "title":"Husbands and Knives"
+  },
+  {
+    "number":408,
+    "season":19,
+    "episode":8,
+    "productioncode":"KABF01",
+    "airdate":"11/25/07",
+    "title":"Funeral for a Fiend"
+  },
+  {
+    "number":409,
+    "season":19,
+    "episode":9,
+    "productioncode":"KABF02",
+    "airdate":"12/16/07",
+    "title":"Eternal Moonshine of the Simpson Mind"
+  },
+  {
+    "number":410,
+    "season":19,
+    "episode":10,
+    "productioncode":"KABF03",
+    "airdate":"01/06/08",
+    "title":"E. Pluribus Wiggum"
+  },
+  {
+    "number":411,
+    "season":19,
+    "episode":11,
+    "productioncode":"KABF04",
+    "airdate":"01/27/08",
+    "title":"That 90's Show"
+  },
+  {
+    "number":412,
+    "season":19,
+    "episode":12,
+    "productioncode":"KABF05",
+    "airdate":"02/17/08",
+    "title":"Love"
+  },
+  {
+    "number":413,
+    "season":19,
+    "episode":13,
+    "productioncode":"KABF06",
+    "airdate":"03/02/08",
+    "title":"The Debarted"
+  },
+  {
+    "number":414,
+    "season":19,
+    "episode":14,
+    "productioncode":"KABF07",
+    "airdate":"03/09/08",
+    "title":"Dial 'N' for Nerder"
+  },
+  {
+    "number":415,
+    "season":19,
+    "episode":15,
+    "productioncode":"KABF08",
+    "airdate":"03/30/08",
+    "title":"Smoke on the D08hter"
+  },
+  {
+    "number":416,
+    "season":19,
+    "episode":16,
+    "productioncode":"KABF09",
+    "airdate":"04/13/08",
+    "title":"Papa Don't Leech"
+  },
+  {
+    "number":417,
+    "season":19,
+    "episode":17,
+    "productioncode":"KABF10",
+    "airdate":"04/27/08",
+    "title":"Apocalypse Cow"
+  },
+  {
+    "number":418,
+    "season":19,
+    "episode":18,
+    "productioncode":"KABF11",
+    "airdate":"05/04/08",
+    "title":"Any Given Sundance"
+  },
+  {
+    "number":419,
+    "season":19,
+    "episode":19,
+    "productioncode":"KABF12",
+    "airdate":"05/11/08",
+    "title":"Mona Leaves-a"
+  },
+  {
+    "number":420,
+    "season":19,
+    "episode":20,
+    "productioncode":"KABF13",
+    "airdate":"05/18/08",
+    "title":"All About Lisa"
+  }
+],
+[
+  {
+    "number":421,
+    "season":20,
+    "episode":1,
+    "productioncode":"KABF17",
+    "airdate":"09/28/08",
+    "title":"Sex"
+  },
+  {
+    "number":422,
+    "season":20,
+    "episode":2,
+    "productioncode":"KABF15",
+    "airdate":"10/05/08",
+    "title":"Lost Verizon"
+  },
+  {
+    "number":423,
+    "season":20,
+    "episode":3,
+    "productioncode":"KABF14",
+    "airdate":"10/19/08",
+    "title":"Double"
+  },
+  {
+    "number":424,
+    "season":20,
+    "episode":4,
+    "productioncode":"KABF16",
+    "airdate":"11/02/08",
+    "title":"Treehouse of Horror XIX"
+  },
+  {
+    "number":425,
+    "season":20,
+    "episode":5,
+    "productioncode":"KABF18",
+    "airdate":"11/09/08",
+    "title":"Dangerous Curves"
+  },
+  {
+    "number":426,
+    "season":20,
+    "episode":6,
+    "productioncode":"KABF19",
+    "airdate":"11/16/08",
+    "title":"Homer and Lisa Exchange Cross Words"
+  },
+  {
+    "number":427,
+    "season":20,
+    "episode":7,
+    "productioncode":"KABF20",
+    "airdate":"11/30/08",
+    "title":"Mypods and Boomsticks"
+  },
+  {
+    "number":428,
+    "season":20,
+    "episode":8,
+    "productioncode":"KABF21",
+    "airdate":"12/07/08",
+    "title":"The Burns and the Bees"
+  },
+  {
+    "number":429,
+    "season":20,
+    "episode":9,
+    "productioncode":"KABF22",
+    "airdate":"01/25/09",
+    "title":"Lisa the Drama Queen"
+  },
+  {
+    "number":430,
+    "season":20,
+    "episode":10,
+    "productioncode":"LABF01",
+    "airdate":"02/15/09",
+    "title":"Take My Life"
+  },
+  {
+    "number":431,
+    "season":20,
+    "episode":11,
+    "productioncode":"LABF02",
+    "airdate":"03/01/09",
+    "title":"How the Test Was Won"
+  },
+  {
+    "number":432,
+    "season":20,
+    "episode":12,
+    "productioncode":"LABF03",
+    "airdate":"03/08/09",
+    "title":"No Loan Again"
+  },
+  {
+    "number":433,
+    "season":20,
+    "episode":13,
+    "productioncode":"LABF04",
+    "airdate":"03/15/09",
+    "title":"Gone Maggie Gone"
+  },
+  {
+    "number":434,
+    "season":20,
+    "episode":14,
+    "productioncode":"LABF11",
+    "airdate":"03/22/09",
+    "title":"In the Name of the Grandfather"
+  },
+  {
+    "number":435,
+    "season":20,
+    "episode":15,
+    "productioncode":"LABF05",
+    "airdate":"03/29/09",
+    "title":"Wedding For Disaster"
+  },
+  {
+    "number":436,
+    "season":20,
+    "episode":16,
+    "productioncode":"LABF06",
+    "airdate":"04/05/09",
+    "title":"Eeny Teeny 05a Moe"
+  },
+  {
+    "number":437,
+    "season":20,
+    "episode":17,
+    "productioncode":"LABF07",
+    "airdate":"04/19/09",
+    "title":"The Good"
+  },
+  {
+    "number":438,
+    "season":20,
+    "episode":18,
+    "productioncode":"LABF08",
+    "airdate":"04/26/09",
+    "title":"Father Knows Worst"
+  },
+  {
+    "number":439,
+    "season":20,
+    "episode":19,
+    "productioncode":"LABF10",
+    "airdate":"05/03/09",
+    "title":"Waverly Hills"
+  },
+  {
+    "number":440,
+    "season":20,
+    "episode":20,
+    "productioncode":"LABF09",
+    "airdate":"05/10/09",
+    "title":"Four Great Women and a Manicure"
+  },
+  {
+    "number":441,
+    "season":20,
+    "episode":21,
+    "productioncode":"LABF12",
+    "airdate":"05/17/09",
+    "title":"Coming to Homerica"
+  }
+],
+[
+  {
+    "number":442,
+    "season":21,
+    "episode":1,
+    "productioncode":"LABF13",
+    "airdate":"09/27/09",
+    "title":"Homer the Whopper"
+  },
+  {
+    "number":443,
+    "season":21,
+    "episode":2,
+    "productioncode":"LABF15",
+    "airdate":"10/04/09",
+    "title":"Bart Gets A 'Z'"
+  },
+  {
+    "number":444,
+    "season":21,
+    "episode":3,
+    "productioncode":"LABF16",
+    "airdate":"10/11/09",
+    "title":"The Great Wife Hope"
+  },
+  {
+    "number":445,
+    "season":21,
+    "episode":4,
+    "productioncode":"LABF14",
+    "airdate":"10/18/09",
+    "title":"Treehouse of Horror XX"
+  },
+  {
+    "number":446,
+    "season":21,
+    "episode":5,
+    "productioncode":"LABF17",
+    "airdate":"11/15/09",
+    "title":"The Devil Wears Nada"
+  },
+  {
+    "number":447,
+    "season":21,
+    "episode":6,
+    "productioncode":"LABF18",
+    "airdate":"11/22/09",
+    "title":"Pranks and Greens"
+  },
+  {
+    "number":448,
+    "season":21,
+    "episode":7,
+    "productioncode":"LABF19",
+    "airdate":"11/29/09",
+    "title":"Rednecks and Broomsticks"
+  },
+  {
+    "number":449,
+    "season":21,
+    "episode":8,
+    "productioncode":"MABF01",
+    "airdate":"12/13/09",
+    "title":"O Brother"
+  },
+  {
+    "number":450,
+    "season":21,
+    "episode":9,
+    "productioncode":"MABF02",
+    "airdate":"01/03/10",
+    "title":"Thursdays with Abie"
+  },
+  {
+    "number":451,
+    "season":21,
+    "episode":10,
+    "productioncode":"LABF20",
+    "airdate":"01/10/10",
+    "title":"Once Upon A Time in Springfield"
+  },
+  {
+    "number":452,
+    "season":21,
+    "episode":11,
+    "productioncode":"MABF03",
+    "airdate":"01/31/10",
+    "title":"Million Dollar 05be"
+  },
+  {
+    "number":453,
+    "season":21,
+    "episode":12,
+    "productioncode":"MABF05",
+    "airdate":"02/14/10",
+    "title":"Boy Meets Curl"
+  },
+  {
+    "number":454,
+    "season":21,
+    "episode":13,
+    "productioncode":"MABF06",
+    "airdate":"02/21/10",
+    "title":"The Color Yellow"
+  },
+  {
+    "number":455,
+    "season":21,
+    "episode":14,
+    "productioncode":"MABF04",
+    "airdate":"03/14/10",
+    "title":"Postcards From the Wedge"
+  },
+  {
+    "number":456,
+    "season":21,
+    "episode":15,
+    "productioncode":"MABF07",
+    "airdate":"03/21/10",
+    "title":"Stealing First Base"
+  },
+  {
+    "number":457,
+    "season":21,
+    "episode":16,
+    "productioncode":"MABF10",
+    "airdate":"03/28/10",
+    "title":"The Greatest Story Ever D'ohed"
+  },
+  {
+    "number":458,
+    "season":21,
+    "episode":17,
+    "productioncode":"MABF08",
+    "airdate":"04/11/10",
+    "title":"American History X-cellent"
+  },
+  {
+    "number":459,
+    "season":21,
+    "episode":18,
+    "productioncode":"MABF09",
+    "airdate":"04/18/10",
+    "title":"Chief of Hearts"
+  },
+  {
+    "number":460,
+    "season":21,
+    "episode":19,
+    "productioncode":"MABF14",
+    "airdate":"04/25/10",
+    "title":"The Squirt and the Whale"
+  },
+  {
+    "number":461,
+    "season":21,
+    "episode":20,
+    "productioncode":"MABF12",
+    "airdate":"05/02/10",
+    "title":"To Surveil With Love"
+  },
+  {
+    "number":462,
+    "season":21,
+    "episode":21,
+    "productioncode":"MABF13",
+    "airdate":"05/09/10",
+    "title":"Moe Letter Blues"
+  },
+  {
+    "number":463,
+    "season":21,
+    "episode":22,
+    "productioncode":"MABF11",
+    "airdate":"05/16/10",
+    "title":"The Bob Next Door"
+  },
+  {
+    "number":464,
+    "season":21,
+    "episode":23,
+    "productioncode":"MABF15",
+    "airdate":"05/23/10",
+    "title":"Judge Me Tender"
+  }
+],
+[
+  {
+    "number":465,
+    "season":22,
+    "episode":1,
+    "productioncode":"MABF21",
+    "airdate":"09/26/10",
+    "title":"Elementary School Musical"
+  },
+  {
+    "number":466,
+    "season":22,
+    "episode":2,
+    "productioncode":"",
+    "airdate":"10/03/10",
+    "title":"Loan-a-Lisa"
+  },
+  {
+    "number":467,
+    "season":22,
+    "episode":3,
+    "productioncode":"",
+    "airdate":"10/10/10",
+    "title":"Money Bart"
+  },
+  {
+    "number":468,
+    "season":22,
+    "episode":4,
+    "productioncode":"MABF16",
+    "airdate":"11/07/10",
+    "title":"Treehouse of Horror XXI"
+  },
+  {
+    "number":469,
+    "season":22,
+    "episode":5,
+    "productioncode":"",
+    "airdate":"11/14/10",
+    "title":"Lisa Simpson"
+  },
+  {
+    "number":470,
+    "season":22,
+    "episode":6,
+    "productioncode":"",
+    "airdate":"11/21/10",
+    "title":"The Fool Monty"
+  },
+  {
+    "number":471,
+    "season":22,
+    "episode":7,
+    "productioncode":"",
+    "airdate":"11/28/10",
+    "title":"How Munched is That Birdie in the Window"
+  },
+  {
+    "number":472,
+    "season":22,
+    "episode":8,
+    "productioncode":"",
+    "airdate":"12/05/10",
+    "title":"The Fight Before Christmas"
+  },
+  {
+    "number":473,
+    "season":22,
+    "episode":9,
+    "productioncode":"",
+    "airdate":"12/12/10",
+    "title":"Donnie Fatso"
+  },
+  {
+    "number":474,
+    "season":22,
+    "episode":10,
+    "productioncode":"",
+    "airdate":"01/09/11",
+    "title":"Moms I'd Like To Forget"
+  },
+  {
+    "number":475,
+    "season":22,
+    "episode":11,
+    "productioncode":"NABF04",
+    "airdate":"01/16/11",
+    "title":"Flaming Moe"
+  },
+  {
+    "number":476,
+    "season":22,
+    "episode":12,
+    "productioncode":"",
+    "airdate":"01/23/11",
+    "title":"Homer The Father"
+  },
+  {
+    "number":477,
+    "season":22,
+    "episode":13,
+    "productioncode":"NABF06",
+    "airdate":"02/13/11",
+    "title":"The Blue and the Gray"
+  },
+  {
+    "number":478,
+    "season":22,
+    "episode":14,
+    "productioncode":"NABF07",
+    "airdate":"02/20/11",
+    "title":"Angry Dad: The Movie"
+  },
+  {
+    "number":479,
+    "season":22,
+    "episode":15,
+    "productioncode":"",
+    "airdate":"03/06/11",
+    "title":"The Scorpion's Tale"
+  },
+  {
+    "number":480,
+    "season":22,
+    "episode":16,
+    "productioncode":"",
+    "airdate":"03/13/11",
+    "title":"A Midsummer's Nice Dream"
+  },
+  {
+    "number":481,
+    "season":22,
+    "episode":17,
+    "productioncode":"",
+    "airdate":"03/27/11",
+    "title":"Love Is A Many Strangled Thing"
+  },
+  {
+    "number":482,
+    "season":22,
+    "episode":18,
+    "productioncode":"",
+    "airdate":"04/10/11",
+    "title":"The Great Simpsina"
+  },
+  {
+    "number":483,
+    "season":22,
+    "episode":19,
+    "productioncode":"",
+    "airdate":"05/01/11",
+    "title":"The Real Housewives of Fat Tony"
+  },
+  {
+    "number":484,
+    "season":22,
+    "episode":20,
+    "productioncode":"NABF13",
+    "airdate":"05/08/11",
+    "title":"Homer Scissorhands"
+  },
+  {
+    "number":485,
+    "season":22,
+    "episode":21,
+    "productioncode":"",
+    "airdate":"05/15/11",
+    "title":"500 Keys"
+  },
+  {
+    "number":486,
+    "season":22,
+    "episode":22,
+    "productioncode":"",
+    "airdate":"05/22/11",
+    "title":"The Ned-Liest Catch"
+  }
+],
+[
+  {
+    "number":487,
+    "season":23,
+    "episode":1,
+    "productioncode":"NABF16",
+    "airdate":"09/25/11",
+    "title":"The Falcon and the D'Ohman"
+  },
+  {
+    "number":488,
+    "season":23,
+    "episode":2,
+    "productioncode":"NABF17",
+    "airdate":"10/02/11",
+    "title":"Bart Stops to Smell the Roosevelts"
+  },
+  {
+    "number":489,
+    "season":23,
+    "episode":3,
+    "productioncode":"NABF19",
+    "airdate":"10/30/11",
+    "title":"Treehouse of Horror XXII"
+  },
+  {
+    "number":490,
+    "season":23,
+    "episode":4,
+    "productioncode":"NABF21",
+    "airdate":"11/06/11",
+    "title":"Replaceable You"
+  },
+  {
+    "number":491,
+    "season":23,
+    "episode":5,
+    "productioncode":"NABF20",
+    "airdate":"11/13/11",
+    "title":"The Food Wife"
+  },
+  {
+    "number":492,
+    "season":23,
+    "episode":6,
+    "productioncode":"NABF22",
+    "airdate":"11/20/11",
+    "title":"The Book Job"
+  },
+  {
+    "number":493,
+    "season":23,
+    "episode":7,
+    "productioncode":"PABF01",
+    "airdate":"11/27/11",
+    "title":"The Man in the Blue Flannel Pants"
+  },
+  {
+    "number":494,
+    "season":23,
+    "episode":8,
+    "productioncode":"PABF02",
+    "airdate":"12/04/11",
+    "title":"The Ten-Per-Cent Solution"
+  },
+  {
+    "number":495,
+    "season":23,
+    "episode":9,
+    "productioncode":"NABF18",
+    "airdate":"12/11/11",
+    "title":"Holidays Of Future Passed"
+  },
+  {
+    "number":496,
+    "season":23,
+    "episode":10,
+    "productioncode":"PABF03",
+    "airdate":"01/08/12",
+    "title":"Politically Inept"
+  },
+  {
+    "number":497,
+    "season":23,
+    "episode":11,
+    "productioncode":"PABF04",
+    "airdate":"01/15/12",
+    "title":"The D'oh-cial Network"
+  },
+  {
+    "number":498,
+    "season":23,
+    "episode":12,
+    "productioncode":"PABF05",
+    "airdate":"01/29/12",
+    "title":"Moe Goes From Rags To Riches"
+  },
+  {
+    "number":499,
+    "season":23,
+    "episode":13,
+    "productioncode":"PABF06",
+    "airdate":"02/12/12",
+    "title":"The D08hter Also Rises"
+  },
+  {
+    "number":500,
+    "season":23,
+    "episode":14,
+    "productioncode":"PABF07",
+    "airdate":"02/19/12",
+    "title":"At Long Last Leave"
+  },
+  {
+    "number":501,
+    "season":23,
+    "episode":15,
+    "productioncode":"PABF09",
+    "airdate":"03/04/12",
+    "title":"Exit Through the Kwik-E-Mart"
+  },
+  {
+    "number":502,
+    "season":23,
+    "episode":16,
+    "productioncode":"PABF08",
+    "airdate":"03/11/12",
+    "title":"How I Wet Your Mother"
+  },
+  {
+    "number":503,
+    "season":23,
+    "episode":17,
+    "productioncode":"PABF10",
+    "airdate":"03/18/12",
+    "title":"Them"
+  },
+  {
+    "number":504,
+    "season":23,
+    "episode":18,
+    "productioncode":"PABF11",
+    "airdate":"04/15/12",
+    "title":"Beware My Cheating Bart"
+  },
+  {
+    "number":505,
+    "season":23,
+    "episode":19,
+    "productioncode":"PABF12",
+    "airdate":"04/29/12",
+    "title":"A Totally Fun Thing That Bart Will Never Do Again"
+  },
+  {
+    "number":506,
+    "season":23,
+    "episode":20,
+    "productioncode":"PABF13",
+    "airdate":"05/06/12",
+    "title":"The Spy Who Learned Me"
+  },
+  {
+    "number":507,
+    "season":23,
+    "episode":21,
+    "productioncode":"",
+    "airdate":"05/13/12",
+    "title":"Ned 'N Edna's Blend"
+  },
+  {
+    "number":508,
+    "season":23,
+    "episode":22,
+    "productioncode":"PABF14",
+    "airdate":"05/20/12",
+    "title":"Lisa Goes Gaga"
+  }
+],
+[
+  {
+    "number":509,
+    "season":24,
+    "episode":1,
+    "productioncode":"PABF21",
+    "airdate":"09/30/12",
+    "title":"Moonshine River"
+  },
+  {
+    "number":510,
+    "season":24,
+    "episode":2,
+    "productioncode":"PABF17",
+    "airdate":"10/07/12",
+    "title":"Treehouse of Horror XXIII"
+  },
+  {
+    "number":511,
+    "season":24,
+    "episode":3,
+    "productioncode":"PABF18",
+    "airdate":"11/04/12",
+    "title":"Adventures in Baby-Getting"
+  },
+  {
+    "number":512,
+    "season":24,
+    "episode":4,
+    "productioncode":"PABF16",
+    "airdate":"11/11/12",
+    "title":"Gone Abie Gone"
+  },
+  {
+    "number":513,
+    "season":24,
+    "episode":5,
+    "productioncode":"PABF19",
+    "airdate":"11/18/12",
+    "title":"Penny-Wiseguys"
+  },
+  {
+    "number":514,
+    "season":24,
+    "episode":6,
+    "productioncode":"PABF22",
+    "airdate":"11/25/12",
+    "title":"A Tree Grows in Springfield"
+  },
+  {
+    "number":515,
+    "season":24,
+    "episode":7,
+    "productioncode":"PABF20",
+    "airdate":"12/09/12",
+    "title":"The Day the Earth Stood Cool"
+  },
+  {
+    "number":516,
+    "season":24,
+    "episode":8,
+    "productioncode":"",
+    "airdate":"12/16/12",
+    "title":"To Cur With Love"
+  },
+  {
+    "number":517,
+    "season":24,
+    "episode":9,
+    "productioncode":"",
+    "airdate":"01/06/13",
+    "title":"Homer Goes to Prep School"
+  },
+  {
+    "number":518,
+    "season":24,
+    "episode":10,
+    "productioncode":"",
+    "airdate":"01/13/13",
+    "title":"A Test Before Trying"
+  },
+  {
+    "number":519,
+    "season":24,
+    "episode":11,
+    "productioncode":"RABF04",
+    "airdate":"01/27/13",
+    "title":"The Changing of the Guardian"
+  },
+  {
+    "number":520,
+    "season":24,
+    "episode":12,
+    "productioncode":"RABF07",
+    "airdate":"02/10/13",
+    "title":"Love Is a Many-Splintered Thing"
+  },
+  {
+    "number":521,
+    "season":24,
+    "episode":13,
+    "productioncode":"RABF05",
+    "airdate":"02/17/13",
+    "title":"Hardly Kirk-Ing"
+  },
+  {
+    "number":522,
+    "season":24,
+    "episode":14,
+    "productioncode":"RABF06",
+    "airdate":"03/03/13",
+    "title":"Gorgeous Grampa"
+  },
+  {
+    "number":523,
+    "season":24,
+    "episode":15,
+    "productioncode":"RABF09",
+    "airdate":"03/10/13",
+    "title":"Black-Eyed Please"
+  },
+  {
+    "number":524,
+    "season":24,
+    "episode":16,
+    "productioncode":"RABF10",
+    "airdate":"03/17/13",
+    "title":"Dark Knight Court"
+  },
+  {
+    "number":525,
+    "season":24,
+    "episode":17,
+    "productioncode":"",
+    "airdate":"04/14/13",
+    "title":"What Animated Women Want"
+  },
+  {
+    "number":526,
+    "season":24,
+    "episode":18,
+    "productioncode":"",
+    "airdate":"04/28/13",
+    "title":"Pulpit Friction"
+  },
+  {
+    "number":527,
+    "season":24,
+    "episode":19,
+    "productioncode":"",
+    "airdate":"05/05/13",
+    "title":"Whiskey Business"
+  },
+  {
+    "number":528,
+    "season":24,
+    "episode":20,
+    "productioncode":"",
+    "airdate":"05/12/13",
+    "title":"Fabulous Faker Boy"
+  },
+  {
+    "number":529,
+    "season":24,
+    "episode":21,
+    "productioncode":"",
+    "airdate":"05/19/13",
+    "title":"The Saga Of Carl"
+  },
+  {
+    "number":530,
+    "season":24,
+    "episode":22,
+    "productioncode":"",
+    "airdate":"05/19/13",
+    "title":"Dangers On A Train"
+  }
+],
+[
+  {
+    "number":531,
+    "season":25,
+    "episode":1,
+    "productioncode":"RABF20",
+    "airdate":"09/29/13",
+    "title":"Homerland"
+  },
+  {
+    "number":532,
+    "season":25,
+    "episode":2,
+    "productioncode":"RABF16",
+    "airdate":"10/06/13",
+    "title":"Treehouse of Horror XXIV"
+  },
+  {
+    "number":533,
+    "season":25,
+    "episode":3,
+    "productioncode":"",
+    "airdate":"11/03/13",
+    "title":"Four Regrettings And A Funeral"
+  },
+  {
+    "number":534,
+    "season":25,
+    "episode":4,
+    "productioncode":"RABF22",
+    "airdate":"11/10/13",
+    "title":"YOLO"
+  },
+  {
+    "number":535,
+    "season":25,
+    "episode":5,
+    "productioncode":"",
+    "airdate":"11/17/13",
+    "title":"Labor Pains"
+  },
+  {
+    "number":536,
+    "season":25,
+    "episode":6,
+    "productioncode":"",
+    "airdate":"11/24/13",
+    "title":"The Kid Is All Right"
+  },
+  {
+    "number":537,
+    "season":25,
+    "episode":7,
+    "productioncode":"",
+    "airdate":"12/08/13",
+    "title":"Yellow Subterfuge"
+  },
+  {
+    "number":538,
+    "season":25,
+    "episode":8,
+    "productioncode":"",
+    "airdate":"12/15/13",
+    "title":"White Christmas Blues"
+  },
+  {
+    "number":539,
+    "season":25,
+    "episode":9,
+    "productioncode":"SABF05",
+    "airdate":"01/05/14",
+    "title":"Steal This Episode"
+  },
+  {
+    "number":540,
+    "season":25,
+    "episode":10,
+    "productioncode":"",
+    "airdate":"01/12/14",
+    "title":"Married To The Blob"
+  },
+  {
+    "number":541,
+    "season":25,
+    "episode":11,
+    "productioncode":"SABF06",
+    "airdate":"01/26/14",
+    "title":"Specs and the City"
+  },
+  {
+    "number":542,
+    "season":25,
+    "episode":12,
+    "productioncode":"SABF08",
+    "airdate":"03/09/14",
+    "title":"Diggs"
+  },
+  {
+    "number":543,
+    "season":25,
+    "episode":13,
+    "productioncode":"SABF07",
+    "airdate":"03/09/14",
+    "title":"The Man Who Grew Too Much"
+  },
+  {
+    "number":544,
+    "season":25,
+    "episode":14,
+    "productioncode":"SABF09",
+    "airdate":"03/16/14",
+    "title":"The Winter of His Content"
+  },
+  {
+    "number":545,
+    "season":25,
+    "episode":15,
+    "productioncode":"SABF10",
+    "airdate":"03/23/14",
+    "title":"The War of Art"
+  },
+  {
+    "number":546,
+    "season":25,
+    "episode":16,
+    "productioncode":"SABF11",
+    "airdate":"03/30/14",
+    "title":"You Don't Have to Live Like a Referee"
+  },
+  {
+    "number":547,
+    "season":25,
+    "episode":17,
+    "productioncode":"SABF12",
+    "airdate":"04/06/14",
+    "title":"Luca$"
+  },
+  {
+    "number":548,
+    "season":25,
+    "episode":18,
+    "productioncode":"SABF13",
+    "airdate":"04/13/14",
+    "title":"Days Of Future Future"
+  },
+  {
+    "number":549,
+    "season":25,
+    "episode":19,
+    "productioncode":"SABF14",
+    "airdate":"04/27/14",
+    "title":"What To Expect When Bart's Expecting"
+  },
+  {
+    "number":550,
+    "season":25,
+    "episode":20,
+    "productioncode":"RABF21",
+    "airdate":"05/04/14",
+    "title":"Brick Like Me"
+  },
+  {
+    "number":551,
+    "season":25,
+    "episode":21,
+    "productioncode":"SABF15",
+    "airdate":"05/11/14",
+    "title":"Pay Pal"
+  },
+  {
+    "number":552,
+    "season":25,
+    "episode":22,
+    "productioncode":"",
+    "airdate":"05/18/14",
+    "title":"The Yellow Badge of Cowardge"
+  }
+]
+]
+}

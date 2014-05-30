@@ -33,9 +33,9 @@
   <script src="libs/backbone.js"></script><!--V 1.1.0 --> 
   <script src="libs/d3.min.js" charset="utf-8"></script>
 
-  <script>
 
-// var friends = new Backbone.Collection([
+
+<!-- // var friends = new Backbone.Collection([
 //   {name: "Athos",      job: "Musketeer"},
 //   {name: "Porthos",    job: "Musketeer"},
 //   {name: "Aramis",     job: "Musketeer"},
@@ -44,12 +44,38 @@
 
 // console.log(friends);
 
+// Templates  -->
+
+<script type="text/template" id="home-template">
+<h1>Home page</h1>
+<p> Bonjour je suis un template</p>
+</script>
+<script type="text/template" id="audience-template">
+<h1>User Reviews</h1>
+<p>select a season</p>
+</script>
+<script type="text/template" id="characters-template">
+<h1>Characters template</h1>
+
+</script>
+<script type="text/template" id="facts-template">
+<h1>Funny Facts</h1>
+<p>select a season</p>
+</script>
+<script type="text/template" id="contribute-template">
+<h1>Give us data</h1>
+
+</script>
+
+<script>
+
   // Views
 
   var Home = Backbone.View.extend({
       el:'#content',
       render: function(){
-        this.$el.html('home page');
+        var template = _.template($('#home-template').html(),{}); // {} = données à parser (pas besoin ici)
+        this.$el.html(template);
         $('#home').addClass('selected');
         $('#audience').removeClass('selected');$('#characters').removeClass('selected');$('#facts').removeClass('selected');$('#contribute').removeClass('selected');
 
@@ -59,7 +85,8 @@
   var Audience = Backbone.View.extend({
       el:'#content',
       render: function(){
-        this.$el.html('audience and rating by seasons');
+        var template = _.template($('#audience-template').html(),{}); // {} = données à parser (pas besoin ici)
+        this.$el.html(template);
         $('#audience').addClass('selected');
         $('#facts').removeClass('selected');$('#characters').removeClass('selected');$('#home').removeClass('selected');$('#contribute').removeClass('selected');
       }
@@ -191,7 +218,8 @@
   var Facts = Backbone.View.extend({
       el:'#content',
       render: function(){
-        this.$el.html('Funny Facts');
+        var template = _.template($('#facts-template').html(),{}); // {} = données à parser (pas besoin ici)
+        this.$el.html(template);
         $('#facts').addClass('selected');
         $('#audience').removeClass('selected');$('#characters').removeClass('selected');$('#home').removeClass('selected');$('#contribute').removeClass('selected');
       }
@@ -200,7 +228,10 @@
   var Contribute = Backbone.View.extend({
       el:'#content',
       render: function(){
-        this.$el.html('Give us data');
+        // this.$el.html('Give us data');
+        // Version Template
+        var template = _.template($('#contribute-template').html(),{}); // {} = données à parser (pas besoin ici)
+        this.$el.html(template);
         $('#contribute').addClass('selected');
         $('#audience').removeClass('selected');$('#characters').removeClass('selected');$('#home').removeClass('selected');$('#facts').removeClass('selected');
       }

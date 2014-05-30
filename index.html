@@ -25,8 +25,7 @@
   
     </section>
 
-    <input class="change-character" name="updateButton" type="button" value="Homer" />
-    <input class="change-character" name="updateButton" type="button" value="Marge" />
+
   <!-- === Références aux Frameworks === -->
   <script src="libs/jquery.js"></script><!--V 1.10.2 -->
   <script src="libs/underscore.js"></script><!--V 1.5.2 -->
@@ -56,7 +55,8 @@
 </script>
 <script type="text/template" id="characters-template">
 <h1>Characters template</h1>
-
+<input class="change-character" name="updateButton" type="button" value="Homer" />
+<input class="change-character" name="updateButton" type="button" value="Marge" />
 </script>
 <script type="text/template" id="facts-template">
 <h1>Funny Facts</h1>
@@ -95,7 +95,8 @@
   var Characters = Backbone.View.extend({
       el:'#content',
       render: function(){
-        this.$el.html('Characters\' List');
+        var template = _.template($('#characters-template').html(),{}); // {} = données à parser pas besoin ici)
+        this.$el.html(template);
         $('#characters').addClass('selected');
         $('#audience').removeClass('selected');$('#facts').removeClass('selected');$('#home').removeClass('selected');$('#contribute').removeClass('selected');
           // ----------------------------------D3---------------------------------------------

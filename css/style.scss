@@ -1,5 +1,6 @@
 
-@import 'fonts';
+@import "fonts";
+@import "var";
 
 html {
   font-size: 1em;
@@ -18,24 +19,26 @@ html, body {
 }
 
 body {
-	font-family:"Langdon";
-	text-transform:uppercase;
-	font-size:20px;
-
+	font-family:Arial;
+	font-size:16px;
+	overflow-x:hidden;
 
 	#menu {
-		padding:0 ;
-		margin:0 auto;
+		padding: 0 ;
+		margin: 0 auto;
+		font-family: $langdon;
+		font-size: 1.250em;
 		text-align: center;
-		width:100%;
-		position:absolute;
-		bottom:0;
-		background-color:#f7f7f7;
+		text-transform: uppercase;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		background-color: #f7f7f7;
+		z-index: 1000;
 
 		nav {
 			
 			ul {
-			 /*border:1px solid black;*/
 			 margin: 0;
 			 list-style-type:none;
 
@@ -76,6 +79,85 @@ body {
 		}
 
 	}
+
+	h1 {
+		font-family: $langdon;
+		text-transform: uppercase;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	
+	/*-------- Characters page--------*/
+
+	#characters-list {
+		background-color: red;
+		position: absolute;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: right 1s; 
+		transition: right 1s;
+		z-index: 100;
+
+		a {
+			display: inline-block;
+			text-align:center;
+		}
+
+		img {
+			width: 350px;
+			height: auto;
+		}
+	}
+
+	.list-opened {
+		right: 0 !important;
+		-webkit-transition: right 1s; 
+		transition: right 1s;
+	}
+
+	#open-list {
+		position: fixed;
+		top: 40px;
+		right: 40px;
+		z-index: 101;
+	}
+
+	#character-info {
+		background-color:$yellow;
+		width: 100%;
+		position:fixed;
+		bottom:55px;
+		height: 100px;
+		padding-top: 2%;
+		z-index: 10;
+		font-size: 1.250rem;
+
+		div {
+			position: relative;
+			display: inline-block;
+			width: 20%;
+			font-family: $langdon;
+			color: $dark-grey;
+			text-transform: uppercase;
+			text-align: center;
+
+			span {
+				font-size: 1.750rem;
+			}
+		}
+
+		#character-name {
+			text-align: right;
+			font-size: 1.750rem;
+			border-right: 3px solid $dark-grey;
+			padding-right:20px;
+		}
+
+	}
+
 }
 
 

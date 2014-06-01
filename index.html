@@ -452,13 +452,26 @@
 </script>
 <script type="text/template" id="characters-template">
 <h1>Character appearances</h1>
-<div id="characters-list"><h1>Choose a character</h1></div>
-<a href="characters-list" id="open-list">List</a>
+<div id="character-name"></div>
+<div id="characters-list">
+    <nav>
+        <ul>
+            <li><a href="relatives">Relatives</a></li><!--
+            --><li><a href="all-characters" id="open-list">All characters</a></li>
+        </ul>
+    </nav>
+    <div id="display-relatives">
+
+    </div>
+    <div id="display-character-list">
+
+    </div>
+</div>
+<!--<a href="characters-list" id="open-list">List</a>-->
 <div id="character-info">
-  <div id="character-name"></div>
   <div id="character-catchphrase">Catchphrase<br><span></span></div>
-  <div id="character-app-number">Appears in<br><span><span></span> episodes</span></div>
   <div id="character-first-app">First appeared in<br><span></span></div>
+  <div id="character-app-number">Appears in<br><span><span></span> episodes</span></div>
 </div>
 </script>
 <script type="text/template" id="facts-template">
@@ -613,13 +626,19 @@
           
           $.getJSON( "json/characters.json", function( data ) {
             for(var i=0; i<data.length; i++){
-              $("#characters-list").append('<a href="'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><br>'+data[i].name+'</a>');
+              $("#display-character-list").append('<a href="'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
+
+            for(var i=0; i<data.length; i++){
+              $("#display-relatives").append('<a href="'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+            }
+
           });
 
           $("#open-list").click(function(e){
             e.preventDefault();
             $("#characters-list").toggleClass("list-opened");
+            // if($("#open-list").text == "All characters"){ $("##open-list").text = "Back"} else {$("##open-list").text = "All characters"}
           })
 
           // ----------------------------------D3---------------------------------------------
@@ -753,7 +772,7 @@
 
           //Update the data on the graph
           $(".page").on("click","a.change-character",function () {
-            $("#characters-list").toggleClass("list-opened");
+            $("#characters-list").removeClass("list-opened");
             event.preventDefault();
             var selected = $(this).attr('data-character');
             console.log(selected);

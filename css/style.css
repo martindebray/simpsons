@@ -18,160 +18,80 @@
   src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
 
 /**
- ** colors **/
-html {
-  font-size: 1em;
-  height: 100%;
-  padding: 0;
-  font-family: "Langdon";
-  text-transform: uppercase;
-  font-size: 20px;
-  background-color: #f7d100; }
-
-html, body {
-  margin: 0;
-  padding: 0; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  font-family: Arial;
-  font-size: 16px;
-  overflow-x: hidden;
-  /*-------- Characters page--------*/ }
-  body #menu {
-    padding: 0;
-    margin: 0 auto;
-    font-family: "Langdon";
-    font-size: 1.250em;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #f7f7f7;
-    z-index: 1000; }
-    body #menu nav ul {
-      margin: 0;
-      list-style-type: none; }
-      body #menu nav ul li {
-        display: inline-block; }
-        body #menu nav ul li a {
-          display: block;
-          float: left;
-          width: 170px;
-          line-height: 250%;
-          color: #555555;
-          text-decoration: none;
-          text-align: center; }
-        body #menu nav ul li a:hover {
-          background-color: #f7f7f7;
-          color: #75c0e5; }
-        body #menu nav ul li .selected {
-          background-color: #f7f7f7;
-          color: #75c0e5; }
-        body #menu nav ul li img {
-          width: 25px; }
-  body .hidden {
-    display: none; }
-  body h1 {
-    font-family: "Langdon";
-    text-transform: uppercase;
-    font-size: 2em;
-    text-align: center; }
-  body #home {
-    text-align: center;
-    margin: 0 auto; }
-    body #home h1 {
-      font-family: "simpsonfont"; }
-    body #home img {
-      text-align: center;
-      margin: 0 auto;
-      width: 25%; }
-    body #home p {
-      font-size: 140%; }
-  body #characters-list {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: right 1s;
-    transition: right 1s;
-    z-index: 100; }
-    body #characters-list a {
-      display: inline-block;
-      text-align: center; }
-    body #characters-list img {
-      width: 350px;
-      height: auto; }
-  body .list-opened {
-    right: 0 !important;
-    -webkit-transition: right 1s;
-    transition: right 1s; }
-  body #open-list {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    z-index: 101; }
-  body #character-info {
-    background-color: #f7d100;
-    width: 100%;
-    position: fixed;
-    bottom: 55px;
-    height: 100px;
-    padding-top: 2%;
-    z-index: 10;
-    font-size: 1.250rem; }
-    body #character-info div {
-      position: relative;
-      display: inline-block;
-      width: 20%;
-      font-family: "Langdon";
-      color: #777777;
-      text-transform: uppercase;
-      text-align: center; }
-      body #character-info div span {
-        font-size: 1.750rem; }
-    body #character-info #character-name {
-      text-align: right;
-      font-size: 1.750rem;
-      border-right: 3px solid #777777;
-      padding-right: 20px; }
-
-@font-face {
-  font-family: 'Simpsonfont';
-  src: url("fonts/simpsonfont-webfont.eot");
-  src: url("fonts/simpsonfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/simpsonfont-webfont.woff") format("woff"), url("fonts/simpsonfont-webfont.ttf") format("truetype"), url("fonts/simpsonfont-webfont.svg#simpsonfontsimpsonfont") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'akbar';
-  src: url("fonts/akbar-webfont.eot");
-  src: url("fonts/akbar-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/akbar-webfont.woff") format("woff"), url("fonts/akbar-webfont.ttf") format("truetype"), url("fonts/akbar-webfont.svg#akbar_plain") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Langdon';
-  src: url("fonts/langdon.eot");
-  src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
-
+ ** fonts **/
+/* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
 /**
  ** colors **/
+/* à remplacer par la vraie couleur du corps du texte quand on aura les maquettes */
+body #home {
+  text-align: center;
+  margin: 0 auto; }
+  body #home h1 {
+    font-family: "Simpsonfont"; }
+  body #home img {
+    text-align: center;
+    margin: 0 auto;
+    width: 25%; }
+  body #home p {
+    font-size: 140%; }
+
+body {
+  /* Css pour les audiences & notes ici */ }
+
+body #characters-list {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+  z-index: 100; }
+  body #characters-list a {
+    display: inline-block;
+    text-align: center; }
+  body #characters-list img {
+    width: 350px;
+    height: auto; }
+body .list-opened {
+  right: 0 !important;
+  -webkit-transition: right 1s;
+  transition: right 1s; }
+body #open-list {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 101; }
+body #character-info {
+  background-color: #f7d100;
+  width: 100%;
+  position: fixed;
+  bottom: 55px;
+  height: 100px;
+  padding-top: 2%;
+  z-index: 10;
+  font-size: 1.250rem; }
+  body #character-info div {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    font-family: "Langdon";
+    color: #777777;
+    text-transform: uppercase;
+    text-align: center; }
+    body #character-info div span {
+      font-size: 1.750rem; }
+  body #character-info #character-name {
+    text-align: right;
+    font-size: 1.750rem;
+    border-right: 3px solid #777777;
+    padding-right: 20px; }
+
 html {
   font-size: 1em;
   height: 100%;
-  padding: 0;
-  font-family: "Langdon";
-  text-transform: uppercase;
-  font-size: 20px;
-  background-color: #f7d100; }
+  padding: 0; }
 
 html, body {
   margin: 0;
@@ -183,10 +103,9 @@ html, body {
   box-sizing: border-box; }
 
 body {
-  font-family: Arial;
-  font-size: 16px;
-  overflow-x: hidden;
-  /*-------- Characters page--------*/ }
+  font-family: "Arial";
+  background-color: #f7d100;
+  overflow-x: hidden; }
   body #menu {
     padding: 0;
     margin: 0 auto;
@@ -227,63 +146,3 @@ body {
     text-transform: uppercase;
     font-size: 2em;
     text-align: center; }
-  body #home {
-    text-align: center;
-    margin: 0 auto; }
-    body #home h1 {
-      font-family: "simpsonfont"; }
-    body #home img {
-      text-align: center;
-      margin: 0 auto;
-      width: 25%; }
-    body #home p {
-      font-size: 140%; }
-  body #characters-list {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: right 1s;
-    transition: right 1s;
-    z-index: 100; }
-    body #characters-list a {
-      display: inline-block;
-      text-align: center; }
-    body #characters-list img {
-      width: 350px;
-      height: auto; }
-  body .list-opened {
-    right: 0 !important;
-    -webkit-transition: right 1s;
-    transition: right 1s; }
-  body #open-list {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    z-index: 101; }
-  body #character-info {
-    background-color: #f7d100;
-    width: 100%;
-    position: fixed;
-    bottom: 55px;
-    height: 100px;
-    padding-top: 2%;
-    z-index: 10;
-    font-size: 1.250rem; }
-    body #character-info div {
-      position: relative;
-      display: inline-block;
-      width: 20%;
-      font-family: "Langdon";
-      color: #777777;
-      text-transform: uppercase;
-      text-align: center; }
-      body #character-info div span {
-        font-size: 1.750rem; }
-    body #character-info #character-name {
-      text-align: right;
-      font-size: 1.750rem;
-      border-right: 3px solid #777777;
-      padding-right: 20px; }

@@ -54,6 +54,8 @@ define([
 
     router.on('route:characters/name', function(name){ // effets characters page
       // déclencheur de l'action
+      var singleCharacterView =  new CharactersView();
+      singleCharacterView.render();
       console.log("On est sur la page character de "+name);
     });
 

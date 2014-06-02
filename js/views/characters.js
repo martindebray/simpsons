@@ -24,11 +24,11 @@ define([
           
           $.getJSON( "json/characters.json", function( data ) {
             for(var i=0; i<data.length; i++){
-              $("#display-character-list").append('<a href="'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
             for(var i=0; i<data.length; i++){
-              $("#display-relatives").append('<a href="'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+              $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
           });
@@ -71,7 +71,7 @@ define([
           }
 
           
-          // find the episode by its number
+          // find the episode's title of the first appearance by its number
           function firstApp(i) {
             i = i-1;
             var title ="";
@@ -86,16 +86,20 @@ define([
             });
           }
 
+          // var aspect = 910 / 480,
+          // $(window).on("resize", function() {
+          //     var targetWidth = svg.parent().width();
+          //     svg.attr("width", targetWidth);
+          //     svg.attr("height", targetWidth / aspect);
+          // });
 
           // display all the episodes on the graph
           function visualizeit(){
             
             //create svg container
-            svg = d3.select(".page").append("svg:svg")
-                .attr("width", "80%")
-                .attr("height", "60%")
+            svg = d3.select("#character-graph")
                 .append("svg:g")
-                .attr("transform", "translate(550, 420)");
+                .attr("transform", "translate(455, 400)");
            
             // bars (rays) attributes
             var barSpacing = d3.scale.linear().domain([0, 9]).range([80, 170]); // domain = à peu près espacement des points &&& range = en gros le rayon de l'intérieur de l'arc                            

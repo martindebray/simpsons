@@ -15,12 +15,17 @@ html {
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.page {
+	height: 100%;
 }
 
 body {
@@ -103,6 +108,9 @@ body {
 		text-transform: uppercase;
 		font-size: 2em;
 		text-align: center;
+		margin: 0;
+		padding: 20px 0;
+		font-weight: normal;
 	}
 
 	// End titles --------------------------------------------------------

@@ -1,3 +1,4 @@
+@charset "CP850";
 @font-face {
   font-family: 'Simpsonfont';
   src: url("fonts/simpsonfont-webfont.eot");
@@ -30,7 +31,9 @@
 /* à remplacer par la vraie couleur du corps du texte quand on aura les maquettes */
 body #home {
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #f7d100;
+  height: 100%; }
   body #home #chargement {
     font-size: 10px;
     text-align: center;
@@ -206,7 +209,6 @@ html, body {
 
 body {
   font-family: "Arial";
-  background-color: #f7d100;
   overflow: hidden; }
   body #menu {
     padding: 0;

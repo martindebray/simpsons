@@ -4,6 +4,8 @@ body {
 	#home {
 		text-align: center;
 		margin:0 auto;
+		background-color: $yellow;
+		height:100%;
 
 		#chargement {
 			font-size: 10px;
@@ -21,13 +23,15 @@ body {
 			border-bottom:4px solid #000;
 			width: 0%;
 		}
+		
 		#container {
 			visibility: hidden;
 		}
-			img {
-				width:27%;
+
+		img {
+			width:27%;
 				
-			}
+		}
 
 		
 		h1 {

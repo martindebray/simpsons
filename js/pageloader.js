@@ -15,7 +15,7 @@
 	 */
 	$.pageLoader = function() {
 		// Selection des images en src="
-		var $elements = $('body').find('img[src]');
+		var $elements = $('.page').find('img[src]');
 		// Selection des images en background-image
 		$('body [style]').each(function() {
 			var src = $(this).css('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
@@ -28,8 +28,11 @@
 		
 		var $chargement = $('#chargement');
 		var $chargementInfos = $('#chargement-infos');
+		// var $donuts = $('#donuts');
 		var elementsCharges = 0;
 		var dureeMs = 1000;
+		
+	
 		
 		function animateStep(now, fx) {
 			$chargementInfos.text(parseInt(now)+'%');
@@ -37,6 +40,7 @@
 		
 		function chargementEnCours() {
 			var pourcentage = 0;
+			var value = 0;
 			if($elements.length) {
 				pourcentage = parseInt((elementsCharges / $elements.length) * 100);
 			}
@@ -51,6 +55,19 @@
 					duration: dureeMs,
 					step: animateStep
 				});
+
+			// $donuts.rotate({ 
+			//    bind: 
+			//      { 
+			//         click: function(){
+			//             value +=90;
+			//             $(this).rotate({ animateTo:value})
+			//         }
+			//      } 
+			   
+			// });				
+
+
 		}
 		
 		function chargementTermine() {

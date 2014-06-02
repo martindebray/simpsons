@@ -4,6 +4,31 @@ body {
 	#home {
 		text-align: center;
 		margin:0 auto;
+
+		#chargement {
+			font-size: 10px;
+			text-align: center;
+			margin:0 auto;
+			right:41%;
+			width:62%;
+			top: 60%;
+		}
+		
+		#chargement-infos {
+			text-align:right;
+			white-space: nowrap;
+			display: block;
+			border-bottom:4px solid #000;
+			width: 0%;
+		}
+		#container {
+			visibility: hidden;
+		}
+			img {
+				width:27%;
+				
+			}
+
 		
 		h1 {
 			font-family: $simpsons;
@@ -17,6 +42,7 @@ body {
 
 		p {
 			font-size: 140%;
+			top:60%;
 		}
 	}
 

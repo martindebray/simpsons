@@ -27,6 +27,23 @@
 body #home {
   text-align: center;
   margin: 0 auto; }
+  body #home #chargement {
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto;
+    right: 41%;
+    width: 62%;
+    top: 60%; }
+  body #home #chargement-infos {
+    text-align: right;
+    white-space: nowrap;
+    display: block;
+    border-bottom: 4px solid #000;
+    width: 0%; }
+  body #home #container {
+    visibility: hidden; }
+  body #home img {
+    width: 27%; }
   body #home h1 {
     font-family: "Simpsonfont"; }
   body #home img {
@@ -34,7 +51,8 @@ body #home {
     margin: 0 auto;
     width: 25%; }
   body #home p {
-    font-size: 140%; }
+    font-size: 140%;
+    top: 60%; }
 
 body {
   /* Css pour les audiences & notes ici */ }

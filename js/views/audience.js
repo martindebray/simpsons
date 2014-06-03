@@ -17,7 +17,7 @@ define([
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
         $('#menu').removeClass('hidden');
-        $('#audienceButton').addClass('selected');$('.page').addClass('violet');
+        $('#audienceButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
          // ----------------------------------------D3 AUDIENCE---------------------------------------------
         var ep_data; // a global variable for the data of all episode of all seasons
@@ -53,7 +53,7 @@ for (var i = 0; i < ep_data.seasons.length; ++i){
           //Width and height
             var w = 600;
             var h = 400;
-            var padding=25;
+            var padding=30;
             //scale
             var scaleX = d3.scale.linear().domain([1, ep_data.seasons.length]).range([padding, w-padding]);
             var scaleY = d3.scale.linear().domain([0, 10]).range([h-padding, padding]);
@@ -70,65 +70,61 @@ for (var i = 0; i < ep_data.seasons.length; ++i){
                     .orient("left")
                     //.ticks(4)
                     ;
-                       
-            
-            /*
-var parseDate = d3.time.format("%Y").parse;
-            var air = parseDate(ep_data.seasons[5][9].airdate);
-            console.log(air);
-*/
-            
-            var dattte=Date.parse(ep_data.seasons[5][9].airdate);
-            console.log(dattte);
-            
-            
+                    
+                    var format = d3.time.format("%m/%d/%y");
+                    var seasonsYear =format.parse(ep_data.seasons[0][0].airdate);
+                    var yearNameFormat = d3.time.format("%Y");
+                    seasonsYear=yearNameFormat(seasonsYear);
+     
            
             
             
-            var sidebar=d3.select("body")
+            var sidebar=d3.select(".page")
             	//.data(ep_data.seasons)
             	//.enter()
             	.append("div")
+            	.attr("id","sidebar")
                 .style("border", "1px solid black")
-                .style("height","100px")
+                .style("height","800px")
                 .style("width","200px")  
                 .style("position","absolute")
                 .style("top",0)
                 .style("right",0)
                 .style("z-index","1000")
-               // .text(air)
                  ;
-                        
-                                              
-            /*
-$("body").append("<div id='sidebar' style='border:1px solid black;height:100%;width:200px;position:absolute;right:0;top:0;z-index:1000;'><h1 id='seasonz'></h1></div>");
-            d3.select("#seasonz").text("the 25 seasons");
-            //create switch audiences/rates
-            $( "#sidebar" ).append( "<button class='switch' id='fuck'>Audience</button>" );
-            $( "#sidebar" ).append( "<button class='switch' id='truc'>Rates</button>" );
-*/
+             
 
-            
-            //create top/flops
-            //$( ".page" ).append( "<h3 class='top'></h3><ol><li id='prems'></li><li id='deuz'></li><li id='troiz'></li></ol>" );  
-            
-            var tops = d3.select("body")
-            	.data(ep_data.seasons)
-            	.enter()
-            	.append("p")
-            	//.text(function(d,i){return (ep_data.seasons[i].rating)})
-            	.style("top", 0 )
-            	.style("left", 0)
-              ;  
-                     
-             /*
-var tops=[];
-             for (var i = 0; i < ep_data.seasons.length; ++i){
-                    tops[i]=ep_data.seasons[i].rating;
-                    }; 
-              var top=d3.max(tops);
-*/
-              
+             var currentSeason=d3.select("#sidebar")
+             	.append("h2")
+             	.attr("id","currentSeason")
+             	.text("The 25 seasons")
+             	;
+             var seasonYear=d3.select("#sidebar")
+             	.append("p")
+             	.attr("id","seasonYear")
+             	.style("display","inline")
+             	.text("1989-2014 | ")
+             	;
+             var epInSeason=d3.select("#sidebar")
+             	.append("p")
+             	.attr("id","epInSeason")
+             	.style("display","inline")
+             	.text("252 episodes")
+             	;
+             var prevseason=d3.select("#sidebar")
+             	.append("p")
+             	.attr("id","prevseason")
+             	.style("display","none")
+             	.text("<<")
+             	;
+             var nextseason=d3.select("#sidebar")
+             	.append("p")
+             	.attr("id","nextseason")
+             	.style("display","none")
+             	.text(">>")
+             	;
+
+                       
             //Create SVG element
             var svg = d3.select(".page")
                         .append("svg:svg")
@@ -140,7 +136,7 @@ var tops=[];
              var lineFunction = d3.svg.line()
                           .x(function(d,i) { return scaleX(i+1) })
                           .y(function(d,i) { return scaleY(ep_data.seasons[i].rating)})
-                          .interpolate("linear");
+                          .interpolate("monotone");
                           
              svg.append("path")
              				.attr("class","graph")
@@ -166,59 +162,8 @@ var tops=[];
 				;
 				})
 				.on("mouseout", function(d,i){return tooltip.style("visibility","hidden")})
-				//removing serie graph
 				.on("click",function (d,i,l) {
-			            d3.select("#choose").text("< Season "+(i+1)+" >");
-			            d3.selectAll("circle").remove();
-			            d3.select("path.graph").remove();
-			            d3.select("g.xAxis").remove();
-			             //creating season graph
-			             var scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
-				         var scaleY = d3.scale.linear().domain([0, 10]).range([h-padding, padding]);
-				         var xAxis = d3.svg.axis()
-				                .scale(scaleX)
-				                .orient("bottom")
-				                ;           
-				         var yAxis = d3.svg.axis()
-		                    .scale(scaleY)
-		                    .orient("left")
-		                    //.ticks(4)
-		                    ;
-			             svg.selectAll("circle")
-			               .data(ep_data.seasons[i])
-			               .enter()
-			               .append("circle")
-			               .attr("fill","white" )
-			               .attr("stroke","#75c0e5")
-			               .attr("stroke-width",2)
-			               .attr("r", 5)
-			               .attr("cx", function(f,j){return scaleX(j+1); } )
-			               .attr("cy", function(f,j){return scaleY(ep_data.seasons[i][j].rating)})
-			               .on("mouseover", function(f,j){return tooltip
-							.style("visibility","visible")
-							.style("top","130px").style("left","400px")
-							.text("Episode "+(i+1)+" Rate "+ep_data.seasons[i][j].rating+"/10")
-							;
-							})
-							.on("mouseout", function(f,j){return tooltip.style("visibility","hidden")});
-							var lineFunction = d3.svg.line()
-								.x(function(f,j) { return scaleX(j+1) })
-								.y(function(f,j) { return scaleY(ep_data.seasons[i][j].rating)})
-							.interpolate("linear");
-							svg.append("path")
-             				.attr("class","graph")
-                            .attr("d", lineFunction(ep_data.seasons[i]))
-                            .attr("stroke", "white")
-                            .attr("stroke-width", 2)
-                            .attr("fill", "none");
-                            
-                            
-			             svg.append("g")
-				            .attr("class", "axis xAxis")  //Assign "axis" class
-				            .attr("transform", "translate(0," + (h - padding) + ")")
-				            .call(xAxis)
-				            ;
-			             
+			            toto(d,i,l);      
 			    });
                
             
@@ -246,8 +191,86 @@ var tops=[];
               .style("top", 0 )
               .style("left", 0)
               ;
-         
-            
+            function toto(d,i,l){
+	           //updating sidebar
+			            d3.select("#currentSeason").text("Season "+(i+1));
+			            var seasonsYear =format.parse(ep_data.seasons[i][l].airdate);
+			            var yearNameFormat = d3.time.format("%Y");
+			            seasonsYear=yearNameFormat(seasonsYear);
+			            d3.select("#seasonYear").text(seasonsYear+" | ")
+			            d3.select("#epInSeason").text(ep_data.seasons[i].length+" episodes")
+			            d3.select("#prevseason").style("display","inline")
+			            d3.select("#nextseason").style("display","inline")
+			            if(i==0){
+				            d3.select("#prevseason").style("display","none")
+			            }
+			            if(i+1==ep_data.seasons.length){
+				            d3.select("#nextseason").style("display","none")
+			            }
+			            d3.select("#prevseason").on("click",function (d,i,l) {
+			            	console.log("this i="+this.i);
+			            	console.log("i="+i);
+			            	toto(d,i,l);      
+			            });
+			            
+			            
+			            //removing old chart
+			            d3.selectAll("circle").remove();
+			            d3.select("path.graph").remove();
+			            d3.select("g.xAxis").remove();
+			            
+			             //creating season graph
+			             var scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
+				         var scaleY = d3.scale.linear().domain([0, 10]).range([h-padding, padding]);
+				         var xAxis = d3.svg.axis()
+				                .scale(scaleX)
+				                .orient("bottom")
+				                ;           
+				         var yAxis = d3.svg.axis()
+		                    .scale(scaleY)
+		                    .orient("left")
+		                    ;
+			             
+			             //adding circles
+			             svg.selectAll("circle")
+			               .data(ep_data.seasons[i])
+			               .enter()
+			               .append("circle")
+			               .attr("fill","white" )
+			               .attr("stroke","#75c0e5")
+			               .attr("stroke-width",2)
+			               .attr("r", 5)
+			               .attr("cx", function(f,j){return scaleX(j+1); } )
+			               .attr("cy", function(f,j){return scaleY(ep_data.seasons[i][j].rating)})
+			              
+			               //adding tooltip
+			               .on("mouseover", function(f,j){return tooltip
+							.style("visibility","visible")
+							.style("top","130px").style("left","400px")
+							.text("Episode "+(i+1)+" Rate "+ep_data.seasons[i][j].rating+"/10")
+							;
+							})
+							.on("mouseout", function(f,j){return tooltip.style("visibility","hidden")});
+							var lineFunction = d3.svg.line()
+								.x(function(f,j) { return scaleX(j+1) })
+								.y(function(f,j) { return scaleY(ep_data.seasons[i][j].rating)})
+                          .interpolate("monotone");
+							
+							//creating path
+							svg.append("path")
+             				.attr("class","graph")
+                            .attr("d", lineFunction(ep_data.seasons[i]))
+                            .attr("stroke", "white")
+                            .attr("stroke-width", 2)
+                            .attr("fill", "none");
+                            
+                            
+			             svg.append("g")
+				            .attr("class", "axis xAxis")  //Assign "axis" class
+				            .attr("transform", "translate(0," + (h - padding) + ")")
+				            .call(xAxis)
+				            ;
+            }
             //console.log(ep_data);//Les 25 saisons (copie du json)
             //console.log(ep_data.seasons); //Les 25 saisons - un tableau par saison
             //console.log(ep_data.seasons[0]);//Données des x épisodes de la saison 0

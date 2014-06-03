@@ -15,15 +15,10 @@
   font-family: 'Langdon';
   src: url("fonts/langdon.eot");
   src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
-<<<<<<< HEAD
-=======
-
 @font-face {
   font-family: 'MuseoSlab700';
   src: url("fonts/museo_slab_700.eot");
   src: url("fonts/museo_slab_700.eot") format("embedded-opentype"), url("fonts/museo_slab_700.woff") format("woff"), url("fonts/museo_slab_700.ttf") format("truetype"), url("fonts/museo_slab_700.svg#MuseoSlab700") format("svg"); }
-
->>>>>>> FETCH_HEAD
 /**
  ** fonts **/
 /* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
@@ -62,8 +57,6 @@ body #home {
     font-size: 140%;
     top: 60%; }
 
-body .violet {
-  background-color: #8c81bf; }
 body .axis path, body .axis line {
   fill: none;
   stroke: white;

@@ -17,12 +17,10 @@
   font-family: 'Langdon';
   src: url("fonts/langdon.eot");
   src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
-
 @font-face {
   font-family: 'MuseoSlab700';
   src: url("fonts/museo_slab_700.eot");
   src: url("fonts/museo_slab_700.eot") format("embedded-opentype"), url("fonts/museo_slab_700.woff") format("woff"), url("fonts/museo_slab_700.ttf") format("truetype"), url("fonts/museo_slab_700.svg#MuseoSlab700") format("svg"); }
-
 /**
  ** fonts **/
 /* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
@@ -61,8 +59,6 @@ body #home {
     font-size: 140%;
     top: 60%; }
 
-body .violet {
-  background-color: #8c81bf; }
 body .axis path, body .axis line {
   fill: none;
   stroke: white;
@@ -257,7 +253,9 @@ body {
     background-color: #f7f7f7;
     z-index: 1000; }
     body #menu nav ul {
-      margin: 0;
+      margin-left: -7%;
+      margin-bottom: 0;
+      margin-top: 0;
       list-style-type: none; }
       body #menu nav ul li {
         display: inline-block; }
@@ -276,7 +274,8 @@ body {
           background-color: #f7f7f7;
           color: #75c0e5; }
         body #menu nav ul li img {
-          width: 25px; }
+          margin-bottom: -12px;
+          width: 42px; }
   body .hidden {
     display: none; }
   body h1 {

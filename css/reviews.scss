@@ -1,6 +1,21 @@
 body {
 
-	/* Css pour les audiences & notes ici */
+	.violet{
+		background-color: $purplee;
+	}
+    .axis path, .axis line {
+	    fill: none;
+	    stroke: white;
+	    stroke-width:2;
+	    shape-rendering: crispEdges;
+    }
 
-
+	.axis text {
+	    font-family: Simpsonfont;
+	    font-size: 11px;
+	    fill: white;
+	}	
+	
+	.xAxis line{
+	display: none;} 
 }

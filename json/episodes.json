@@ -5,4466 +5,5018 @@
     "number":1,
     "season":1,
     "episode":1,
-    "productioncode":"7G08",
     "airdate":"12/17/89",
-    "title":"Simpsons Roasting on an Open Fire"
+    "title":"Simpsons Roasting on an Open Fire",
+    "viewers":"26.7",
+    "rating":8.0
   },
   {
     "number":2,
     "season":1,
     "episode":2,
-    "productioncode":"7G02",
     "airdate":"01/14/90",
-    "title":"Bart the Genius"
+    "title":"Bart the Genius",
+    "viewers":"24.5",
+    "rating":7.4
   },
   {
     "number":3,
     "season":1,
     "episode":3,
-    "productioncode":"7G03",
     "airdate":"01/21/90",
-    "title":"Homer's Odyssey"
+    "title":"Homer's Odyssey",
+    "viewers":"27.5",
+    "rating":7.4
   },
   {
     "number":4,
     "season":1,
     "episode":4,
-    "productioncode":"7G04",
     "airdate":"01/28/90",
-    "title":"There's No Disgrace Like Home"
+    "title":"There's No Disgrace Like Home",
+    "viewers":"20.2",
+    "rating":7.4
   },
   {
     "number":5,
     "season":1,
     "episode":5,
-    "productioncode":"7G05",
     "airdate":"02/04/90",
-    "title":"Bart the General"
+    "title":"Bart the General",
+    "viewers":"27.1",
+    "rating":8.3
   },
   {
     "number":6,
     "season":1,
     "episode":6,
-    "productioncode":"7G06",
     "airdate":"02/11/90",
-    "title":"Moaning Lisa"
+    "title":"Moaning Lisa",
+    "viewers":"27.4",
+    "rating":7.4
   },
   {
     "number":7,
     "season":1,
     "episode":7,
-    "productioncode":"7G09",
     "airdate":"02/18/90",
-    "title":"The Call of the Simpsons"
+    "title":"The Call of the Simpsons",
+    "viewers":"27.6",
+    "rating":7.4
   },
   {
     "number":8,
     "season":1,
     "episode":8,
-    "productioncode":"7G07",
     "airdate":"02/25/90",
-    "title":"The Telltale Head"
+    "title":"The Telltale Head",
+    "viewers":"28",
+    "rating":7.4
   },
   {
     "number":9,
     "season":1,
     "episode":9,
-    "productioncode":"7G11",
     "airdate":"03/18/90",
-    "title":"Life on the Fast Lane"
+    "title":"Life on the Fast Lane",
+    "viewers":"33.5",
+    "rating":7.4
   },
   {
     "number":10,
     "season":1,
     "episode":10,
-    "productioncode":"7G10",
     "airdate":"03/25/90",
-    "title":"Homer's Night Out"
+    "title":"Homer's Night Out",
+    "viewers":"30.3",
+    "rating":7.4
   },
   {
     "number":11,
     "season":1,
     "episode":11,
-    "productioncode":"7G13",
     "airdate":"04/15/90",
-    "title":"The Crepes of Wrath"
+    "title":"The Crepes of Wrath",
+    "viewers":"31.2",
+    "rating":7.4
   },
   {
     "number":12,
     "season":1,
     "episode":12,
-    "productioncode":"7G12",
     "airdate":"04/29/90",
-    "title":"Krusty Gets Busted"
+    "title":"Krusty Gets Busted",
+    "viewers":"30.4",
+    "rating":7.6
   },
   {
     "number":13,
     "season":1,
     "episode":13,
-    "productioncode":"7G01",
     "airdate":"05/13/90",
-    "title":"Some Enchanted Evening"
-  },
-  {
-    "number":14,
-    "season":2,
-    "episode":1,
-    "productioncode":"7F03",
-    "airdate":"10/11/90",
-    "title":"Bart Gets an F"
+    "title":"Some Enchanted Evening",
+    "viewers":"27.1",
+    "rating":8.1
   }
 ],
 [
   {
+    "number":14,
+    "season":2,
+    "episode":1,
+    "airdate":"10/11/90",
+    "title":"Bart Gets an F",
+    "viewers":"33.6",
+    "rating":7.6
+  },
+  {
     "number":15,
     "season":2,
     "episode":2,
-    "productioncode":"7F02",
     "airdate":"10/18/90",
-    "title":"Simpson and Delilah"
+    "title":"Simpson and Delilah",
+    "viewers":"29.9",
+    "rating":8.7
   },
   {
     "number":16,
     "season":2,
     "episode":3,
-    "productioncode":"7F04",
     "airdate":"10/25/90",
-    "title":"Treehouse of Horror"
+    "title":"Treehouse of Horror",
+    "viewers":"27.4",
+    "rating":7.6
   },
   {
     "number":17,
     "season":2,
     "episode":4,
-    "productioncode":"7F01",
     "airdate":"11/01/90",
-    "title":"Two Cars in Every Garage and Three Eyes on Every Fish"
+    "title":"Two Cars in Every Garage and Three Eyes on Every Fish",
+    "viewers":"26.1",
+    "rating":7.5
   },
   {
     "number":18,
     "season":2,
     "episode":5,
-    "productioncode":"7F05",
     "airdate":"11/08/90",
-    "title":"Dancin' Homer"
+    "title":"Dancin' Homer",
+    "viewers":"26.1",
+    "rating":7.4
   },
   {
     "number":19,
     "season":2,
     "episode":6,
-    "productioncode":"7F08",
     "airdate":"11/15/90",
-    "title":"Dead Putting Society"
+    "title":"Dead Putting Society",
+    "viewers":"25.4",
+    "rating":7.4
   },
   {
     "number":20,
     "season":2,
     "episode":7,
-    "productioncode":"7F07",
     "airdate":"11/22/90",
-    "title":"Bart vs. Thanksgiving"
+    "title":"Bart vs. Thanksgiving",
+    "viewers":"25.9",
+    "rating":7.4
   },
   {
     "number":21,
     "season":2,
     "episode":8,
-    "productioncode":"7F06",
     "airdate":"12/06/90",
-    "title":"Bart the Daredevil"
+    "title":"Bart the Daredevil",
+    "viewers":"26.2",
+    "rating":7.6
   },
   {
     "number":22,
     "season":2,
     "episode":9,
-    "productioncode":"7F09",
     "airdate":"12/20/90",
-    "title":"Itchy & Scratchy & Marge"
+    "title":"Itchy & Scratchy & Marge",
+    "viewers":"22.2",
+    "rating":8.1
   },
   {
     "number":23,
     "season":2,
     "episode":10,
-    "productioncode":"7F10",
     "airdate":"01/10/91",
-    "title":"Bart Gets Hit by a Car"
+    "title":"Bart Gets Hit by a Car",
+    "viewers":"24.8",
+    "rating":7.4
   },
   {
     "number":24,
     "season":2,
     "episode":11,
-    "productioncode":"7F11",
     "airdate":"01/24/91",
-    "title":"One Fish"
+    "title":"One Fish, Two Fish, Blowfish, Blue Fish",
+    "viewers":"24.2",
+    "rating":8.9
   },
   {
     "number":25,
     "season":2,
     "episode":12,
-    "productioncode":"7F12",
     "airdate":"01/31/91",
-    "title":"The Way We Was"
+    "title":"The Way We Was",
+    "viewers":"26.8",
+    "rating":7.6
   },
   {
     "number":26,
     "season":2,
     "episode":13,
-    "productioncode":"7F13",
     "airdate":"02/07/91",
-    "title":"Homer vs. Lisa and the Eighth Commandment"
+    "title":"Homer vs. Lisa and the Eighth Commandment",
+    "viewers":"26.2",
+    "rating":7.4
   },
   {
     "number":27,
     "season":2,
     "episode":14,
-    "productioncode":"7F15",
     "airdate":"02/14/91",
-    "title":"Principal Charming"
+    "title":"Principal Charming",
+    "viewers":"23.9",
+    "rating":7.4
   },
   {
     "number":28,
     "season":2,
     "episode":15,
-    "productioncode":"7F16",
     "airdate":"02/21/91",
-    "title":"Oh Brother"
+    "title":"Oh Brother, Where Art Thou?",
+    "viewers":"26.8",
+    "rating":7.5
   },
   {
     "number":29,
     "season":2,
     "episode":16,
-    "productioncode":"7F14",
     "airdate":"03/07/91",
-    "title":"Bart's Dog Gets an F"
+    "title":"Bart's Dog Gets an F",
+    "viewers":"23.9",
+    "rating":7.4
   },
   {
     "number":30,
     "season":2,
     "episode":17,
-    "productioncode":"7F17",
     "airdate":"03/28/91",
-    "title":"Old Money"
+    "title":"Old Money",
+    "viewers":"21.2",
+    "rating":7.4
   },
   {
     "number":31,
     "season":2,
     "episode":18,
-    "productioncode":"7F18",
     "airdate":"04/11/91",
-    "title":"Brush With Greatness"
+    "title":"Brush With Greatness",
+    "viewers":"20.6",
+    "rating":7.4
   },
   {
     "number":32,
     "season":2,
     "episode":19,
-    "productioncode":"7F19",
     "airdate":"04/25/91",
-    "title":"Lisa's Substitute"
+    "title":"Lisa's Substitute",
+    "viewers":"17.7",
+    "rating":8.3
   },
   {
     "number":33,
     "season":2,
     "episode":20,
-    "productioncode":"7F20",
     "airdate":"05/02/91",
-    "title":"The War of the Simpsons"
+    "title":"The War of the Simpsons",
+    "viewers":"19.7",
+    "rating":7.4
   },
   {
     "number":34,
     "season":2,
     "episode":21,
-    "productioncode":"7F21",
     "airdate":"05/09/91",
-    "title":"Three Men and a Comic Book"
+    "title":"Three Men and a Comic Book",
+    "viewers":"21",
+    "rating":8.5
   },
   {
     "number":35,
     "season":2,
     "episode":22,
-    "productioncode":"7F22",
     "airdate":"07/11/91",
-    "title":"Blood Feud"
+    "title":"Blood Feud",
+    "viewers":"17.3",
+    "rating":7.4
   }
-],
+  ],
 [
   {
     "number":36,
     "season":3,
     "episode":1,
-    "productioncode":"7F24",
     "airdate":"09/19/91",
-    "title":"Stark Raving Dad"
+    "title":"Stark Raving Dad",
+    "viewers":"22.9",
+    "rating":8.5
   },
   {
     "number":37,
     "season":3,
     "episode":2,
-    "productioncode":"8F01",
     "airdate":"09/26/91",
-    "title":"Mr. Lisa Goes to Washington"
+    "title":"Mr. Lisa Goes to Washington",
+    "viewers":"20.2",
+    "rating":7.4
   },
   {
     "number":38,
     "season":3,
     "episode":3,
-    "productioncode":"7F23",
     "airdate":"10/03/91",
-    "title":"When Flanders Failed"
+    "title":"When Flanders Failed",
+    "viewers":"22.8",
+    "rating":7.5
   },
   {
     "number":39,
     "season":3,
     "episode":4,
-    "productioncode":"8F03",
     "airdate":"10/10/91",
-    "title":"Bart the Murderer"
+    "title":"Bart the Murderer",
+    "viewers":"20.8",
+    "rating":8.7
   },
   {
     "number":40,
     "season":3,
     "episode":5,
-    "productioncode":"8F04",
     "airdate":"10/17/91",
-    "title":"Homer Defined"
+    "title":"Homer Defined",
+    "viewers":"20.6",
+    "rating":8.7
   },
   {
     "number":41,
     "season":3,
     "episode":6,
-    "productioncode":"8F05",
     "airdate":"10/24/91",
-    "title":"Like Father Like Clown"
+    "title":"Like Father Like Clown",
+    "viewers":"20.2",
+    "rating":7.4
   },
   {
     "number":42,
     "season":3,
     "episode":7,
-    "productioncode":"8F02",
     "airdate":"10/31/91",
-    "title":"Treehouse of Horror II"
+    "title":"Treehouse of Horror II",
+    "viewers":"20",
+    "rating":7.5
   },
   {
     "number":43,
     "season":3,
     "episode":8,
-    "productioncode":"8F06",
     "airdate":"11/07/91",
-    "title":"Lisa's Pony"
+    "title":"Lisa's Pony",
+    "viewers":"23",
+    "rating":7.4
   },
   {
     "number":44,
     "season":3,
     "episode":9,
-    "productioncode":"8F07",
     "airdate":"11/14/91",
-    "title":"Saturdays of Thunder"
+    "title":"Saturdays of Thunder",
+    "viewers":"24.7",
+    "rating":7.4
   },
   {
     "number":45,
     "season":3,
     "episode":10,
-    "productioncode":"8F08",
     "airdate":"11/21/91",
-    "title":"Flaming Moe's"
+    "title":"Flaming Moe's",
+    "viewers":"23.9",
+    "rating":7.6
   },
   {
     "number":46,
     "season":3,
     "episode":11,
-    "productioncode":"8F09",
     "airdate":"12/05/91",
-    "title":"Burns Verkaufen der Kraftwerk"
+    "title":"Burns Verkaufen der Kraftwerk",
+    "viewers":"21.1",
+    "rating":7.5
   },
   {
     "number":47,
     "season":3,
     "episode":12,
-    "productioncode":"8F10",
     "airdate":"12/26/91",
-    "title":"I Married Marge"
+    "title":"I Married Marge",
+    "viewers":"21.9",
+    "rating":7.5
   },
   {
     "number":48,
     "season":3,
     "episode":13,
-    "productioncode":"8F11",
     "airdate":"01/09/92",
-    "title":"Radio Bart"
+    "title":"Radio Bart",
+    "viewers":"24.2",
+    "rating":7.6
   },
   {
     "number":49,
     "season":3,
     "episode":14,
-    "productioncode":"8F12",
     "airdate":"01/23/92",
-    "title":"Lisa the Greek"
+    "title":"Lisa the Greek",
+    "viewers":"23.2",
+    "rating":7.4
   },
   {
     "number":50,
     "season":3,
     "episode":15,
-    "productioncode":"8F14",
     "airdate":"02/06/92",
-    "title":"Homer Alone"
+    "title":"Homer Alone",
+    "viewers":"23.7",
+    "rating":7.4
   },
   {
     "number":51,
     "season":3,
     "episode":16,
-    "productioncode":"8F16",
     "airdate":"02/13/92",
-    "title":"Bart the Lover"
+    "title":"Bart the Lover",
+    "viewers":"20.5",
+    "rating":8.3
   },
   {
     "number":52,
     "season":3,
     "episode":17,
-    "productioncode":"8F13",
     "airdate":"02/20/92",
-    "title":"Homer at the Bat"
+    "title":"Homer at the Bat",
+    "viewers":"24.6",
+    "rating":7.5
   },
   {
     "number":53,
     "season":3,
     "episode":18,
-    "productioncode":"8F15",
     "airdate":"02/27/92",
-    "title":"Separate Vocations"
+    "title":"Separate Vocations",
+    "viewers":"23.7",
+    "rating":7.5
   },
   {
     "number":54,
     "season":3,
     "episode":19,
-    "productioncode":"8F17",
     "airdate":"03/12/92",
-    "title":"Dog of Death"
+    "title":"Dog of Death",
+    "viewers":"23.4",
+    "rating":7.4
   },
   {
     "number":55,
     "season":3,
     "episode":20,
-    "productioncode":"8F19",
     "airdate":"03/26/92",
-    "title":"Colonel Homer"
+    "title":"Colonel Homer",
+    "viewers":"25.5",
+    "rating":7.4
   },
   {
     "number":56,
     "season":3,
     "episode":21,
-    "productioncode":"8F20",
     "airdate":"04/09/92",
-    "title":"Black Widower"
+    "title":"Black Widower",
+    "viewers":"17.3",
+    "rating":7.5
   },
   {
     "number":57,
     "season":3,
     "episode":22,
-    "productioncode":"8F21",
     "airdate":"04/23/92",
-    "title":"The Otto Show"
+    "title":"The Otto Show",
+    "viewers":"17.5",
+    "rating":7.4
   },
   {
     "number":58,
     "season":3,
     "episode":23,
-    "productioncode":"8F22",
     "airdate":"05/07/92",
-    "title":"Bart's Friend Falls in Love"
+    "title":"Bart's Friend Falls in Love",
+    "viewers":"19.5",
+    "rating":7.4
   },
   {
     "number":59,
     "season":3,
     "episode":24,
-    "productioncode":"8F23",
     "airdate":"08/27/92",
-    "title":"Brother"
+    "title":"Brother, Can You Spare Two Dimes?",
+    "viewers":"17.2",
+    "rating":7.6
   }
-],
+  ],
 [
   {
     "number":60,
     "season":4,
     "episode":1,
-    "productioncode":"8F24",
     "airdate":"09/24/92",
-    "title":"Kamp Krusty"
+    "title":"Kamp Krusty",
+    "viewers":"21.8",
+    "rating":7.6
   },
   {
     "number":61,
     "season":4,
     "episode":2,
-    "productioncode":"8F18",
     "airdate":"10/01/92",
-    "title":"A Streetcar Named Marge"
+    "title":"A Streetcar Named Marge",
+    "viewers":"18.3",
+    "rating":7.6
   },
   {
     "number":62,
     "season":4,
     "episode":3,
-    "productioncode":"9F01",
     "airdate":"10/08/92",
-    "title":"Homer the Heretic"
+    "title":"Homer the Heretic",
+    "viewers":"19.3",
+    "rating":8.9
   },
   {
     "number":63,
     "season":4,
     "episode":4,
-    "productioncode":"9F02",
     "airdate":"10/15/92",
-    "title":"Lisa the Beauty Queen"
+    "title":"Lisa the Beauty Queen",
+    "viewers":"19",
+    "rating":7.4
   },
   {
     "number":64,
     "season":4,
     "episode":5,
-    "productioncode":"9F04",
     "airdate":"10/29/92",
-    "title":"Treehouse of Horror III"
+    "title":"Treehouse of Horror III",
+    "viewers":"25.1",
+    "rating":7.6
   },
   {
     "number":65,
     "season":4,
     "episode":6,
-    "productioncode":"9F03",
     "airdate":"11/03/92",
-    "title":"Itchy & Scratchy: The Movie"
+    "title":"Itchy & Scratchy: The Movie",
+    "viewers":"20.1",
+    "rating":7.5
   },
   {
     "number":66,
     "season":4,
     "episode":7,
-    "productioncode":"9F05",
     "airdate":"11/05/92",
-    "title":"Marge Gets a Job"
+    "title":"Marge Gets a Job",
+    "viewers":"22.9",
+    "rating":7.4
   },
   {
     "number":67,
     "season":4,
     "episode":8,
-    "productioncode":"9F06",
     "airdate":"11/12/92",
-    "title":"The New Kid on the Block"
+    "title":"The New Kid on the Block",
+    "viewers":"23.1",
+    "rating":7.5
   },
   {
     "number":68,
     "season":4,
     "episode":9,
-    "productioncode":"9F07",
     "airdate":"11/19/92",
-    "title":"Mr. Plow"
+    "title":"Mr. Plow",
+    "viewers":"24",
+    "rating":7.6
   },
   {
     "number":69,
     "season":4,
     "episode":10,
-    "productioncode":"9F08",
     "airdate":"12/03/92",
-    "title":"Lisa's First Word"
+    "title":"Lisa's First Word",
+    "viewers":"28.6",
+    "rating":7.5
   },
   {
     "number":70,
     "season":4,
     "episode":11,
-    "productioncode":"9F09",
     "airdate":"12/17/92",
-    "title":"Homer's Triple Bypass"
+    "title":"Homer's Triple Bypass",
+    "viewers":"23.6",
+    "rating":8.9
   },
   {
     "number":71,
     "season":4,
     "episode":12,
-    "productioncode":"9F10",
     "airdate":"01/14/93",
-    "title":"Marge vs. the Monorail"
+    "title":"Marge vs. the Monorail",
+    "viewers":"23",
+    "rating":7.6
   },
   {
     "number":72,
     "season":4,
     "episode":13,
-    "productioncode":"9F11",
     "airdate":"01/21/93",
-    "title":"Selma's Choice"
+    "title":"Selma's Choice",
+    "viewers":"24.5",
+    "rating":7.4
   },
   {
     "number":73,
     "season":4,
     "episode":14,
-    "productioncode":"9F12",
     "airdate":"02/04/93",
-    "title":"Brother From the Same Planet"
+    "title":"Brother From the Same Planet",
+    "viewers":"23.8",
+    "rating":7.5
   },
   {
     "number":74,
     "season":4,
     "episode":15,
-    "productioncode":"9F13",
     "airdate":"02/11/93",
-    "title":"I Love Lisa"
+    "title":"I Love Lisa",
+    "viewers":"25.2",
+    "rating":7.5
   },
   {
     "number":75,
     "season":4,
     "episode":16,
-    "productioncode":"9F14",
     "airdate":"02/18/93",
-    "title":"Duffless"
+    "title":"Duffless",
+    "viewers":"25.7",
+    "rating":7.5
   },
   {
     "number":76,
     "season":4,
     "episode":17,
-    "productioncode":"9F15",
     "airdate":"03/11/93",
-    "title":"Last Exit to Springfield"
+    "title":"Last Exit to Springfield",
+    "viewers":"22.4",
+    "rating":8.4
   },
   {
     "number":77,
     "season":4,
     "episode":18,
-    "productioncode":"9F17",
     "airdate":"04/01/93",
-    "title":"So It's Come to This: A Simpsons Clip Show"
+    "title":"So It's Come to This: A Simpsons Clip Show",
+    "viewers":"25.5",
+    "rating":7.2
   },
   {
     "number":78,
     "season":4,
     "episode":19,
-    "productioncode":"9F16",
     "airdate":"04/15/93",
-    "title":"The Front"
+    "title":"The Front",
+    "viewers":"20.1",
+    "rating":7.5
   },
   {
     "number":79,
     "season":4,
     "episode":20,
-    "productioncode":"9F18",
     "airdate":"04/29/93",
-    "title":"Whacking Day"
+    "title":"Whacking Day",
+    "viewers":"20",
+    "rating":7.5
   },
   {
     "number":80,
     "season":4,
     "episode":21,
-    "productioncode":"9F20",
     "airdate":"05/06/93",
-    "title":"Marge in Chains"
+    "title":"Marge in Chains",
+    "viewers":"17.3",
+    "rating":7.4
   },
   {
     "number":81,
     "season":4,
     "episode":22,
-    "productioncode":"9F19",
     "airdate":"05/13/93",
-    "title":"Krusty Gets Kancelled"
+    "title":"Krusty Gets Kancelled",
+    "viewers":"19.4",
+    "rating":7.5
   }
-],
+  ],
 [
   {
     "number":82,
     "season":5,
     "episode":1,
-    "productioncode":"9F21",
     "airdate":"09/30/93",
-    "title":"Homer's Barbershop Quartet"
+    "title":"Homer's Barbershop Quartet",
+    "viewers":"19.9",
+    "rating":7.5
   },
   {
     "number":83,
     "season":5,
     "episode":2,
-    "productioncode":"9F22",
     "airdate":"10/07/93",
-    "title":"Cape Feare"
+    "title":"Cape Feare",
+    "viewers":"20.0",
+    "rating":7.6
   },
   {
     "number":84,
     "season":5,
     "episode":3,
-    "productioncode":"1F02",
     "airdate":"10/14/93",
-    "title":"Homer Goes to College"
+    "title":"Homer Goes to College",
+    "viewers":"18.1",
+    "rating":7.5
   },
   {
     "number":85,
     "season":5,
     "episode":4,
-    "productioncode":"1F01",
     "airdate":"10/21/93",
-    "title":"Rosebud"
+    "title":"Rosebud",
+    "viewers":"19.5",
+    "rating":8.7
   },
   {
     "number":86,
     "season":5,
     "episode":5,
-    "productioncode":"1F04",
     "airdate":"10/28/93",
-    "title":"Treehouse of Horror IV"
+    "title":"Treehouse of Horror IV",
+    "viewers":"24.0",
+    "rating":7.6
   },
   {
     "number":87,
     "season":5,
     "episode":6,
-    "productioncode":"1F03",
     "airdate":"11/04/93",
-    "title":"Marge on the Lam"
+    "title":"Marge on the Lam",
+    "viewers":"21.7",
+    "rating":7.4
   },
   {
     "number":88,
     "season":5,
     "episode":7,
-    "productioncode":"1F05",
     "airdate":"11/11/93",
-    "title":"Bart's Inner Child"
+    "title":"Bart's Inner Child",
+    "viewers":"18.7",
+    "rating":7.4
   },
   {
     "number":89,
     "season":5,
     "episode":8,
-    "productioncode":"1F06",
     "airdate":"11/18/93",
-    "title":"Boy-Scoutz 'n the Hood"
+    "title":"Boy-Scoutz 'n the Hood",
+    "viewers":"20.1",
+    "rating":8.8
   },
   {
     "number":90,
     "season":5,
     "episode":9,
-    "productioncode":"1F07",
     "airdate":"12/09/93",
-    "title":"The Last Temptation of Homer"
+    "title":"The Last Temptation of Homer",
+    "viewers":"20.6",
+    "rating":7.5
   },
   {
     "number":91,
     "season":5,
     "episode":10,
-    "productioncode":"1F08",
     "airdate":"12/16/93",
-    "title":"$pringfield (Or"
+    "title":"$pringfield (Or, How I Learned to Stop Worrying and Love Legalized Gambling)",
+    "viewers":"17.9",
+    "rating":7.5
   },
   {
     "number":92,
     "season":5,
     "episode":11,
-    "productioncode":"1F09",
     "airdate":"01/06/94",
-    "title":"Homer the Vigilante"
+    "title":"Homer the Vigilante",
+    "viewers":"20.1",
+    "rating":7.5
   },
   {
     "number":93,
     "season":5,
     "episode":12,
-    "productioncode":"1F11",
     "airdate":"02/03/94",
-    "title":"Bart Gets Famous"
+    "title":"Bart Gets Famous",
+    "viewers":"20.0",
+    "rating":7.5
   },
   {
     "number":94,
     "season":5,
     "episode":13,
-    "productioncode":"1F10",
     "airdate":"02/10/94",
-    "title":"Homer and Apu"
+    "title":"Homer and Apu",
+    "viewers":"21.8",
+    "rating":7.5
   },
   {
     "number":95,
     "season":5,
     "episode":14,
-    "productioncode":"1F12",
     "airdate":"02/17/94",
-    "title":"Lisa vs. Malibu Stacy"
+    "title":"Lisa vs. Malibu Stacy",
+    "viewers":"20.5",
+    "rating":8.4
   },
   {
     "number":96,
     "season":5,
     "episode":15,
-    "productioncode":"1F13",
     "airdate":"02/24/94",
-    "title":"Deep Space Homer"
+    "title":"Deep Space Homer",
+    "viewers":"18.2",
+    "rating":8.0
   },
   {
     "number":97,
     "season":5,
     "episode":16,
-    "productioncode":"1F14",
     "airdate":"03/17/94",
-    "title":"Homer Loves Flanders"
+    "title":"Homer Loves Flanders",
+    "viewers":"18.0",
+    "rating":8.5
   },
   {
     "number":98,
     "season":5,
     "episode":17,
-    "productioncode":"1F15",
     "airdate":"03/31/94",
-    "title":"Bart Gets an Elephant"
+    "title":"Bart Gets an Elephant",
+    "viewers":"17.0",
+    "rating":7.4
   },
   {
     "number":99,
     "season":5,
     "episode":18,
-    "productioncode":"1F16",
     "airdate":"04/14/94",
-    "title":"Burns' Heir"
+    "title":"Burns' Heir",
+    "viewers":"14.7",
+    "rating":8.6
   },
   {
     "number":100,
     "season":5,
     "episode":19,
-    "productioncode":"1F18",
     "airdate":"04/28/94",
-    "title":"Sweet Seymour Skinner's Baadasssss Song"
+    "title":"Sweet Seymour Skinner's Baadasssss Song",
+    "viewers":"19.7",
+    "rating":8.7
   },
   {
     "number":101,
     "season":5,
     "episode":20,
-    "productioncode":"1F19",
     "airdate":"05/05/94",
-    "title":"The Boy Who Knew Too Much"
+    "title":"The Boy Who Knew Too Much",
+    "viewers":"15.5",
+    "rating":7.5
   },
   {
     "number":102,
     "season":5,
     "episode":21,
-    "productioncode":"1F21",
     "airdate":"05/12/94",
-    "title":"Lady Bouvier's Lover"
+    "title":"Lady Bouvier's Lover",
+    "viewers":"15.1",
+    "rating":7.4
   },
   {
     "number":103,
     "season":5,
     "episode":22,
-    "productioncode":"1F20",
     "airdate":"05/19/94",
-    "title":"Secrets of a Successful Marriage"
+    "title":"Secrets of a Successful Marriage",
+    "viewers":"15.6",
+    "rating":7.5
   }
-],
+  ],
 [
   {
     "number":104,
     "season":6,
     "episode":1,
-    "productioncode":"1F22",
     "airdate":"09/04/94",
-    "title":"Bart of Darkness"
+    "title":"Bart of Darkness",
+    "viewers":"15.1",
+    "rating":7.5
   },
   {
     "number":105,
     "season":6,
     "episode":2,
-    "productioncode":"1F17",
     "airdate":"09/11/94",
-    "title":"Lisa's Rival"
+    "title":"Lisa's Rival",
+    "viewers":"16.7",
+    "rating":7.5
   },
   {
     "number":106,
     "season":6,
     "episode":3,
-    "productioncode":"2F33",
     "airdate":"09/25/94",
-    "title":"Another Simpsons Clip Show"
+    "title":"Another Simpsons Clip Show",
+    "viewers":"13.5",
+    "rating":6.1
   },
   {
     "number":107,
     "season":6,
     "episode":4,
-    "productioncode":"2F01",
     "airdate":"10/02/94",
-    "title":"Itchy & Scratchy Land"
+    "title":"Itchy & Scratchy Land",
+    "viewers":"14.8",
+    "rating":7.5
   },
   {
     "number":108,
     "season":6,
     "episode":5,
-    "productioncode":"2F02",
     "airdate":"10/09/94",
-    "title":"Sideshow Bob Roberts"
+    "title":"Sideshow Bob Roberts",
+    "viewers":"14.4",
+    "rating":7.5
   },
   {
     "number":109,
     "season":6,
     "episode":6,
-    "productioncode":"2F03",
     "airdate":"10/30/94",
-    "title":"Treehouse of Horror V"
+    "title":"Treehouse of Horror V",
+    "viewers":"22.2",
+    "rating":7.6
   },
   {
     "number":110,
     "season":6,
     "episode":7,
-    "productioncode":"2F04",
     "airdate":"11/06/94",
-    "title":"Bart's Girlfriend"
+    "title":"Bart's Girlfriend",
+    "viewers":"15.3",
+    "rating":7.5
   },
   {
     "number":111,
     "season":6,
     "episode":8,
-    "productioncode":"2F05",
     "airdate":"11/13/94",
-    "title":"Lisa on Ice"
+    "title":"Lisa on Ice",
+    "viewers":"17.9",
+    "rating":7.5
   },
   {
     "number":112,
     "season":6,
     "episode":9,
-    "productioncode":"2F06",
     "airdate":"11/27/94",
-    "title":"Homer Badman"
+    "title":"Homer Badman",
+    "viewers":"17.0",
+    "rating":9.0
   },
   {
     "number":113,
     "season":6,
     "episode":10,
-    "productioncode":"2F07",
     "airdate":"12/04/94",
-    "title":"Grandpa vs. Sexual Inadequacy"
+    "title":"Grandpa vs. Sexual Inadequacy",
+    "viewers":"14.1",
+    "rating":7.4
   },
   {
     "number":114,
     "season":6,
     "episode":11,
-    "productioncode":"2F08",
     "airdate":"12/18/94",
-    "title":"Fear of Flying"
+    "title":"Fear of Flying",
+    "viewers":"15.6",
+    "rating":7.4
   },
   {
     "number":115,
     "season":6,
     "episode":12,
-    "productioncode":"2F09",
     "airdate":"01/08/95",
-    "title":"Homer the Great"
+    "title":"Homer the Great",
+    "viewers":"20.1",
+    "rating":8.6
   },
   {
     "number":116,
     "season":6,
     "episode":13,
-    "productioncode":"2F10",
     "airdate":"01/22/95",
-    "title":"And Maggie Makes Three"
+    "title":"And Maggie Makes Three",
+    "viewers":"17.3",
+    "rating":7.5
   },
   {
     "number":117,
     "season":6,
     "episode":14,
-    "productioncode":"2F11",
     "airdate":"02/05/95",
-    "title":"Bart's Comet"
+    "title":"Bart's Comet",
+    "viewers":"18.7",
+    "rating":7.5
   },
   {
     "number":118,
     "season":6,
     "episode":15,
-    "productioncode":"2F12",
     "airdate":"02/12/95",
-    "title":"Homie the Clown"
+    "title":"Homie the Clown",
+    "viewers":"17.6",
+    "rating":7.5
   },
   {
     "number":119,
     "season":6,
     "episode":16,
-    "productioncode":"2F13",
     "airdate":"02/19/95",
-    "title":"Bart vs. Australia"
+    "title":"Bart vs. Australia",
+    "viewers":"15.1",
+    "rating":7.5
   },
   {
     "number":120,
     "season":6,
     "episode":17,
-    "productioncode":"2F14",
     "airdate":"02/26/95",
-    "title":"Homer vs. Patty and Selma"
+    "title":"Homer vs. Patty and Selma",
+    "viewers":"18.9",
+    "rating":7.4
   },
   {
     "number":121,
     "season":6,
     "episode":18,
-    "productioncode":"2F31",
     "airdate":"03/05/95",
-    "title":"A Star is Burns"
+    "title":"A Star is Burns",
+    "viewers":"14.4",
+    "rating":7.5
   },
   {
     "number":122,
     "season":6,
     "episode":19,
-    "productioncode":"2F15",
     "airdate":"03/19/95",
-    "title":"Lisa's Wedding"
+    "title":"Lisa's Wedding",
+    "viewers":"14.4",
+    "rating":7.5
   },
   {
     "number":123,
     "season":6,
     "episode":20,
-    "productioncode":"2F18",
     "airdate":"04/09/95",
-    "title":"Two Dozen and One Greyhounds"
+    "title":"Two Dozen and One Greyhounds",
+    "viewers":"11.6",
+    "rating":7.5
   },
   {
     "number":124,
     "season":6,
     "episode":21,
-    "productioncode":"2F19",
     "airdate":"04/16/95",
-    "title":"The PTA Disbands"
+    "title":"The PTA Disbands",
+    "viewers":"11.8",
+    "rating":7.5
   },
   {
     "number":125,
     "season":6,
     "episode":22,
-    "productioncode":"2F32",
     "airdate":"04/30/95",
-    "title":"Round Springfield"
+    "title":"Round Springfield",
+    "viewers":"12.6",
+    "rating":8.3
   },
   {
     "number":126,
     "season":6,
     "episode":23,
-    "productioncode":"2F21",
     "airdate":"05/07/95",
-    "title":"The Springfield Connection"
+    "title":"The Springfield Connection",
+    "viewers":"12.7",
+    "rating":7.5
   },
   {
     "number":127,
     "season":6,
     "episode":24,
-    "productioncode":"2F22",
     "airdate":"05/14/95",
-    "title":"Lemon of Troy"
+    "title":"Lemon of Troy",
+    "viewers":"13.1",
+    "rating":7.5
   },
   {
     "number":128,
     "season":6,
     "episode":25,
-    "productioncode":"2F16",
     "airdate":"05/21/95",
-    "title":"Who Shot Mr. Burns? (1)"
+    "title":"Who Shot Mr. Burns? (1)",
+    "viewers":"15.0",
+    "rating":7.6
   }
-],
+  ],
 [
   {
     "number":129,
     "season":7,
     "episode":1,
-    "productioncode":"2F20",
     "airdate":"09/17/95",
-    "title":"Who Shot Mr. Burns? (2)"
+    "title":"Who Shot Mr. Burns? (2)",
+    "viewers":"16.0",
+    "rating":7.6
   },
   {
     "number":130,
     "season":7,
     "episode":2,
-    "productioncode":"2F17",
     "airdate":"09/24/95",
-    "title":"Radioactive Man"
+    "title":"Radioactive Man",
+    "viewers":"15.7",
+    "rating":7.5
   },
   {
     "number":131,
     "season":7,
     "episode":3,
-    "productioncode":"3F01",
     "airdate":"10/01/95",
-    "title":"Home Sweet Homediddly-Dum-Doodily"
+    "title":"Home Sweet Homediddly-Dum-Doodily",
+    "viewers":"14.5",
+    "rating":7.5
   },
   {
     "number":132,
     "season":7,
     "episode":4,
-    "productioncode":"3F02",
     "airdate":"10/08/95",
-    "title":"Bart Sells His Soul"
+    "title":"Bart Sells His Soul",
+    "viewers":"14.8",
+    "rating":8.3
   },
   {
     "number":133,
     "season":7,
     "episode":5,
-    "productioncode":"3F03",
     "airdate":"10/15/95",
-    "title":"Lisa the Vegetarian"
+    "title":"Lisa the Vegetarian",
+    "viewers":"14.6",
+    "rating":8.3
   },
   {
     "number":134,
     "season":7,
     "episode":6,
-    "productioncode":"3F04",
     "airdate":"10/29/95",
-    "title":"Treehouse of Horror VI"
+    "title":"Treehouse of Horror VI",
+    "viewers":"19.7",
+    "rating":7.5
   },
   {
     "number":135,
     "season":7,
     "episode":7,
-    "productioncode":"3F05",
     "airdate":"11/05/95",
-    "title":"King-Size Homer"
+    "title":"King-Size Homer",
+    "viewers":"17.0",
+    "rating":8.9
   },
   {
     "number":136,
     "season":7,
     "episode":8,
-    "productioncode":"3F06",
     "airdate":"11/19/95",
-    "title":"Mother Simpson"
+    "title":"Mother Simpson",
+    "viewers":"15.3",
+    "rating":7.5
   },
   {
     "number":137,
     "season":7,
     "episode":9,
-    "productioncode":"3F08",
     "airdate":"11/26/95",
-    "title":"Sideshow Bob's Last Gleaming"
+    "title":"Sideshow Bob's Last Gleaming",
+    "viewers":"14.2",
+    "rating":7.5
   },
   {
     "number":138,
     "season":7,
     "episode":10,
-    "productioncode":"3F31",
     "airdate":"12/03/95",
-    "title":"The Simpsons 138th Episode Spectacular"
+    "title":"The Simpsons 138th Episode Spectacular",
+    "viewers":"16.4",
+    "rating":7.4
   },
   {
     "number":139,
     "season":7,
     "episode":11,
-    "productioncode":"3F07",
     "airdate":"12/17/95",
-    "title":"Marge Be Not Proud"
+    "title":"Marge Be Not Proud",
+    "viewers":"16.7",
+    "rating":8.4
   },
   {
     "number":140,
     "season":7,
     "episode":12,
-    "productioncode":"3F10",
     "airdate":"01/07/96",
-    "title":"Team Homer"
+    "title":"Team Homer",
+    "viewers":"16.7",
+    "rating":7.5
   },
   {
     "number":141,
     "season":7,
     "episode":13,
-    "productioncode":"3F09",
     "airdate":"01/14/96",
-    "title":"Two Bad Neighbors"
+    "title":"Two Bad Neighbors",
+    "viewers":"16.5",
+    "rating":8.8
   },
   {
     "number":142,
     "season":7,
     "episode":14,
-    "productioncode":"3F11",
     "airdate":"02/04/96",
-    "title":"Scenes From the Class Struggle in Springfield"
+    "title":"Scenes From the Class Struggle in Springfield",
+    "viewers":"14.4",
+    "rating":7.4
   },
   {
     "number":143,
     "season":7,
     "episode":15,
-    "productioncode":"3F12",
     "airdate":"02/11/96",
-    "title":"Bart the Fink"
+    "title":"Bart the Fink",
+    "viewers":"15.0",
+    "rating":7.4
   },
   {
     "number":144,
     "season":7,
     "episode":16,
-    "productioncode":"3F13",
     "airdate":"02/18/96",
-    "title":"Lisa the Iconoclast"
+    "title":"Lisa the Iconoclast",
+    "viewers":"13.4",
+    "rating":7.5
   },
   {
     "number":145,
     "season":7,
     "episode":17,
-    "productioncode":"3F14",
     "airdate":"02/25/96",
-    "title":"Homer the Smithers"
+    "title":"Homer the Smithers",
+    "viewers":"14.1",
+    "rating":9.1
   },
   {
     "number":146,
     "season":7,
     "episode":18,
-    "productioncode":"3F16",
     "airdate":"03/17/96",
-    "title":"The Day the Violence Died"
+    "title":"The Day the Violence Died",
+    "viewers":"14.4",
+    "rating":7.4
   },
   {
     "number":147,
     "season":7,
     "episode":19,
-    "productioncode":"3F15",
     "airdate":"03/24/96",
-    "title":"A Fish Called Selma"
+    "title":"A Fish Called Selma",
+    "viewers":"12.9",
+    "rating":8.3
   },
   {
     "number":148,
     "season":7,
     "episode":20,
-    "productioncode":"3F17",
     "airdate":"03/31/96",
-    "title":"Bart on the Road"
+    "title":"Bart on the Road",
+    "viewers":"11.8",
+    "rating":8.7
   },
   {
     "number":149,
     "season":7,
     "episode":21,
-    "productioncode":"3F18",
     "airdate":"04/14/96",
-    "title":"22 Short Films About Springfield"
+    "title":"22 Short Films About Springfield",
+    "viewers":"10.5",
+    "rating":7.5
   },
   {
     "number":150,
     "season":7,
     "episode":22,
-    "productioncode":"3F19",
     "airdate":"04/28/96",
-    "title":"Raging Abe Simpson and His Grumbling Grandson in \"The Curse of the Flying Hellfish\""
+    "title":"Raging Abe Simpson and His Grumbling Grandson in \"The Curse of the Flying Hellfish\"",
+    "viewers":"13.0",
+    "rating":7.5
   },
   {
     "number":151,
     "season":7,
     "episode":23,
-    "productioncode":"3F20",
     "airdate":"05/05/96",
-    "title":"Much Apu About Nothing"
+    "title":"Much Apu About Nothing",
+    "viewers":"11.3",
+    "rating":7.4
   },
   {
     "number":152,
     "season":7,
     "episode":24,
-    "productioncode":"3F21",
     "airdate":"05/19/96",
-    "title":"Homerpalooza"
+    "title":"Homerpalooza",
+    "viewers":"12.9",
+    "rating":7.4
   },
   {
     "number":153,
     "season":7,
     "episode":25,
-    "productioncode":"3F22",
     "airdate":"05/19/96",
-    "title":"Summer of 4 ft. 2"
+    "title":"Summer of 4 ft. 2",
+    "viewers":"14.7",
+    "rating":7.5
   }
-],
+  ],
 [
   {
     "number":154,
     "season":8,
     "episode":1,
-    "productioncode":"4F02",
     "airdate":"10/27/96",
-    "title":"Treehouse of Horror VII"
+    "title":"Treehouse of Horror VII",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":155,
     "season":8,
     "episode":2,
-    "productioncode":"3F23",
     "airdate":"11/03/96",
-    "title":"You Only Move Twice"
+    "title":"You Only Move Twice",
+    "viewers":"N/A",
+    "rating":7.7
   },
   {
     "number":156,
     "season":8,
     "episode":3,
-    "productioncode":"4F03",
     "airdate":"11/10/96",
-    "title":"The Homer They Fall"
+    "title":"The Homer They Fall",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":157,
     "season":8,
     "episode":4,
-    "productioncode":"4F05",
     "airdate":"11/17/96",
-    "title":"Burns"
+    "title":"Burns, Baby Burns",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":158,
     "season":8,
     "episode":5,
-    "productioncode":"4F06",
     "airdate":"11/24/96",
-    "title":"Bart After Dark"
+    "title":"Bart After Dark",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":159,
     "season":8,
     "episode":6,
-    "productioncode":"4F04",
     "airdate":"12/01/96",
-    "title":"A Milhouse Divided"
+    "title":"A Milhouse Divided",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":160,
     "season":8,
     "episode":7,
-    "productioncode":"4F01",
     "airdate":"12/15/96",
-    "title":"Lisa's Date With Density"
+    "title":"Lisa's Date With Density",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":161,
     "season":8,
     "episode":8,
-    "productioncode":"4F07",
     "airdate":"12/29/96",
-    "title":"Hurricane Neddy"
+    "title":"Hurricane Neddy",
+    "viewers":"N/A",
+    "rating":8.8
   },
   {
     "number":162,
     "season":8,
     "episode":9,
-    "productioncode":"3F24",
     "airdate":"01/05/97",
-    "title":"El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)"
+    "title":"El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":163,
     "season":8,
     "episode":10,
-    "productioncode":"3G01",
     "airdate":"01/12/97",
-    "title":"The Springfield Files"
+    "title":"The Springfield Files",
+    "viewers":"N/A",
+    "rating":7.6
   },
   {
     "number":164,
     "season":8,
     "episode":11,
-    "productioncode":"4F08",
     "airdate":"01/19/97",
-    "title":"The Twisted World of Marge Simpson"
+    "title":"The Twisted World of Marge Simpson",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":165,
     "season":8,
     "episode":12,
-    "productioncode":"4F10",
     "airdate":"02/02/97",
-    "title":"Mountain of Madness"
+    "title":"Mountain of Madness",
+    "viewers":"N/A",
+    "rating":8.8
   },
   {
     "number":166,
     "season":8,
     "episode":13,
-    "productioncode":"3G03",
     "airdate":"02/07/97",
-    "title":"Simpsoncalifragilisticexpiala (Annoyed Grunt) cious"
+    "title":"Simpsoncalifragilisticexpiala (Annoyed Grunt) cious",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":167,
     "season":8,
     "episode":14,
-    "productioncode":"4F12",
     "airdate":"02/09/97",
-    "title":"The Itchy & Scratchy & Poochie Show"
+    "title":"The Itchy & Scratchy & Poochie Show",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":168,
     "season":8,
     "episode":15,
-    "productioncode":"4F11",
     "airdate":"02/16/97",
-    "title":"Homer's Phobia"
+    "title":"Homer's Phobia",
+    "viewers":"N/A",
+    "rating":9.0
   },
   {
     "number":169,
     "season":8,
     "episode":16,
-    "productioncode":"4F14",
     "airdate":"02/23/97",
-    "title":"Brother From Another Series"
+    "title":"Brother From Another Series",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":170,
     "season":8,
     "episode":17,
-    "productioncode":"4F13",
     "airdate":"03/02/97",
-    "title":"My Sister"
+    "title":"My Sister, My Sitter",
+    "viewers":"N/A",
+    "rating":8.4
   },
   {
     "number":171,
     "season":8,
     "episode":18,
-    "productioncode":"4F15",
     "airdate":"03/16/97",
-    "title":"Homer vs. the Eighteenth Amendment"
+    "title":"Homer vs. the Eighteenth Amendment",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":172,
     "season":8,
     "episode":19,
-    "productioncode":"4F09",
     "airdate":"04/06/97",
-    "title":"Grade School Confidential"
+    "title":"Grade School Confidential",
+    "viewers":"N/A",
+    "rating":8.4
   },
   {
     "number":173,
     "season":8,
     "episode":20,
-    "productioncode":"4F16",
     "airdate":"04/13/97",
-    "title":"The Canine Mutiny"
+    "title":"The Canine Mutiny",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":174,
     "season":8,
     "episode":21,
-    "productioncode":"4F17",
     "airdate":"04/20/97",
-    "title":"The Old Man and Lisa"
+    "title":"The Old Man and Lisa",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":175,
     "season":8,
     "episode":22,
-    "productioncode":"4F18",
     "airdate":"04/27/97",
-    "title":"In Marge We Trust"
+    "title":"In Marge We Trust",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":176,
     "season":8,
     "episode":23,
-    "productioncode":"4F19",
     "airdate":"05/04/97",
-    "title":"Homer's Enemy"
+    "title":"Homer's Enemy",
+    "viewers":"N/A",
+    "rating":9.0
   },
   {
     "number":177,
     "season":8,
     "episode":24,
-    "productioncode":"4F20",
     "airdate":"05/11/97",
-    "title":"The Simpsons Spin-Off Showcase"
+    "title":"The Simpsons Spin-Off Showcase",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":178,
     "season":8,
     "episode":25,
-    "productioncode":"4F21",
     "airdate":"05/18/97",
-    "title":"The Secret War of Lisa Simpson"
+    "title":"The Secret War of Lisa Simpson",
+    "viewers":"N/A",
+    "rating":7.4
   }
-],
+  ],
 [
   {
     "number":179,
     "season":9,
     "episode":1,
-    "productioncode":"4F22",
     "airdate":"09/21/97",
-    "title":"The City of New York vs. Homer Simpson"
+    "title":"The City of New York vs. Homer Simpson",
+    "viewers":"N/A",
+    "rating":8.8
   },
   {
     "number":180,
     "season":9,
     "episode":2,
-    "productioncode":"4F23",
     "airdate":"09/28/97",
-    "title":"The Principal and the Pauper"
+    "title":"The Principal and the Pauper",
+    "viewers":"N/A",
+    "rating":8.0
   },
   {
     "number":181,
     "season":9,
     "episode":3,
-    "productioncode":"3G02",
     "airdate":"10/19/97",
-    "title":"Lisa's Sax"
+    "title":"Lisa's Sax",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":182,
     "season":9,
     "episode":4,
-    "productioncode":"5F02",
     "airdate":"10/26/97",
-    "title":"Treehouse of Horror VIII"
+    "title":"Treehouse of Horror VIII",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":183,
     "season":9,
     "episode":5,
-    "productioncode":"5F01",
     "airdate":"11/02/97",
-    "title":"The Cartridge Family"
+    "title":"The Cartridge Family",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":184,
     "season":9,
     "episode":6,
-    "productioncode":"5F03",
     "airdate":"11/09/97",
-    "title":"Bart Star"
+    "title":"Bart Star",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":185,
     "season":9,
     "episode":7,
-    "productioncode":"5F04",
     "airdate":"11/16/97",
-    "title":"The Two Mrs. Nahasapeemapetilons"
+    "title":"The Two Mrs. Nahasapeemapetilons",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":186,
     "season":9,
     "episode":8,
-    "productioncode":"5F05",
     "airdate":"11/23/97",
-    "title":"Lisa the Skeptic"
+    "title":"Lisa the Skeptic",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":187,
     "season":9,
     "episode":9,
-    "productioncode":"5F06",
     "airdate":"12/07/97",
-    "title":"Realty Bites"
+    "title":"Realty Bites",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":188,
     "season":9,
     "episode":10,
-    "productioncode":"5F07",
     "airdate":"12/21/97",
-    "title":"Miracle on Evergreen Terrace"
+    "title":"Miracle on Evergreen Terrace",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":189,
     "season":9,
     "episode":11,
-    "productioncode":"5F24",
     "airdate":"01/04/98",
-    "title":"All Singing"
+    "title":"All Singing, All Dancing",
+    "viewers":"N/A",
+    "rating":5.2
   },
   {
     "number":190,
     "season":9,
     "episode":12,
-    "productioncode":"5F08",
     "airdate":"01/11/98",
-    "title":"Bart Carny"
+    "title":"Bart Carny",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":191,
     "season":9,
     "episode":13,
-    "productioncode":"5F23",
     "airdate":"02/08/98",
-    "title":"The Joy of Sect"
+    "title":"The Joy of Sect",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":192,
     "season":9,
     "episode":14,
-    "productioncode":"5F11",
     "airdate":"02/15/98",
-    "title":"Das Bus"
+    "title":"Das Bus",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":193,
     "season":9,
     "episode":15,
-    "productioncode":"5F10",
     "airdate":"02/22/98",
-    "title":"The Last Temptation of Krusty"
+    "title":"The Last Temptation of Krusty",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":194,
     "season":9,
     "episode":16,
-    "productioncode":"5F12",
     "airdate":"03/01/98",
-    "title":"Dumbbell Indemnity"
+    "title":"Dumbbell Indemnity",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":195,
     "season":9,
     "episode":17,
-    "productioncode":"4F24",
     "airdate":"03/08/98",
-    "title":"Lisa the Simpson"
+    "title":"Lisa the Simpson",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":196,
     "season":9,
     "episode":18,
-    "productioncode":"5F13",
     "airdate":"03/22/98",
-    "title":"This Little Wiggy"
+    "title":"This Little Wiggy",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":197,
     "season":9,
     "episode":19,
-    "productioncode":"3G04",
     "airdate":"03/29/98",
-    "title":"Simpson Tide"
+    "title":"Simpson Tide",
+    "viewers":"N/A",
+    "rating":8.7
   },
   {
     "number":198,
     "season":9,
     "episode":20,
-    "productioncode":"5F14",
     "airdate":"04/05/98",
-    "title":"The Trouble With Trillions"
+    "title":"The Trouble With Trillions",
+    "viewers":"N/A",
+    "rating":8.3
   },
   {
     "number":199,
     "season":9,
     "episode":21,
-    "productioncode":"5F15",
     "airdate":"04/19/98",
-    "title":"Girly Edition"
+    "title":"Girly Edition",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":200,
     "season":9,
     "episode":22,
-    "productioncode":"5F09",
     "airdate":"04/26/98",
-    "title":"Trash of the Titans"
+    "title":"Trash of the Titans",
+    "viewers":"N/A",
+    "rating":8.3
   },
   {
     "number":201,
     "season":9,
     "episode":23,
-    "productioncode":"5F16",
     "airdate":"05/03/98",
-    "title":"King of the Hill"
+    "title":"King of the Hill",
+    "viewers":"N/A",
+    "rating":8.4
   },
   {
     "number":202,
     "season":9,
     "episode":24,
-    "productioncode":"5F17",
     "airdate":"05/10/98",
-    "title":"Lost Our Lisa"
+    "title":"Lost Our Lisa",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":203,
     "season":9,
     "episode":25,
-    "productioncode":"5F18",
     "airdate":"05/17/98",
-    "title":"Natural Born Kissers"
+    "title":"Natural Born Kissers",
+    "viewers":"N/A",
+    "rating":7.4
   }
-],
+  ],
 [
   {
     "number":204,
     "season":10,
     "episode":1,
-    "productioncode":"5F20",
     "airdate":"08/23/98",
-    "title":"Lard of the Dance"
+    "title":"Lard of the Dance",
+    "viewers":"7.1",
+    "rating":7.4
   },
   {
     "number":205,
     "season":10,
     "episode":2,
-    "productioncode":"5F21",
     "airdate":"09/20/98",
-    "title":"The Wizard of Evergreen Terrace"
+    "title":"The Wizard of Evergreen Terrace",
+    "viewers":"7.95",
+    "rating":8.1
   },
   {
     "number":206,
     "season":10,
     "episode":3,
-    "productioncode":"5F22",
     "airdate":"09/27/98",
-    "title":"Bart the Mother"
+    "title":"Bart the Mother",
+    "viewers":"7.35",
+    "rating":7.3
   },
   {
     "number":207,
     "season":10,
     "episode":4,
-    "productioncode":"AABF01",
     "airdate":"10/25/98",
-    "title":"Treehouse of Horror IX"
+    "title":"Treehouse of Horror IX",
+    "viewers":"8.5",
+    "rating":7.5
   },
   {
     "number":208,
     "season":10,
     "episode":5,
-    "productioncode":"5F19",
     "airdate":"11/08/98",
-    "title":"When You Dish Upon a Star"
+    "title":"When You Dish Upon a Star",
+    "viewers":"9.0",
+    "rating":7.3
   },
   {
     "number":209,
     "season":10,
     "episode":6,
-    "productioncode":"AABF02",
     "airdate":"11/15/98",
-    "title":"D'Oh-in' in the Wind"
+    "title":"D'Oh-in' in the Wind",
+    "viewers":"8.4",
+    "rating":7.4
   },
   {
     "number":210,
     "season":10,
     "episode":7,
-    "productioncode":"AABF03",
     "airdate":"11/22/98",
-    "title":"Lisa Gets an \"A\""
+    "title":"Lisa Gets an \"A\"",
+    "viewers":"8",
+    "rating":7.4
   },
   {
     "number":211,
     "season":10,
     "episode":8,
-    "productioncode":"AABF04",
     "airdate":"12/06/98",
-    "title":"Homer Simpson in: \"Kidney Trouble\""
+    "title":"Homer Simpson in: \"Kidney Trouble\"",
+    "viewers":"7.2",
+    "rating":7.3
   },
   {
     "number":212,
     "season":10,
     "episode":9,
-    "productioncode":"AABF05",
     "airdate":"12/20/98",
-    "title":"Mayored to the Mob"
+    "title":"Mayored to the Mob",
+    "viewers":"8.5",
+    "rating":8.3
   },
   {
     "number":213,
     "season":10,
     "episode":10,
-    "productioncode":"AABF06",
     "airdate":"01/10/99",
-    "title":"Viva Ned Flanders"
+    "title":"Viva Ned Flanders",
+    "viewers":"11.5",
+    "rating":7.4
   },
   {
     "number":214,
     "season":10,
     "episode":11,
-    "productioncode":"AABF07",
     "airdate":"01/17/99",
-    "title":"Wild Barts Can't Be Broken"
+    "title":"Wild Barts Can't Be Broken",
+    "viewers":"8.8",
+    "rating":7.3
   },
   {
     "number":215,
     "season":10,
     "episode":12,
-    "productioncode":"AABF08",
     "airdate":"01/31/99",
-    "title":"Sunday"
+    "title":"Sunday, Cruddy Sunday",
+    "viewers":"11.5",
+    "rating":7.0
   },
   {
     "number":216,
     "season":10,
     "episode":13,
-    "productioncode":"AABF09",
     "airdate":"02/07/99",
-    "title":"Homer to the Max"
+    "title":"Homer to the Max",
+    "viewers":"8.4",
+    "rating":7.4
   },
   {
     "number":217,
     "season":10,
     "episode":14,
-    "productioncode":"AABF11",
     "airdate":"02/14/99",
-    "title":"I'm With Cupid"
+    "title":"I'm With Cupid",
+    "viewers":"7.7",
+    "rating":7.3
   },
   {
     "number":218,
     "season":10,
     "episode":15,
-    "productioncode":"AABF10",
     "airdate":"02/21/99",
-    "title":"Marge Simpson in: \"Screaming Yellow Honkers\""
+    "title":"Marge Simpson in: \"Screaming Yellow Honkers\"",
+    "viewers":"8.6",
+    "rating":7.3
   },
   {
     "number":219,
     "season":10,
     "episode":16,
-    "productioncode":"AABF12",
     "airdate":"02/28/99",
-    "title":"Make Room For Lisa"
+    "title":"Make Room For Lisa",
+    "viewers":"7.6",
+    "rating":7.3
   },
   {
     "number":220,
     "season":10,
     "episode":17,
-    "productioncode":"AABF13",
     "airdate":"03/28/99",
-    "title":"Maximum Homerdrive"
+    "title":"Maximum Homerdrive",
+    "viewers":"15.5",
+    "rating":7.3
   },
   {
     "number":221,
     "season":10,
     "episode":18,
-    "productioncode":"AABF14",
     "airdate":"04/04/99",
-    "title":"Simpsons Bible Stories"
+    "title":"Simpsons Bible Stories",
+    "viewers":"12.2",
+    "rating":7.3
   },
   {
     "number":222,
     "season":10,
     "episode":19,
-    "productioncode":"AABF15",
     "airdate":"04/11/99",
-    "title":"Mom and Pop Art"
+    "title":"Mom and Pop Art",
+    "viewers":"8.5",
+    "rating":7.4
   },
   {
     "number":223,
     "season":10,
     "episode":20,
-    "productioncode":"AABF16",
     "airdate":"04/25/99",
-    "title":"The Old Man and the \"C\" Student"
+    "title":"The Old Man and the \"C\" Student",
+    "viewers":"6.9",
+    "rating":7.3
   },
   {
     "number":224,
     "season":10,
     "episode":21,
-    "productioncode":"AABF17",
     "airdate":"05/02/99",
-    "title":"Monty Can't Buy Me Love"
+    "title":"Monty Can't Buy Me Love",
+    "viewers":"7.26",
+    "rating":7.2
   },
   {
     "number":225,
     "season":10,
     "episode":22,
-    "productioncode":"AABF18",
     "airdate":"05/09/99",
-    "title":"They Saved Lisa's Brain"
+    "title":"They Saved Lisa's Brain",
+    "viewers":"6.8",
+    "rating":7.3
   },
   {
     "number":226,
     "season":10,
     "episode":23,
-    "productioncode":"AABF20",
     "airdate":"05/16/99",
-    "title":"30 Minutes Over Tokyo"
+    "title":"30 Minutes Over Tokyo",
+    "viewers":"8",
+    "rating":7.4
   }
-],
+  ],
 [
   {
     "number":227,
     "season":11,
     "episode":1,
-    "productioncode":"AABF23",
     "airdate":"09/26/99",
-    "title":"Beyond Blunderdome"
+    "title":"Beyond Blunderdome",
+    "viewers":"8.1",
+    "rating":7.3
   },
   {
     "number":228,
     "season":11,
     "episode":2,
-    "productioncode":"AABF22",
     "airdate":"10/03/99",
-    "title":"Brother's Little Helper"
+    "title":"Brother's Little Helper",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":229,
     "season":11,
     "episode":3,
-    "productioncode":"AABF21",
     "airdate":"10/24/99",
-    "title":"Guess Who's Coming to Criticize Dinner"
+    "title":"Guess Who's Coming to Criticize Dinner",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":230,
     "season":11,
     "episode":4,
-    "productioncode":"BABF01",
     "airdate":"10/31/99",
-    "title":"Treehouse of Horror X"
+    "title":"Treehouse of Horror X",
+    "viewers":"8.7",
+    "rating":7.4
   },
   {
     "number":231,
     "season":11,
     "episode":5,
-    "productioncode":"AABF19",
     "airdate":"11/07/99",
-    "title":"E-I-E-I-(Annoyed Grunt)"
+    "title":"E-I-E-I-(Annoyed Grunt)",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":232,
     "season":11,
     "episode":6,
-    "productioncode":"BABF02",
     "airdate":"11/14/99",
-    "title":"Hello Gutter"
+    "title":"Hello Gutter, Hello Fadder",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":233,
     "season":11,
     "episode":7,
-    "productioncode":"BABF03",
     "airdate":"11/21/99",
-    "title":"Eight Misbehavin"
+    "title":"Eight Misbehavin",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":234,
     "season":11,
     "episode":8,
-    "productioncode":"BABF05",
     "airdate":"11/28/99",
-    "title":"Take My Wife"
+    "title":"Take My Wife, Sleaze",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":235,
     "season":11,
     "episode":9,
-    "productioncode":"BABF07",
     "airdate":"12/19/99",
-    "title":"Grift of the Magi"
+    "title":"Grift of the Magi",
+    "viewers":"7.76",
+    "rating":7.3
   },
   {
     "number":236,
     "season":11,
     "episode":10,
-    "productioncode":"BABF04",
     "airdate":"01/09/00",
-    "title":"Little Big Mom"
+    "title":"Little Big Mom",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":237,
     "season":11,
     "episode":11,
-    "productioncode":"BABF06",
     "airdate":"01/16/00",
-    "title":"Faith Off"
+    "title":"Faith Off",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":238,
     "season":11,
     "episode":12,
-    "productioncode":"BABF08",
     "airdate":"01/23/00",
-    "title":"The Mansion Family"
+    "title":"The Mansion Family",
+    "viewers":"11.3",
+    "rating":7.3
   },
   {
     "number":239,
     "season":11,
     "episode":13,
-    "productioncode":"BABF09",
     "airdate":"02/06/00",
-    "title":"Saddlesore Galactica"
+    "title":"Saddlesore Galactica",
+    "viewers":"9.6",
+    "rating":6.5
   },
   {
     "number":240,
     "season":11,
     "episode":14,
-    "productioncode":"BABF10",
     "airdate":"02/13/00",
-    "title":"Alone Again Natura-Diddily"
+    "title":"Alone Again Natura-Diddily",
+    "viewers":"10.8",
+    "rating":8.4
   },
   {
     "number":241,
     "season":11,
     "episode":15,
-    "productioncode":"BABF11",
     "airdate":"02/20/00",
-    "title":"Missionary Impossible"
+    "title":"Missionary Impossible",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":242,
     "season":11,
     "episode":16,
-    "productioncode":"BABF12",
     "airdate":"02/27/00",
-    "title":"Pygmoelian"
+    "title":"Pygmoelian",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":243,
     "season":11,
     "episode":17,
-    "productioncode":"BABF13",
     "airdate":"03/19/00",
-    "title":"Bart to the Future"
+    "title":"Bart to the Future",
+    "viewers":"8.77",
+    "rating":7.0
   },
   {
     "number":244,
     "season":11,
     "episode":18,
-    "productioncode":"BABF14",
     "airdate":"04/09/00",
-    "title":"Days of Wine and D'Ohses"
+    "title":"Days of Wine and D'Ohses",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":245,
     "season":11,
     "episode":19,
-    "productioncode":"BABF16",
     "airdate":"04/30/00",
-    "title":"Kill the Alligator and Run"
+    "title":"Kill the Alligator and Run",
+    "viewers":"7.46",
+    "rating":6.5
   },
   {
     "number":246,
     "season":11,
     "episode":20,
-    "productioncode":"BABF15",
     "airdate":"05/07/00",
-    "title":"Last Tap Dance in Springfield"
+    "title":"Last Tap Dance in Springfield",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":247,
     "season":11,
     "episode":21,
-    "productioncode":"BABF18",
     "airdate":"05/14/00",
-    "title":"It's a Mad"
+    "title":"It's a Mad, Mad, Mad, Mad Marge",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":248,
     "season":11,
     "episode":22,
-    "productioncode":"BABF19",
     "airdate":"05/21/00",
-    "title":"Behind the Laughter"
+    "title":"Behind the Laughter",
+    "viewers":"N/A",
+    "rating":7.4
   }
-],
+  ],
 [
   {
     "number":249,
     "season":12,
     "episode":1,
-    "productioncode":"BABF21",
     "airdate":"11/01/00",
-    "title":"Treehouse of Horror XI"
+    "title":"Treehouse of Horror XI",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":250,
     "season":12,
     "episode":2,
-    "productioncode":"BABF20",
     "airdate":"11/05/00",
-    "title":"A Tale of Two Springfields"
+    "title":"A Tale of Two Springfields",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":251,
     "season":12,
     "episode":3,
-    "productioncode":"BABF17",
     "airdate":"11/12/00",
-    "title":"Insane Clown Poppy"
+    "title":"Insane Clown Poppy",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":252,
     "season":12,
     "episode":4,
-    "productioncode":"CABF01",
     "airdate":"11/19/00",
-    "title":"Lisa the Treehugger"
+    "title":"Lisa the Treehugger",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":253,
     "season":12,
     "episode":5,
-    "productioncode":"CABF04",
     "airdate":"11/26/00",
-    "title":"Homer vs. Dignity"
+    "title":"Homer vs. Dignity",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":254,
     "season":12,
     "episode":6,
-    "productioncode":"CABF02",
     "airdate":"12/03/00",
-    "title":"The Computer Wore Menace Shoes"
+    "title":"The Computer Wore Menace Shoes",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":255,
     "season":12,
     "episode":7,
-    "productioncode":"CABF03",
     "airdate":"12/10/00",
-    "title":"The Great Money Caper"
+    "title":"The Great Money Caper",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":256,
     "season":12,
     "episode":8,
-    "productioncode":"CABF06",
     "airdate":"12/17/00",
-    "title":"Skinner's Sense of Snow"
+    "title":"Skinner's Sense of Snow",
+    "viewers":"N/A",
+    "rating":8.3
   },
   {
     "number":257,
     "season":12,
     "episode":9,
-    "productioncode":"BABF22",
     "airdate":"01/07/01",
-    "title":"HOMR"
+    "title":"HOMR",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":258,
     "season":12,
     "episode":10,
-    "productioncode":"CABF05",
     "airdate":"01/14/01",
-    "title":"Pokeymom"
+    "title":"Pokeymom",
+    "viewers":"N/A",
+    "rating":7.8
   },
   {
     "number":259,
     "season":12,
     "episode":11,
-    "productioncode":"CABF08",
     "airdate":"02/04/01",
-    "title":"Worst Episode Ever"
+    "title":"Worst Episode Ever",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":260,
     "season":12,
     "episode":12,
-    "productioncode":"CABF07",
     "airdate":"02/11/01",
-    "title":"Tennis the Menace"
+    "title":"Tennis the Menace",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":261,
     "season":12,
     "episode":13,
-    "productioncode":"CABF10",
     "airdate":"02/18/01",
-    "title":"Day of the Jackanapes"
+    "title":"Day of the Jackanapes",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":262,
     "season":12,
     "episode":14,
-    "productioncode":"CABF12",
     "airdate":"02/25/01",
-    "title":"New Kids on the Blecch"
+    "title":"New Kids on the Blecch",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":263,
     "season":12,
     "episode":15,
-    "productioncode":"CABF09",
     "airdate":"03/04/01",
-    "title":"Hungry Hungry Homer"
+    "title":"Hungry Hungry Homer",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":264,
     "season":12,
     "episode":16,
-    "productioncode":"CABF11",
     "airdate":"03/11/01",
-    "title":"Bye Bye Nerdy"
+    "title":"Bye Bye Nerdy",
+    "viewers":"N/A",
+    "rating":6.6
   },
   {
     "number":265,
     "season":12,
     "episode":17,
-    "productioncode":"CABF13",
     "airdate":"04/01/01",
-    "title":"Simpsons Safari"
+    "title":"Simpsons Safari",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":266,
     "season":12,
     "episode":18,
-    "productioncode":"CABF14",
     "airdate":"04/29/01",
-    "title":"Trilogy of Error"
+    "title":"Trilogy of Error",
+    "viewers":"N/A",
+    "rating":7.5
   },
   {
     "number":267,
     "season":12,
     "episode":19,
-    "productioncode":"CABF15",
     "airdate":"05/06/01",
-    "title":"I'm Goin' to Praise Land"
+    "title":"I'm Goin' to Praise Land",
+    "viewers":"N/A",
+    "rating":7.8
   },
   {
     "number":268,
     "season":12,
     "episode":20,
-    "productioncode":"CABF16",
     "airdate":"05/13/01",
-    "title":"Children of a Lesser Clod"
+    "title":"Children of a Lesser Clod",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":269,
     "season":12,
     "episode":21,
-    "productioncode":"CABF17",
     "airdate":"05/20/01",
-    "title":"Simpsons Tall Tales"
+    "title":"Simpsons Tall Tales",
+    "viewers":"N/A",
+    "rating":6.8
   }
-],
+  ],
 [
   {
     "number":270,
     "season":13,
     "episode":1,
-    "productioncode":"CABF19",
     "airdate":"11/06/01",
-    "title":"Treehouse of Horror XII"
+    "title":"Treehouse of Horror XII",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":271,
     "season":13,
     "episode":2,
-    "productioncode":"CABF22",
     "airdate":"11/11/01",
-    "title":"The Parent Rap"
+    "title":"The Parent Rap",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":272,
     "season":13,
     "episode":3,
-    "productioncode":"CABF20",
     "airdate":"11/18/01",
-    "title":"Homer the Moe"
+    "title":"Homer the Moe",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":273,
     "season":13,
     "episode":4,
-    "productioncode":"CABF18",
     "airdate":"12/02/01",
-    "title":"Hunka Hunka Burns in Love"
+    "title":"Hunka Hunka Burns in Love",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":274,
     "season":13,
     "episode":5,
-    "productioncode":"CABF21",
     "airdate":"12/09/01",
-    "title":"The Blunder Years"
+    "title":"The Blunder Years",
+    "viewers":"N/A",
+    "rating":8.0
   },
   {
     "number":275,
     "season":13,
     "episode":6,
-    "productioncode":"DABF02",
     "airdate":"12/16/01",
-    "title":"She of Little Faith"
+    "title":"She of Little Faith",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":276,
     "season":13,
     "episode":7,
-    "productioncode":"DABF01",
     "airdate":"01/06/02",
-    "title":"Brawl in the Family"
+    "title":"Brawl in the Family",
+    "viewers":"N/A",
+    "rating":6.7
   },
   {
     "number":277,
     "season":13,
     "episode":8,
-    "productioncode":"DABF03",
     "airdate":"01/20/02",
-    "title":"Sweets and Sour Marge"
+    "title":"Sweets and Sour Marge",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":278,
     "season":13,
     "episode":9,
-    "productioncode":"DABF05",
     "airdate":"01/27/02",
-    "title":"Jaws Wired Shut"
+    "title":"Jaws Wired Shut",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":279,
     "season":13,
     "episode":10,
-    "productioncode":"DABF04",
     "airdate":"02/10/02",
-    "title":"Half-12ent Proposal"
+    "title":"Half-12ent Proposal",
+    "viewers":"N/A",
+    "rating":7.9
   },
   {
     "number":280,
     "season":13,
     "episode":11,
-    "productioncode":"DABF06",
     "airdate":"02/17/02",
-    "title":"The Bart Wants What It Wants"
+    "title":"The Bart Wants What It Wants",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":281,
     "season":13,
     "episode":12,
-    "productioncode":"DABF07",
     "airdate":"02/24/02",
-    "title":"The Lastest Gun in the West"
+    "title":"The Lastest Gun in the West",
+    "viewers":"N/A",
+    "rating":6.5
   },
   {
     "number":282,
     "season":13,
     "episode":13,
-    "productioncode":"DABF09",
     "airdate":"03/10/02",
-    "title":"The Old Man and the Key"
+    "title":"The Old Man and the Key",
+    "viewers":"N/A",
+    "rating":6.5
   },
   {
     "number":283,
     "season":13,
     "episode":14,
-    "productioncode":"DABF08",
     "airdate":"03/17/02",
-    "title":"Tales From the Public Domain"
+    "title":"Tales From the Public Domain",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":284,
     "season":13,
     "episode":15,
-    "productioncode":"DABF10",
     "airdate":"03/31/02",
-    "title":"Blame it on Lisa"
+    "title":"Blame it on Lisa",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":285,
     "season":13,
     "episode":16,
-    "productioncode":"DABF11",
     "airdate":"04/07/02",
-    "title":"Weekend at Burnsies"
+    "title":"Weekend at Burnsies",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":286,
     "season":13,
     "episode":17,
-    "productioncode":"DABF12",
     "airdate":"04/21/02",
-    "title":"Gump Roast"
+    "title":"Gump Roast",
+    "viewers":"N/A",
+    "rating":5.5
   },
   {
     "number":287,
     "season":13,
     "episode":18,
-    "productioncode":"DABF13",
     "airdate":"04/28/02",
-    "title":"I am Furious Yellow"
+    "title":"I am Furious Yellow",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":288,
     "season":13,
     "episode":19,
-    "productioncode":"DABF14",
     "airdate":"05/05/02",
-    "title":"The Sweetest Apu"
+    "title":"The Sweetest Apu",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":289,
     "season":13,
     "episode":20,
-    "productioncode":"DABF15",
     "airdate":"05/12/02",
-    "title":"Little Girl in the Big Ten"
+    "title":"Little Girl in the Big Ten",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":290,
     "season":13,
     "episode":21,
-    "productioncode":"DABF16",
     "airdate":"05/19/02",
-    "title":"Frying Game"
+    "title":"Frying Game",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":291,
     "season":13,
     "episode":22,
-    "productioncode":"DABF17",
     "airdate":"05/22/02",
-    "title":"Papa's Got a Brand New Badge"
+    "title":"Papa's Got a Brand New Badge",
+    "viewers":"N/A",
+    "rating":8.6
   }
-],
+  ],
 [
   {
     "number":292,
     "season":14,
     "episode":1,
-    "productioncode":"DABF19",
     "airdate":"11/03/02",
-    "title":"Treehouse of Horror XIII"
+    "title":"Treehouse of Horror XIII",
+    "viewers":"16.7",
+    "rating":7.3
   },
   {
     "number":293,
     "season":14,
     "episode":2,
-    "productioncode":"DABF22",
     "airdate":"11/10/02",
-    "title":"How I Spent My Strummer Vacation"
+    "title":"How I Spent My Strummer Vacation",
+    "viewers":"12.5",
+    "rating":7.3
   },
   {
     "number":294,
     "season":14,
     "episode":3,
-    "productioncode":"DABF20",
     "airdate":"11/17/02",
-    "title":"Bart vs. Lisa vs. 3rd Grade"
+    "title":"Bart vs. Lisa vs. 3rd Grade",
+    "viewers":"13.3",
+    "rating":6.9
   },
   {
     "number":295,
     "season":14,
     "episode":4,
-    "productioncode":"DABF18",
     "airdate":"11/24/02",
-    "title":"Large Marge"
+    "title":"Large Marge",
+    "viewers":"17.4",
+    "rating":7.2
   },
   {
     "number":296,
     "season":14,
     "episode":5,
-    "productioncode":"DABF21",
     "airdate":"12/01/02",
-    "title":"Helter Shelter"
+    "title":"Helter Shelter",
+    "viewers":"15.1",
+    "rating":6.6
   },
   {
     "number":297,
     "season":14,
     "episode":6,
-    "productioncode":"EABF01",
     "airdate":"12/15/02",
-    "title":"The Great Louse Detective"
+    "title":"The Great Louse Detective",
+    "viewers":"15.5",
+    "rating":7.2
   },
   {
     "number":298,
     "season":14,
     "episode":7,
-    "productioncode":"EABF02",
     "airdate":"01/05/03",
-    "title":"Special Edna (a.k.a. Love And Marking)"
+    "title":"Special Edna (a.k.a. Love And Marking)",
+    "viewers":"15.0",
+    "rating":7.0
   },
   {
     "number":299,
     "season":14,
     "episode":8,
-    "productioncode":"EABF03",
     "airdate":"01/12/03",
-    "title":"The Dad Who Knew Too Little"
+    "title":"The Dad Who Knew Too Little",
+    "viewers":"12.8",
+    "rating":7.2
   },
   {
     "number":300,
     "season":14,
     "episode":9,
-    "productioncode":"EABF04",
     "airdate":"02/02/03",
-    "title":"The Strong Arms of the Ma"
+    "title":"The Strong Arms of the Ma",
+    "viewers":"15.4",
+    "rating":6.7
   },
   {
     "number":301,
     "season":14,
     "episode":10,
-    "productioncode":"EABF06",
     "airdate":"02/09/03",
-    "title":"Pray Anything"
+    "title":"Pray Anything",
+    "viewers":"13.4",
+    "rating":6.7
   },
   {
     "number":302,
     "season":14,
     "episode":11,
-    "productioncode":"EABF05",
     "airdate":"02/16/03",
-    "title":"Barting Over"
+    "title":"Barting Over",
+    "viewers":"21.3",
+    "rating":6.5
   },
   {
     "number":303,
     "season":14,
     "episode":12,
-    "productioncode":"EABF07",
     "airdate":"02/16/03",
-    "title":"I'm Spelling As Fast As I Can"
+    "title":"I'm Spelling As Fast As I Can",
+    "viewers":"22.1",
+    "rating":7.3
   },
   {
     "number":304,
     "season":14,
     "episode":13,
-    "productioncode":"EABF08",
     "airdate":"03/02/03",
-    "title":"A Star is Born Again"
+    "title":"A Star is Born Again",
+    "viewers":"14.4",
+    "rating":7.0
   },
   {
     "number":305,
     "season":14,
     "episode":14,
-    "productioncode":"EABF09",
     "airdate":"03/09/03",
-    "title":"Mr. Spritz Goes to Washington"
+    "title":"Mr. Spritz Goes to Washington",
+    "viewers":"14.4",
+    "rating":6.7
   },
   {
     "number":306,
     "season":14,
     "episode":15,
-    "productioncode":"EABF10",
     "airdate":"03/16/03",
-    "title":"C. E. D'oh"
+    "title":"C. E. D'oh",
+    "viewers":"13.0",
+    "rating":7.3
   },
   {
     "number":307,
     "season":14,
     "episode":16,
-    "productioncode":"EABF11",
     "airdate":"03/30/03",
-    "title":"'Scuse Me While I Miss the Sky"
+    "title":"'Scuse Me While I Miss the Sky",
+    "viewers":"12.6",
+    "rating":7.0
   },
   {
     "number":308,
     "season":14,
     "episode":17,
-    "productioncode":"EABF12",
     "airdate":"04/13/03",
-    "title":"Three Gays of the Condo"
+    "title":"Three Gays of the Condo",
+    "viewers":"12.02",
+    "rating":7.2
   },
   {
     "number":309,
     "season":14,
     "episode":18,
-    "productioncode":"EABF13",
     "airdate":"04/27/03",
-    "title":"Dude"
+    "title":"Dude, Where's My Ranch?",
+    "viewers":"11.71",
+    "rating":6.9
   },
   {
     "number":310,
     "season":14,
     "episode":19,
-    "productioncode":"EABF14",
     "airdate":"05/04/03",
-    "title":"Old Yeller-Belly"
+    "title":"Old Yeller-Belly",
+    "viewers":"11.59",
+    "rating":6.7
   },
   {
     "number":311,
     "season":14,
     "episode":20,
-    "productioncode":"EABF15",
     "airdate":"05/11/03",
-    "title":"Brake My Wife"
+    "title":"Brake My Wife, Please",
+    "viewers":"10.56",
+    "rating":6.8
   },
   {
     "number":312,
     "season":14,
     "episode":21,
-    "productioncode":"EABF16",
     "airdate":"05/18/03",
-    "title":"The Bart of War"
+    "title":"The Bart of War",
+    "viewers":"12.10",
+    "rating":6.6
   },
   {
     "number":313,
     "season":14,
     "episode":22,
-    "productioncode":"EABF17",
     "airdate":"05/18/03",
-    "title":"Moe Baby Blues"
+    "title":"Moe Baby Blues",
+    "viewers":"13.44",
+    "rating":8.4
   }
-],
+  ],
 [
   {
     "number":314,
     "season":15,
     "episode":1,
-    "productioncode":"EABF21",
     "airdate":"11/02/03",
-    "title":"Treehouse of Horror XIV"
+    "title":"Treehouse of Horror XIV",
+    "viewers":"16.22",
+    "rating":7.3
   },
   {
     "number":315,
     "season":15,
     "episode":2,
-    "productioncode":"EABF18",
     "airdate":"11/09/03",
-    "title":"My Mother the Carjacker"
+    "title":"My Mother the Carjacker",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":316,
     "season":15,
     "episode":3,
-    "productioncode":"EABF20",
     "airdate":"11/16/03",
-    "title":"The President Wore Pearls"
+    "title":"The President Wore Pearls",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":317,
     "season":15,
     "episode":4,
-    "productioncode":"EABF22",
     "airdate":"11/23/03",
-    "title":"The Regina Monologues"
+    "title":"The Regina Monologues",
+    "viewers":"N/A",
+    "rating":7.0
   },
   {
     "number":318,
     "season":15,
     "episode":5,
-    "productioncode":"EABF19",
     "airdate":"11/30/03",
-    "title":"The Fat and the Furriest"
+    "title":"The Fat and the Furriest",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":319,
     "season":15,
     "episode":6,
-    "productioncode":"FABF01",
     "airdate":"12/07/03",
-    "title":"Today I am a Clown"
+    "title":"Today I am a Clown",
+    "viewers":"N/A",
+    "rating":6.6
   },
   {
     "number":320,
     "season":15,
     "episode":7,
-    "productioncode":"FABF02",
     "airdate":"12/14/03",
-    "title":"'Tis the Fifteenth Season"
+    "title":"'Tis the Fifteenth Season",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":321,
     "season":15,
     "episode":8,
-    "productioncode":"FABF03",
     "airdate":"01/04/04",
-    "title":"Marge vs. Singles"
+    "title":"Marge vs. Singles, Seniors, Childless Couples and Teens, and Gays",
+    "viewers":"N/A",
+    "rating":6.6
   },
   {
     "number":322,
     "season":15,
     "episode":9,
-    "productioncode":"FABF04",
     "airdate":"01/11/04",
-    "title":"I"
+    "title":"I, (Annoyed Grunt)-Bot",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":323,
     "season":15,
     "episode":10,
-    "productioncode":"FABF05",
     "airdate":"01/25/04",
-    "title":"Diatribe of a Mad Housewife"
+    "title":"Diatribe of a Mad Housewife",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":324,
     "season":15,
     "episode":11,
-    "productioncode":"FABF06",
     "airdate":"02/08/04",
-    "title":"Margical History Tour"
+    "title":"Margical History Tour",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":325,
     "season":15,
     "episode":12,
-    "productioncode":"FABF07",
     "airdate":"02/15/04",
-    "title":"Milhouse Doesn't Live Here Anymore"
+    "title":"Milhouse Doesn't Live Here Anymore",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":326,
     "season":15,
     "episode":13,
-    "productioncode":"FABF09",
     "airdate":"02/22/04",
-    "title":"Smart & Smarter"
+    "title":"Smart & Smarter",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":327,
     "season":15,
     "episode":14,
-    "productioncode":"FABF08",
     "airdate":"03/14/04",
-    "title":"The Ziff Who Came to Dinner"
+    "title":"The Ziff Who Came to Dinner",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":328,
     "season":15,
     "episode":15,
-    "productioncode":"FABF10",
     "airdate":"03/21/04",
-    "title":"Co-Dependent's Day"
+    "title":"Co-Dependent's Day",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":329,
     "season":15,
     "episode":16,
-    "productioncode":"FABF11",
     "airdate":"03/28/04",
-    "title":"Wandering Juvie"
+    "title":"Wandering Juvie",
+    "viewers":"N/A",
+    "rating":6.9
   },
   {
     "number":330,
     "season":15,
     "episode":17,
-    "productioncode":"FABF12",
     "airdate":"04/18/04",
-    "title":"My Big Fat Geek Wedding"
+    "title":"My Big Fat Geek Wedding",
+    "viewers":"N/A",
+    "rating":6.6
   },
   {
     "number":331,
     "season":15,
     "episode":18,
-    "productioncode":"FABF14",
     "airdate":"04/25/04",
-    "title":"Catch 'Em If You Can"
+    "title":"Catch 'Em If You Can",
+    "viewers":"N/A",
+    "rating":6.8
   },
   {
     "number":332,
     "season":15,
     "episode":19,
-    "productioncode":"FABF15",
     "airdate":"05/02/04",
-    "title":"Simple Simpson"
+    "title":"Simple Simpson",
+    "viewers":"N/A",
+    "rating":7.2
   },
   {
     "number":333,
     "season":15,
     "episode":20,
-    "productioncode":"FABF13",
     "airdate":"05/09/04",
-    "title":"The Way We Weren't"
+    "title":"The Way We Weren't",
+    "viewers":"N/A",
+    "rating":7.1
   },
   {
     "number":334,
     "season":15,
     "episode":21,
-    "productioncode":"FABF17",
     "airdate":"05/16/04",
-    "title":"Bart-Mangled Banner"
+    "title":"Bart-Mangled Banner",
+    "viewers":"N/A",
+    "rating":6.2
   },
   {
     "number":335,
     "season":15,
     "episode":22,
-    "productioncode":"FABF18",
     "airdate":"05/23/04",
-    "title":"Fraudcast News"
+    "title":"Fraudcast News",
+    "viewers":"N/A",
+    "rating":7.0
   }
-],
+  ],
 [
   {
     "number":336,
     "season":16,
     "episode":1,
-    "productioncode":"FABF23",
     "airdate":"11/07/04",
-    "title":"Treehouse of Horror XV"
+    "title":"Treehouse of Horror XV",
+    "viewers":"11.29",
+    "rating":7.3
   },
   {
     "number":337,
     "season":16,
     "episode":2,
-    "productioncode":"FABF20",
     "airdate":"11/14/04",
-    "title":"All's Fair in Oven War"
+    "title":"All's Fair in Oven War",
+    "viewers":"11.64",
+    "rating":6.9
   },
   {
     "number":338,
     "season":16,
     "episode":3,
-    "productioncode":"FABF19",
     "airdate":"11/21/04",
-    "title":"Sleeping With the Enemy"
+    "title":"Sleeping With the Enemy",
+    "viewers":"9.95",
+    "rating":7.0
   },
   {
     "number":339,
     "season":16,
     "episode":4,
-    "productioncode":"FABF22",
     "airdate":"12/05/04",
-    "title":"She Used to Be My Girl"
+    "title":"She Used to Be My Girl",
+    "viewers":"10.81",
+    "rating":6.5
   },
   {
     "number":340,
     "season":16,
     "episode":5,
-    "productioncode":"FABF21",
     "airdate":"12/12/04",
-    "title":"Fat Man and Little Boy"
+    "title":"Fat Man and Little Boy",
+    "viewers":"10.31",
+    "rating":7.0
   },
   {
     "number":341,
     "season":16,
     "episode":6,
-    "productioncode":"FABF16",
     "airdate":"01/16/05",
-    "title":"Midnight Rx"
+    "title":"Midnight Rx",
+    "viewers":"8.11",
+    "rating":7.3
   },
   {
     "number":342,
     "season":16,
     "episode":7,
-    "productioncode":"GABF01",
     "airdate":"01/30/05",
-    "title":"Mommie Beerest"
+    "title":"Mommie Beerest",
+    "viewers":"9.97",
+    "rating":6.9
   },
   {
     "number":343,
     "season":16,
     "episode":8,
-    "productioncode":"GABF02",
     "airdate":"02/06/05",
-    "title":"Homer and Ned's Hail Mary Pass"
+    "title":"Homer and Ned's Hail Mary Pass",
+    "viewers":"23.07",
+    "rating":6.5
   },
   {
     "number":344,
     "season":16,
     "episode":9,
-    "productioncode":"GABF03",
     "airdate":"02/13/05",
-    "title":"Pranksta Rap"
+    "title":"Pranksta Rap",
+    "viewers":"8.01",
+    "rating":6.9
   },
   {
     "number":345,
     "season":16,
     "episode":10,
-    "productioncode":"GABF04",
     "airdate":"02/20/05",
-    "title":"There's Something About Marrying"
+    "title":"There's Something About Marrying",
+    "viewers":"10.39",
+    "rating":6.9
   },
   {
     "number":346,
     "season":16,
     "episode":11,
-    "productioncode":"GABF05",
     "airdate":"03/06/05",
-    "title":"On a Clear Day I Can't See My Sister"
+    "title":"On a Clear Day I Can't See My Sister",
+    "viewers":"10.39",
+    "rating":6.8
   },
   {
     "number":347,
     "season":16,
     "episode":12,
-    "productioncode":"GABF06",
     "airdate":"03/13/05",
-    "title":"Goo Goo Gai Pan"
+    "title":"Goo Goo Gai Pan",
+    "viewers":"10.28",
+    "rating":6.9
   },
   {
     "number":348,
     "season":16,
     "episode":13,
-    "productioncode":"GABF07",
     "airdate":"03/20/05",
-    "title":"Mobile Homer"
+    "title":"Mobile Homer",
+    "viewers":"8.49",
+    "rating":6.9
   },
   {
     "number":349,
     "season":16,
     "episode":14,
-    "productioncode":"GABF08",
     "airdate":"04/03/05",
-    "title":"The Seven-Beer Snitch"
+    "title":"The Seven-Beer Snitch",
+    "viewers":"7.48",
+    "rating":6.9
   },
   {
     "number":350,
     "season":16,
     "episode":15,
-    "productioncode":"GABF12",
     "airdate":"04/17/05",
-    "title":"Future-Drama"
+    "title":"Future-Drama",
+    "viewers":"8.31",
+    "rating":7.2
   },
   {
     "number":351,
     "season":16,
     "episode":16,
-    "productioncode":"GABF10",
     "airdate":"05/01/05",
-    "title":"Don't Fear the Roofer"
+    "title":"Don't Fear the Roofer",
+    "viewers":"11.92",
+    "rating":7.3
   },
   {
     "number":352,
     "season":16,
     "episode":17,
-    "productioncode":"GABF11",
     "airdate":"05/01/05",
-    "title":"The Heartbroke Kid"
+    "title":"The Heartbroke Kid",
+    "viewers":"10.79",
+    "rating":7.2
   },
   {
     "number":353,
     "season":16,
     "episode":18,
-    "productioncode":"GABF13",
     "airdate":"05/08/05",
-    "title":"A Star is Torn"
+    "title":"A Star is Torn",
+    "viewers":"8.72",
+    "rating":6.6
   },
   {
     "number":354,
     "season":16,
     "episode":19,
-    "productioncode":"GABF14",
     "airdate":"05/08/05",
-    "title":"Thank God It's Doomsday"
+    "title":"Thank God It's Doomsday",
+    "viewers":"10.05",
+    "rating":7.2
   },
   {
     "number":355,
     "season":16,
     "episode":20,
-    "productioncode":"GABF15",
     "airdate":"05/15/05",
-    "title":"Home Away From Homer"
+    "title":"Home Away From Homer",
+    "viewers":"8.17",
+    "rating":7.2
   },
   {
     "number":356,
     "season":16,
     "episode":21,
-    "productioncode":"GABF09",
     "airdate":"05/15/05",
-    "title":"Father"
+    "title":"Father, Son and Holy Guest-Star",
+    "viewers":"9.69",
+    "rating":7.3
   }
-],
+  ],
 [
   {
     "number":357,
     "season":17,
     "episode":1,
-    "productioncode":"GABF18",
     "airdate":"09/11/05",
-    "title":"Bonfire of the Manatees"
+    "title":"Bonfire of the Manatees",
+    "viewers":"11.10",
+    "rating":6.5
   },
   {
     "number":358,
     "season":17,
     "episode":2,
-    "productioncode":"GABF16",
     "airdate":"09/18/05",
-    "title":"The Girl Who Slept Too Little"
+    "title":"The Girl Who Slept Too Little",
+    "viewers":"9.79",
+    "rating":6.8
   },
   {
     "number":359,
     "season":17,
     "episode":3,
-    "productioncode":"GABF19",
     "airdate":"09/25/05",
-    "title":"Milhouse of Sand and Fog"
+    "title":"Milhouse of Sand and Fog",
+    "viewers":"10.19",
+    "rating":6.9
   },
   {
     "number":360,
     "season":17,
     "episode":4,
-    "productioncode":"GABF17",
     "airdate":"11/06/05",
-    "title":"Treehouse of Horror XVI"
+    "title":"Treehouse of Horror XVI",
+    "viewers":"11.63",
+    "rating":7.3
   },
   {
     "number":361,
     "season":17,
     "episode":5,
-    "productioncode":"GABF20",
     "airdate":"11/13/05",
-    "title":"Marge's Son Poisoning"
+    "title":"Marge's Son Poisoning",
+    "viewers":"11.4",
+    "rating":6.7
   },
   {
     "number":362,
     "season":17,
     "episode":6,
-    "productioncode":"GABF21",
     "airdate":"11/20/05",
-    "title":"See Homer Run"
+    "title":"See Homer Run",
+    "viewers":"10.3",
+    "rating":6.9
   },
   {
     "number":363,
     "season":17,
     "episode":7,
-    "productioncode":"GABF22",
     "airdate":"11/27/05",
-    "title":"The Last of the Red Hat Mamas"
+    "title":"The Last of the Red Hat Mamas",
+    "viewers":"11.46",
+    "rating":6.6
   },
   {
     "number":364,
     "season":17,
     "episode":8,
-    "productioncode":"HABF02",
     "airdate":"12/11/05",
-    "title":"The Italian Bob"
+    "title":"The Italian Bob",
+    "viewers":"10.39",
+    "rating":6.9
   },
   {
     "number":365,
     "season":17,
     "episode":9,
-    "productioncode":"HABF01",
     "airdate":"12/18/05",
-    "title":"Simpson Christmas Stories"
+    "title":"Simpson Christmas Stories",
+    "viewers":"9.8",
+    "rating":6.8
   },
   {
     "number":366,
     "season":17,
     "episode":10,
-    "productioncode":"HABF03",
     "airdate":"01/08/06",
-    "title":"Homer's Paternity Coot"
+    "title":"Homer's Paternity Coot",
+    "viewers":"10.1",
+    "rating":6.6
   },
   {
     "number":367,
     "season":17,
     "episode":11,
-    "productioncode":"HABF04",
     "airdate":"01/29/06",
-    "title":"We're on the Road to D'oh-where"
+    "title":"We're on the Road to D'oh-where",
+    "viewers":"9.04",
+    "rating":7.0
   },
   {
     "number":368,
     "season":17,
     "episode":12,
-    "productioncode":"HABF05",
     "airdate":"02/26/06",
-    "title":"My Fair Laddy"
+    "title":"My Fair Laddy",
+    "viewers":"9.51",
+    "rating":6.3
   },
   {
     "number":369,
     "season":17,
     "episode":13,
-    "productioncode":"HABF06",
     "airdate":"03/12/06",
-    "title":"The Seemingly Never-Ending Story"
+    "title":"The Seemingly Never-Ending Story",
+    "viewers":"9.72",
+    "rating":7.3
   },
   {
     "number":370,
     "season":17,
     "episode":14,
-    "productioncode":"HABF07",
     "airdate":"03/19/06",
-    "title":"Bart Has Two Mommies"
+    "title":"Bart Has Two Mommies",
+    "viewers":"8.75",
+    "rating":6.9
   },
   {
     "number":371,
     "season":17,
     "episode":15,
-    "productioncode":"HABF08",
     "airdate":"03/26/06",
-    "title":"Homer Simpson"
+    "title":"Homer Simpson, This is Your Wife",
+    "viewers":"10.09",
+    "rating":6.5
   },
   {
     "number":372,
     "season":17,
     "episode":16,
-    "productioncode":"HABF09",
     "airdate":"04/02/06",
-    "title":"Million Dollar Abie"
+    "title":"Million Dollar Abie",
+    "viewers":"7.83",
+    "rating":7.1
   },
   {
     "number":373,
     "season":17,
     "episode":17,
-    "productioncode":"HABF10",
     "airdate":"04/09/06",
-    "title":"Kiss Kiss Bang Bangalore"
+    "title":"Kiss Kiss Bang Bangalore",
+    "viewers":"8.20",
+    "rating":7.3
   },
   {
     "number":374,
     "season":17,
     "episode":18,
-    "productioncode":"HABF11",
     "airdate":"04/23/06",
-    "title":"The Wettest Stories Ever Told"
+    "title":"The Wettest Stories Ever Told",
+    "viewers":"7.04",
+    "rating":6.6
   },
   {
     "number":375,
     "season":17,
     "episode":19,
-    "productioncode":"HABF12",
     "airdate":"04/30/06",
-    "title":"Girls Just Want to Have Sums"
+    "title":"Girls Just Want to Have Sums",
+    "viewers":"8.7",
+    "rating":7.2
   },
   {
     "number":376,
     "season":17,
     "episode":20,
-    "productioncode":"HABF13",
     "airdate":"05/07/06",
-    "title":"Regarding Margie"
+    "title":"Regarding Margie",
+    "viewers":"8.50",
+    "rating":6.6
   },
   {
     "number":377,
     "season":17,
     "episode":21,
-    "productioncode":"HABF14",
     "airdate":"05/14/06",
-    "title":"The Monkey Suit"
+    "title":"The Monkey Suit",
+    "viewers":"8.3",
+    "rating":7.2
   },
   {
     "number":378,
     "season":17,
     "episode":22,
-    "productioncode":"HABF16",
     "airdate":"05/21/06",
-    "title":"Marge and Homer Turn a Couple Play"
+    "title":"Marge and Homer Turn a Couple Play",
+    "viewers":"8.23",
+    "rating":6.6
   }
-],
+  ],
 [
   {
     "number":379,
     "season":18,
     "episode":1,
-    "productioncode":"HABF15",
     "airdate":"09/10/06",
-    "title":"The Mook"
+    "title":"The Mook, the Chef, the Wife and Her Homer",
+    "viewers":"11.50",
+    "rating":7.3
   },
   {
     "number":380,
     "season":18,
     "episode":2,
-    "productioncode":"HABF18",
     "airdate":"09/17/06",
-    "title":"Jazzy and the Pussycats"
+    "title":"Jazzy and the Pussycats",
+    "viewers":"8.94",
+    "rating":6.7
   },
   {
     "number":381,
     "season":18,
     "episode":3,
-    "productioncode":"HABF20",
     "airdate":"09/24/06",
-    "title":"Please Homer"
+    "title":"Please Homer, Don't Hammer 'em",
+    "viewers":"9.72",
+    "rating":6.7
   },
   {
     "number":382,
     "season":18,
     "episode":4,
-    "productioncode":"HABF17",
     "airdate":"11/05/06",
-    "title":"Treehouse of Horror XVII"
+    "title":"Treehouse of Horror XVII",
+    "viewers":"10.43",
+    "rating":7.1
   },
   {
     "number":383,
     "season":18,
     "episode":5,
-    "productioncode":"HABF21",
     "airdate":"11/12/06",
-    "title":"GI (Annoyed Grunt)"
+    "title":"GI (Annoyed Grunt)",
+    "viewers":"11.43",
+    "rating":6.8
   },
   {
     "number":384,
     "season":18,
     "episode":6,
-    "productioncode":"HABF19",
     "airdate":"11/19/06",
-    "title":"Moe 'N' a Lisa"
+    "title":"Moe 'N' a Lisa",
+    "viewers":"9.31",
+    "rating":6.7
   },
   {
     "number":385,
     "season":18,
     "episode":7,
-    "productioncode":"HABF22",
     "airdate":"11/26/06",
-    "title":"Ice Cream of Margie (With the Light Blue Hair)"
+    "title":"Ice Cream of Margie (With the Light Blue Hair)",
+    "viewers":"10.90",
+    "rating":6.9
   },
   {
     "number":386,
     "season":18,
     "episode":8,
-    "productioncode":"JABF02",
     "airdate":"12/10/06",
-    "title":"The Haw-Hawed Couple"
+    "title":"The Haw-Hawed Couple",
+    "viewers":"8.29",
+    "rating":7.2
   },
   {
     "number":387,
     "season":18,
     "episode":9,
-    "productioncode":"JABF01",
     "airdate":"12/17/06",
-    "title":"Kill Gil (Parts I & II)"
+    "title":"Kill Gil (Parts I & II)",
+    "viewers":"8.96",
+    "rating":6.5
   },
   {
     "number":388,
     "season":18,
     "episode":10,
-    "productioncode":"JABF03",
     "airdate":"01/07/07",
-    "title":"The Wife Aquatic"
+    "title":"The Wife Aquatic",
+    "viewers":"13.90",
+    "rating":6.6
   },
   {
     "number":389,
     "season":18,
     "episode":11,
-    "productioncode":"JABF05",
     "airdate":"01/28/07",
-    "title":"Revenge is a Dish Best Served Three Times"
+    "title":"Revenge is a Dish Best Served Three Times",
+    "viewers":"8.09",
+    "rating":6.9
   },
   {
     "number":390,
     "season":18,
     "episode":12,
-    "productioncode":"JABF04",
     "airdate":"02/11/07",
-    "title":"Little Big Girl"
+    "title":"Little Big Girl",
+    "viewers":"8.27",
+    "rating":6.9
   },
   {
     "number":391,
     "season":18,
     "episode":13,
-    "productioncode":"JABF07",
     "airdate":"02/18/07",
-    "title":"Springfield Up"
+    "title":"Springfield Up",
+    "viewers":"8.80",
+    "rating":7.3
   },
   {
     "number":392,
     "season":18,
     "episode":14,
-    "productioncode":"JABF09",
     "airdate":"03/04/07",
-    "title":"Yokel Chords"
+    "title":"Yokel Chords",
+    "viewers":"9.09",
+    "rating":7.1
   },
   {
     "number":393,
     "season":18,
     "episode":15,
-    "productioncode":"JABF08",
     "airdate":"03/11/07",
-    "title":"Rome-old and Juli-eh"
+    "title":"Rome-old and Juli-eh",
+    "viewers":"8.98",
+    "rating":6.3
   },
   {
     "number":394,
     "season":18,
     "episode":16,
-    "productioncode":"JABF06",
     "airdate":"03/25/07",
-    "title":"Homerazzi"
+    "title":"Homerazzi",
+    "viewers":"6.91",
+    "rating":7.2
   },
   {
     "number":395,
     "season":18,
     "episode":17,
-    "productioncode":"JABF10",
     "airdate":"04/22/07",
-    "title":"Marge Gamer"
+    "title":"Marge Gamer",
+    "viewers":"6.40",
+    "rating":7.2
   },
   {
     "number":396,
     "season":18,
     "episode":18,
-    "productioncode":"JABF11",
     "airdate":"04/29/07",
-    "title":"The Boys of Bummer"
+    "title":"The Boys of Bummer",
+    "viewers":"7.57",
+    "rating":6.5
   },
   {
     "number":397,
     "season":18,
     "episode":19,
-    "productioncode":"JABF13",
     "airdate":"05/06/07",
-    "title":"Crook and Ladder"
+    "title":"Crook and Ladder",
+    "viewers":"7.72",
+    "rating":7.0
   },
   {
     "number":398,
     "season":18,
     "episode":20,
-    "productioncode":"JABF12",
     "airdate":"05/13/07",
-    "title":"Stop Or My Dog Will Shoot"
+    "title":"Stop Or My Dog Will Shoot",
+    "viewers":"6.48",
+    "rating":6.9
   },
   {
     "number":399,
     "season":18,
     "episode":21,
-    "productioncode":"JABF14",
     "airdate":"05/20/07",
-    "title":"24 Minutes"
+    "title":"24 Minutes",
+    "viewers":"9.80",
+    "rating":7.5
   },
   {
     "number":400,
     "season":18,
     "episode":22,
-    "productioncode":"JABF15",
     "airdate":"05/20/07",
-    "title":"You Kent Always Say What You Want"
+    "title":"You Kent Always Say What You Want",
+    "viewers":"9.80",
+    "rating":7.3
   }
-],
+  ],
 [
   {
     "number":401,
     "season":19,
     "episode":1,
-    "productioncode":"JABF20",
     "airdate":"09/23/07",
-    "title":"He Loves To Fly And He D'ohs"
+    "title":"He Loves To Fly And He D'ohs",
+    "viewers":"9.7",
+    "rating":6.7
   },
   {
     "number":402,
     "season":19,
     "episode":2,
-    "productioncode":"JABF18",
     "airdate":"09/30/07",
-    "title":"Homer of Seville"
+    "title":"Homer of Seville",
+    "viewers":"8.4",
+    "rating":6.6
   },
   {
     "number":403,
     "season":19,
     "episode":3,
-    "productioncode":"JABF21",
     "airdate":"10/07/07",
-    "title":"Midnight Towboy"
+    "title":"Midnight Towboy",
+    "viewers":"7.7",
+    "rating":7.2
   },
   {
     "number":404,
     "season":19,
     "episode":4,
-    "productioncode":"JABF19",
     "airdate":"10/14/07",
-    "title":"I Don't Wanna Know Why the Caged Bird Sings"
+    "title":"I Don't Wanna Know Why the Caged Bird Sings",
+    "viewers":"8.8",
+    "rating":6.9
   },
   {
     "number":405,
     "season":19,
     "episode":5,
-    "productioncode":"JABF16",
     "airdate":"11/04/07",
-    "title":"Treehouse of Horror XVIII"
+    "title":"Treehouse of Horror XVIII",
+    "viewers":"11.7",
+    "rating":7.0
   },
   {
     "number":406,
     "season":19,
     "episode":6,
-    "productioncode":"JABF22",
     "airdate":"11/11/07",
-    "title":"Little Orphan Millie"
+    "title":"Little Orphan Millie",
+    "viewers":"10.57",
+    "rating":6.6
   },
   {
     "number":407,
     "season":19,
     "episode":7,
-    "productioncode":"JABF17",
     "airdate":"11/18/07",
-    "title":"Husbands and Knives"
+    "title":"Husbands and Knives",
+    "viewers":"10.5",
+    "rating":7.2
   },
   {
     "number":408,
     "season":19,
     "episode":8,
-    "productioncode":"KABF01",
     "airdate":"11/25/07",
-    "title":"Funeral for a Fiend"
+    "title":"Funeral for a Fiend",
+    "viewers":"9.0",
+    "rating":7.2
   },
   {
     "number":409,
     "season":19,
     "episode":9,
-    "productioncode":"KABF02",
     "airdate":"12/16/07",
-    "title":"Eternal Moonshine of the Simpson Mind"
+    "title":"Eternal Moonshine of the Simpson Mind",
+    "viewers":"10.15",
+    "rating":7.4
   },
   {
     "number":410,
     "season":19,
     "episode":10,
-    "productioncode":"KABF03",
     "airdate":"01/06/08",
-    "title":"E. Pluribus Wiggum"
+    "title":"E. Pluribus Wiggum",
+    "viewers":"8.2",
+    "rating":6.9
   },
   {
     "number":411,
     "season":19,
     "episode":11,
-    "productioncode":"KABF04",
     "airdate":"01/27/08",
-    "title":"That 90's Show"
+    "title":"That 90's Show",
+    "viewers":"7.6",
+    "rating":6.3
   },
   {
     "number":412,
     "season":19,
     "episode":12,
-    "productioncode":"KABF05",
     "airdate":"02/17/08",
-    "title":"Love"
+    "title":"Love, Springfieldian Style",
+    "viewers":"N/A",
+    "rating":6.6
   },
   {
     "number":413,
     "season":19,
     "episode":13,
-    "productioncode":"KABF06",
     "airdate":"03/02/08",
-    "title":"The Debarted"
+    "title":"The Debarted",
+    "viewers":"N/A",
+    "rating":7.4
   },
   {
     "number":414,
     "season":19,
     "episode":14,
-    "productioncode":"KABF07",
     "airdate":"03/09/08",
-    "title":"Dial 'N' for Nerder"
+    "title":"Dial 'N' for Nerder",
+    "viewers":"N/A",
+    "rating":7.3
   },
   {
     "number":415,
     "season":19,
     "episode":15,
-    "productioncode":"KABF08",
     "airdate":"03/30/08",
-    "title":"Smoke on the D08hter"
+    "title":"Smoke on the Daughter",
+    "viewers":"7.10",
+    "rating":6.8
   },
   {
     "number":416,
     "season":19,
     "episode":16,
-    "productioncode":"KABF09",
     "airdate":"04/13/08",
-    "title":"Papa Don't Leech"
+    "title":"Papa Don't Leech",
+    "viewers":"6.9",
+    "rating":6.2
   },
   {
     "number":417,
     "season":19,
     "episode":17,
-    "productioncode":"KABF10",
     "airdate":"04/27/08",
-    "title":"Apocalypse Cow"
+    "title":"Apocalypse Cow",
+    "viewers":"7.69",
+    "rating":6.9
   },
   {
     "number":418,
     "season":19,
     "episode":18,
-    "productioncode":"KABF11",
     "airdate":"05/04/08",
-    "title":"Any Given Sundance"
+    "title":"Any Given Sundance",
+    "viewers":"6.18",
+    "rating":7.0
   },
   {
     "number":419,
     "season":19,
     "episode":19,
-    "productioncode":"KABF12",
     "airdate":"05/11/08",
-    "title":"Mona Leaves-a"
+    "title":"Mona Leaves-a",
+    "viewers":"6.02",
+    "rating":7.0
   },
   {
     "number":420,
     "season":19,
     "episode":20,
-    "productioncode":"KABF13",
     "airdate":"05/18/08",
-    "title":"All About Lisa"
+    "title":"All About Lisa",
+    "viewers":"6.11",
+    "rating":6.5
   }
-],
+  ],
 [
   {
     "number":421,
     "season":20,
     "episode":1,
-    "productioncode":"KABF17",
     "airdate":"09/28/08",
-    "title":"Sex"
+    "title":"Sex, Pies and Idiot Scrapes",
+    "viewers":"9.3",
+    "rating":7.2
   },
   {
     "number":422,
     "season":20,
     "episode":2,
-    "productioncode":"KABF15",
     "airdate":"10/05/08",
-    "title":"Lost Verizon"
+    "title":"Lost Verizon",
+    "viewers":"7.43",
+    "rating":6.8
   },
   {
     "number":423,
     "season":20,
     "episode":3,
-    "productioncode":"KABF14",
     "airdate":"10/19/08",
-    "title":"Double"
+    "title":"Double, Double, Boy in Trouble",
+    "viewers":"8.09",
+    "rating":6.9
   },
   {
     "number":424,
     "season":20,
     "episode":4,
-    "productioncode":"KABF16",
     "airdate":"11/02/08",
-    "title":"Treehouse of Horror XIX"
+    "title":"Treehouse of Horror XIX",
+    "viewers":"12.48",
+    "rating":7.2
   },
   {
     "number":425,
     "season":20,
     "episode":5,
-    "productioncode":"KABF18",
     "airdate":"11/09/08",
-    "title":"Dangerous Curves"
+    "title":"Dangerous Curves",
+    "viewers":"15.85",
+    "rating":6.5
   },
   {
     "number":426,
     "season":20,
     "episode":6,
-    "productioncode":"KABF19",
     "airdate":"11/16/08",
-    "title":"Homer and Lisa Exchange Cross Words"
+    "title":"Homer and Lisa Exchange Cross Words",
+    "viewers":"8.52",
+    "rating":7.1
   },
   {
     "number":427,
     "season":20,
     "episode":7,
-    "productioncode":"KABF20",
     "airdate":"11/30/08",
-    "title":"Mypods and Boomsticks"
+    "title":"Mypods and Boomsticks",
+    "viewers":"8",
+    "rating":7.2
   },
   {
     "number":428,
     "season":20,
     "episode":8,
-    "productioncode":"KABF21",
     "airdate":"12/07/08",
-    "title":"The Burns and the Bees"
+    "title":"The Burns and the Bees",
+    "viewers":"6.19",
+    "rating":6.6
   },
   {
     "number":429,
     "season":20,
     "episode":9,
-    "productioncode":"KABF22",
     "airdate":"01/25/09",
-    "title":"Lisa the Drama Queen"
+    "title":"Lisa the Drama Queen",
+    "viewers":"5.75",
+    "rating":6.0
   },
   {
     "number":430,
     "season":20,
     "episode":10,
-    "productioncode":"LABF01",
     "airdate":"02/15/09",
-    "title":"Take My Life"
+    "title":"Take My Life, Please",
+    "viewers":"6.82",
+    "rating":7.0
   },
   {
     "number":431,
     "season":20,
     "episode":11,
-    "productioncode":"LABF02",
     "airdate":"03/01/09",
-    "title":"How the Test Was Won"
+    "title":"How the Test Was Won",
+    "viewers":"6.71",
+    "rating":6.9
   },
   {
     "number":432,
     "season":20,
     "episode":12,
-    "productioncode":"LABF03",
     "airdate":"03/08/09",
-    "title":"No Loan Again"
+    "title":"No Loan Again, Naturally",
+    "viewers":"5.99",
+    "rating":6.9
   },
   {
     "number":433,
     "season":20,
     "episode":13,
-    "productioncode":"LABF04",
     "airdate":"03/15/09",
-    "title":"Gone Maggie Gone"
+    "title":"Gone Maggie Gone",
+    "viewers":"5.97",
+    "rating":7.3
   },
   {
     "number":434,
     "season":20,
     "episode":14,
-    "productioncode":"LABF11",
     "airdate":"03/22/09",
-    "title":"In the Name of the Grandfather"
+    "title":"In the Name of the Grandfather",
+    "viewers":"6.15",
+    "rating":6.4
   },
   {
     "number":435,
     "season":20,
     "episode":15,
-    "productioncode":"LABF05",
     "airdate":"03/29/09",
-    "title":"Wedding For Disaster"
+    "title":"Wedding For Disaster",
+    "viewers":"6.58",
+    "rating":6.8
   },
   {
     "number":436,
     "season":20,
     "episode":16,
-    "productioncode":"LABF06",
     "airdate":"04/05/09",
-    "title":"Eeny Teeny 05a Moe"
+    "title":"Eeny Teeny Maya Moe",
+    "viewers":"6.4",
+    "rating":7.2
   },
   {
     "number":437,
     "season":20,
     "episode":17,
-    "productioncode":"LABF07",
     "airdate":"04/19/09",
-    "title":"The Good"
+    "title":"The Good, the Sad and the Drugly",
+    "viewers":"6.50",
+    "rating":7.2
   },
   {
     "number":438,
     "season":20,
     "episode":18,
-    "productioncode":"LABF08",
     "airdate":"04/26/09",
-    "title":"Father Knows Worst"
+    "title":"Father Knows Worst",
+    "viewers":"5.94",
+    "rating":6.9
   },
   {
     "number":439,
     "season":20,
     "episode":19,
-    "productioncode":"LABF10",
     "airdate":"05/03/09",
-    "title":"Waverly Hills"
+    "title":"Waverly Hills, 9021-D'Oh",
+    "viewers":"6.75",
+    "rating":7.1
   },
   {
     "number":440,
     "season":20,
     "episode":20,
-    "productioncode":"LABF09",
     "airdate":"05/10/09",
-    "title":"Four Great Women and a Manicure"
+    "title":"Four Great Women and a Manicure",
+    "viewers":"5.16",
+    "rating":6.3
   },
   {
     "number":441,
     "season":20,
     "episode":21,
-    "productioncode":"LABF12",
     "airdate":"05/17/09",
-    "title":"Coming to Homerica"
+    "title":"Coming to Homerica",
+    "viewers":"5.86",
+    "rating":7.3
   }
-],
+  ],
 [
   {
     "number":442,
     "season":21,
     "episode":1,
-    "productioncode":"LABF13",
     "airdate":"09/27/09",
-    "title":"Homer the Whopper"
+    "title":"Homer the Whopper",
+    "viewers":"8.31",
+    "rating":7.3
   },
   {
     "number":443,
     "season":21,
     "episode":2,
-    "productioncode":"LABF15",
     "airdate":"10/04/09",
-    "title":"Bart Gets A 'Z'"
+    "title":"Bart Gets A 'Z'",
+    "viewers":"9.32",
+    "rating":6.6
   },
   {
     "number":444,
     "season":21,
     "episode":3,
-    "productioncode":"LABF16",
     "airdate":"10/11/09",
-    "title":"The Great Wife Hope"
+    "title":"The Great Wife Hope",
+    "viewers":"7.5",
+    "rating":6.4
   },
   {
     "number":445,
     "season":21,
     "episode":4,
-    "productioncode":"LABF14",
     "airdate":"10/18/09",
-    "title":"Treehouse of Horror XX"
+    "title":"Treehouse of Horror XX",
+    "viewers":"8.59",
+    "rating":7.3
   },
   {
     "number":446,
     "season":21,
     "episode":5,
-    "productioncode":"LABF17",
     "airdate":"11/15/09",
-    "title":"The Devil Wears Nada"
+    "title":"The Devil Wears Nada",
+    "viewers":"9.04",
+    "rating":6.7
   },
   {
     "number":447,
     "season":21,
     "episode":6,
-    "productioncode":"LABF18",
     "airdate":"11/22/09",
-    "title":"Pranks and Greens"
+    "title":"Pranks and Greens",
+    "viewers":"7.03",
+    "rating":6.7
   },
   {
     "number":448,
     "season":21,
     "episode":7,
-    "productioncode":"LABF19",
     "airdate":"11/29/09",
-    "title":"Rednecks and Broomsticks"
+    "title":"Rednecks and Broomsticks",
+    "viewers":"9.02",
+    "rating":6.9
   },
   {
     "number":449,
     "season":21,
     "episode":8,
-    "productioncode":"MABF01",
     "airdate":"12/13/09",
-    "title":"O Brother"
+    "title":"O Brother, Where Bart Thou?",
+    "viewers":"7.11",
+    "rating":7.3
   },
   {
     "number":450,
     "season":21,
     "episode":9,
-    "productioncode":"MABF02",
     "airdate":"01/03/10",
-    "title":"Thursdays with Abie"
+    "title":"Thursdays with Abie",
+    "viewers":"8.65",
+    "rating":6.8
   },
   {
     "number":451,
     "season":21,
     "episode":10,
-    "productioncode":"LABF20",
     "airdate":"01/10/10",
-    "title":"Once Upon A Time in Springfield"
+    "title":"Once Upon A Time in Springfield",
+    "viewers":"21.01",
+    "rating":6.8
   },
   {
     "number":452,
     "season":21,
     "episode":11,
-    "productioncode":"MABF03",
     "airdate":"01/31/10",
-    "title":"Million Dollar 05be"
+    "title":"Million Dollar Maybe",
+    "viewers":"5.11",
+    "rating":7.3
   },
   {
     "number":453,
     "season":21,
     "episode":12,
-    "productioncode":"MABF05",
     "airdate":"02/14/10",
-    "title":"Boy Meets Curl"
+    "title":"Boy Meets Curl",
+    "viewers":"5.87",
+    "rating":6.8
   },
   {
     "number":454,
     "season":21,
     "episode":13,
-    "productioncode":"MABF06",
     "airdate":"02/21/10",
-    "title":"The Color Yellow"
+    "title":"The Color Yellow",
+    "viewers":"6.08",
+    "rating":6.6
   },
   {
     "number":455,
     "season":21,
     "episode":14,
-    "productioncode":"MABF04",
     "airdate":"03/14/10",
-    "title":"Postcards From the Wedge"
+    "title":"Postcards From the Wedge",
+    "viewers":"5.23",
+    "rating":7.2
   },
   {
     "number":456,
     "season":21,
     "episode":15,
-    "productioncode":"MABF07",
     "airdate":"03/21/10",
-    "title":"Stealing First Base"
+    "title":"Stealing First Base",
+    "viewers":"5.69",
+    "rating":7.1
   },
   {
     "number":457,
     "season":21,
     "episode":16,
-    "productioncode":"MABF10",
     "airdate":"03/28/10",
-    "title":"The Greatest Story Ever D'ohed"
+    "title":"The Greatest Story Ever D'ohed",
+    "viewers":"5.69",
+    "rating":5.8
   },
   {
     "number":458,
     "season":21,
     "episode":17,
-    "productioncode":"MABF08",
     "airdate":"04/11/10",
-    "title":"American History X-cellent"
+    "title":"American History X-cellent",
+    "viewers":"5.65",
+    "rating":6.8
   },
   {
     "number":459,
     "season":21,
     "episode":18,
-    "productioncode":"MABF09",
     "airdate":"04/18/10",
-    "title":"Chief of Hearts"
+    "title":"Chief of Hearts",
+    "viewers":"5.93",
+    "rating":7.0
   },
   {
     "number":460,
     "season":21,
     "episode":19,
-    "productioncode":"MABF14",
     "airdate":"04/25/10",
-    "title":"The Squirt and the Whale"
+    "title":"The Squirt and the Whale",
+    "viewers":"5.94",
+    "rating":6.9
   },
   {
     "number":461,
     "season":21,
     "episode":20,
-    "productioncode":"MABF12",
     "airdate":"05/02/10",
-    "title":"To Surveil With Love"
+    "title":"To Surveil With Love",
+    "viewers":"6.06",
+    "rating":7.2
   },
   {
     "number":462,
     "season":21,
     "episode":21,
-    "productioncode":"MABF13",
     "airdate":"05/09/10",
-    "title":"Moe Letter Blues"
+    "title":"Moe Letter Blues",
+    "viewers":"5.66",
+    "rating":6.9
   },
   {
     "number":463,
     "season":21,
     "episode":22,
-    "productioncode":"MABF11",
     "airdate":"05/16/10",
-    "title":"The Bob Next Door"
+    "title":"The Bob Next Door",
+    "viewers":"6.26",
+    "rating":7.3
   },
   {
     "number":464,
     "season":21,
     "episode":23,
-    "productioncode":"MABF15",
     "airdate":"05/23/10",
-    "title":"Judge Me Tender"
+    "title":"Judge Me Tender",
+    "viewers":"5.74",
+    "rating":6.6
   }
-],
+  ],
 [
   {
     "number":465,
     "season":22,
     "episode":1,
-    "productioncode":"MABF21",
     "airdate":"09/26/10",
-    "title":"Elementary School Musical"
+    "title":"Elementary School Musical",
+    "viewers":"7.75",
+    "rating":6.4
   },
   {
     "number":466,
     "season":22,
     "episode":2,
-    "productioncode":"",
     "airdate":"10/03/10",
-    "title":"Loan-a-Lisa"
+    "title":"Loan-a-Lisa",
+    "viewers":"8.59",
+    "rating":6.8
   },
   {
     "number":467,
     "season":22,
     "episode":3,
-    "productioncode":"",
     "airdate":"10/10/10",
-    "title":"Money Bart"
+    "title":"Money Bart",
+    "viewers":"6.72",
+    "rating":6.9
   },
   {
     "number":468,
     "season":22,
     "episode":4,
-    "productioncode":"MABF16",
     "airdate":"11/07/10",
-    "title":"Treehouse of Horror XXI"
+    "title":"Treehouse of Horror XXI",
+    "viewers":"8.19",
+    "rating":7.3
   },
   {
     "number":469,
     "season":22,
     "episode":5,
-    "productioncode":"",
     "airdate":"11/14/10",
-    "title":"Lisa Simpson"
+    "title":"Lisa Simpson, This Isn't Your Life",
+    "viewers":"8.97",
+    "rating":7.2
   },
   {
     "number":470,
     "season":22,
     "episode":6,
-    "productioncode":"",
     "airdate":"11/21/10",
-    "title":"The Fool Monty"
+    "title":"The Fool Monty",
+    "viewers":"6.58",
+    "rating":6.5
   },
   {
     "number":471,
     "season":22,
     "episode":7,
-    "productioncode":"",
     "airdate":"11/28/10",
-    "title":"How Munched is That Birdie in the Window"
+    "title":"How Munched is That Birdie in the Window",
+    "viewers":"9.38",
+    "rating":6.5
   },
   {
     "number":472,
     "season":22,
     "episode":8,
-    "productioncode":"",
     "airdate":"12/05/10",
-    "title":"The Fight Before Christmas"
+    "title":"The Fight Before Christmas",
+    "viewers":"9.54",
+    "rating":6.9
   },
   {
     "number":473,
     "season":22,
     "episode":9,
-    "productioncode":"",
     "airdate":"12/12/10",
-    "title":"Donnie Fatso"
+    "title":"Donnie Fatso",
+    "viewers":"7.18",
+    "rating":7.2
   },
   {
     "number":474,
     "season":22,
     "episode":10,
-    "productioncode":"",
     "airdate":"01/09/11",
-    "title":"Moms I'd Like To Forget"
+    "title":"Moms I'd Like To Forget",
+    "viewers":"12.6",
+    "rating":6.4
   },
   {
     "number":475,
     "season":22,
     "episode":11,
-    "productioncode":"NABF04",
     "airdate":"01/16/11",
-    "title":"Flaming Moe"
+    "title":"Flaming Moe",
+    "viewers":"6.47",
+    "rating":6.9
   },
   {
     "number":476,
     "season":22,
     "episode":12,
-    "productioncode":"",
     "airdate":"01/23/11",
-    "title":"Homer The Father"
+    "title":"Homer The Father",
+    "viewers":"6.50",
+    "rating":7.1
   },
   {
     "number":477,
     "season":22,
     "episode":13,
-    "productioncode":"NABF06",
     "airdate":"02/13/11",
-    "title":"The Blue and the Gray"
+    "title":"The Blue and the Gray",
+    "viewers":"5.61",
+    "rating":6.9
   },
   {
     "number":478,
     "season":22,
     "episode":14,
-    "productioncode":"NABF07",
     "airdate":"02/20/11",
-    "title":"Angry Dad: The Movie"
+    "title":"Angry Dad: The Movie",
+    "viewers":"6.35",
+    "rating":7.3
   },
   {
     "number":479,
     "season":22,
     "episode":15,
-    "productioncode":"",
     "airdate":"03/06/11",
-    "title":"The Scorpion's Tale"
+    "title":"The Scorpion's Tale",
+    "viewers":"6.20",
+    "rating":6.6
   },
   {
     "number":480,
     "season":22,
     "episode":16,
-    "productioncode":"",
     "airdate":"03/13/11",
-    "title":"A Midsummer's Nice Dream"
+    "title":"A Midsummer's Nice Dream",
+    "viewers":"5.44",
+    "rating":6.3
   },
   {
     "number":481,
     "season":22,
     "episode":17,
-    "productioncode":"",
     "airdate":"03/27/11",
-    "title":"Love Is A Many Strangled Thing"
+    "title":"Love Is A Many Strangled Thing",
+    "viewers":"6.14",
+    "rating":6.6
   },
   {
     "number":482,
     "season":22,
     "episode":18,
-    "productioncode":"",
     "airdate":"04/10/11",
-    "title":"The Great Simpsina"
+    "title":"The Great Simpsina",
+    "viewers":"4.99",
+    "rating":6.9
   },
   {
     "number":483,
     "season":22,
     "episode":19,
-    "productioncode":"",
     "airdate":"05/01/11",
-    "title":"The Real Housewives of Fat Tony"
+    "title":"The Real Housewives of Fat Tony",
+    "viewers":"6.10",
+    "rating":6.8
   },
   {
     "number":484,
     "season":22,
     "episode":20,
-    "productioncode":"NABF13",
     "airdate":"05/08/11",
-    "title":"Homer Scissorhands"
+    "title":"Homer Scissorhands",
+    "viewers":"5.48",
+    "rating":7.1
   },
   {
     "number":485,
     "season":22,
     "episode":21,
-    "productioncode":"",
     "airdate":"05/15/11",
-    "title":"500 Keys"
+    "title":"500 Keys",
+    "viewers":"6.00",
+    "rating":7.3
   },
   {
     "number":486,
     "season":22,
     "episode":22,
-    "productioncode":"",
     "airdate":"05/22/11",
-    "title":"The Ned-Liest Catch"
+    "title":"The Ned-Liest Catch",
+    "viewers":"5.25",
+    "rating":7.0
   }
-],
+  ],
 [
   {
     "number":487,
     "season":23,
     "episode":1,
-    "productioncode":"NABF16",
     "airdate":"09/25/11",
-    "title":"The Falcon and the D'Ohman"
+    "title":"The Falcon and the D'Ohman",
+    "viewers":"8.08",
+    "rating":7.3
   },
   {
     "number":488,
     "season":23,
     "episode":2,
-    "productioncode":"NABF17",
     "airdate":"10/02/11",
-    "title":"Bart Stops to Smell the Roosevelts"
+    "title":"Bart Stops to Smell the Roosevelts",
+    "viewers":"6.19",
+    "rating":6.9
   },
   {
     "number":489,
     "season":23,
     "episode":3,
-    "productioncode":"NABF19",
     "airdate":"10/30/11",
-    "title":"Treehouse of Horror XXII"
+    "title":"Treehouse of Horror XXII",
+    "viewers":"8.10",
+    "rating":6.6
   },
   {
     "number":490,
     "season":23,
     "episode":4,
-    "productioncode":"NABF21",
     "airdate":"11/06/11",
-    "title":"Replaceable You"
+    "title":"Replaceable You",
+    "viewers":"7.97",
+    "rating":6.8
   },
   {
     "number":491,
     "season":23,
     "episode":5,
-    "productioncode":"NABF20",
     "airdate":"11/13/11",
-    "title":"The Food Wife"
+    "title":"The Food Wife",
+    "viewers":"7.50",
+    "rating":7.2
   },
   {
     "number":492,
     "season":23,
     "episode":6,
-    "productioncode":"NABF22",
     "airdate":"11/20/11",
-    "title":"The Book Job"
+    "title":"The Book Job",
+    "viewers":"5.74",
+    "rating":7.3
   },
   {
     "number":493,
     "season":23,
     "episode":7,
-    "productioncode":"PABF01",
     "airdate":"11/27/11",
-    "title":"The Man in the Blue Flannel Pants"
+    "title":"The Man in the Blue Flannel Pants",
+    "viewers":"5.61",
+    "rating":6.8
   },
   {
     "number":494,
     "season":23,
     "episode":8,
-    "productioncode":"PABF02",
     "airdate":"12/04/11",
-    "title":"The Ten-Per-Cent Solution"
+    "title":"The Ten-Per-Cent Solution",
+    "viewers":"9.01",
+    "rating":6.4
   },
   {
     "number":495,
     "season":23,
     "episode":9,
-    "productioncode":"NABF18",
     "airdate":"12/11/11",
-    "title":"Holidays Of Future Passed"
+    "title":"Holidays Of Future Passed",
+    "viewers":"6.43",
+    "rating":7.4
   },
   {
     "number":496,
     "season":23,
     "episode":10,
-    "productioncode":"PABF03",
     "airdate":"01/08/12",
-    "title":"Politically Inept"
+    "title":"Politically Inept, With Homer Simpson",
+    "viewers":"5.07",
+    "rating":6.2
   },
   {
     "number":497,
     "season":23,
     "episode":11,
-    "productioncode":"PABF04",
     "airdate":"01/15/12",
-    "title":"The D'oh-cial Network"
+    "title":"The D'oh-cial Network",
+    "viewers":"11.48",
+    "rating":7.2
   },
   {
     "number":498,
     "season":23,
     "episode":12,
-    "productioncode":"PABF05",
     "airdate":"01/29/12",
-    "title":"Moe Goes From Rags To Riches"
+    "title":"Moe Goes From Rags To Riches",
+    "viewers":"5.12",
+    "rating":5.9
   },
   {
     "number":499,
     "season":23,
     "episode":13,
-    "productioncode":"PABF06",
     "airdate":"02/12/12",
-    "title":"The D08hter Also Rises"
+    "title":"The Daughter Also Rises",
+    "viewers":"4.26",
+    "rating":6.5
   },
   {
     "number":500,
     "season":23,
     "episode":14,
-    "productioncode":"PABF07",
     "airdate":"02/19/12",
-    "title":"At Long Last Leave"
+    "title":"At Long Last Leave",
+    "viewers":"5.77",
+    "rating":7.1
   },
   {
     "number":501,
     "season":23,
     "episode":15,
-    "productioncode":"PABF09",
     "airdate":"03/04/12",
-    "title":"Exit Through the Kwik-E-Mart"
+    "title":"Exit Through the Kwik-E-Mart",
+    "viewers":"5.09",
+    "rating":6.9
   },
   {
     "number":502,
     "season":23,
     "episode":16,
-    "productioncode":"PABF08",
     "airdate":"03/11/12",
-    "title":"How I Wet Your Mother"
+    "title":"How I Wet Your Mother",
+    "viewers":"4.97",
+    "rating":7.2
   },
   {
     "number":503,
     "season":23,
     "episode":17,
-    "productioncode":"PABF10",
     "airdate":"03/18/12",
-    "title":"Them"
+    "title":"Them, Robot",
+    "viewers":"5.25",
+    "rating":7.2
   },
   {
     "number":504,
     "season":23,
     "episode":18,
-    "productioncode":"PABF11",
     "airdate":"04/15/12",
-    "title":"Beware My Cheating Bart"
+    "title":"Beware My Cheating Bart",
+    "viewers":"4.86",
+    "rating":7.1
   },
   {
     "number":505,
     "season":23,
     "episode":19,
-    "productioncode":"PABF12",
     "airdate":"04/29/12",
-    "title":"A Totally Fun Thing That Bart Will Never Do Again"
+    "title":"A Totally Fun Thing That Bart Will Never Do Again",
+    "viewers":"5.00",
+    "rating":7.3
   },
   {
     "number":506,
     "season":23,
     "episode":20,
-    "productioncode":"PABF13",
     "airdate":"05/06/12",
-    "title":"The Spy Who Learned Me"
+    "title":"The Spy Who Learned Me",
+    "viewers":"4.84",
+    "rating":7.0
   },
   {
     "number":507,
     "season":23,
     "episode":21,
-    "productioncode":"",
     "airdate":"05/13/12",
-    "title":"Ned 'N Edna's Blend"
+    "title":"Ned 'N Edna's Blend",
+    "viewers":"4.07",
+    "rating":6.8
   },
   {
     "number":508,
     "season":23,
     "episode":22,
-    "productioncode":"PABF14",
     "airdate":"05/20/12",
-    "title":"Lisa Goes Gaga"
+    "title":"Lisa Goes Gaga",
+    "viewers":"4.82",
+    "rating":4.9
   }
-],
+  ],
 [
   {
     "number":509,
     "season":24,
     "episode":1,
-    "productioncode":"PABF21",
     "airdate":"09/30/12",
-    "title":"Moonshine River"
+    "title":"Moonshine River",
+    "viewers":"8.08",
+    "rating":6.5
   },
   {
     "number":510,
     "season":24,
     "episode":2,
-    "productioncode":"PABF17",
     "airdate":"10/07/12",
-    "title":"Treehouse of Horror XXIII"
+    "title":"Treehouse of Horror XXIII",
+    "viewers":"6.57",
+    "rating":7.3
   },
   {
     "number":511,
     "season":24,
     "episode":3,
-    "productioncode":"PABF18",
     "airdate":"11/04/12",
-    "title":"Adventures in Baby-Getting"
+    "title":"Adventures in Baby-Getting",
+    "viewers":"5.65",
+    "rating":7.0
   },
   {
     "number":512,
     "season":24,
     "episode":4,
-    "productioncode":"PABF16",
     "airdate":"11/11/12",
-    "title":"Gone Abie Gone"
+    "title":"Gone Abie Gone",
+    "viewers":"6.86",
+    "rating":6.7
   },
   {
     "number":513,
     "season":24,
     "episode":5,
-    "productioncode":"PABF19",
     "airdate":"11/18/12",
-    "title":"Penny-Wiseguys"
+    "title":"Penny-Wiseguys",
+    "viewers":"5.06",
+    "rating":6.4
   },
   {
     "number":514,
     "season":24,
     "episode":6,
-    "productioncode":"PABF22",
     "airdate":"11/25/12",
-    "title":"A Tree Grows in Springfield"
+    "title":"A Tree Grows in Springfield",
+    "viewers":"7.46",
+    "rating":6.4
   },
   {
     "number":515,
     "season":24,
     "episode":7,
-    "productioncode":"PABF20",
     "airdate":"12/09/12",
-    "title":"The Day the Earth Stood Cool"
+    "title":"The Day the Earth Stood Cool",
+    "viewers":"7.44",
+    "rating":7.1
   },
   {
     "number":516,
     "season":24,
     "episode":8,
-    "productioncode":"",
     "airdate":"12/16/12",
-    "title":"To Cur With Love"
+    "title":"To Cur With Love",
+    "viewers":"3.77",
+    "rating":7.2
   },
   {
     "number":517,
     "season":24,
     "episode":9,
-    "productioncode":"",
     "airdate":"01/06/13",
-    "title":"Homer Goes to Prep School"
+    "title":"Homer Goes to Prep School",
+    "viewers":"8.97",
+    "rating":6.9
   },
   {
     "number":518,
     "season":24,
     "episode":10,
-    "productioncode":"",
     "airdate":"01/13/13",
-    "title":"A Test Before Trying"
+    "title":"A Test Before Trying",
+    "viewers":"5.04",
+    "rating":7.3
   },
   {
     "number":519,
     "season":24,
     "episode":11,
-    "productioncode":"RABF04",
     "airdate":"01/27/13",
-    "title":"The Changing of the Guardian"
+    "title":"The Changing of the Guardian",
+    "viewers":"5.23",
+    "rating":6.8
   },
   {
     "number":520,
     "season":24,
     "episode":12,
-    "productioncode":"RABF07",
     "airdate":"02/10/13",
-    "title":"Love Is a Many-Splintered Thing"
+    "title":"Love Is a Many-Splintered Thing",
+    "viewers":"4.19",
+    "rating":6.6
   },
   {
     "number":521,
     "season":24,
     "episode":13,
-    "productioncode":"RABF05",
     "airdate":"02/17/13",
-    "title":"Hardly Kirk-Ing"
+    "title":"Hardly Kirk-Ing",
+    "viewers":"4.57",
+    "rating":7.1
   },
   {
     "number":522,
     "season":24,
     "episode":14,
-    "productioncode":"RABF06",
     "airdate":"03/03/13",
-    "title":"Gorgeous Grampa"
+    "title":"Gorgeous Grampa",
+    "viewers":"4.66",
+    "rating":6.3
   },
   {
     "number":523,
     "season":24,
     "episode":15,
-    "productioncode":"RABF09",
     "airdate":"03/10/13",
-    "title":"Black-Eyed Please"
+    "title":"Black-Eyed Please",
+    "viewers":"4.85",
+    "rating":7.1
   },
   {
     "number":524,
     "season":24,
     "episode":16,
-    "productioncode":"RABF10",
     "airdate":"03/17/13",
-    "title":"Dark Knight Court"
+    "title":"Dark Knight Court",
+    "viewers":"4.89",
+    "rating":7.1
   },
   {
     "number":525,
     "season":24,
     "episode":17,
-    "productioncode":"",
     "airdate":"04/14/13",
-    "title":"What Animated Women Want"
+    "title":"What Animated Women Want",
+    "viewers":"4.11",
+    "rating":6.6
   },
   {
     "number":526,
     "season":24,
     "episode":18,
-    "productioncode":"",
     "airdate":"04/28/13",
-    "title":"Pulpit Friction"
+    "title":"Pulpit Friction",
+    "viewers":"4.54",
+    "rating":6.7
   },
   {
     "number":527,
     "season":24,
     "episode":19,
-    "productioncode":"",
     "airdate":"05/05/13",
-    "title":"Whiskey Business"
+    "title":"Whiskey Business",
+    "viewers":"4.43",
+    "rating":6.9
   },
   {
     "number":528,
     "season":24,
     "episode":20,
-    "productioncode":"",
     "airdate":"05/12/13",
-    "title":"Fabulous Faker Boy"
+    "title":"Fabulous Faker Boy",
+    "viewers":"4.16",
+    "rating":6.5
   },
   {
     "number":529,
     "season":24,
     "episode":21,
-    "productioncode":"",
     "airdate":"05/19/13",
-    "title":"The Saga Of Carl"
+    "title":"The Saga Of Carl",
+    "viewers":"4.01",
+    "rating":7.3
   },
   {
     "number":530,
     "season":24,
     "episode":22,
-    "productioncode":"",
     "airdate":"05/19/13",
-    "title":"Dangers On A Train"
-  }
-],
+    "title":"Dangers On A Train",
+    "viewers":"4.52",
+    "rating":7.1
+  } 
+  ],
 [
   {
     "number":531,
     "season":25,
     "episode":1,
-    "productioncode":"RABF20",
     "airdate":"09/29/13",
-    "title":"Homerland"
+    "title":"Homerland",
+    "viewers":"6.37",
+    "rating":7.0
   },
   {
     "number":532,
     "season":25,
     "episode":2,
-    "productioncode":"RABF16",
     "airdate":"10/06/13",
-    "title":"Treehouse of Horror XXIV"
+    "title":"Treehouse of Horror XXIV",
+    "viewers":"6.42",
+    "rating":7.1
   },
   {
     "number":533,
     "season":25,
     "episode":3,
-    "productioncode":"",
     "airdate":"11/03/13",
-    "title":"Four Regrettings And A Funeral"
+    "title":"Four Regrettings And A Funeral",
+    "viewers":"5.43",
+    "rating":6.5
   },
   {
     "number":534,
     "season":25,
     "episode":4,
-    "productioncode":"RABF22",
     "airdate":"11/10/13",
-    "title":"YOLO"
+    "title":"YOLO",
+    "viewers":"4.20",
+    "rating":6.8
   },
   {
     "number":535,
     "season":25,
     "episode":5,
-    "productioncode":"",
     "airdate":"11/17/13",
-    "title":"Labor Pains"
+    "title":"Labor Pains",
+    "viewers":"4.08",
+    "rating":6.9
   },
   {
     "number":536,
     "season":25,
     "episode":6,
-    "productioncode":"",
     "airdate":"11/24/13",
-    "title":"The Kid Is All Right"
+    "title":"The Kid Is All Right",
+    "viewers":"6.78",
+    "rating":6.7
   },
   {
     "number":537,
     "season":25,
     "episode":7,
-    "productioncode":"",
     "airdate":"12/08/13",
-    "title":"Yellow Subterfuge"
+    "title":"Yellow Subterfuge",
+    "viewers":"6.85",
+    "rating":7.0
   },
   {
     "number":538,
     "season":25,
     "episode":8,
-    "productioncode":"",
     "airdate":"12/15/13",
-    "title":"White Christmas Blues"
+    "title":"White Christmas Blues",
+    "viewers":"8.48",
+    "rating":6.6
   },
   {
     "number":539,
     "season":25,
     "episode":9,
-    "productioncode":"SABF05",
     "airdate":"01/05/14",
-    "title":"Steal This Episode"
+    "title":"Steal This Episode",
+    "viewers":"12.04",
+    "rating":7.4
   },
   {
     "number":540,
     "season":25,
     "episode":10,
-    "productioncode":"",
     "airdate":"01/12/14",
-    "title":"Married To The Blob"
+    "title":"Married To The Blob",
+    "viewers":"4.83",
+    "rating":7.1
   },
   {
     "number":541,
     "season":25,
     "episode":11,
-    "productioncode":"SABF06",
     "airdate":"01/26/14",
-    "title":"Specs and the City"
+    "title":"Specs and the City",
+    "viewers":"3.87",
+    "rating":7.1
   },
   {
     "number":542,
     "season":25,
     "episode":12,
-    "productioncode":"SABF08",
     "airdate":"03/09/14",
-    "title":"Diggs"
+    "title":"Diggs",
+    "viewers":"2.69",
+    "rating":6.4
   },
   {
     "number":543,
     "season":25,
     "episode":13,
-    "productioncode":"SABF07",
     "airdate":"03/09/14",
-    "title":"The Man Who Grew Too Much"
+    "title":"The Man Who Grew Too Much",
+    "viewers":"3.75",
+    "rating":6.7
   },
   {
     "number":544,
     "season":25,
     "episode":14,
-    "productioncode":"SABF09",
     "airdate":"03/16/14",
-    "title":"The Winter of His Content"
+    "title":"The Winter of His Content",
+    "viewers":"4.02",
+    "rating":6.5
   },
   {
     "number":545,
     "season":25,
     "episode":15,
-    "productioncode":"SABF10",
     "airdate":"03/23/14",
-    "title":"The War of Art"
+    "title":"The War of Art",
+    "viewers":"3.98",
+    "rating":6.9
   },
   {
     "number":546,
     "season":25,
     "episode":16,
-    "productioncode":"SABF11",
     "airdate":"03/30/14",
-    "title":"You Don't Have to Live Like a Referee"
+    "title":"You Don't Have to Live Like a Referee",
+    "viewers":"3.91",
+    "rating":6.9
   },
   {
     "number":547,
     "season":25,
     "episode":17,
-    "productioncode":"SABF12",
     "airdate":"04/06/14",
-    "title":"Luca$"
+    "title":"Luca$",
+    "viewers":"4.30",
+    "rating":6.7
   },
   {
     "number":548,
     "season":25,
     "episode":18,
-    "productioncode":"SABF13",
     "airdate":"04/13/14",
-    "title":"Days Of Future Future"
+    "title":"Days Of Future Future",
+    "viewers":"3.64",
+    "rating":7.0
   },
   {
     "number":549,
     "season":25,
     "episode":19,
-    "productioncode":"SABF14",
     "airdate":"04/27/14",
-    "title":"What To Expect When Bart's Expecting"
+    "title":"What To Expect When Bart's Expecting",
+    "viewers":"3.45",
+    "rating":5.7
   },
   {
     "number":550,
     "season":25,
     "episode":20,
-    "productioncode":"RABF21",
     "airdate":"05/04/14",
-    "title":"Brick Like Me"
+    "title":"Brick Like Me",
+    "viewers":"4.39",
+    "rating":7.4
   },
   {
     "number":551,
     "season":25,
     "episode":21,
-    "productioncode":"SABF15",
     "airdate":"05/11/14",
-    "title":"Pay Pal"
+    "title":"Pay Pal",
+    "viewers":"3.66",
+    "rating":6.7
   },
   {
     "number":552,
     "season":25,
     "episode":22,
-    "productioncode":"",
     "airdate":"05/18/14",
-    "title":"The Yellow Badge of Cowardge"
+    "title":"The Yellow Badge of Cowardge",
+    "viewers":"3.28",
+    "rating":6.6
   }
-]
+  ]
 ]
 }

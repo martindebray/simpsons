@@ -1,22 +1,31 @@
-<h1>Character appearances</h1>
-<div id="character-name"></div>
-<div id="characters-list">
-    <nav>
-        <ul>
-            <li><a href="relatives">Relatives</a></li><!--
-            --><li><a href="all-characters" id="open-list">All characters</a></li>
-        </ul>
-    </nav>
-    <div id="display-relatives">
+<div id="characters-module">
 
+  <div id="left-wrapper">
+    <h1>Character appearances</h1>
+    <div id="character-name-wrapper"><span id="character-name"></span></div>
+    <div class="graph-wrapper">
+      <svg id="character-graph" width="100%" height="60%" viewBox="0 0 910 480" preserveAspectRatio="xMidYMid"></svg>
     </div>
-    <div id="display-character-list">
-
+    <div id="character-info">
+      <div id="character-catchphrase">Catchphrase<br><span></span></div>
+      <div id="character-first-app">First appeared in<br><span></span></div>
+      <div id="character-app-number">Appears in<br><span><span></span> episodes</span></div>
     </div>
-</div>
-<!--<a href="characters-list" id="open-list">List</a>-->
-<div id="character-info">
-  <div id="character-catchphrase">Catchphrase<br><span></span></div>
-  <div id="character-first-app">First appeared in<br><span></span></div>
-  <div id="character-app-number">Appears in<br><span><span></span> episodes</span></div>
+  </div>
+  <div id="characters-list">
+      <!--<nav>
+          <ul>
+              <li><a href="relatives">Relatives</a></li><li><a href="all-characters" id="open-list">All characters</a></li>
+          </ul>
+      </nav>-->
+      <div id="display-relatives">
+        <h2>Relatives</h2>
+        <div></div>
+      </div>
+      <div id="display-character-list">
+        <h2>All characters</h2>
+        <div></div>
+      </div>
+  </div>
+  <a href="characters-list" id="open-list">List</a>
 </div>

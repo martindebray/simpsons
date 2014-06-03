@@ -30,3 +30,12 @@
          url('fonts/langdon.ttf') format('truetype'),
          url('fonts/langdon.svg#LangdonRegular') format('svg');
 }
+
+@font-face {
+    font-family: 'MuseoSlab700';
+    src: url('fonts/museo_slab_700.eot');
+    src: url('fonts/museo_slab_700.eot') format('embedded-opentype'),
+         url('fonts/museo_slab_700.woff') format('woff'),
+         url('fonts/museo_slab_700.ttf') format('truetype'),
+         url('fonts/museo_slab_700.svg#MuseoSlab700') format('svg');
+}

@@ -1,19 +1,90 @@
 body {
 
+	#characters-module {
+		background-image: url("../img/characters-bg.jpg");
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center; 
+		background-color:#fff;
+		height: 100%;
+
+		h1 {
+			color:#fff;
+		}
+	}
+
+	#left-wrapper {
+		width: 100%;
+		position:relative;
+
+		.graph-wrapper {
+			width: 100%;
+			height: 70%;
+		}
+
+		#character-info {
+			background-color: rgba(255,255,255,0.3);
+			width: 100%;
+			position:fixed;
+			bottom:55px;
+			height: 100px;
+			padding-top: 2%;
+			z-index: 10;
+			font-size: 1.250rem;
+
+			div {
+				position: relative;
+				display: inline-block;
+				width: 32%;
+				font-family: $langdon;
+				color: $dark-grey;
+				text-transform: uppercase;
+				text-align: center;
+
+				span {
+					font-size: 1.750rem;
+				}
+
+			}
+		}
+
+		#character-name-wrapper {
+			position: absolute;
+			right: 0;
+    		left: 0;
+    		bottom:0;
+    		text-align: center;
+
+    		span {
+				text-align: center;
+				background-color: orange;
+				padding: 10px 20px;
+				border: red 2px solid;
+			}
+		}
+
+	}
+
 	
 	#characters-list {
-		background-color: red;
 		position: absolute;
-		top: 0;
-		right: -75%;
+		top: 70px;
+		right: -100%;
 		width: 100%;
 		height: 100%;
 		-webkit-transition: right 1s; 
 		transition: right 1s;
 		z-index: 100;
-		border-left:5px solid #fff;
-		border-right:5px solid #fff;
 		padding-bottom: 50px;
+		font-family: $museo;
+		text-transform: uppercase;
+
+		h2 {
+			margin: 20px 0 10px 20px;
+			font-weight: normal;
+			text-transform: uppercase;
+			font-size: 1.25rem;
+		}
 
 		nav {
 			width: 25%;
@@ -54,26 +125,35 @@ body {
 		img {
 			width: 100%;
 			height: auto;
+			border-radius: 150px;
+			border: 3px solid #fff;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+			box-shadow: 1px 1px 12px #555;
 		}
 
-		#display-relatives {
-			display: inline-block;
+		#display-relatives, #display-character-list {
+			display: block;
 			overflow-y: auto;
-			height: 100%;
-			width: 25%;
-			background-color: green;
+			/*height: 100%;*/
+			width: 80%;
+			margin:0 auto;
+			padding-bottom: 20px;
+			background-color: #fff;
 
 			a{
-				display: block;
+				display: inline-block;
 				position:relative;
-				width:100%;
-				height: 25vh;
+				width:20%;
+				color: #666666;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
 
 				span {
-					position:absolute;
-					bottom:0;
 					width: 100%;
-					line-height: 2.500em;
 					display: block;
 					text-align: center;
 					background-color: rgba(255,255,255,0.6);
@@ -85,29 +165,16 @@ body {
 		}
 
 		#display-character-list {
-			display: inline-block;
-			position: absolute;
-			overflow-y: auto;
-			height: 100%;
-			width: 74%;
-			background-color: blue;
-
-			a{
-				display: inline-block;
-				width:20%;
-				position: relative;
-
-				span {
-					position:absolute;
-					bottom:0;
-					width: 100%;
-					line-height: 2.500em;
-					display: block;
-					text-align: center;
-					background-color: rgba(255,255,255,0.6);
-				}
-			}
+			height: 60%;
+			padding-bottom:0;	
 		}
+	}
+
+	#open-list {
+		position:fixed;
+		right: 50px;
+		top: 50px;
+		z-index: 1000;
 	}
 
 
@@ -117,39 +184,7 @@ body {
 		transition: right 1s;
 	}
 
-	#character-info {
-		background-color:$yellow;
-		width: 75%;
-		position:fixed;
-		bottom:55px;
-		height: 100px;
-		padding-top: 2%;
-		z-index: 10;
-		font-size: 1.250rem;
-
-		div {
-			position: relative;
-			display: inline-block;
-			width: 32%;
-			font-family: $langdon;
-			color: $dark-grey;
-			text-transform: uppercase;
-			text-align: center;
-
-			span {
-				font-size: 1.750rem;
-			}
-
-		}
-
-		#character-name {
-			text-align: right;
-			font-size: 1.750rem;
-			border-right: 3px solid $dark-grey;
-			padding-right:20px;
-		}
-
-	}
+	
 	
 
 }

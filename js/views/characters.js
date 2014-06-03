@@ -28,6 +28,18 @@ define([
             }
 
             for(var i=0; i<data.length; i++){
+              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+            }
+
+            for(var i=0; i<data.length; i++){
+              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+            }
+
+            for(var i=0; i<data.length; i++){
+              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+            }
+
+            for(var i=0; i<data.length; i++){
               $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
@@ -36,7 +48,10 @@ define([
           $("#open-list").click(function(e){
             e.preventDefault();
             $("#characters-list").toggleClass("list-opened");
-            // if($("#open-list").text == "All characters"){ $("##open-list").text = "Back"} else {$("##open-list").text = "All characters"}
+            $(this).text(function(i, text){
+                return text === "List of all the characters" ? "Close the list" : "List of all the characters";
+            })
+            
           })
 
           // ----------------------------------D3---------------------------------------------
@@ -86,13 +101,6 @@ define([
             });
           }
 
-          // var aspect = 910 / 480,
-          // $(window).on("resize", function() {
-          //     var targetWidth = svg.parent().width();
-          //     svg.attr("width", targetWidth);
-          //     svg.attr("height", targetWidth / aspect);
-          // });
-
           // display all the episodes on the graph
           function visualizeit(){
             
@@ -125,7 +133,7 @@ define([
                 .enter().append("svg:circle")
                 .attr("cx", function (d,i){return barSpacing(i); } ) 
                 .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "red" } else { return "#777" } }) 
+                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "rgba(255,255,255,0.6)" } }) 
                 .on("mouseover", function (d,i){ return tooltip.style("visibility", "visible").text("Episode "+d.episode+" : "+d.title); }) //show label and title episode
                 .on("mousemove", function (){ return tooltip.style("top",
                     (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
@@ -138,9 +146,9 @@ define([
                           .attr("x", 330)
                           .attr("y", 0)
                           .text(function(d,i){return "Season "+ (i+1)})
-                          .attr("font-family", "sans-serif")
+                          .attr("font-family", "Langdon")
                           .attr("font-size", "12px")
-                          .attr("fill", "red");
+                          .attr("fill", "#fff");
 
             // the label that is displaying the title of an episode when the mouse is over a dot (episode)
             var tooltip = d3.select("body")
@@ -175,6 +183,9 @@ define([
           //Update the data on the graph
           $(".page").on("click","a.change-character",function () {
             $("#characters-list").removeClass("list-opened");
+            $("#open-list").text(function(i, text){
+                return text === "List of all the characters" ? "Close the list" : "List of all the characters";
+            })
             event.preventDefault();
             var selected = $(this).attr('data-character');
             console.log(selected);
@@ -187,7 +198,7 @@ define([
                 .transition().duration(750)
                 .delay(100)
                 .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "red" } else { return "#777" } }) ;
+                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#ee5ba1" } else { return "#fff" } }) ;
 
             img = svg.selectAll("image")
               .data(character_data[0].name)

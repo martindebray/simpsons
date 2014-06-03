@@ -1,29 +1,28 @@
-@charset "UTF-8";
+@charset "CP850";
 @font-face {
   font-family: 'Simpsonfont';
   src: url("fonts/simpsonfont-webfont.eot");
   src: url("fonts/simpsonfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/simpsonfont-webfont.woff") format("woff"), url("fonts/simpsonfont-webfont.ttf") format("truetype"), url("fonts/simpsonfont-webfont.svg#simpsonfontsimpsonfont") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'akbar';
   src: url("fonts/akbar-webfont.eot");
   src: url("fonts/akbar-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/akbar-webfont.woff") format("woff"), url("fonts/akbar-webfont.ttf") format("truetype"), url("fonts/akbar-webfont.svg#akbar_plain") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Langdon';
   src: url("fonts/langdon.eot");
   src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
-<<<<<<< HEAD
-=======
 
 @font-face {
   font-family: 'MuseoSlab700';
   src: url("fonts/museo_slab_700.eot");
   src: url("fonts/museo_slab_700.eot") format("embedded-opentype"), url("fonts/museo_slab_700.woff") format("woff"), url("fonts/museo_slab_700.ttf") format("truetype"), url("fonts/museo_slab_700.svg#MuseoSlab700") format("svg"); }
 
->>>>>>> FETCH_HEAD
 /**
  ** fonts **/
 /* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
@@ -77,14 +76,16 @@ body .xAxis line {
   display: none; }
 
 body #characters-module {
-  background-image: url("../img/characters-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background: url("../img/characters-bg.jpg") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #fff;
   height: 100%; }
   body #characters-module h1 {
-    color: #fff; }
+    color: #fff;
+    text-shadow: 2px 1px 5px #7fb9db; }
 body #left-wrapper {
   width: 100%;
   position: relative; }
@@ -115,26 +116,32 @@ body #left-wrapper {
     right: 0;
     left: 0;
     bottom: 0;
-    text-align: center; }
+    text-align: center;
+    font-family: "MuseoSlab700";
+    color: #73bae5; }
     body #left-wrapper #character-name-wrapper span {
       text-align: center;
-      background-color: orange;
-      padding: 10px 20px;
-      border: red 2px solid; }
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 8px 15px;
+      box-shadow: 2px 1px 5px #84bcdc; }
 body #characters-list {
   position: absolute;
   top: 70px;
   right: -100%;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 78%;
   -webkit-transition: right 1s;
   transition: right 1s;
   z-index: 100;
-  padding-bottom: 50px;
+  margin: 0 10% 150px 10%;
   font-family: "MuseoSlab700";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: #fff;
+  overflow-y: auto;
+  webkit-border-radius: 10px;
+  border-radius: 10px; }
   body #characters-list h2 {
-    margin: 20px 0 10px 20px;
+    margin: 0 0 10px 20px;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.25rem; }
@@ -158,7 +165,13 @@ body #characters-list {
           color: #75c0e5; }
   body #characters-list a {
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    webkit-border-radius: 10px;
+    border-radius: 10px; }
+    body #characters-list a:hover {
+      background-color: #f2f6f9; }
   body #characters-list img {
     width: 100%;
     height: auto;
@@ -169,33 +182,42 @@ body #characters-list {
     box-shadow: 1px 1px 12px #555; }
   body #characters-list #display-relatives, body #characters-list #display-character-list {
     display: block;
-    overflow-y: auto;
-    /*height: 100%;*/
-    width: 80%;
+    overflow-x: auto;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 20px;
-    background-color: #fff; }
+    padding: 20px;
+    padding-bottom: 20px; }
     body #characters-list #display-relatives a, body #characters-list #display-character-list a {
       display: inline-block;
       position: relative;
       width: 20%;
       color: #666666;
       text-decoration: none; }
-      body #characters-list #display-relatives a:hover, body #characters-list #display-character-list a:hover {
-        text-decoration: underline; }
       body #characters-list #display-relatives a span, body #characters-list #display-character-list a span {
         width: 100%;
         display: block;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.6); }
+        text-align: center; }
   body #characters-list #display-character-list {
-    height: 60%;
-    padding-bottom: 0; }
+    /*height: 60%;*/
+    margin-bottom: 0;
+    border-radius: 0 0 10px 10px;
+    webkit-border-radius: 0 0 10px 10px; }
 body #open-list {
   position: fixed;
-  right: 50px;
-  top: 50px;
-  z-index: 1000; }
+  right: 30px;
+  top: 20px;
+  z-index: 1000;
+  font-family: "Langdon";
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 15px;
+  box-shadow: 2px 1px 5px #84bcdc;
+  text-shadow: 2px 1px 5px #84bcdc; }
+  body #open-list:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.4); }
 body .list-opened {
   right: 0 !important;
   -webkit-transition: right 1s;

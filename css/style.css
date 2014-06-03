@@ -257,7 +257,9 @@ body {
     background-color: #f7f7f7;
     z-index: 1000; }
     body #menu nav ul {
-      margin: 0;
+      margin-left: -7%;
+      margin-bottom: 0;
+      margin-top: 0;
       list-style-type: none; }
       body #menu nav ul li {
         display: inline-block; }
@@ -276,7 +278,8 @@ body {
           background-color: #f7f7f7;
           color: #75c0e5; }
         body #menu nav ul li img {
-          width: 25px; }
+          margin-bottom: -12px;
+          width: 42px; }
   body .hidden {
     display: none; }
   body h1 {

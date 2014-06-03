@@ -28,18 +28,6 @@ define([
             }
 
             for(var i=0; i<data.length; i++){
-              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
-            }
-
-            for(var i=0; i<data.length; i++){
-              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
-            }
-
-            for(var i=0; i<data.length; i++){
-              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
-            }
-
-            for(var i=0; i<data.length; i++){
               $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
@@ -62,12 +50,7 @@ define([
           var svg;
           var img;
 
-          // get episode data
-          d3.json("json/episodes.json", function(error, json) {
-            if (error) return console.warn(error);
-            ep_data = json;
-            visualizeit();
-          });
+          
 
 
           // get character data
@@ -75,12 +58,20 @@ define([
             if (error) return console.warn(error);
             character_data = json;
             displayInformation(index);
+
+            // get episode data
+            d3.json("json/episodes.json", function(error, json) {
+              if (error) return console.warn(error);
+              ep_data = json;
+              visualizeit();
+            });
+
           });
 
           // display the character's information
           function displayInformation(index) {
             $("#character-name").text(character_data[index].name);
-            $("#character-catchphrase span").text(character_data[index].name);
+            $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
             $("#character-app-number span span").text(character_data[index].appearances.length);
             firstApp(character_data[index].appearances[0]);
           }
@@ -94,7 +85,7 @@ define([
               for (var a=0; a<data.seasons.length; a++) {
                 for (var j=0; j<data.seasons[a].length; j++) {
                     if (i == data.seasons[a][j].number){
-                      $("#character-first-app span").text(data.seasons[a][i].title);
+                      $("#character-first-app span").text('"'+data.seasons[a][i].title+'"');
                     }
                 }
               }
@@ -110,7 +101,7 @@ define([
                 .attr("transform", "translate(455, 400)");
            
             // bars (rays) attributes
-            var barSpacing = d3.scale.linear().domain([0, 9]).range([80, 170]); // domain = à peu près espacement des points &&& range = en gros le rayon de l'intérieur de l'arc                            
+            var barSpacing = d3.scale.linear().domain([0, 8.5]).range([80, 170]); // domain = à peu près espacement des points &&& range = en gros le rayon de l'intérieur de l'arc                            
             var rotation = d3.range(183, 363, 7.2); // rotation rayon par rayon de l'angle 183 à 363 avec un pas de 7,2 (= 180 / 25 rayons)
 
             //add character's image
@@ -133,7 +124,7 @@ define([
                 .enter().append("svg:circle")
                 .attr("cx", function (d,i){return barSpacing(i); } ) 
                 .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "rgba(255,255,255,0.6)" } }) 
+                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "#cee7f5" } }) 
                 .on("mouseover", function (d,i){ return tooltip.style("visibility", "visible").text("Episode "+d.episode+" : "+d.title); }) //show label and title episode
                 .on("mousemove", function (){ return tooltip.style("top",
                     (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
@@ -143,12 +134,14 @@ define([
             // label the different rays with season number
             var text = g.append("svg:text");
             var textLabels = text
-                          .attr("x", 330)
-                          .attr("y", 0)
-                          .text(function(d,i){return "Season "+ (i+1)})
-                          .attr("font-family", "Langdon")
+                          .attr("x", function(d,i){if(i<13) { return -375 } else { return 350 } })
+                          .attr("y", function(d,i){if(i<13) { return 5 } else { return 0 } })
+                          .text(function(d,i){if(i<9) { return "S0"+ (i+1) } else { return "S"+ (i+1)} })
+                          .attr("font-family", "Arial")
+                          .style("text-transform", "uppercase")
                           .attr("font-size", "12px")
-                          .attr("fill", "#fff");
+                          .attr("fill", "#fff")
+                          .attr("transform", function(d,i){if(i<13) { return "rotate(-180)" } else { return "rotate(0)" } });
 
             // the label that is displaying the title of an episode when the mouse is over a dot (episode)
             var tooltip = d3.select("body")
@@ -198,7 +191,7 @@ define([
                 .transition().duration(750)
                 .delay(100)
                 .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#ee5ba1" } else { return "#fff" } }) ;
+                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "#cee7f5" } }) ;
 
             img = svg.selectAll("image")
               .data(character_data[0].name)

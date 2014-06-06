@@ -54,7 +54,7 @@ body {
 			position: absolute;
 			right: 0;
     		left: 0;
-    		bottom:0;
+    		bottom:-5px;
     		text-align: center;
     		font-family: $museo;
     		color: #73bae5;
@@ -160,10 +160,14 @@ body {
 
 			a{
 				display: inline-block;
-				position:relative;
-				width:20%;
+				position: relative;
+				word-wrap:break-word;
+				overflow-wrap: break-word;
+				width:17%;
+				height: 215px;
 				color: #666666;
 				text-decoration: none;
+				float: left;
 
 				span {
 					width: 100%;
@@ -209,9 +213,10 @@ body {
 		right: 0 !important;
 		-webkit-transition: right 1s; 
 		transition: right 1s;
-	}
 
-	
-	
+		a {
+			opacity: 0;
+		}
+	}
 
 }

@@ -11,6 +11,8 @@ define([
   var CharactersView = Backbone.View.extend({
     el: '.page',
     render: function(){
+      var _this = this;
+
       // Using Underscore we can compile our template with data
       var data = {};
       var compiledTemplate = _.template( charactersTemplate, data );
@@ -27,15 +29,22 @@ define([
               $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
-            for(var i=0; i<data.length; i++){
-              $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
-            }
+            // for(var i=0; i<data.length; i++){
+            //   $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+            // }
 
           });
+
 
           $("#open-list").click(function(e){
             e.preventDefault();
             $("#characters-list").toggleClass("list-opened");
+            $('#display-character-list a').css("opacity","0");
+            if($("#characters-list").hasClass("list-opened")) {
+              $('#display-character-list a').each(function(i) {
+                $(this).delay((i++) * 300).fadeTo(500, 1); 
+              });
+            } 
             $(this).text(function(i, text){
                 return text === "List of all the characters" ? "Close the list" : "List of all the characters";
             })
@@ -43,165 +52,155 @@ define([
           })
 
           // ----------------------------------D3---------------------------------------------
-          var ep_data; // a global variable for the data of all episode of all seasons
-          var character_data; // a global variable for the data of all episode of all seasons
-          var index = 0;
+          this.ep_data = null; // a global variable for the data of all episode of all seasons
+          this.character_data = null; // a global variable for the data of all episode of all seasons
+          this.index = 0;
           var g;
           var svg;
           var img;
-
-          
 
 
           // get character data
           d3.json("json/characters.json", function(error, json) {
             if (error) return console.warn(error);
             character_data = json;
-            displayInformation(index);
+            var currentCharName = Backbone.history.fragment.substring(11);
+            if(currentCharName) { 
+              index = _this.findIndexOf(character_data, currentCharName); 
+            } else { 
+              index = 20 
+            }
+            _this.displayInformation(index);
 
             // get episode data
             d3.json("json/episodes.json", function(error, json) {
               if (error) return console.warn(error);
               ep_data = json;
-              visualizeit();
+              _this.visualizeit();
             });
 
           });
 
-          // display the character's information
-          function displayInformation(index) {
-            $("#character-name").text(character_data[index].name);
-            $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
-            $("#character-app-number span span").text(character_data[index].appearances.length);
-            firstApp(character_data[index].appearances[0]);
-          }
+      },
+      // display all the episodes on the graph
+      visualizeit: function(){
+        var _this = this;
+        
+        //create svg container
+        svg = d3.select("#character-graph")
+            .append("svg:g")
+            .attr("transform", "translate(455, 400)");
+       
+        // bars (rays) attributes
+        var barSpacing = d3.scale.linear().domain([0, 8.5]).range([80, 170]); // domain = à peu près espacement des points &&& range = en gros le rayon de l'intérieur de l'arc                            
+        var rotation = d3.range(183, 363, 7.2); // rotation rayon par rayon de l'angle 183 à 363 avec un pas de 7,2 (= 180 / 25 rayons)
 
-          
-          // find the episode's title of the first appearance by its number
-          function firstApp(i) {
-            i = i-1;
-            var title ="";
-            $.getJSON( "json/episodes.json", function( data ) {
-              for (var a=0; a<data.seasons.length; a++) {
-                for (var j=0; j<data.seasons[a].length; j++) {
-                    if (i == data.seasons[a][j].number){
-                      $("#character-first-app span").text('"'+data.seasons[a][i].title+'"');
-                    }
-                }
-              }
-            });
-          }
+        //add character's image
+        img = svg.append("image")
+          .attr("width", 140)
+          .attr("height", 140)
+          .attr("x", -70)
+          .attr("y", -70)
+          .attr("xlink:href","img/characters/"+character_data[index].name+".svg")
+          .style("opacity","0");
 
-          // display all the episodes on the graph
-          function visualizeit(){
+        img.transition()
+          .duration(800)
+          .delay(300)
+          .style("opacity","1");
+
+        // create a ray per season
+        g = svg.selectAll("g")
+            .data(ep_data.seasons)
+            .enter().append("svg:g")
+            .attr("transform", function(d,i) { return "rotate(0)"; })
+            .style("opacity","0");
+
+        g.transition()
+          .duration(800)
+          .delay(100)
+          .attr("transform", function(d,i) { return "rotate(" + rotation[i] + ")"; })
+          .style("opacity","1");
+
+        // create dots for each episode on the rays
+        var circle = g.selectAll("circle")
+            .data(function(d, i, j) { return d; }) // on attache les données des apparitions par ep
+            .enter().append("svg:circle")
+            .attr("cx", function (d,i){return barSpacing(i); } ) 
+            .attr("r", 0) 
+            .attr("fill", function (d,j) { if(_this.checkAppearances(d,j)==true){ return "#003e63" } else { return "#cee7f5" } }) 
+            .on("mouseover", function (d,i){ return tooltip.style("visibility", "visible").text("Episode "+d.episode+" : "+d.title); }) //show label and title episode
+            .on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
+            .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }); 
             
-            //create svg container
-            svg = d3.select("#character-graph")
-                .append("svg:g")
-                .attr("transform", "translate(455, 400)");
-           
-            // bars (rays) attributes
-            var barSpacing = d3.scale.linear().domain([0, 8.5]).range([80, 170]); // domain = à peu près espacement des points &&& range = en gros le rayon de l'intérieur de l'arc                            
-            var rotation = d3.range(183, 363, 7.2); // rotation rayon par rayon de l'angle 183 à 363 avec un pas de 7,2 (= 180 / 25 rayons)
+            circle.transition()
+              .duration(500)
+              .delay(100) 
+              .attr("r", function (d,j){ if(_this.checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } });
 
-            //add character's image
-            img = svg.append("image")
-              .attr("width", 310)
-              .attr("height", 310)
-              .attr("x", -155)
-              .attr("y", -155)
-              .attr("xlink:href","img/characters/"+character_data[0].name+".svg");
+        // label the different rays with season number
+        var text = g.append("svg:text");
+        var textLabels = text
+                      .attr("x", function(d,i){if(i<13) { return -375 } else { return 350 } })
+                      .attr("y", function(d,i){if(i<13) { return 5 } else { return 0 } })
+                      .text(function(d,i){if(i<9) { return "S0"+ (i+1) } else { return "S"+ (i+1)} })
+                      .attr("font-family", "Arial")
+                      .style("text-transform", "uppercase")
+                      .attr("font-size", "12px")
+                      .attr("fill", "#fff")
+                      .attr("transform", function(d,i){if(i<13) { return "rotate(-180)" } else { return "rotate(0)" } });
 
-            // create a ray per season
-            g = svg.selectAll("g")
-                .data(ep_data.seasons)
-                .enter().append("svg:g")
-                .attr("transform", function(d,i) { return "rotate(" + rotation[i] + ")"; });
-
-            // create dots for each episode on the rays
-            var circle = g.selectAll("circle")
-                .data(function(d, i, j) { return d; }) // on attache les données des apparitions par ep
-                .enter().append("svg:circle")
-                .attr("cx", function (d,i){return barSpacing(i); } ) 
-                .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "#cee7f5" } }) 
-                .on("mouseover", function (d,i){ return tooltip.style("visibility", "visible").text("Episode "+d.episode+" : "+d.title); }) //show label and title episode
-                .on("mousemove", function (){ return tooltip.style("top",
-                    (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
-                .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }); 
-                
-
-            // label the different rays with season number
-            var text = g.append("svg:text");
-            var textLabels = text
-                          .attr("x", function(d,i){if(i<13) { return -375 } else { return 350 } })
-                          .attr("y", function(d,i){if(i<13) { return 5 } else { return 0 } })
-                          .text(function(d,i){if(i<9) { return "S0"+ (i+1) } else { return "S"+ (i+1)} })
-                          .attr("font-family", "Arial")
-                          .style("text-transform", "uppercase")
-                          .attr("font-size", "12px")
-                          .attr("fill", "#fff")
-                          .attr("transform", function(d,i){if(i<13) { return "rotate(-180)" } else { return "rotate(0)" } });
-
-            // the label that is displaying the title of an episode when the mouse is over a dot (episode)
-            var tooltip = d3.select("body")
-              .append("div")
-              .style("position", "absolute")
-              .style("z-index", "10")
-              .style("background-color", "rgba(255,255,255,0.8)")
-              .style("padding", "5px 10px")
-              .style("font-size","12px")
-              .style("font-family","arial")
-              .style("visibility", "hidden");
+        // the label that is displaying the title of an episode when the mouse is over a dot (episode)
+        var tooltip = d3.select("body")
+          .append("div")
+          .style("position", "absolute")
+          .style("z-index", "10")
+          .style("background-color", "rgba(255,255,255,0.8)")
+          .style("padding", "5px 10px")
+          .style("font-size","12px")
+          .style("font-family","arial")
+          .style("visibility", "hidden");
 
 
-          } //end visualizeit
-
-          function checkAppearances(d,j) { 
-            for (var i=0; i<(character_data[index].appearances).length; i++){
-              if(d.number==character_data[index].appearances[i]){ 
-                return true;
-              } 
+      }, //end visualizeit
+      checkAppearances: function(d,j) { 
+        for (var i=0; i<(character_data[index].appearances).length; i++){
+          if(d.number==character_data[index].appearances[i]){ 
+            return true;
+          } 
+        }
+      },
+      findIndexOf: function(json, name){
+        for (var i=0; i<json.length; i++){
+          if(json[i].name== name){
+            return i;
+          }
+        } 
+      },
+      // display the character's information
+      displayInformation: function(index) {
+        $("#character-name").text(character_data[index].name);
+        $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
+        $("#character-app-number span span").text(character_data[index].appearances.length);
+        //console.log(character_data[index].appearances[0]);
+        this.firstApp(character_data[index].appearances[0]);
+      },
+      // find the episode's title of the first appearance by its number
+      firstApp: function(i) {
+        i = i;
+        var title ="";
+        $.getJSON( "json/episodes.json", function( data ) {
+          for (var a=0; a<data.seasons.length; a++) {
+            for (var j=0; j<data.seasons[a].length; j++) {
+                if (i == data.seasons[a][j].number){
+                  $("#character-first-app span").text('"'+data.seasons[a][i-1].title+'"');
+                }
             }
           }
-
-          function findIndexOf(json, name){
-            for (var i=0; i<json.length; i++){
-              if(json[i].name== name){
-                return i;
-              }
-            } 
-          }
-
-          //Update the data on the graph
-          $(".page").on("click","a.change-character",function () {
-            $("#characters-list").removeClass("list-opened");
-            $("#open-list").text(function(i, text){
-                return text === "List of all the characters" ? "Close the list" : "List of all the characters";
-            })
-            event.preventDefault();
-            var selected = $(this).attr('data-character');
-            console.log(selected);
-
-            index = findIndexOf(character_data, selected);
-            displayInformation(index);
-
-            circle = g.selectAll("circle")
-                .data(function(d, i, j) { return d; }) // on attache les données des apparitions par ep
-                .transition().duration(750)
-                .delay(100)
-                .attr("r", function (d,j){ if(checkAppearances(d,j)==true){ return 4.5 } else { return 2.5 } }) 
-                .attr("fill", function (d,j) { if(checkAppearances(d,j)==true){ return "#003e63" } else { return "#cee7f5" } }) ;
-
-            img = svg.selectAll("image")
-              .data(character_data[0].name)
-              .transition().duration(750)
-              .delay(100)
-              .attr("xlink:href","img/characters/"+selected+".svg");
-
-          });
-
+        });
       }
+
   });
   // Our module now returns our view
   return CharactersView;

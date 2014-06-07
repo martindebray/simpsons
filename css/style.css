@@ -97,14 +97,17 @@ body #left-wrapper {
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
     position: fixed;
-    bottom: 55px;
+    bottom: -55px;
     height: 100px;
     padding-top: 2%;
     z-index: 10;
-    font-size: 1.250rem; }
+    font-size: 1.250rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
     body #left-wrapper #character-info div {
       position: relative;
       display: inline-block;
+      float: left;
       width: 32%;
       font-family: "Langdon";
       color: #464646;
@@ -112,8 +115,11 @@ body #left-wrapper {
       text-align: center; }
       body #left-wrapper #character-info div span {
         font-size: 1.750rem; }
+  body #left-wrapper .character-info-open {
+    bottom: 55px !important; }
   body #left-wrapper #character-name-wrapper {
     position: absolute;
+    display: none;
     right: 0;
     left: 0;
     bottom: -5px;
@@ -223,9 +229,62 @@ body #open-list {
 body .list-opened {
   right: 0 !important;
   -webkit-transition: right 1s;
-  transition: right 1s; }
-  body .list-opened a {
-    opacity: 0; }
+  transition: right 1s;
+  /*a {
+  	opacity: 0;
+  }*/ }
+
+body #contribute {
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 15% 70px 15%;
+  background-color: #f7d100;
+  background: url("../img/lisa-bg.png") no-repeat 10% bottom, url("../img/homer-bg.png") no-repeat 95% 110%, url("../img/bart-bg.png") no-repeat -10% top, #f7d100; }
+  body #contribute .form-link {
+    display: block;
+    width: 240px;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    padding: 15px 20px;
+    border: 2px solid #000;
+    color: #000;
+    font-family: "Langdon";
+    text-transform: uppercase;
+    font-size: 1.250rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    body #contribute .form-link:hover {
+      background-color: #000;
+      color: #f7d100; }
+
+body #about {
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 10% 70px 10%;
+  background-color: #f7d100;
+  /*background: url("../img/about-bg.gif") no-repeat fixed center;*/ }
+  body #about h2 {
+    font-family: "MuseoSlab700"; }
+  body #about #team {
+    margin: 0 auto 20px auto;
+    width: 90%;
+    background-color: #f7d100; }
+    body #about #team a {
+      display: inline-block;
+      width: 16%;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      font-family: "Langdon";
+      text-transform: uppercase; }
+      body #about #team a img {
+        width: 90%;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+      body #about #team a:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
 
 #facts #diagram {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

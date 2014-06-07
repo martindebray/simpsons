@@ -28,15 +28,18 @@ body {
 			background-color: rgba(255,255,255,0.3);
 			width: 100%;
 			position:fixed;
-			bottom:55px;
+			bottom:-55px;
 			height: 100px;
 			padding-top: 2%;
 			z-index: 10;
 			font-size: 1.250rem;
+			-webkit-transition: all 1s ease; 
+					transition: all 1s ease; 
 
 			div {
 				position: relative;
 				display: inline-block;
+				float: left;
 				width: 32%;
 				font-family: $langdon;
 				color: $dark-grey;
@@ -50,11 +53,16 @@ body {
 			}
 		}
 
+		.character-info-open {
+			bottom:55px !important;
+		}
+
 		#character-name-wrapper {
 			position: absolute;
+			display: none;
 			right: 0;
     		left: 0;
-    		bottom:-5px;
+    		bottom: -5px;
     		text-align: center;
     		font-family: $museo;
     		color: #73bae5;
@@ -211,9 +219,9 @@ body {
 		-webkit-transition: right 1s; 
 		transition: right 1s;
 
-		a {
+		/*a {
 			opacity: 0;
-		}
+		}*/
 	}
 
 }

@@ -39,12 +39,18 @@ define([
           $("#open-list").click(function(e){
             e.preventDefault();
             $("#characters-list").toggleClass("list-opened");
-            $('#display-character-list a').css("opacity","0");
-            if($("#characters-list").hasClass("list-opened")) {
-              $('#display-character-list a').each(function(i) {
-                $(this).delay((i++) * 300).fadeTo(500, 1); 
-              });
-            } 
+            // $('#display-character-list a').css("opacity","0");
+            // if($("#characters-list").hasClass("list-opened")) {
+            //   $('#display-character-list a').each(function(i) {
+            //     $(this).delay((i++) * 150).fadeTo(400, 1); 
+            //     // $("#open-list").click(function(){
+            //     //   console.log("clicked");
+            //     //   return false;
+            //     //   });
+            //   });
+            // } else {
+            //   $('#display-character-list a').css("opacity","0");
+            // }
             $(this).text(function(i, text){
                 return text === "List of all the characters" ? "Close the list" : "List of all the characters";
             })
@@ -180,11 +186,22 @@ define([
       },
       // display the character's information
       displayInformation: function(index) {
+        console.log("HEY");
+        $("#character-info").addClass("character-info-open");
+        $("#character-name-wrapper").fadeIn(1500);
         $("#character-name").text(character_data[index].name);
         $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
-        $("#character-app-number span span").text(character_data[index].appearances.length);
-        //console.log(character_data[index].appearances[0]);
+        this.animateNumbers("#character-app-number span span",character_data[index].appearances.length);
         this.firstApp(character_data[index].appearances[0]);
+      },
+      animateNumbers: function(el,number) {
+        jQuery({someValue: 0}).animate({someValue: number}, {
+          duration: 2000,
+          easing:'swing', 
+          step: function() { 
+            $(el).text(Math.ceil(this.someValue));
+          }
+        });
       },
       // find the episode's title of the first appearance by its number
       firstApp: function(i) {
@@ -194,7 +211,7 @@ define([
           for (var a=0; a<data.seasons.length; a++) {
             for (var j=0; j<data.seasons[a].length; j++) {
                 if (i == data.seasons[a][j].number){
-                  $("#character-first-app span").text('"'+data.seasons[a][i-1].title+'"');
+                  $("#character-first-app span").text('"'+data.seasons[a][j].title+'"');
                 }
             }
           }

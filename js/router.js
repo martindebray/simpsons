@@ -8,8 +8,9 @@ define([
   'views/audience',
   'views/characters',
   'views/facts',
-  'views/contribute'  
-], function($, _, Backbone, d3, HomeView, AudienceView, CharactersView, FactsView, ContributeView){
+  'views/contribute',
+  'views/about'   
+], function($, _, Backbone, d3, HomeView, AudienceView, CharactersView, FactsView, ContributeView, AboutView){
   var AppRouter = Backbone.Router.extend({
     routes: {
         '':'home', // la home
@@ -18,7 +19,8 @@ define([
         'characters':'characters', // #characters   
         'characters/:name':'characters/name', // #characters/name
         'facts':'facts', // #facts 
-        'contribute':'contribute' // #contribute  
+        'contribute':'contribute', // #contribute  
+        'about':'about' // #about  
     },
     
   });
@@ -72,6 +74,14 @@ define([
       contributeView.render();
       console.log("On est sur la contribute page");
     });
+
+    router.on('route:about', function(){ // effets about page
+      // déclencheur de l'action
+      var aboutView =  new AboutView();
+      aboutView.render();
+      console.log("On est sur la page about");
+    });
+
     Backbone.history.start();
   };
   return {

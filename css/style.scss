@@ -49,6 +49,7 @@ body {
 		z-index: 1000;
 
 		nav {
+			position:relative;
 			
 			ul {
 				margin-left: -7%;
@@ -89,6 +90,17 @@ body {
 
 				 }
 
+			}
+
+			ul + a {
+				position:absolute;
+				right: 30px;
+				top:8px;
+
+				img {
+					width:40px;
+					height: auto;
+				}
 			}
 
 		}

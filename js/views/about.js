@@ -17,7 +17,7 @@ define([
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
         $('#menu').removeClass('hidden');
-        $('#contributeButton').addClass('selected');
+        $('#contributeButton').removeClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#factsButton').removeClass('selected');
     }
   });

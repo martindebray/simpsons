@@ -1,0 +1,35 @@
+body {
+
+	#contribute {
+		overflow-y: auto;
+		height: 100%;
+		padding: 0 10% 70px 10%;
+		background-color: $yellow;
+		background: url("../img/lisa-bg.png") no-repeat 10% bottom,
+		 url("../img/homer-bg.png") no-repeat 95% 110%,
+		 url("../img/bart-bg.png") no-repeat -10% top,
+		  $yellow;
+
+		.form-link {
+			display: block;
+			width: 240px;
+			text-align: center;
+			margin: 40px auto 0 auto;
+			padding: 15px 20px;
+			border: 2px solid #000;
+			color: #000;
+			font-family: $langdon;
+			text-transform: uppercase;
+			font-size: 1.250rem;
+			-webkit-transition: all 0.5s ease; 
+					transition: all 0.5s ease; 
+
+			&:hover {
+				background-color:#000;
+				color: $yellow;
+			}
+		}
+
+	}
+
+}

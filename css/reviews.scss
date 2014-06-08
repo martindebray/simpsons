@@ -1,23 +1,57 @@
 body {
+	
+	button:focus {
+		outline:0 !important;
+	}
 
 	#audience-module{
 		height: 100%;
 		width: 100%;
-		background-color: purple;
-	}
-    .axis path, .axis line {
-	    fill: none;
-	    stroke: white;
-	    stroke-width:2;
-	    shape-rendering: crispEdges;
-    }
-
-	.axis text {
-	    font-family: Simpsonfont;
-	    font-size: 11px;
-	    fill: white;
-	}	
+		background-color: $purplee;
+		
+		svg{
+			margin-left: 20%;
+			margin-top: 4%;
+			//width: 60%;
+		}
 	
-	.xAxis line{
-	display: none;} 
+		.axis path, .axis line {
+		    fill: none;
+		    stroke: white;
+		    stroke-width:2;
+		    shape-rendering: crispEdges;
+	    }
+	
+		.axis text {
+		    font-family: Simpsonfont;
+		    font-size: 11px;
+		    fill: white;
+		}	
+		
+		.xAxis line{
+		display: none;} 
+		
+		#sidebar{
+			color: white;
+			
+			button{
+				background-color: red;
+				height: 100px;
+				width: 100px;
+				border-radius: 100px;
+				margin: 10px;
+				border: 0;
+				font-size: 18px;
+				-webkit-transform: rotate(0deg);
+				-webkit-transition: -webkit-transform, 0.2s;										
+			}
+			button.selected
+				{			
+				-webkit-transform: rotate(-30deg);
+				-webkit-transition: -webkit-transform, 0.5s;
+				//background: blue;
+				}
+		}
+	
+	}
 }

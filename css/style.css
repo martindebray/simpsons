@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @font-face {
   font-family: 'Simpsonfont';
   src: url("fonts/simpsonfont-webfont.eot");
@@ -56,21 +56,41 @@ body #home {
     font-size: 140%;
     top: 60%; }
 
+body button:focus {
+  outline: 0 !important; }
 body #audience-module {
   height: 100%;
   width: 100%;
-  background-color: purple; }
-body .axis path, body .axis line {
-  fill: none;
-  stroke: white;
-  stroke-width: 2;
-  shape-rendering: crispEdges; }
-body .axis text {
-  font-family: Simpsonfont;
-  font-size: 11px;
-  fill: white; }
-body .xAxis line {
-  display: none; }
+  background-color: #8c81bf; }
+  body #audience-module svg {
+    margin-left: 20%;
+    margin-top: 4%; }
+  body #audience-module .axis path, body #audience-module .axis line {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    shape-rendering: crispEdges; }
+  body #audience-module .axis text {
+    font-family: Simpsonfont;
+    font-size: 11px;
+    fill: white; }
+  body #audience-module .xAxis line {
+    display: none; }
+  body #audience-module #sidebar {
+    color: white; }
+    body #audience-module #sidebar button {
+      background-color: red;
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+      margin: 10px;
+      border: 0;
+      font-size: 18px;
+      -webkit-transform: rotate(0deg);
+      -webkit-transition: -webkit-transform, 0.2s; }
+    body #audience-module #sidebar button.selected {
+      -webkit-transform: rotate(-30deg);
+      -webkit-transition: -webkit-transform, 0.5s; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;

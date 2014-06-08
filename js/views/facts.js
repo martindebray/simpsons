@@ -29,9 +29,9 @@ define([
         // svg.append("g")
         //   .attr("class", "lines");
 
-        var width = 960,
-            height = 450,
-          radius = Math.min(width, height) / 2;
+        var width = 150,
+            height = 140,
+          radius = Math.min($(window).width()/width*100, $(window).height()/height*100) / 2;
 
         var pie = d3.layout.pie()
           .sort(null)
@@ -40,99 +40,104 @@ define([
           });
           // Arc intérieur, parts
         var arc = d3.svg.arc()
-          .outerRadius(radius * 0.8)
-          .innerRadius(radius * 0.3);
+          .outerRadius(radius * 0.65)
+          .innerRadius(radius * 0.25);
           // Arc extérieur, légendes
         var outerArc = d3.svg.arc()
           .innerRadius(radius * 0.9)
           .outerRadius(radius * 0.9);
 
-          // Positionnement
-        svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+           // Positionnement
+         svg.attr("transform", "translate(" + $(window).width()/width*100/3 + "," + $(window).height()/height*100/3+ ")")
+            .attr("class","contenuDiagram");
 
-        var key = function(d){ return d.data.label; };
-var i=0;
-getData(i);
+        var i=0;
+        getData(i);
+
         svg.append("g")
           .attr("class", "slices");
         svg.append("g")
           .attr("class", "labels");
 
-function getData(i){
+        function getData(i){
 
-d3.json("json/facts.json", function(error, data) {
-console.log(data.type[0][0].number);
+        d3.json("json/facts.json", function(error, data) {
+        console.log(data.type[0][0].number);
 
-var totalFacts = 0;
-  data.type[i].forEach(function(d) {
-    console.log(d.number);
-    d.number = +d.number;
-    totalFacts = totalFacts+d.number; // calcul du total
-  });
+        var totalFacts = 0;
+          data.type[i].forEach(function(d) {
+            console.log(d.number);
+            d.number = +d.number;
+            totalFacts = totalFacts+d.number; // calcul du total
+          });
 
-// slices
+        // slices
 
-  var slice = svg.select(".slices").selectAll("path.slice")
-      .data(pie(data.type[i]));
+          var slice = svg.select(".slices").selectAll("path.slice")
+              .data(pie(data.type[i]));
 
-  slice.enter()
-      .insert("path")
-      .attr("d", arc)
-      .style("fill", function(d) { return color(d.data.season); })
-      .attr("class", "slice");
+          slice.enter()
+              .insert("path")
+              .attr("d", arc)
+              .style("fill", function(d) { return color(d.data.season); })
+              .style("stroke","white")
+              .attr("class", "slice");
 
-          slice   
-            .transition().duration(1000)
-            .attrTween("d", function(d) {
-              this._current = this._current || d;
-              var interpolate = d3.interpolate(this._current, d);
-              this._current = interpolate(0);
-              return function(t) {
-                return arc(interpolate(t));
-              };
-            })
+                  slice   
+                    .transition().duration(1000)
+                    .attrTween("d", function(d) {
+                      this._current = this._current || d;
+                      var interpolate = d3.interpolate(this._current, d);
+                      this._current = interpolate(0);
+                      return function(t) {
+                        return arc(interpolate(t));
+                      };
+                    })
 
-          slice.exit()
-            .remove();
-// label
+                  slice.exit()
+                    .remove();
+        // label
 
-  var text = svg.select(".labels").selectAll("text.label")
-    .data(pie(data.type[i]));
+          var text = svg.select(".labels").selectAll("text.label")
+            .data(pie(data.type[i]));
 
-  text.enter()
-      .append("text")
-      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-      .attr("dy", ".35em")
-      .style("text-anchor", "middle")
-      .text(function(d) {
-        var number =  d.data.season;
-        number = d.data.number/totalFacts*100;
-        return number.toFixed(1)+"%"; })
-      .attr("class","label");
-     
+          text.enter()
+              .append("text")
+              .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+              .attr("dy", ".35em")
+              .style("text-anchor", "middle")
+              .text(function(d) {
+                var number =  d.data.season;
+                number = d.data.number/totalFacts*100;
+                return number.toFixed(1)+"%"; })
+              .style("fill", "#f7f7f7")
+              .attr("class","label");
 
-                // Transition des textes --- changement des nombres
+             
 
-  text.transition().duration(1000) // On ajoute pas de append on rajoute juste le nombre et sa position
-      .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-      .attr("dy", ".35em")
-      .style("text-anchor", "middle")
-      .text(function(d) {
-      var number =  d.data.season;
-      number = d.data.number/totalFacts*100;
-      return number.toFixed(1)+"%"; });
-         
-          text.exit()
-            .remove();
+                        // Transition des textes --- changement des nombres
 
-});
-        var color = d3.scale.ordinal()
-          //.domain([0.1, 0.4, 0.5, 0.51, 0.52, 0.53, 0.54]) //, 0.55, 0.56, 0.57, 0.58, 0.59, 0.65, 0.64, 0.63
-          .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]); // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
-}
+          text.transition().duration(1000) // On ajoute pas de append on rajoute juste le nombre et sa position
+              .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+              .attr("dy", ".35em")
+              .style("text-anchor", "middle")
+              .text(function(d) {
+              var number =  d.data.season;
+              number = d.data.number/totalFacts*100;
+              return number.toFixed(1)+"%"; })
+              .style("fill", "#f7f7f7");
+                 
+                  text.exit()
+                    .remove();
+
+        });
+                var color = d3.scale.ordinal()
+                  //.domain([0.1, 0.4, 0.5, 0.51, 0.52, 0.53, 0.54]) //, 0.55, 0.56, 0.57, 0.58, 0.59, 0.65, 0.64, 0.63
+                  .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]); // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
+        }
 
 // au click de next
-        d3.select(".next")
+        d3.select("#next")
           .on("click", function(){
             //change(randomData());
             i++;
@@ -141,7 +146,7 @@ var totalFacts = 0;
 
           });
 // au click de prec
-        d3.select(".prec")
+        d3.select("#prec")
           .on("click", function(){
             //change(randomData());
             i=i-1;

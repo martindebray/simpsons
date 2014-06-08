@@ -1,21 +1,108 @@
 #facts{
+	background-color: $yellow;
+	width:100%;
+	height:100%;
+	font-family: $langdon;
 
 	#diagram {
-	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	  width: 960px;
-	  height: 500px;
+	  font-family: $langdon;
+	  width: 40%;
+	  height: 75%;
+	  margin-left: 8%;
+	  margin-top: 3%;
+	  float: left;
 	  position: relative;
+
+
+
+
+	  .contenuDiagram{
+	  	margin-left: -100px;
+	  }
+
+	  svg g .labels {
+	  	color:rgba(0,255,255,0.8);
+	  }
+
+
 	}
 
-	path.slice{
-		stroke-width:2px;
+	#menuRight{
+		width:350px;
+		margin-left: 50%;
+		font-family: $langdon;
+		font-size: 2em;
+		text-transform: uppercase;
+		position:relative;
+
+		#nav{
+			background-color:#f7f7f7;
+			border-radius: 3px;
+			text-align: center;
+			height:52px;
+			position:relative;
+
+		}
+
+		.title{
+			text-align: center;
+			margin-top:10px;
+		}
+
+		.direction {
+			cursor: pointer;
+			padding-left:28px;
+			padding-right:28px;
+			padding-top:10px;
+			padding-bottom:10px;
+
+		}
+
+		#next{
+			border-left:1px solid #6d6e76;
+			float: right;
+
+		}
+
+		#prec{
+			border-right:1px solid #6d6e76;
+			float: left;
+		}
+
+		#picture img {
+			width:350px;
+			margin-top: 25px;
+		}
+
+		#total {
+			width:350px;
+			background-color:#f7f7f7;
+			border-radius: 3px;
+			text-align: right;
+			padding-bottom:15px;
+			padding-top:15px;
+			margin-top: 25px;
+		}
 	}
 
-	polyline{
-		opacity: 0.3;
-		stroke: black;
-		stroke-width: 2px;
-		fill: none;
+	#seasons{
+		background-color: rgba(255, 255, 255, 0.3);
+width: 100%;
+position: fixed;
+bottom: 8%;
+height: 19%;
+z-index: 10;
 	}
+
+	// path.slice{
+	// 	stroke-width:8px;
+	// }
+
+	// polyline{
+	// 	opacity: 0.3;
+	// 	stroke: black;
+	// 	stroke-width: 2px;
+	// 	fill: none;
+	// }
 
 }

@@ -5,24 +5,20 @@
   src: url("fonts/simpsonfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/simpsonfont-webfont.woff") format("woff"), url("fonts/simpsonfont-webfont.ttf") format("truetype"), url("fonts/simpsonfont-webfont.svg#simpsonfontsimpsonfont") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'akbar';
   src: url("fonts/akbar-webfont.eot");
   src: url("fonts/akbar-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/akbar-webfont.woff") format("woff"), url("fonts/akbar-webfont.ttf") format("truetype"), url("fonts/akbar-webfont.svg#akbar_plain") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: 'Langdon';
   src: url("fonts/langdon.eot");
   src: url("fonts/langdon.eot") format("embedded-opentype"), url("fonts/langdon.woff") format("woff"), url("fonts/langdon.ttf") format("truetype"), url("fonts/langdon.svg#LangdonRegular") format("svg"); }
-
 @font-face {
   font-family: 'MuseoSlab700';
   src: url("fonts/museo_slab_700.eot");
   src: url("fonts/museo_slab_700.eot") format("embedded-opentype"), url("fonts/museo_slab_700.woff") format("woff"), url("fonts/museo_slab_700.ttf") format("truetype"), url("fonts/museo_slab_700.svg#MuseoSlab700") format("svg"); }
-
 /**
  ** fonts **/
 /* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
@@ -234,18 +230,69 @@ body .list-opened {
   	opacity: 0;
   }*/ }
 
-#facts #diagram {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 960px;
-  height: 500px;
-  position: relative; }
-#facts path.slice {
-  stroke-width: 2px; }
-#facts polyline {
-  opacity: 0.3;
-  stroke: black;
-  stroke-width: 2px;
-  fill: none; }
+#facts {
+  background-color: #f7d100;
+  width: 100%;
+  height: 100%;
+  font-family: "Langdon"; }
+  #facts #diagram {
+    font-family: "Langdon";
+    width: 40%;
+    height: 75%;
+    margin-left: 8%;
+    margin-top: 3%;
+    float: left;
+    position: relative; }
+    #facts #diagram .contenuDiagram {
+      margin-left: -100px; }
+    #facts #diagram svg g .labels {
+      color: rgba(0, 255, 255, 0.8); }
+  #facts #menuRight {
+    width: 350px;
+    margin-left: 50%;
+    font-family: "Langdon";
+    font-size: 2em;
+    text-transform: uppercase;
+    position: relative; }
+    #facts #menuRight #nav {
+      background-color: #f7f7f7;
+      border-radius: 3px;
+      text-align: center;
+      height: 52px;
+      position: relative; }
+    #facts #menuRight .title {
+      text-align: center;
+      margin-top: 10px; }
+    #facts #menuRight .direction {
+      cursor: pointer;
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    #facts #menuRight #next {
+      border-left: 1px solid #6d6e76;
+      float: right; }
+    #facts #menuRight #prec {
+      border-right: 1px solid #6d6e76;
+      float: left; }
+    #facts #menuRight #picture img {
+      width: 350px;
+      margin-top: 25px; }
+    #facts #menuRight #total {
+      width: 350px;
+      background-color: #f7f7f7;
+      border-radius: 3px;
+      text-align: right;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin-top: 25px; }
+  #facts #seasons {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: fixed;
+    bottom: 8%;
+    height: 19%;
+    z-index: 10; }
 
 body #contribute {
   overflow-y: auto;

@@ -187,7 +187,7 @@ define([
 	                            .attr("stroke-width", 2)
 	                            .attr("fill", "none");
 	
-	            svg.selectAll("circle")
+	            svg.selectAll("circle.ratings")
 	               .data(ep_data.seasons)
 	               .enter()
 	               .append("circle")
@@ -310,7 +310,7 @@ define([
                             .attr("fill", "none");
                             
 			             //adding circles
-			             svg.selectAll("circle")
+			             svg.selectAll("circle.ratings")
 			               .data(ep_data.seasons[i])
 			               .enter()
 			               .append("circle")
@@ -391,7 +391,7 @@ define([
 	                .attr("stroke-width", 2)
 	                .attr("fill", "none");
 	
-	            svg.selectAll("circle")
+	            svg.selectAll("circle.viewers")
 	               .data(ep_data.seasons)
 	               .enter()
 	               .append("circle")
@@ -511,7 +511,7 @@ define([
                             .attr("fill", "none");
 			             
 			             //adding circles
-			             svg.selectAll("circle")
+			             svg.selectAll("circle.viewers")
 			               .data(ep_data.seasons[i])
 			               .enter()
 			               .append("circle")

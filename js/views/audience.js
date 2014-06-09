@@ -16,9 +16,11 @@ define([
       var compiledTemplate = _.template( audienceTemplate, data );
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
+      	$('body').scrollTop(0);
         $('#menu').removeClass('hidden');
         $('#audienceButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
+        $('.page').fadeIn(300);
          // ----------------------------------------D3 AUDIENCE---------------------------------------------
         var ep_data; // a global variable for the data of all episode of all seasons
         var w = 600;
@@ -26,6 +28,15 @@ define([
         var padding=30;
         var toggleRate=false;
         var toggleView=false;
+        var isInSeason=false;
+        var scaleYl;
+        var scaleYr;
+        var scaleX;
+        var format;
+        var currentSeason;
+        var currentSeasonlong;
+        var i;
+        
         
         
           // get episode data
@@ -34,233 +45,15 @@ define([
             ep_data = json;
             init();
           });
-            
-            
-        function toggleR(svg){
-        if(toggleRate){
-        	$("#notes").removeClass("selected");
-	        d3.select("path.ratings").remove();
-	        d3.selectAll("circle.ratings").remove();
-	        toggleRate=!toggleRate;
-  
-        }
-        else{
-	        toggleRate=!toggleRate;
-	        
-	        d3.select("#notes").attr("class","selected");
-	        visualizeRatings(svg);
-        }
-        
-        
-        }
-        function toggleV(svg){
-        	if(toggleView){
-        	$("#audiences").removeClass("selected");
-	        d3.select("path.viewers").remove();
-	        d3.selectAll("circle.viewers").remove();
-	        toggleView=!toggleView;
-	        
-	        
-        }
-        else{
-	        toggleView=!toggleView;
-	        d3.select("#audiences").attr("class","selected");
-        	
-        	visualizeViewers(svg);
-        }
-        }
-        ;
- //-------------------------------------------------------INIT-------------------------------------------------------
-        function init(){
-
-  		//Create SVG element
+          
+          //Create SVG element
             var svg = d3.select("#audience-module")
                         .append("svg:svg")
                         .attr("width", w)
                         .attr("height", h)
                         .style("background-color","#2a4a7c");
                         
-            var sidebar=d3.select("#audience-module")
-            	//.data(ep_data.seasons)
-            	//.enter()
-            	.append("div")
-            	.attr("id","sidebar")
-                .style("border", "1px solid black")
-                .style("height","800px")
-                .style("width","200px")  
-                .style("position","absolute")
-                .style("top",0)
-                .style("right",0)
-                .style("z-index","1000")
-                 ;
-             
-
-             var currentSeason=d3.select("#sidebar")
-             	.append("h2")
-             	.attr("id","currentSeason")
-             	.text("The 25 seasons")
-             	;
-             var seasonYear=d3.select("#sidebar")
-             	.append("p")
-             	.attr("id","seasonYear")
-             	.style("display","inline")
-             	.text("1989-2014 | ")
-             	;
-             var epInSeason=d3.select("#sidebar")
-             	.append("p")
-             	.attr("id","epInSeason")
-             	.style("display","inline")
-             	.text("252 episodes")
-             	;
-             var prevseason=d3.select("#sidebar")
-             	.append("p")
-             	.attr("id","prevseason")
-             	.style("display","none")
-             	.text("<<")
-             	;
-             var nextseason=d3.select("#sidebar")
-             	.append("p")
-             	.attr("id","nextseason")
-             	.style("display","none")
-             	.text(">>")
-             	;
-             /*
-var refresh=d3.select("#sidebar")
-             	.append("button")
-             	.attr("id","refresh")
-             	.text("refresh")
-             	.on("click",function (d,i,l) {
-             			d3.selectAll("svg").remove();
-             			//d3.select("#sidebar").remove();
-			            visualizeViewers() ;     
-			    });
-*/
-             	var notes=d3.select("#sidebar")
-             	.append("button")
-             	.attr("id","notes")
-             	.text("notes")
-             	.on("click",function (d,i,l) {
-             			//d3.selectAll("svg").remove();
-             			//d3.select("#sidebar").remove();
-             			toggleR(svg);
-			            //visualizeRatings(svg);      
-			    });
-             	;
-
-             	var audience=d3.select("#sidebar")
-             	.append("button")
-             	.attr("id","audiences")
-             	.text("audience")
-             	.on("click",function (d,i,l) {
-             			//d3.selectAll("svg").remove();
-             			//d3.select("#sidebar").remove();
-             			toggleV(svg);
-			            //visualizeViewers(svg);      
-			    });
-             	;           	             	
-        } //end init
-        
- //------------------------------------------------------------END INIT----------------------------------------------------------        
-        
-        
- //-------------------------------------------------------VISUALIZEREVIEWS-------------------------------------------------------        
-        function visualizeViewers(svg){        
-        console.log("serie viewers")
-        //viewers each season with average of the season's episodes views
-        for (var j=0;j<ep_data.seasons.length;j++){
-        var totalOneSeason=0;
-	    	for (var i = 0; i<ep_data.seasons[j].length; i++){
-                    totalOneSeason+=ep_data.seasons[j][i].viewers
-                    moy=totalOneSeason/ep_data.seasons[j].length
-                    ep_data.seasons[j].viewers=Math.floor(moy*10)/10;   
-        };
-  
-        };        
-
-            //scale
-            var scaleX = d3.scale.linear().domain([1, ep_data.seasons.length]).range([padding, w-padding]);
-            var scaleY = d3.scale.linear().domain([0, 35]).range([h-padding, padding]);
-            
-            //axes
-            var xAxis = d3.svg.axis()
-                  .scale(scaleX)
-                  .orient("bottom")
-                  .ticks(24)
-                  ;
-                  
-            var yAxis = d3.svg.axis()
-                    .scale(scaleY)
-                    .orient("right")
-                    //.ticks(4)
-                    ;
-                    
-                    var format = d3.time.format("%m/%d/%y");
-                    var seasonsYear =format.parse(ep_data.seasons[0][0].airdate);
-                    var yearNameFormat = d3.time.format("%Y");
-                    seasonsYear=yearNameFormat(seasonsYear);
-
-                       
-           /*
- //Create SVG element
-            var svg = d3.select("#audience-module")
-                        .append("svg:svg")
-                        .attr("width", w)
-                        .attr("height", h)
-                        .style("background-color","#2a4a7c")
-*/
-                   
-                        
-             var lineFunction = d3.svg.line()
-                          .x(function(d,i) { return scaleX(i+1) })
-                          .y(function(d,i) { return scaleY(ep_data.seasons[i].viewers)})
-                          .interpolate("monotone");
-                          
-             svg.append("path")
-             				.attr("class","graph")
-             				.attr("class","viewers")
-                            .attr("d", lineFunction(ep_data.seasons))
-                            .attr("stroke", "white")
-                            .attr("stroke-width", 2)
-                            .attr("fill", "none");
-
-            svg.selectAll("circle")
-               .data(ep_data.seasons)
-               .enter()
-               .append("circle")
-               .attr("fill","white" )
-               .attr("class","viewers")
-               .attr("stroke","#75c0e5")
-               .attr("stroke-width",2)
-               .attr("r", 5)
-               .attr("cx", function(d,i){return scaleX(i+1); } )
-               .attr("cy", function(d,i){return scaleY(ep_data.seasons[i].viewers)})
-               .on("mouseover", function(d,i){return tooltip
-				.style("visibility","visible")
-				.style("top","20px").style("left","400px")
-				.text("Season "+(i+1)+" Rate "+ep_data.seasons[i].viewers+"/10")
-				;
-				})
-				.on("mouseout", function(d,i){return tooltip.style("visibility","hidden")})
-				.on("click",function (d,i,l) {
-			            visualizeSeason(d,i,l);      
-			    });
-               
-            
-            //Create axis
-            svg.append("g")
-            .attr("class", "axis xAxis")  //Assign "axis" class
-            .attr("transform", "translate(0," + (h - padding) + ")")
-            .call(xAxis)
-            ;
-            
-            svg.append("g")
-            .attr("class", "axis yAxis")  //Assign "axis" class
-            .attr("transform", "translate("+(w-padding) +",0)")
-            .call(yAxis)
-            ;
-            
-            /*
-var tooltip = d3.select("body")
+            var tooltip = d3.select("#audience-module")
               .append("div")
               .style("position", "absolute")
               .style("padding","10px")
@@ -271,18 +64,431 @@ var tooltip = d3.select("body")
               .style("top", 0 )
               .style("left", 0)
               ;
-*/
-            function visualizeSeason(d,i,l){
-            console.log("season viewers");
             
-            d3.select("path.viewers").remove();
-	        d3.selectAll("circle.viewers").remove();
-            
+        function toggleR(svg){
+	        if(toggleRate){
+	        	$("#notes").removeClass("selected");
+
+		        toggleRate=!toggleRate;
+	  
+	        }
+	        else{
+		        toggleRate=!toggleRate;      
+		        d3.select("#notes").attr("class","selected");
+	        }        
+        }
+        
+        function toggleV(svg){
+        	if(toggleView){
+        	$("#audiences").removeClass("selected");
+	        toggleView=!toggleView;
+	        
+	        
+	        }
+	        else{
+		        toggleView=!toggleView;
+		        d3.select("#audiences").attr("class","selected");
+	        }
+        }
+ //-------------------------------------------------------INIT-------------------------------------------------------
+        function init(){
+        isInSeason=false;
+          	
+             var clean=d3.select("#clean")
+             	.on("click",function (m,n,p) {
+             			if(toggleRate||toggleView){
+				        d3.selectAll("circle").remove();
+             			d3.selectAll("path").remove();
+             			d3.selectAll("g.axis").remove();
+             			if(toggleRate){
+	             			toggleR(svg);
+             			}
+             			if(toggleView)
+             			toggleV(svg);
+             			init();
+			            }
+			    });
+			    
+             	var notes=d3.select("#notes")
+             		.style("background","red")
+             		.on("click",function (m,n,p) {
+						if(toggleRate){
+							toggleR(svg);  
+					        d3.select("path.ratings").remove();
+					        d3.selectAll("circle.ratings").remove();
+					    }
+			        	else{
+			        		toggleR(svg);
+			        		if(isInSeason){
+	             				d3.select("path.ratings").remove();
+	             				d3.selectAll("circle.ratings").remove();
+	             				m=currentSeasonlong;
+	             				n=currentSeason;
+		             			check(m,n,p);
+		             		}else
+		             			showRatingsSerie(svg);
+		             		}
+			    });
+
+             	var audience=d3.select("#audiences")
+             		.on("click",function (m,n,p) {
+	             		if(toggleView){
+		             		toggleV(svg);  
+		             		d3.select("path.viewers").remove();
+		             		d3.selectAll("circle.viewers").remove();
+		             	}
+		             	else{
+				        	toggleV(svg);
+				        	if(isInSeason){
+             					d3.select("path.reviews").remove();
+	             				d3.selectAll("circle.reviews").remove();
+	             				m=currentSeasonlong;
+	             				n=currentSeason;
+		             			check(m,n,p);
+		             		}else
+		             			showViewersSerie(svg);
+		             		}
+		         });
+		        
+		        scaleYl = d3.scale.linear().domain([5, 9.5]).range([h-padding, padding]);
+		        scaleYr = d3.scale.linear().domain([0, 35]).range([h-padding, padding]);
+			    
+			    var ylAxis = d3.svg.axis()
+		                    .scale(scaleYl)
+		                    .orient("left")
+		                    ;
+		                    
+		        var yrAxis = d3.svg.axis()
+	                    .scale(scaleYr)
+	                    .orient("right")
+	                    //.ticks(4)
+	                    ;
+		               
+		        svg.append("g")
+	            .attr("class", "axis ylAxis")  //Assign "axis" class
+	            .attr("transform", "translate("+(padding) +",0)")
+	            .call(ylAxis)
+	            ;
+	            
+	            svg.append("g")
+	            .attr("class", "axis yrAxis")  //Assign "axis" class
+	            .attr("transform", "translate("+(w-padding) +",0)")
+	            .call(yrAxis)
+	            ; 
 	           //updating sidebar
-			            d3.select("#currentSeason").text("Season "+(i+1));
-			            var seasonsYear =format.parse(ep_data.seasons[i][l].airdate);
+			   d3.select("#currentSeason").text("The 25 seasons");
+			   d3.select("#seasonYear").text("1989-2014 | ");
+			   d3.select("#epInSeason").text("252");
+			             
+		        isInSeason=true;
+			    makeRatings(svg);
+			    makeViewers(svg);
+			    toggleR(svg);
+			    showRatingsSerie(svg);
+			    toggleV(svg);
+			    showViewersSerie(svg);
+			    
+			    
+			    
+			    
+        } //end init       
+ //------------------------------------------------------------END INIT----------------------------------------------------------        
+         function makeRatings(svg){
+	         //Rating each season with average of the season's episodes rates
+		        for (var m=0;m<ep_data.seasons.length;m++){
+			        var totalOneSeason=0;
+				    	for (var n = 0; n<ep_data.seasons[m].length; n++){
+			                    totalOneSeason+=ep_data.seasons[m][n].rating
+			                    moy=totalOneSeason/ep_data.seasons[m].length
+			                    ep_data.seasons[m].rating=Math.floor(moy*10)/10;
+			             };
+		        };  
+         }
+         
+         function makeViewers(svg){
+	         for (var m=0;m<ep_data.seasons.length;m++){
+		        	var totalOneSeason=0;
+			    	for (var n = 0; n<ep_data.seasons[m].length; n++){
+		                    totalOneSeason+=ep_data.seasons[m][n].viewers
+		                    moy=totalOneSeason/ep_data.seasons[m].length
+		                    ep_data.seasons[m].viewers=+Math.floor(moy*10)/10;
+		            };
+		        }; 
+         }
+         
+         function check(d,i,l){
+         d3.select("#currentSeason").text("Season "+(i+1));
+			            format = d3.time.format("%m/%d/%y");
+			            var seasonsYear=format.parse(ep_data.seasons[i][l].airdate);
 			            var yearNameFormat = d3.time.format("%Y");
 			            seasonsYear=yearNameFormat(seasonsYear);
+			            d3.select("#seasonYear").text(seasonsYear+" | ")
+			            d3.select("#epInSeason").text(""+ep_data.seasons[i].length)
+			            d3.select("#prevseason").style("display","inline")
+			            d3.select("#nextseason").style("display","inline")
+			            if(i==0){
+				            d3.select("#prevseason").style("display","none")
+			            }
+			            if(i+1==ep_data.seasons.length){
+				            d3.select("#nextseason").style("display","none")
+			            }
+			            d3.select("#prevseason").on("click",function () {
+			            	i--;
+			            	check(d,i,l);      
+			            });
+			            d3.select("#nextseason").on("click",function () {
+			            	i++;
+			            	check(d,i,l);     
+			            });
+         	if(isInSeason){
+	         	if(toggleRate){
+		         	showRatingsSeason(d,i,l);
+	         	}
+	         	if(toggleView){
+		         	showViewersSeason(d,i,l);
+	         	}
+         	}
+				         
+            }     
+  //----------------------------------------------------- VISUALIZE RATINGS-------------------------------------------------------    
+        function showRatingsSerie(svg){
+	            //scale
+	            scaleX = d3.scale.linear().domain([1, ep_data.seasons.length]).range([padding, w-padding]);
+	            //scaleYl = d3.scale.linear().domain([5, 9.5]).range([h-padding, padding]);
+	            
+	            //axes
+	            var xAxis = d3.svg.axis()
+	                  .scale(scaleX)
+	                  .orient("bottom")
+	                  .ticks(24)
+	                  ;            
+	                        
+	            var lineFunction = d3.svg.line()
+	                          .x(function(m,n) { return scaleX(n+1) })
+	                          .y(function(m,n) { return scaleYl(ep_data.seasons[n].rating)})
+	                          .interpolate("monotone");
+	                          
+	             svg.append("path")
+	             				.attr("class","graph")
+	             				.attr("class","ratings")
+	                            .attr("d", lineFunction(ep_data.seasons))
+	                            .attr("stroke", "red")
+	                            .attr("stroke-width", 2)
+	                            .attr("fill", "none");
+	                            
+	            svg.selectAll("circle.ratings")
+	               .data(ep_data.seasons)
+	               .enter()
+	               .append("circle")
+	               .attr("class","ratings")
+	               .attr("fill","white" )
+	               .attr("stroke","red")
+	               .attr("stroke-width",2)
+	               .attr("r", 5)
+	               .attr("cx", function(m,n){return scaleX(n+1); } )
+	               .attr("cy", function(m,n){return scaleYl(ep_data.seasons[n].rating)})
+	               .on("mouseover", function(m,n){return tooltip
+						.style("visibility","visible")
+						.style("top","20px").style("left","400px")
+						.text("Season "+(n+1)+" Rate "+ep_data.seasons[n].rating+"/10");})
+						.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")})
+						.on("click",function (m,n,p) {
+					            currentSeason=n;
+					            currentSeasonlong=m;
+					            check(currentSeasonlong,currentSeason,p);  
+					                
+				    });
+	               
+	            
+	           if(d3.select("g.xAxis").empty()){
+	           		svg.append("g")
+	           		.attr("class", "axis xAxis")  //Assign "axis" class
+	           		.attr("transform", "translate(0," + (h - padding) + ")")
+	           		.call(xAxis)
+				    ; 
+               }
+
+        }
+
+       function showRatingsSeason(d,i,l){
+            	currentSeason=i;
+            	currentSeasonlong=d;
+	           //updating sidebar
+			            /*
+d3.select("#currentSeason").text("Season "+(i+1));
+			            format = d3.time.format("%m/%d/%y");
+			            var seasonsYear=format.parse(ep_data.seasons[i][l].airdate);
+			            var yearNameFormat = d3.time.format("%Y");
+			            seasonsYear=yearNameFormat(seasonsYear);
+			            console.log(seasonsYear);
+			            d3.select("#seasonYear").text(seasonsYear+" | ")
+			            d3.select("#epInSeason").text(""+ep_data.seasons[i].length)
+			            d3.select("#prevseason").style("display","inline")
+			            d3.select("#nextseason").style("display","inline")
+			            if(i==0){
+				            d3.select("#prevseason").style("display","none")
+			            }
+			            if(i+1==ep_data.seasons.length){
+				            d3.select("#nextseason").style("display","none")
+			            }
+			            d3.select("#prevseason").on("click",function () {
+			            	i--;
+			            	check(d,i,l);      
+			            });
+			            d3.select("#nextseason").on("click",function () {
+			            	i++;
+			            	check(d,i,l);     
+			            });
+*/
+			            
+			            
+			            //removing old chart
+			            d3.select("path.ratings").remove();
+			            d3.selectAll("circle.ratings").remove();
+			            d3.select("g.xAxis").remove();
+			             //creating season graph
+			             scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
+				         //scaleYl = d3.scale.linear().domain([4.5, 9.5]).range([h-padding, padding]);
+				         
+				         var xAxis = d3.svg.axis()
+				                .scale(scaleX)
+				                .orient("bottom")
+				                ;           
+				                		             
+			             var lineFunction = d3.svg.line()
+								.x(function(m,n) { return scaleX(n+1) })
+								.y(function(m,n) { return scaleYl(ep_data.seasons[i][n].rating)})
+								.interpolate("monotone");
+							
+							//creating path
+						svg.append("path")
+             				.attr("class","graph")
+             				.attr("class","ratings")
+                            .attr("d", lineFunction(ep_data.seasons[i]))
+                            .attr("stroke", "red")
+                            .attr("stroke-width", 2)
+                            .attr("fill", "none");
+                            
+			             //adding circles
+			             svg.selectAll("circle.ratings")
+			               .data(ep_data.seasons[i])
+			               .enter()
+			               .append("circle")
+			               .attr("class","ratings")
+			               .attr("fill","white" )
+			               .attr("stroke","red")
+			               .attr("stroke-width",2)
+			               .attr("r", 5)
+			               .attr("cx", function(m,n){return scaleX(n+1); } )
+			               .attr("cy", function(m,n){return scaleYl(ep_data.seasons[i][n].rating)})
+			               //adding tooltip
+			               .on("mouseover", function(m,n){return tooltip
+								.style("visibility","visible")
+								.style("top","20px").style("left","400px")
+								.text("Episode "+(n+1)+" Rate "+ep_data.seasons[i][n].rating+"/10")
+								;
+							})
+							.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")});
+                            
+                            if(d3.select("g.xAxis").empty()){
+	                           svg.append("g")
+	                           		.attr("class", "axis xAxis")  //Assign "axis" class
+	                           		.attr("transform", "translate(0," + (h - padding) + ")")
+	                           		.call(xAxis)
+	                           		; 
+                            }			             
+				        }
+				        
+  //-----------------------------------------------------END VISUALIZE RATINGS-------------------------------------------------------
+  
+  //-------------------------------------------------------VISUALIZEREVIEWS-------------------------------------------------------        
+        function showViewersSerie(svg){
+		    if(!toggleView){  
+	        	d3.select("path.viewers").remove();
+	        	d3.selectAll("circle.viewers").remove();
+	        }
+	        else{
+
+	            //scale
+	            scaleX = d3.scale.linear().domain([1, ep_data.seasons.length]).range([padding, w-padding]);
+	            /* scaleYr = d3.scale.linear().domain([0, 35]).range([h-padding, padding]); */
+	            
+	            //axes
+	            var xAxis = d3.svg.axis()
+	                  .scale(scaleX)
+	                  .orient("bottom")
+	                  .ticks(24)
+	                  ;
+	                    
+	             var lineFunction = d3.svg.line()
+	                          .x(function(m,n) { return scaleX(n+1) })
+	                          .y(function(m,n) { return scaleYr(ep_data.seasons[n].viewers)})
+	                          .interpolate("monotone");
+	            
+	            /*
+format = d3.time.format("%m/%d/%y");
+	            var seasonsYear =format.parse(ep_data.seasons[0][0].airdate);
+	            var yearNameFormat = d3.time.format("%Y");
+	            seasonsYear=yearNameFormat(seasonsYear);
+*/
+	                                 
+	             svg.append("path")
+	             	.attr("class","graph")
+	             	.attr("class","viewers")
+	                .attr("d", lineFunction(ep_data.seasons))
+	                .attr("stroke", "#75c0e5")
+	                .attr("stroke-width", 2)
+	                .attr("fill", "none");
+	
+	            svg.selectAll("circle.viewers")
+	               .data(ep_data.seasons)
+	               .enter()
+	               .append("circle")
+	               .attr("fill","white" )
+	               .attr("class","viewers")
+	               .attr("stroke","#75c0e5")
+	               .attr("stroke-width",2)
+	               .attr("r", 5)
+	               .attr("cx", function(m,n){return scaleX(n+1); } )
+	               .attr("cy", function(m,n){return scaleYr(ep_data.seasons[n].viewers)})
+	               .on("mouseover", function(d,i){return tooltip
+		           		.style("visibility","visible")
+		           		.style("top","20px").style("left","400px")
+		           		.text("Season "+(i+1)+" "+ep_data.seasons[i].viewers+" millions viewers")
+		           	;})
+					.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")})
+					.on("click",function (m,n,p) {
+							currentSeason=n;
+					         currentSeasonlong=m;
+				    	check(currentSeasonlong,currentSeason,p);      
+				    });
+	               
+	            
+	            //Create axis
+	            if(d3.select("g.xAxis").empty()){
+	            	svg.append("g")
+	            		.attr("class", "axis xAxis")  //Assign "axis" class
+	            		.attr("transform", "translate(0," + (h - padding) + ")")
+				        .call(xAxis)
+				        ; 
+                }
+          
+               
+            } //end showViewersSerie
+        }        
+            function showViewersSeason(d,i,l){
+            	currentSeason=i;
+            	currentSeasonlong=d;
+	            
+            
+	           //updating sidebar
+			            /*
+d3.select("#currentSeason").text("Season "+(i+1));
+			            
+			        format = d3.time.format("%m/%d/%y");
+                    var seasonsYear=format.parse(ep_data.seasons[i][l].airdate);
+                    var yearNameFormat = d3.time.format("%Y");
+                    seasonsYear=yearNameFormat(seasonsYear);
 			            d3.select("#seasonYear").text(seasonsYear+" | ")
 			            d3.select("#epInSeason").text(ep_data.seasons[i].length+" episodes")
 			            d3.select("#prevseason").style("display","inline")
@@ -295,278 +501,74 @@ var tooltip = d3.select("body")
 			            }
 			            d3.select("#prevseason").on("click",function () {
 			            	i--;
-			            	visualizeSeason(d,i,l);      
+			            	check(d,i,l);   
 			            })
 			            d3.select("#nextseason").on("click",function () {
 			            	i++;
-			            	visualizeSeason(d,i,l);      
+			            	check(d,i,l);      
 			            });
+*/
 			            
 			            //removing old chart
-			            d3.selectAll("circle").remove();
-			            d3.select("path.graph").remove();
+			            d3.select("path.viewers").remove();
+			            d3.selectAll("circle.viewers").remove();
 			            d3.select("g.xAxis").remove();
 			            
 			             //creating season graph
-			             var scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
-				         var scaleY = d3.scale.linear().domain([0, 35]).range([h-padding, padding]);
-				         var xAxis = d3.svg.axis()
-				                .scale(scaleX)
-				                .orient("bottom")
-				                ;           
-				         var yAxis = d3.svg.axis()
-		                    .scale(scaleY)
-		                    .orient("left")
-		                    ;
-			             
-			             //adding circles
-			             svg.selectAll("circle")
-			               .data(ep_data.seasons[i])
-			               .enter()
-			               .append("circle")
-			               .attr("fill","white" )
-			               .attr("stroke","#75c0e5")
-			               .attr("stroke-width",2)
-			               .attr("r", 5)
-			               .attr("cx", function(f,j){return scaleX(j+1); } )
-			               .attr("cy", function(f,j){return scaleY(ep_data.seasons[i][j].viewers)})
-			              
-			               //adding tooltip
-			               .on("mouseover", function(f,j){return tooltip
-							.style("visibility","visible")
-							.style("top","20px").style("left","400px")
-							.text("Episode "+(j+1)+" Rate "+ep_data.seasons[i][j].viewers+"/10")
-							;
-							})
-							.on("mouseout", function(f,j){return tooltip.style("visibility","hidden")});
-							var lineFunction = d3.svg.line()
-								.x(function(f,j) { return scaleX(j+1) })
-								.y(function(f,j) { return scaleY(ep_data.seasons[i][j].viewers)})
-								.interpolate("monotone");
-							
-							//creating path
-							svg.append("path")
-             				.attr("class","graph")
-                            .attr("d", lineFunction(ep_data.seasons[i]))
-                            .attr("stroke", "white")
-                            .attr("stroke-width", 2)
-                            .attr("fill", "none");
-                            
-                            
-			             svg.append("g")
-				            .attr("class", "axis xAxis")  //Assign "axis" class
-				            .attr("transform", "translate(0," + (h - padding) + ")")
-				            .call(xAxis)
-				            ;
+			             scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
+				         //scaleYr = d3.scale.linear().domain([0, 35]).range([h-padding, padding]);
 				         
-            }
-               
-        } //end visualizeViewers
-  //-----------------------------------------------------END VISUALIZE VIEWERS-------------------------------------------------------       
-        
-        
-        
-  //----------------------------------------------------- VISUALIZE RATINGS-------------------------------------------------------
-        
-        function visualizeRatings(svg){
-	     console.log("serie ratings")
-        //Rating each season with average of the season's episodes rates
-        for (var j=0;j<ep_data.seasons.length;j++){
-        var totalOneSeason=0;
-	    	for (var i = 0; i<ep_data.seasons[j].length; i++){
-                    totalOneSeason+=ep_data.seasons[j][i].rating
-                    moy=totalOneSeason/ep_data.seasons[j].length
-                    ep_data.seasons[j].rating=Math.floor(moy*10)/10;   
-        };
-  
-        };        
-            //scale
-            var scaleX = d3.scale.linear().domain([1, ep_data.seasons.length]).range([padding, w-padding]);
-            var scaleY = d3.scale.linear().domain([6, 8]).range([h-padding, padding]);
-            
-            //axes
-            var xAxis = d3.svg.axis()
-                  .scale(scaleX)
-                  .orient("bottom")
-                  .ticks(24)
-                  ;
-                  
-            var yAxis = d3.svg.axis()
-                    .scale(scaleY)
-                    .orient("left")
-                    //.ticks(4)
-                    ;
-                    
-                    var format = d3.time.format("%m/%d/%y");
-                    var seasonsYear =format.parse(ep_data.seasons[0][0].airdate);
-                    var yearNameFormat = d3.time.format("%Y");
-                    seasonsYear=yearNameFormat(seasonsYear);
-
-                       
-            //Create SVG element
-            /*
-var svg = d3.select("#audience-module")
-                        .append("svg:svg")
-                        .attr("width", w)
-                        .attr("height", h)
-                        .style("background-color","#2a4a7c")
-*/
-                   
-                        
-             var lineFunction = d3.svg.line()
-                          .x(function(d,i) { return scaleX(i+1) })
-                          .y(function(d,i) { return scaleY(ep_data.seasons[i].rating)})
-                          .interpolate("monotone");
-                          
-             svg.append("path")
-             				.attr("class","graph")
-             				.attr("class","ratings")
-                            .attr("d", lineFunction(ep_data.seasons))
-                            .attr("stroke", "white")
-                            .attr("stroke-width", 2)
-                            .attr("fill", "none");
-
-            svg.selectAll("circle")
-               .data(ep_data.seasons)
-               .enter()
-               .append("circle")
-               .attr("class","ratings")
-               .attr("fill","white" )
-               .attr("stroke","#75c0e5")
-               .attr("stroke-width",2)
-               .attr("r", 5)
-               .attr("cx", function(d,i){return scaleX(i+1); } )
-               .attr("cy", function(d,i){return scaleY(ep_data.seasons[i].rating)})
-               .on("mouseover", function(d,i){return tooltip
-				.style("visibility","visible")
-				.style("top","20px").style("left","400px")
-				.text("Season "+(i+1)+" Rate "+ep_data.seasons[i].rating+"/10")
-				;
-				})
-				.on("mouseout", function(d,i){return tooltip.style("visibility","hidden")})
-				.on("click",function (d,i,l) {
-			            visualizeSeason(d,i,l);      
-			    });
-               
-            
-            //Create axis
-            svg.append("g")
-            .attr("class", "axis xAxis")  //Assign "axis" class
-            .attr("transform", "translate(0," + (h - padding) + ")")
-            .call(xAxis)
-            ;
-            
-            svg.append("g")
-            .attr("class", "axis yAxis")  //Assign "axis" class
-            .attr("transform", "translate("+(padding) +",0)")
-            .call(yAxis)
-            ;
-            
-            /*
-var tooltip = d3.select("body")
-              .append("div")
-              .style("position", "absolute")
-              .style("padding","10px")
-              .style("border","1px solid white")
-              .style("border-radius","3px")
-              .style("visibility", "hidden")
-              .style("color","white")
-              .style("top", 0 )
-              .style("left", 0)
-              ;
-*/
-              
-            function visualizeSeason(d,i,l){
-            	console.log("season ratings");
-            	d3.select("path.ratings").remove();
-	        d3.selectAll("circle.ratings").remove();
-	           //updating sidebar
-			            d3.select("#currentSeason").text("Season "+(i+1));
-			            var seasonsYear =format.parse(ep_data.seasons[i][l].airdate);
-			            var yearNameFormat = d3.time.format("%Y");
-			            seasonsYear=yearNameFormat(seasonsYear);
-			            d3.select("#seasonYear").text(seasonsYear+" | ")
-			            d3.select("#epInSeason").text(ep_data.seasons[i].length+" episodes")
-			            d3.select("#prevseason").style("display","inline")
-			            d3.select("#nextseason").style("display","inline")
-			            if(i==0){
-				            d3.select("#prevseason").style("display","none")
-			            }
-			            if(i+1==ep_data.seasons.length){
-				            d3.select("#nextseason").style("display","none")
-			            }
-			            d3.select("#prevseason").on("click",function () {
-			            	i--;
-			            	visualizeSeason(d,i,l);      
-			            });
-			            d3.select("#nextseason").on("click",function () {
-			            	i++;
-			            	visualizeSeason(d,i,l);      
-			            });
-			            
-			            
-			            //removing old chart
-			            d3.selectAll("circle").remove();
-			            d3.select("path.graph").remove();
-			            d3.select("g.xAxis").remove();
-			            
-			             //creating season graph
-			             var scaleX = d3.scale.linear().domain([1, ep_data.seasons[i].length]).range([padding, w-padding]);
-				         var scaleY = d3.scale.linear().domain([0, 10]).range([h-padding, padding]);
 				         var xAxis = d3.svg.axis()
 				                .scale(scaleX)
 				                .orient("bottom")
 				                ;           
-				         var yAxis = d3.svg.axis()
-		                    .scale(scaleY)
-		                    .orient("left")
-		                    ;
-			             
-			             //adding circles
-			             svg.selectAll("circle")
-			               .data(ep_data.seasons[i])
-			               .enter()
-			               .append("circle")
-			               .attr("fill","white" )
-			               .attr("stroke","#75c0e5")
-			               .attr("stroke-width",2)
-			               .attr("r", 5)
-			               .attr("cx", function(f,j){return scaleX(j+1); } )
-			               .attr("cy", function(f,j){return scaleY(ep_data.seasons[i][j].rating)})
-			              
-			               //adding tooltip
-			               .on("mouseover", function(f,j){return tooltip
-							.style("visibility","visible")
-							.style("top","20px").style("left","400px")
-							.text("Episode "+(j+1)+" Rate "+ep_data.seasons[j][i].rating+"/10")
-							;
-							})
-							.on("mouseout", function(f,j){return tooltip.style("visibility","hidden")});
-							var lineFunction = d3.svg.line()
-								.x(function(f,j) { return scaleX(j+1) })
-								.y(function(f,j) { return scaleY(ep_data.seasons[i][j].rating)})
+		                    
+		                    var lineFunction = d3.svg.line()
+								.x(function(m,n) { return scaleX(n+1) })
+								.y(function(m,n) { return scaleYr(ep_data.seasons[i][n].viewers)})
 								.interpolate("monotone");
 							
 							//creating path
 							svg.append("path")
              				.attr("class","graph")
+             				.attr("class","viewers")
                             .attr("d", lineFunction(ep_data.seasons[i]))
-                            .attr("stroke", "white")
+                            .attr("stroke", "#75c0e5")
                             .attr("stroke-width", 2)
                             .attr("fill", "none");
-                            
-                            
-			             svg.append("g")
-				            .attr("class", "axis xAxis")  //Assign "axis" class
+			             
+			             //adding circles
+			             svg.selectAll("circle.viewers")
+			               .data(ep_data.seasons[i])
+			               .enter()
+			               .append("circle")
+			               .attr("fill","white" )
+			               .attr("class","viewers")
+			               .attr("stroke","#75c0e5")
+			               .attr("stroke-width",2)
+			               .attr("r", 5)
+			               .attr("cx", function(m,n){return scaleX(n+1); } )
+			               .attr("cy", function(m,n){return scaleYr(ep_data.seasons[i][n].viewers)})
+			              
+			               //adding tooltip
+			               .on("mouseover", function(m,n){return tooltip
+							.style("visibility","visible")
+							.style("top","20px").style("left","400px")
+							.text("Episode "+(+1)+" "+ep_data.seasons[i][n].viewers+" millions viewers")
+							;
+							})
+							.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")});
+							
+			             if(d3.select("g.xAxis").empty()){
+	                           svg.append("g")
+	                           .attr("class", "axis xAxis")  //Assign "axis" class
 				            .attr("transform", "translate(0," + (h - padding) + ")")
 				            .call(xAxis)
-				            ;
-            }
-
-               
-        }
-        //-----------------------------------------------------END VISUALIZE RATINGS-------------------------------------------------------
-        
+				            ; 
+                            }
+				  }
+  //-----------------------------------------------------END VISUALIZE VIEWERS-------------------------------------------------------       
+         
         
         // -----------------------------------FIN D3 AUDIENCE--------------------------------------------
       }

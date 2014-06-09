@@ -16,10 +16,11 @@ define([
       var compiledTemplate = _.template( factsTemplate, data );
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
+        $('body').scrollTop(0);
         $('#menu').removeClass('hidden');
         $('#factsButton').addClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-   
+        $('.page').fadeIn(300);
         // D3 ----------------------------------
 
         var svg = d3.select("#diagram")

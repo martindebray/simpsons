@@ -1,0 +1,53 @@
+body {
+
+	
+	#sections-menu {
+		background-color: $yellow;
+		height: 100%;
+
+		ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				height: 100%;
+
+				li {
+				 	display: block;
+				 	height: 34%;
+				 	position: relative;
+
+					a {
+						display: block;
+						float: left;   
+						width: 100%;
+						height: 100%;
+						padding-top: 20px;
+						color: $dark-grey;
+						text-align: center;
+						-webkit-transition: all 0.2s ease; 
+						transition: all 0.2s ease; 
+
+						&:hover {
+							background-color: $blue;
+							color: #fff;
+						} 
+					}
+
+					&:nth-child(1) {
+						background-color: $purplee;
+					}
+
+					&:nth-child(2) {
+						background-color: $blue;
+					}
+
+					&:nth-child(3) {
+						background-color: $yellow;
+					}		  
+
+				}
+		}
+	}
+
+
+}

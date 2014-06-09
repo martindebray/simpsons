@@ -33,13 +33,25 @@ body {
 		
 		#sidebar{
 			color: white;
+			border: 1px solid black;
+			height: 100%;
+			width: 20%;
+			z-index: 1000;
+			float: right;
+			
+			#epInSeason, #seasonYear{
+				display: inline;
+				//float: left;
+			}
 			
 			button{
-				background-color: red;
-				height: 100px;
-				width: 100px;
+				color: white;
+				font-family: $langdon;
+				text-transform: uppercase;
+				background-color: #2a4a7c;
+				height: 120px;
+				width: 120px;
 				border-radius: 100px;
-				margin: 10px;
 				border: 0;
 				font-size: 18px;
 				-webkit-transform: rotate(0deg);
@@ -51,6 +63,17 @@ body {
 				-webkit-transition: -webkit-transform, 0.5s;
 				//background: blue;
 				}
+			h2{
+				text-align: center;
+			}
+		}
+
+		#topsflops {
+
+			ol {
+				margin-top: 0;
+			}
+			
 		}
 	
 	}

@@ -77,13 +77,22 @@ body #audience-module {
   body #audience-module .xAxis line {
     display: none; }
   body #audience-module #sidebar {
-    color: white; }
+    color: white;
+    border: 1px solid black;
+    height: 100%;
+    width: 20%;
+    z-index: 1000;
+    float: right; }
+    body #audience-module #sidebar #epInSeason, body #audience-module #sidebar #seasonYear {
+      display: inline; }
     body #audience-module #sidebar button {
-      background-color: red;
-      height: 100px;
-      width: 100px;
+      color: white;
+      font-family: "Langdon";
+      text-transform: uppercase;
+      background-color: #2a4a7c;
+      height: 120px;
+      width: 120px;
       border-radius: 100px;
-      margin: 10px;
       border: 0;
       font-size: 18px;
       -webkit-transform: rotate(0deg);
@@ -91,6 +100,8 @@ body #audience-module {
     body #audience-module #sidebar button.selected {
       -webkit-transform: rotate(-30deg);
       -webkit-transition: -webkit-transform, 0.5s; }
+    body #audience-module #sidebar h2 {
+      text-align: center; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;

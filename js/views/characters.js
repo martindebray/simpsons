@@ -18,10 +18,12 @@ define([
       var compiledTemplate = _.template( charactersTemplate, data );
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
+        $('body').scrollTop(0);
         $('#menu').removeClass('hidden');
         $('#charactersButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#audienceButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-
+        $('.page').fadeIn(300);
+        
           // -----------------------------List of the characters -----------------------------
           
           $.getJSON( "json/characters.json", function( data ) {

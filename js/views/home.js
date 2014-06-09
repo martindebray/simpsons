@@ -19,7 +19,7 @@ define([
         $('#menu').addClass('hidden');
         $('#homeButton').addClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#factsButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-    
+        $('.page').show();
     // Loader
 
     // Selection des images en src="
@@ -107,10 +107,17 @@ define([
       
       console.log('terminé');
         setInterval(function(){
-        $('#container').fadeOut(900).delay(300).fadeIn(800);  
+        $('#container').fadeTo(800, 0.6).fadeTo(800, 1);  
           }, 10);
       
     }
+
+    $('#home').on('click', 'a#enter', function(){      
+      $('body').animate({
+        scrollTop: $('#sections-menu').offset().top
+      }, 1000);
+      return false;
+    }); 
     
     // La page contient des elements permettant d'afficher une barre de progression
     if($elements.length) {

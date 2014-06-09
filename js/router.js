@@ -5,13 +5,12 @@ define([
   'backbone',
   'd3',
   'views/home',
-  'views/sections',
   'views/audience',
   'views/characters',
   'views/facts',
   'views/contribute',
   'views/about'   
-], function($, _, Backbone, d3, HomeView, SectionsView, AudienceView, CharactersView, FactsView, ContributeView, AboutView){
+], function($, _, Backbone, d3, HomeView, AudienceView, CharactersView, FactsView, ContributeView, AboutView){
   var AppRouter = Backbone.Router.extend({
     routes: {
         '':'home', // la home
@@ -37,9 +36,7 @@ define([
     });
 
     router.on('route:sections', function(){
-      // déclencheur de l'action
-      var sectionsView =  new SectionsView();
-      sectionsView.render();
+
     });
 
     router.on('route:audience', function(){ // effets audience page

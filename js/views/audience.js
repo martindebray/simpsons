@@ -16,6 +16,7 @@ define([
       var compiledTemplate = _.template( audienceTemplate, data );
       // Append our compiled template to this Views "el"
       this.$el.html( compiledTemplate );
+      	$('body').scrollTop(0);
         $('#menu').removeClass('hidden');
         $('#audienceButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');

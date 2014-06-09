@@ -35,6 +35,7 @@ html, body {
 body {
 	font-family: $bodytext;
 	overflow:hidden;
+	position: relative;
 
 	a {
 		text-decoration: none;

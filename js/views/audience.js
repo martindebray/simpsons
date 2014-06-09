@@ -20,6 +20,7 @@ define([
         $('#menu').removeClass('hidden');
         $('#audienceButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
+        $('.page').fadeIn(300);
          // ----------------------------------------D3 AUDIENCE---------------------------------------------
         var ep_data; // a global variable for the data of all episode of all seasons
         var w = 600;

@@ -2,7 +2,7 @@ body {
 
 	
 	#sections-menu {
-		background-color: red;
+		background-color: $yellow;
 		height: 100%;
 
 		ul {
@@ -31,6 +31,18 @@ body {
 							background-color: $blue;
 							color: #fff;
 						} 
+					}
+
+					&:nth-child(1) {
+						background-color: $purplee;
+					}
+
+					&:nth-child(2) {
+						background-color: $blue;
+					}
+
+					&:nth-child(3) {
+						background-color: $yellow;
 					}		  
 
 				}

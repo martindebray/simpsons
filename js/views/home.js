@@ -19,7 +19,7 @@ define([
         $('#menu').addClass('hidden');
         $('#homeButton').addClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#factsButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-    
+        $('.page').show();
     // Loader
 
     // Selection des images en src="

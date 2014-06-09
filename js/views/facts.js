@@ -20,7 +20,7 @@ define([
         $('#menu').removeClass('hidden');
         $('#factsButton').addClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-   
+        $('.page').fadeIn(300);
         // D3 ----------------------------------
 
         var svg = d3.select("#diagram")

@@ -116,7 +116,7 @@ define([
     if($elements.length) {
       chargementEnCours();
       
-      $elements.load(function() {
+      $elements.ready(function() {
         $(this).off('load');
         elementsCharges++;
         chargementEnCours();

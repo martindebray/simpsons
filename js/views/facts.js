@@ -55,9 +55,11 @@ define([
         getData(i);
 
         svg.append("g")
-          .attr("class", "slices");
+          .attr("class", "slices")
+          .style("z-index","-1000");
         svg.append("g")
-          .attr("class", "labels");
+          .attr("class", "labels")
+          .style("z-index","-1000");
 
         function getData(i){
 
@@ -81,10 +83,11 @@ define([
               .attr("d", arc)
               .style("fill", function(d) { return color(d.data.season); })
               .style("stroke","white")
+              .style("z-index","1000")
               .attr("class", "slice");
 
                   slice   
-                    .transition().duration(1000)
+                    .transition().duration(1500)
                     .attrTween("d", function(d) {
                       this._current = this._current || d;
                       var interpolate = d3.interpolate(this._current, d);
@@ -96,6 +99,7 @@ define([
 
                   slice.exit()
                     .remove();
+
         // label
 
           var text = svg.select(".labels").selectAll("text.label")
@@ -117,7 +121,7 @@ define([
 
                         // Transition des textes --- changement des nombres
 
-          text.transition().duration(1000) // On ajoute pas de append on rajoute juste le nombre et sa position
+          text.transition().duration(1500) // On ajoute pas de append on rajoute juste le nombre et sa position
               .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
               .attr("dy", ".35em")
               .style("text-anchor", "middle")
@@ -130,31 +134,58 @@ define([
                   text.exit()
                     .remove();
 
+            function animateNumbers(el,number) {
+                jQuery({someValue: 0}).animate({someValue: number}, {
+                  duration: 1000,
+                  easing:'swing', 
+                  step: function() { 
+                    $(el).text(Math.ceil(this.someValue));
+                  }
+                });
+              }
+
+            // On affiche le total
+            animateNumbers("#number",(totalFacts));
+
+
+
         });
                 var color = d3.scale.ordinal()
                   //.domain([0.1, 0.4, 0.5, 0.51, 0.52, 0.53, 0.54]) //, 0.55, 0.56, 0.57, 0.58, 0.59, 0.65, 0.64, 0.63
                   .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]); // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
         }
 
+var Facts = ["homer said doh", "Itchy and Scratchy appear", "Bart's prank", "Strangle", "Abraham's story"];
 // au click de next
         d3.select("#next")
           .on("click", function(){
-            //change(randomData());
-            i++;
+            if(i==Facts.length-1){
+              i=0;
+            } else {
+              i++;
+            }   
             getData(i);
-            console.log("click");
+            $(".title").html(Facts[i]);
+           
 
           });
 // au click de prec
         d3.select("#prec")
           .on("click", function(){
-            //change(randomData());
-            i=i-1;
+            if(i==0){
+              i=Facts.length-1;
+            } else {
+              i=i-1;
+            }               
             getData(i);
-            console.log("click");
+            $(".title").html(Facts[i]);
 
           });
 
+          
+         
+           //            $(".slices").hover(function(){     $(".slices").addClass(".poulet");       //$(this).style("fill","black")
+           // });
 
             }
           });

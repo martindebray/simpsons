@@ -13,9 +13,6 @@
 	  float: left;
 	  position: relative;
 
-
-
-
 	  .contenuDiagram{
 	  	margin-left: -100px;
 	  }
@@ -24,16 +21,29 @@
 	  	color:rgba(0,255,255,0.8);
 	  }
 
+	  path.slice{
+	  	
+	  	&:hover{
+	  		fill:white !important;
+	  		fill-opacity:0.5 !important;
+	  	}
+	  }
+
+	  .poulet{
+	  	fill:black;
+	  }
+
 
 	}
 
 	#menuRight{
-		width:350px;
+		width:28%;
 		margin-left: 50%;
 		font-family: $langdon;
 		font-size: 2em;
 		text-transform: uppercase;
 		position:relative;
+		color:#464646;
 
 		#nav{
 			background-color:#f7f7f7;
@@ -46,7 +56,11 @@
 
 		.title{
 			text-align: center;
-			margin-top:10px;
+			top:6px;
+			font-size: 0.7em;
+			position:relative;
+
+
 		}
 
 		.direction {
@@ -65,34 +79,77 @@
 		}
 
 		#prec{
-			border-right:1px solid #6d6e76;
+			border-right:1px solid #464646;
 			float: left;
 		}
 
 		#picture img {
-			width:350px;
+			width:100%;
 			margin-top: 25px;
 		}
 
 		#total {
-			width:350px;
+			width:100%;
 			background-color:#f7f7f7;
 			border-radius: 3px;
 			text-align: right;
 			padding-bottom:15px;
 			padding-top:15px;
+			padding-right: 15px;
 			margin-top: 25px;
+
 		}
 	}
 
 	#seasons{
-		background-color: rgba(255, 255, 255, 0.3);
-width: 100%;
-position: fixed;
-bottom: 8%;
-height: 19%;
-z-index: 10;
-	}
+		background-color: rgba(255, 255, 255, 0.4);
+		text-transform: uppercase;
+		width: 100%;
+		position: fixed;
+		bottom: 8%;
+		height: 19%;
+		z-index: 10;
+		text-align: center;
+		margin:0 auto;	
+		color:#464646;
+
+		#season{
+			display: block;
+			position:absolute;
+			font-size: 1.5em;
+			padding-top: 18px;
+			padding-left: 2%;
+			}
+
+			#contentUl{
+				width:100%;
+				height:100%;
+				margin-left: 3%;
+				
+			}
+
+
+			ul {
+				list-style: none;
+				float: left;
+				position:relative;
+				width: 18%;
+
+				
+				li {
+					margin-top: 10px;
+					position:relative;
+				}
+				// .ronds{
+				// 		width:10px;
+				// 		height:10px;
+				// 		background-color: black;
+				// 		position:relative;
+				// 	}
+			}
+
+
+		}
 
 	// path.slice{
 	// 	stroke-width:8px;

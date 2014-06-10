@@ -20,6 +20,7 @@ define([
         $('#menu').removeClass('hidden');
         $('#contributeButton').removeClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#factsButton').removeClass('selected');
+        $('.page').fadeIn(300);
     }
   });
   // Our module now returns our view

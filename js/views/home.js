@@ -19,7 +19,7 @@ define([
         $('#menu').addClass('hidden');
         $('#homeButton').addClass('selected');
         $('#audienceButton').removeClass('selected');$('#charactersButton').removeClass('selected');$('#factsButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-    
+        $('.page').show();
     // Loader
 
     // Selection des images en src="
@@ -123,7 +123,7 @@ define([
     if($elements.length) {
       chargementEnCours();
       
-      $elements.load(function() {
+      $elements.ready(function() {
         $(this).off('load');
         elementsCharges++;
         chargementEnCours();

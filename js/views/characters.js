@@ -22,7 +22,8 @@ define([
         $('#menu').removeClass('hidden');
         $('#charactersButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#audienceButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
-
+        $('.page').fadeIn(300);
+        
           // -----------------------------List of the characters -----------------------------
           
           $.getJSON( "json/characters.json", function( data ) {

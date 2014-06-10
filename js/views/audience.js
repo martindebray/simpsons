@@ -180,7 +180,7 @@ define([
 			   d3.select("#seasonYear").text("1989-2014 | ");
 			   d3.select("#epInSeason").text("252");
 			             
-		        isInSeason=true;
+		        
 			    makeRatings(svg);
 			    makeViewers(svg);
 			    toggleR(svg);
@@ -218,6 +218,7 @@ define([
          
          function check(d,i,l){
          d3.select("#currentSeason").text("Season "+(i+1));
+         isInSeason=true;
 			            format = d3.time.format("%m/%d/%y");
 			            var seasonsYear=format.parse(ep_data.seasons[i][l].airdate);
 			            var yearNameFormat = d3.time.format("%Y");

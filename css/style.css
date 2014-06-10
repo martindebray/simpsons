@@ -46,11 +46,6 @@ body #home {
     visibility: hidden; }
     body #home #container a {
       color: #000; }
-<<<<<<< HEAD
-  body #home img {
-    width: 27%; }
-=======
->>>>>>> FETCH_HEAD
   body #home h1 {
     font-family: "Simpsonfont"; }
   body #home img {
@@ -95,43 +90,16 @@ body #sections-menu {
       body #sections-menu ul li:nth-child(3) {
         background-color: #f7d100; }
 
-body #sections-menu {
-  background-color: red;
-  height: 100%; }
-  body #sections-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    height: 100%; }
-    body #sections-menu ul li {
-      display: block;
-      height: 34%;
-      position: relative; }
-      body #sections-menu ul li a {
-        display: block;
-        float: left;
-        width: 100%;
-        height: 100%;
-        padding-top: 20px;
-        color: #464646;
-        text-align: center;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease; }
-        body #sections-menu ul li a:hover {
-          background-color: #75c0e5;
-          color: #fff; }
-
 body button:focus {
   outline: 0 !important; }
 body #audience-module {
   height: 100%;
   width: 100%;
-  background-image: url(../img/tv.svg);
-  background-repeat: no-repeat;
+  background: url("../img/tv.svg") no-repeat fixed center;
   background-size: cover; }
   body #audience-module svg {
-    margin-left: 13%;
-    margin-top: 9%; }
+    margin-left: 16%;
+    margin-top: 8%; }
   body #audience-module .axis path, body #audience-module .axis line {
     fill: none;
     stroke: white;
@@ -546,12 +514,8 @@ html, body {
 body {
   font-family: "Arial";
   overflow: hidden;
-<<<<<<< HEAD
-  position: relative; }
-=======
   position: relative;
   /* background: url("http://www.gifmania.co.uk/Animated-Cartoons/FOX/The-Simpsons/Homer-Simpson/homer-simpson38-33437.gif") no-repeat fixed center; */ }
->>>>>>> FETCH_HEAD
   body a {
     text-decoration: none; }
   body #menu {

@@ -53,17 +53,16 @@ define([
                         .attr("height", h)
                         .style("background-color","#2a4a7c");
                         
-            var tooltip = d3.select("#audience-module")
-              .append("div")
-              .style("position", "absolute")
-              .style("padding","10px")
-              .style("border","1px solid white")
-              .style("border-radius","3px")
-              .style("visibility", "hidden")
-              .style("color","white")
-              .style("top", 0 )
-              .style("left", 0)
-              ;
+            var tooltip = d3.select("body")
+          .append("div")
+          .style("position", "absolute")
+          .style("z-index", "10")
+          .style("background-color", "rgba(255,255,255,0.8)")
+          .style("padding", "5px 10px")
+          .style("font-size","12px")
+          .style("font-family","arial")
+          .style("visibility", "hidden");
+          
             
         function toggleR(svg){
 	        if(toggleRate){
@@ -92,6 +91,7 @@ define([
         }
  //-------------------------------------------------------INIT-------------------------------------------------------
         function init(){
+        d3.select("#test").text("OUBFZEF");
         isInSeason=false;
           	
              var clean=d3.select("#clean")
@@ -293,6 +293,8 @@ define([
 						.style("top","20px").style("left","400px")
 						.text("Season "+(n+1)+" Rate "+ep_data.seasons[n].rating+"/10");})
 						.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")})
+						.on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
 						.on("click",function (m,n,p) {
 					            currentSeason=n;
 					            currentSeasonlong=m;
@@ -389,6 +391,8 @@ d3.select("#currentSeason").text("Season "+(i+1));
 								.text("Episode "+(n+1)+" Rate "+ep_data.seasons[i][n].rating+"/10")
 								;
 							})
+							.on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
 							.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")});
                             
                             if(d3.select("g.xAxis").empty()){
@@ -457,6 +461,8 @@ format = d3.time.format("%m/%d/%y");
 		           		.style("top","20px").style("left","400px")
 		           		.text("Season "+(i+1)+" "+ep_data.seasons[i].viewers+" millions viewers")
 		           	;})
+		           	.on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
 					.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")})
 					.on("click",function (m,n,p) {
 							currentSeason=n;
@@ -555,9 +561,11 @@ d3.select("#currentSeason").text("Season "+(i+1));
 			               .on("mouseover", function(m,n){return tooltip
 							.style("visibility","visible")
 							.style("top","20px").style("left","400px")
-							.text("Episode "+(+1)+" "+ep_data.seasons[i][n].viewers+" millions viewers")
+							.text("Episode "+(n+1)+" "+ep_data.seasons[i][n].viewers+" millions viewers")
 							;
 							})
+							.on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
 							.on("mouseout", function(m,n){return tooltip.style("visibility","hidden")});
 							
 			             if(d3.select("g.xAxis").empty()){

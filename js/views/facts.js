@@ -30,8 +30,8 @@ define([
         // svg.append("g")
         //   .attr("class", "lines");
 
-        var width = 150,
-            height = 140,
+        var width = 140,
+            height = 120,
           radius = Math.min($(window).width()/width*100, $(window).height()/height*100) / 2;
 
         var pie = d3.layout.pie()
@@ -111,6 +111,7 @@ define([
               .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
               .attr("dy", ".35em")
               .style("text-anchor", "middle")
+              .style("font-size","14px")
               .text(function(d) {
                 var number =  d.data.season;
                 number = d.data.number/totalFacts*100;

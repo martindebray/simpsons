@@ -33,11 +33,6 @@ body {
 			}
 		}
 
-		img {
-			width:27%;
-				
-		}
-
 		
 		h1 {
 			font-family: $simpsons;
@@ -52,6 +47,10 @@ body {
 		p {
 			font-size: 140%;
 			top:60%;
+		}
+
+		#enter img {
+			width:9%;
 		}
 	}
 

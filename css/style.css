@@ -44,8 +44,8 @@ body #home {
     width: 0%; }
   body #home #container {
     visibility: hidden; }
-  body #home img {
-    width: 27%; }
+    body #home #container a {
+      color: #000; }
   body #home h1 {
     font-family: "Simpsonfont"; }
   body #home img {
@@ -55,6 +55,40 @@ body #home {
   body #home p {
     font-size: 140%;
     top: 60%; }
+  body #home #enter img {
+    width: 9%; }
+
+body #sections-menu {
+  background-color: #f7d100;
+  height: 100%; }
+  body #sections-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 100%; }
+    body #sections-menu ul li {
+      display: block;
+      height: 34%;
+      position: relative; }
+      body #sections-menu ul li a {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        color: #464646;
+        text-align: center;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        body #sections-menu ul li a:hover {
+          background-color: #75c0e5;
+          color: #fff; }
+      body #sections-menu ul li:nth-child(1) {
+        background-color: #8c81bf; }
+      body #sections-menu ul li:nth-child(2) {
+        background-color: #75c0e5; }
+      body #sections-menu ul li:nth-child(3) {
+        background-color: #f7d100; }
 
 body button:focus {
   outline: 0 !important; }
@@ -102,6 +136,8 @@ body #audience-module {
       -webkit-transition: -webkit-transform, 0.5s; }
     body #audience-module #sidebar h2 {
       text-align: center; }
+  body #audience-module #topsflops ol {
+    margin-top: 0; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;
@@ -262,10 +298,25 @@ body .list-opened {
   }*/ }
 
 #facts {
-  background-color: #f7d100;
+  background-image: url("../img/facts/background_facts.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
   height: 100%;
   font-family: "Langdon"; }
+  #facts h1 {
+    width: 13%;
+    padding: 3px 0px 7px 0px;
+    color: #464646;
+    top: 5px;
+    margin-bottom: 66px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #FBFBFB;
+    text-align: center;
+    margin: 0 auto; }
   #facts #diagram {
     font-family: "Langdon";
     width: 40%;
@@ -290,9 +341,10 @@ body .list-opened {
     font-size: 2em;
     text-transform: uppercase;
     position: relative;
-    color: #464646; }
+    color: #464646;
+    margin-top: 2%; }
     #facts #menuRight #nav {
-      background-color: #f7f7f7;
+      background-color: #FBFBFB;
       border-radius: 3px;
       text-align: center;
       height: 52px;
@@ -319,7 +371,7 @@ body .list-opened {
       margin-top: 25px; }
     #facts #menuRight #total {
       width: 100%;
-      background-color: #f7f7f7;
+      background-color: #FBFBFB;
       border-radius: 3px;
       text-align: right;
       padding-bottom: 15px;
@@ -327,7 +379,7 @@ body .list-opened {
       padding-right: 15px;
       margin-top: 25px; }
   #facts #seasons {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     width: 100%;
     position: fixed;
@@ -382,14 +434,19 @@ body #contribute {
 body #about {
   overflow-y: auto;
   height: 100%;
-  padding: 0 10% 70px 10%;
+  padding: 0 15% 70px 15%;
   background-color: #f7d100;
   /*background: url("../img/about-bg.gif") no-repeat fixed center;*/ }
   body #about h2 {
     font-family: "MuseoSlab700"; }
+  body #about p > a, body #about ul a {
+    text-decoration: underline;
+    color: #000; }
+    body #about p > a:hover, body #about ul a:hover {
+      text-decoration: none; }
   body #about #team {
     margin: 0 auto 20px auto;
-    width: 90%;
+    width: 95%;
     background-color: #f7d100; }
     body #about #team a {
       display: inline-block;
@@ -399,7 +456,9 @@ body #about {
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       font-family: "Langdon";
-      text-transform: uppercase; }
+      font-size: 1.250em;
+      text-transform: uppercase;
+      color: #000; }
       body #about #team a img {
         width: 90%;
         -webkit-transition: all 0.5s ease;
@@ -428,7 +487,9 @@ html, body {
 
 body {
   font-family: "Arial";
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  /* background: url("http://www.gifmania.co.uk/Animated-Cartoons/FOX/The-Simpsons/Homer-Simpson/homer-simpson38-33437.gif") no-repeat fixed center; */ }
   body a {
     text-decoration: none; }
   body #menu {

@@ -73,7 +73,7 @@ define([
 	        }
 	        else{
 		        toggleRate=!toggleRate;      
-		        d3.select("#notes").attr("class","selected");
+		        $("#notes").addClass("selected");
 	        }        
         }
         
@@ -86,7 +86,7 @@ define([
 	        }
 	        else{
 		        toggleView=!toggleView;
-		        d3.select("#audiences").attr("class","selected");
+		        $("#audiences").addClass("selected");
 	        }
         }
  //-------------------------------------------------------INIT-------------------------------------------------------
@@ -109,7 +109,7 @@ define([
 			    });
 			    
              	var notes=d3.select("#notes")
-             		.style("background","red")
+             		/* .style("background","red") */
              		.on("click",function (m,n,p) {
 						if(toggleRate){
 							toggleR(svg);  

@@ -33,6 +33,11 @@ body {
 				}
 
 				&:nth-child(1) {
+					background: url("../img/menu-reviews-bg.jpg") no-repeat center;
+					-webkit-background-size: cover;
+					-moz-background-size: cover; 
+					-o-background-size: cover; 
+					background-size: cover;
 					background-color: $purplee;
 				}
 

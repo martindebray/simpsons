@@ -188,25 +188,50 @@ define([
 			    toggleV(svg);
 			    showViewersSerie(svg);
 			    
+			    d3.select("#flopp").text("TOP RATING : #");
+			    
 			    
 			    
 			    
         } //end init
         function tops(currentSeasonlong,currentSeason,p){        	
-var tab=new Array();
-var max;
-var theMax;
-	        for (var w=0;w<currentSeasonlong.length;w++){
-		        tab.push(ep_data.seasons[currentSeason][w].rating)
-		        max=d3.max(tab);
-		        theMax=tab.indexOf(max);
-		       
-	        }
-	        theMax=theMax+1;
-	        d3.select("#first").text("#"+theMax+" : "+ep_data.seasons[currentSeason][theMax].title+"- rate : "+ep_data.seasons[currentSeason][theMax].rating);
+var tabmaxR=new Array();
+var tabminR=new Array();
+var tabmaxV=new Array();
+var tabminV=new Array();
+var maxR;
+var minR;
+var maxV;
+var minV;
+var theMaxR;
+var theMinR;
+var theMaxV;
+var theMinV;
 
-//console.log(currentSeason);
-//console.log(currentSeasonlong);
+	        for (var w=0;w<currentSeasonlong.length;w++){
+		        tabmaxR.push(ep_data.seasons[currentSeason][w].rating);
+		        tabminR.push(ep_data.seasons[currentSeason][w].rating);
+		        tabmaxV.push(ep_data.seasons[currentSeason][w].viewers);
+		        tabminV.push(ep_data.seasons[currentSeason][w].viewers);
+		        maxR=d3.max(tabmaxR);
+		        minR=d3.min(tabminR);
+		        maxV=d3.max(tabmaxV);
+		        minV=d3.min(tabminV);
+		        theMaxR=tabmaxR.indexOf(maxR);
+		        theMinR=tabminR.indexOf(minR);
+		        theMaxV=tabmaxV.indexOf(maxV);
+		        theMinV=tabminV.indexOf(minV);
+	        }
+	        theMaxR=theMaxR;
+	        theMin=theMinR;
+	        theMax=theMaxV;
+	        theMin=theMinV;
+	        
+	        d3.select("#flopp").text("TOP RATING : #"+(theMaxR+1)+" : "+ep_data.seasons[currentSeason][theMaxR].title+" ("+ep_data.seasons[currentSeason][theMaxR].rating+"/10), "
+	        +"FLOP RATING : #"+(theMinR+1)+" : "+ep_data.seasons[currentSeason][theMinR].title+" ("+ep_data.seasons[currentSeason][theMinR].rating+"/10), "
+	        +"TOP VIEWERS : #"+(theMaxV+1)+" : "+ep_data.seasons[currentSeason][theMaxV].title+" ("+ep_data.seasons[currentSeason][theMaxV].viewers+"M viewers), "
+	        +"FLOP VIEWERS : #"+(theMinV+1)+" : "+ep_data.seasons[currentSeason][theMinV].title+" ("+ep_data.seasons[currentSeason][theMinV].viewers+"M viewers). ");
+
         }       
  //------------------------------------------------------------END INIT----------------------------------------------------------        
          function makeRatings(svg){
@@ -476,7 +501,7 @@ format = d3.time.format("%m/%d/%y");
 	               .on("mouseover", function(d,i){return tooltip
 		           		.style("visibility","visible")
 		           		.style("top","20px").style("left","400px")
-		           		.text("Season "+(i+1)+" "+ep_data.seasons[i].viewers+" millions viewers")
+		           		.text("Season "+(i+1)+" "+ep_data.seasons[i].viewers+"M viewers")
 		           	;})
 		           	.on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
@@ -578,7 +603,7 @@ d3.select("#currentSeason").text("Season "+(i+1));
 			               .on("mouseover", function(m,n){return tooltip
 							.style("visibility","visible")
 							.style("top","20px").style("left","400px")
-							.text("Episode "+(n+1)+" "+ep_data.seasons[i][n].viewers+" millions viewers")
+							.text("Episode "+(n+1)+" "+ep_data.seasons[i][n].viewers+"M viewers")
 							;
 							})
 							.on("mousemove", function (){ return tooltip.style("top",

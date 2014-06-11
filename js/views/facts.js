@@ -11,6 +11,7 @@ define([
   var FactsView = Backbone.View.extend({
     el: '.page',
     render: function(){
+      
       // Using Underscore we can compile our template with data
       var data = {};
       var compiledTemplate = _.template( factsTemplate, data );
@@ -64,12 +65,12 @@ define([
 
         function getData(i){
 
-        d3.json("json/facts.json", function(error, data) {
-        console.log(data.type[0][0].number);
+        d3.json("json/dataFacts.json", function(error, data) {
+        
 
         var totalFacts = 0;
           data.type[i].forEach(function(d) {
-            console.log(d.number);
+          
             d.number = +d.number;
             totalFacts = totalFacts+d.number; // calcul du total
           });
@@ -82,10 +83,14 @@ define([
           slice.enter()
               .insert("path")
               .attr("d", arc)
-              .style("fill", function(d) { return color(d.data.season); })
+              .style("fill", function(d) { return color[d.data.season]; })
               .style("stroke","white")
               .style("z-index","1000")
-              .attr("class", "slice");
+              .attr("class", "slice")
+              .on("mouseover", function (d){ d3.select(this).style("fill-opacity",0.6); return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
+              .on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
+              .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); }); 
 
                   slice   
                     .transition().duration(1500)
@@ -112,12 +117,17 @@ define([
               .attr("dy", ".35em")
               .style("text-anchor", "middle")
               .style("font-size","14px")
+              .style("cursor","default")
               .text(function(d) {
                 var number =  d.data.season;
                 number = d.data.number/totalFacts*100;
                 return number.toFixed(1)+"%"; })
               .style("fill", "#f7f7f7")
-              .attr("class","label");
+              .attr("class","label")
+                            .on("mouseover", function (d){ return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
+              .on("mousemove", function (){ return tooltip.style("top",
+                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
+              .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }); ;
 
              
 
@@ -131,7 +141,7 @@ define([
               var number =  d.data.season;
               number = d.data.number/totalFacts*100;
               return number.toFixed(1)+"%"; })
-              .style("fill", "#f7f7f7");
+              
                  
                   text.exit()
                     .remove();
@@ -146,18 +156,27 @@ define([
                 });
               }
 
+        // the label that is displaying the title of an episode when the mouse is over a dot (episode)
+        var tooltip = d3.select("#facts")
+          .append("div")
+          .style("position", "absolute")
+          .style("z-index", "1000")
+          .style("background-color", "rgba(255,255,255,0.8)")
+          .style("padding", "5px 10px")
+          .style("font-size","12px")
+          .style("font-family","arial")
+          .style("visibility", "hidden");
             // On affiche le total
             animateNumbers("#number",(totalFacts));
 
 
 
         });
-                var color = d3.scale.ordinal()
-                  //.domain([0.1, 0.4, 0.5, 0.51, 0.52, 0.53, 0.54]) //, 0.55, 0.56, 0.57, 0.58, 0.59, 0.65, 0.64, 0.63
-                  .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]); // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
+                var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
         }
 
-var Facts = ["homer said doh", "Itchy and Scratchy appear", "Bart's prank", "Strangle", "Abraham's story"];
+var Facts = ["homer said doh", "Itchy and Scratchy appear", "Homer strangles Bart", "Bart phone's prank", "Presence of Church", "Moleman close to death"];
+var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.png", "Church-message.png", ""];
 // au click de next
         d3.select("#next")
           .on("click", function(){
@@ -167,7 +186,16 @@ var Facts = ["homer said doh", "Itchy and Scratchy appear", "Bart's prank", "Str
               i++;
             }   
             getData(i);
-            $(".title").html(Facts[i]);
+                   
+            $(".title").fadeOut(750,function() {
+                $(this).html(Facts[i]).fadeIn(750);
+            });
+
+            $("#myPicture").fadeOut(750,function() {
+                $(this).attr("src","img/facts/"+imgFacts[i]);
+                $(this).fadeIn(750);
+            });
+         
            
 
           });
@@ -180,7 +208,14 @@ var Facts = ["homer said doh", "Itchy and Scratchy appear", "Bart's prank", "Str
               i=i-1;
             }               
             getData(i);
-            $(".title").html(Facts[i]);
+
+            $(".title").fadeOut(function() {
+                $(this).html(Facts[i]).fadeIn();
+            });
+
+            $("#myPicture").fadeOut(200,function() {
+                $(this).attr("src","img/facts/"+imgFacts[i]).fadeIn();
+            });
 
           });
 

@@ -38,18 +38,13 @@
 	  	color:rgba(0,255,255,0.8);
 	  }
 
-	  path.slice{
+	  // path.slice{
 	  	
-	  	&:hover{
-	  		fill:white !important;
-	  		fill-opacity:0.5 !important;
-	  	}
-	  }
-
-	  .poulet{
-	  	fill:black;
-	  }
-
+	  // 	&:hover{
+	  // 		fill:white !important;
+	  // 		fill-opacity:0.5 !important;
+	  // 	}
+	  // }
 
 	}
 
@@ -75,7 +70,7 @@
 		.title{
 			text-align: center;
 			top:6px;
-			font-size: 0.7em;
+			font-size: 0.6em;
 			position:relative;
 
 
@@ -101,9 +96,15 @@
 			float: left;
 		}
 
+		#picture{
+			background-color:white;
+			margin-top: 25px;
+		}
+
 		#picture img {
 			width:100%;
-			margin-top: 25px;
+			
+
 		}
 
 		#total {

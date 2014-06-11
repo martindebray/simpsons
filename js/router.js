@@ -34,7 +34,6 @@ define([
       $('.page').fadeOut(300, function() {
         var homeView =  new HomeView();
         homeView.render();
-        console.log("On est sur la home page");
       });
     });
 
@@ -43,7 +42,6 @@ define([
       $('.page').fadeOut(300, function() {
         var audienceView =  new AudienceView();
         audienceView.render();
-        console.log("On est sur la audience page de toutes les saisons");
       });
     });
 
@@ -58,7 +56,6 @@ define([
       $('.page').fadeOut(300, function() {
         var charactersView =  new CharactersView();
         charactersView.render();
-        console.log("On est sur la page de tous les personnages");
       });
     });
 
@@ -66,7 +63,6 @@ define([
       // déclencheur de l'action
       var singleCharacterView =  new CharactersView();
       singleCharacterView.render();
-      console.log("On est sur la page character de "+name);
     });
 
     router.on('route:facts', function(){ // effets facts page
@@ -74,7 +70,6 @@ define([
       $('.page').fadeOut(300, function() {
         var factsView =  new FactsView();
         factsView.render();
-        console.log("On est sur la facts page");
       });
     });
 
@@ -83,7 +78,6 @@ define([
       $('.page').fadeOut(300, function() {
         var contributeView =  new ContributeView();
         contributeView.render();
-        console.log("On est sur la contribute page");
       });
     });
 
@@ -92,7 +86,6 @@ define([
       $('.page').fadeOut(300, function() {
         var aboutView =  new AboutView();
         aboutView.render();
-        console.log("On est sur la page about");
       });
     });
 

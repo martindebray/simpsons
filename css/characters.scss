@@ -188,7 +188,6 @@ body {
 		}
 
 		#display-character-list {
-			/*height: 60%;*/
 			margin-bottom:0;	
 			border-radius: 0 0 10px 10px;
 			webkit-border-radius: 0 0 10px 10px;
@@ -219,10 +218,6 @@ body {
 		right: 0 !important;
 		-webkit-transition: right 1s; 
 		transition: right 1s;
-
-		/*a {
-			opacity: 0;
-		}*/
 	}
 
 }

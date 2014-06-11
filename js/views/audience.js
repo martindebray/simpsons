@@ -191,7 +191,23 @@ define([
 			    
 			    
 			    
-        } //end init       
+        } //end init
+        function tops(currentSeasonlong,currentSeason,p){        	
+var tab=new Array();
+var max;
+var theMax;
+	        for (var w=0;w<currentSeasonlong.length;w++){
+		        tab.push(ep_data.seasons[currentSeason][w].rating)
+		        max=d3.max(tab);
+		        theMax=tab.indexOf(max);
+		       
+	        }
+	        theMax=theMax+1;
+	        d3.select("#first").text("#"+theMax+" : "+ep_data.seasons[currentSeason][theMax].title+"- rate : "+ep_data.seasons[currentSeason][theMax].rating);
+
+//console.log(currentSeason);
+//console.log(currentSeasonlong);
+        }       
  //------------------------------------------------------------END INIT----------------------------------------------------------        
          function makeRatings(svg){
 	         //Rating each season with average of the season's episodes rates
@@ -298,7 +314,8 @@ define([
 						.on("click",function (m,n,p) {
 					            currentSeason=n;
 					            currentSeasonlong=m;
-					            check(currentSeasonlong,currentSeason,p);  
+					            check(currentSeasonlong,currentSeason,p);
+					            tops(currentSeasonlong,currentSeason,p);  
 					                
 				    });
 	               

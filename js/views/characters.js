@@ -23,7 +23,7 @@ define([
         $('#charactersButton').addClass('selected');
         $('#factsButton').removeClass('selected');$('#audienceButton').removeClass('selected');$('#homeButton').removeClass('selected');$('#contributeButton').removeClass('selected');
         $('.page').fadeIn(300);
-        
+
           // -----------------------------List of the characters -----------------------------
           
           $.getJSON( "json/characters.json", function( data ) {
@@ -31,28 +31,12 @@ define([
               $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
             }
 
-            // for(var i=0; i<data.length; i++){
-            //   $("#display-relatives div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
-            // }
-
           });
 
 
           $("#open-list").click(function(e){
             e.preventDefault();
             $("#characters-list").toggleClass("list-opened");
-            // $('#display-character-list a').css("opacity","0");
-            // if($("#characters-list").hasClass("list-opened")) {
-            //   $('#display-character-list a').each(function(i) {
-            //     $(this).delay((i++) * 150).fadeTo(400, 1); 
-            //     // $("#open-list").click(function(){
-            //     //   console.log("clicked");
-            //     //   return false;
-            //     //   });
-            //   });
-            // } else {
-            //   $('#display-character-list a').css("opacity","0");
-            // }
             $(this).text(function(i, text){
                 return text === "List of all the characters" ? "Close the list" : "List of all the characters";
             })
@@ -188,11 +172,19 @@ define([
       },
       // display the character's information
       displayInformation: function(index) {
-        console.log("HEY");
         $("#character-info").addClass("character-info-open");
         $("#character-name-wrapper").fadeIn(1500);
         $("#character-name").text(character_data[index].name);
-        $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
+        if(character_data[index].catchphrase.length!=0) {
+          $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
+        } else {
+          $("#character-catchphrase span").text('none');
+        }
+        if(character_data[index].catchphrase.length>70) {
+          $("#character-info").css("height","140px");
+        } else if (character_data[index].catchphrase.length>35) {
+          $("#character-info").css("height","120px");
+        }
         this.animateNumbers("#character-app-number span span",character_data[index].appearances.length);
         this.firstApp(character_data[index].appearances[0]);
       },
@@ -214,6 +206,9 @@ define([
             for (var j=0; j<data.seasons[a].length; j++) {
                 if (i == data.seasons[a][j].number){
                   $("#character-first-app span").text('"'+data.seasons[a][j].title+'"');
+                  if(data.seasons[a][j].title.length>35) {
+                    $("#character-info").css("height","120px");
+                  }
                 }
             }
           }

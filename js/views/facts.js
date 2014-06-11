@@ -75,6 +75,8 @@ define([
             totalFacts = totalFacts+d.number; // calcul du total
           });
 
+          $(".seasons").addClass("seasons-open");
+
         // slices
 
           var slice = svg.select(".slices").selectAll("path.slice")
@@ -86,11 +88,14 @@ define([
               .style("fill", function(d) { return color[d.data.season]; })
               .style("stroke","white")
               .style("z-index","1000")
+              .style("cursor","pointer")
               .attr("class", "slice")
               .on("mouseover", function (d){ d3.select(this).style("fill-opacity",0.6); return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
-              .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); }); 
+              .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); })
+              .on("click", function(d){
+            animateNumbers("#numberFacts",(d.data.number),750);animateNumbers("#season",(d.data.season),750);}); 
 
                   slice   
                     .transition().duration(1500)
@@ -117,17 +122,19 @@ define([
               .attr("dy", ".35em")
               .style("text-anchor", "middle")
               .style("font-size","14px")
-              .style("cursor","default")
+              .style("cursor","pointer")
               .text(function(d) {
                 var number =  d.data.season;
                 number = d.data.number/totalFacts*100;
                 return number.toFixed(1)+"%"; })
               .style("fill", "#f7f7f7")
               .attr("class","label")
-                            .on("mouseover", function (d){ return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
+              .on("mouseover", function (d){ return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
-              .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }); ;
+              .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }) 
+              .on("click", function(d){
+            animateNumbers("#numberFacts",(d.data.number),750);$("#season").html(d.data.season);});  ;
 
              
 
@@ -146,9 +153,9 @@ define([
                   text.exit()
                     .remove();
 
-            function animateNumbers(el,number) {
+            function animateNumbers(el,number,d) {
                 jQuery({someValue: 0}).animate({someValue: number}, {
-                  duration: 1000,
+                  duration: d,
                   easing:'swing', 
                   step: function() { 
                     $(el).text(Math.ceil(this.someValue));
@@ -167,16 +174,21 @@ define([
           .style("font-family","arial")
           .style("visibility", "hidden");
             // On affiche le total
-            animateNumbers("#number",(totalFacts));
+            animateNumbers("#number",(totalFacts),1000);
+
 
 
 
         });
-                var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
-        }
+                //var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
+      var color = ["#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085"]; 
+    }
 
 var Facts = ["homer said doh", "Itchy and Scratchy appear", "Homer strangles Bart", "Bart phone's prank", "Presence of Church", "Moleman close to death"];
 var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.png", "Church-message.png", ""];
+
+
+
 // au click de next
         d3.select("#next")
           .on("click", function(){
@@ -191,12 +203,21 @@ var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.p
                 $(this).html(Facts[i]).fadeIn(750);
             });
 
+            $("#contentSeason").fadeOut(function() {
+                 $("#typeFacts").html(Facts[i]);
+                 $("#numberFacts").html(0);
+                 $("#season").html(0);
+
+                $(this).fadeIn();
+            });
+
             $("#myPicture").fadeOut(750,function() {
                 $(this).attr("src","img/facts/"+imgFacts[i]);
                 $(this).fadeIn(750);
             });
          
            
+
 
           });
 // au click de prec
@@ -211,6 +232,15 @@ var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.p
 
             $(".title").fadeOut(function() {
                 $(this).html(Facts[i]).fadeIn();
+            });
+
+
+            $("#contentSeason").fadeOut(function() {
+                 $("#typeFacts").html(Facts[i]);
+                 $("#numberFacts").html(0);
+                 $("#season").html(0);
+
+                $(this).fadeIn();
             });
 
             $("#myPicture").fadeOut(200,function() {

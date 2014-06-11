@@ -75,7 +75,6 @@ define([
                   }, duration:5000, easing:'linear'    
           }); 
           // }, 10);       
-         console.log('en cours');
 
     }
     
@@ -105,7 +104,6 @@ define([
             .animate({opacity:1});
         });
       
-      console.log('terminé');
         setInterval(function(){
         $('#container').fadeTo(800, 0.6).fadeTo(800, 1);  
           }, 10);

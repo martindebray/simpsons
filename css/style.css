@@ -84,7 +84,7 @@ body #sections-menu {
           background-color: #75c0e5;
           color: #fff; }
       body #sections-menu ul li:nth-child(1) {
-        background-color: #8c81bf; }
+        background-color: #624b83; }
       body #sections-menu ul li:nth-child(2) {
         background-color: #75c0e5; }
       body #sections-menu ul li:nth-child(3) {
@@ -98,8 +98,8 @@ body #audience-module {
   background: url("../img/tv.svg") no-repeat fixed center;
   background-size: cover; }
   body #audience-module svg {
-    margin-left: 16%;
-    margin-top: 8%; }
+    margin-left: 15%;
+    margin-top: 4%; }
   body #audience-module .axis path, body #audience-module .axis line {
     fill: none;
     stroke: white;
@@ -162,8 +162,6 @@ body #audience-module {
       background-repeat: no-repeat; }
     body #audience-module #sidebar h2 {
       text-align: center; }
-  body #audience-module #topsflops ol {
-    margin-top: 0; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;

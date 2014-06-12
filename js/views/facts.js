@@ -228,7 +228,7 @@ $("#contentSeason").hide();
                 $(this).html(Facts[i]).fadeIn(750);
             });
 
-
+            $("#introSeason").hide();
             $("#contentSeason").fadeOut(function() {
                  $("#typeFacts").html(Facts[i]);
                  $("#numberFacts").html(firstData.type[i][0].number);
@@ -260,7 +260,7 @@ $("#contentSeason").hide();
                 $(this).html(Facts[i]).fadeIn();
             });
 
-
+            $("#introSeason").hide();
             $("#contentSeason").fadeOut(function() {
                  $("#typeFacts").html(Facts[i]);
                  $("#numberFacts").html(firstData.type[i][0].number);

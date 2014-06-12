@@ -23,8 +23,8 @@ define([
         $('.page').fadeIn(300);
          // ----------------------------------------D3 AUDIENCE---------------------------------------------
         var ep_data; // a global variable for the data of all episode of all seasons
-        var w = 600;
-        var h = 400;
+        var w = 550;
+        var h = 350;
         var padding=30;
         var toggleRate=false;
         var toggleView=false;
@@ -47,11 +47,10 @@ define([
           });
           
           //Create SVG element
-            var svg = d3.select("#audience-module")
-                        .append("svg:svg")
-                        .attr("width", w)
-                        .attr("height", h)
-                        .style("background-color","#2a4a7c");
+            var svg = d3.select("#courbe")
+                        .append("g")
+                        .attr("transform", "translate(200,156.1)")
+                        ;
                         
             var tooltip = d3.select("body")
           .append("div")
@@ -66,56 +65,65 @@ define([
             
         function toggleR(svg){
 	        if(toggleRate){
-	        	$("#notes").removeClass("selected");
-
+	        	$("#ratingsButton").removeClass("selected");
 		        toggleRate=!toggleRate;
-	  
 	        }
 	        else{
 		        toggleRate=!toggleRate;      
-		        $("#notes").addClass("selected");
+		        $("#ratingsButton").addClass("selected");
+		        $("#toto")
+		        .attr("attributeName","transform")
+		        .attr("begin","0s")
+		        .attr("dur","2s")
+		        .attr("type","rotate")
+		        .attr("from","0 1160.85 137.932")
+		        .attr("to","-30 1160.85 137.932")
+		        .attr("repeatCount","3")
+		        ;
 	        }        
         }
         
         function toggleV(svg){
         	if(toggleView){
-        	$("#audiences").removeClass("selected");
+        	$("#viewersButton").removeClass("selected");
 	        toggleView=!toggleView;
 	        
 	        
 	        }
 	        else{
 		        toggleView=!toggleView;
-		        $("#audiences").addClass("selected");
+		        $("#viewersButton").addClass("selected");
 	        }
         }
  //-------------------------------------------------------INIT-------------------------------------------------------
         function init(){
-        d3.select("#test").text("OUBFZEF");
         isInSeason=false;
           	
-             var clean=d3.select("#clean")
+             var cleanButton=d3.select("#cleanButton")
              	.on("click",function (m,n,p) {
              			if(toggleRate||toggleView){
-				        d3.selectAll("circle").remove();
-             			d3.selectAll("path").remove();
+				        //d3.selectAll("circle").remove();
+             			d3.selectAll("path.viewers").remove();
+             			d3.selectAll("circle.viewers").remove();
+             			d3.selectAll("path.ratings").remove();
+             			d3.selectAll("circle.ratings").remove();
              			d3.selectAll("g.axis").remove();
              			if(toggleRate){
 	             			toggleR(svg);
              			}
              			if(toggleView)
              			toggleV(svg);
-             			init();
 			            }
+			            init();
 			    });
 			    
-             	var notes=d3.select("#notes")
-             		/* .style("background","red") */
+             	var notes=d3.select("#ratingsButton")
              		.on("click",function (m,n,p) {
 						if(toggleRate){
 							toggleR(svg);  
 					        d3.select("path.ratings").remove();
 					        d3.selectAll("circle.ratings").remove();
+					        
 					    }
 			        	else{
 			        		toggleR(svg);
@@ -130,7 +138,7 @@ define([
 		             		}
 			    });
 
-             	var audience=d3.select("#audiences")
+             	var audience=d3.select("#viewersButton")
              		.on("click",function (m,n,p) {
 	             		if(toggleView){
 		             		toggleV(svg);  
@@ -163,7 +171,8 @@ define([
 	                    .orient("right")
 	                    //.ticks(4)
 	                    ;
-		               
+		        svg.append("rect").attr("fill","#999999").attr("width",w).attr("height",h);       
+		        
 		        svg.append("g")
 	            .attr("class", "axis ylAxis")  //Assign "axis" class
 	            .attr("transform", "translate("+(padding) +",0)")
@@ -175,10 +184,28 @@ define([
 	            .attr("transform", "translate("+(w-padding) +",0)")
 	            .call(yrAxis)
 	            ; 
+	            
 	           //updating sidebar
-			   d3.select("#currentSeason").text("The 25 seasons");
-			   d3.select("#seasonYear").text("1989-2014 | ");
-			   d3.select("#epInSeason").text("252");
+			   d3.select("#currentSeason").text("Select one season");
+			   d3.select("#seasonYear").text("252 episodes");
+			   /*
+d3.select("#epInSeason").text("");
+			   d3.select("#epInSeason").style("font-family","Langdon");
+			   d3.select("#epInSeason").style("text-transform","uppercase");
+*/
+			   d3.select("#currentSeason").style("font-family","Langdon");
+			   d3.select("#currentSeason").style("text-transform","uppercase");
+			   d3.select("#seasonYear").style("font-family","Langdon");
+			   d3.select("#seasonYear").style("text-transform","uppercase");
+			   
+			   d3.select("#prev_hover").style("visibility","hidden");
+			   d3.select("#prevSeason").on("mouseover", function(m,n){d3.select("#prev_hover").style("visibility","visible");});
+			   d3.select("#prevSeason").on("mouseout", function(m,n){d3.select("#prev_hover").style("visibility","hidden");});
+			   
+			   d3.select("#next_hover").style("visibility","hidden");
+			   d3.select("#nextSeason").on("mouseover", function(m,n){d3.select("#next_hover").style("visibility","visible");});
+			   d3.select("#nextSeason").on("mouseout", function(m,n){d3.select("#next_hover").style("visibility","hidden");});
+			   
 			             
 		        
 			    makeRatings(svg);
@@ -188,8 +215,9 @@ define([
 			    toggleV(svg);
 			    showViewersSerie(svg);
 			    
-			    d3.select("#flopp").text("TOP RATING : #");
-			    
+			    d3.select("#topflop").text("TOP RATING : #");
+			    $("#nextSeason").hide();
+			    $("#prevSeason").hide();
 			    
 			    
 			    
@@ -227,14 +255,15 @@ var theMinV;
 	        theMax=theMaxV;
 	        theMin=theMinV;
 	        
-	        d3.select("#flopp").text("TOP RATING : #"+(theMaxR+1)+" : "+ep_data.seasons[currentSeason][theMaxR].title+" ("+ep_data.seasons[currentSeason][theMaxR].rating+"/10), "
-	        +"FLOP RATING : #"+(theMinR+1)+" : "+ep_data.seasons[currentSeason][theMinR].title+" ("+ep_data.seasons[currentSeason][theMinR].rating+"/10), "
-	        +"TOP VIEWERS : #"+(theMaxV+1)+" : "+ep_data.seasons[currentSeason][theMaxV].title+" ("+ep_data.seasons[currentSeason][theMaxV].viewers+"M viewers), "
+	        d3.select("#topflop").text("TOP RATING : #"+(theMaxR+1)+" : "+ep_data.seasons[currentSeason][theMaxR].title+" ("+ep_data.seasons[currentSeason][theMaxR].rating+"/10) -- "
+	        +"FLOP RATING : #"+(theMinR+1)+" : "+ep_data.seasons[currentSeason][theMinR].title+" ("+ep_data.seasons[currentSeason][theMinR].rating+"/10) -- "
+	        +"TOP VIEWERS : #"+(theMaxV+1)+" : "+ep_data.seasons[currentSeason][theMaxV].title+" ("+ep_data.seasons[currentSeason][theMaxV].viewers+"M viewers) -- "
 	        +"FLOP VIEWERS : #"+(theMinV+1)+" : "+ep_data.seasons[currentSeason][theMinV].title+" ("+ep_data.seasons[currentSeason][theMinV].viewers+"M viewers). ");
 
         }       
  //------------------------------------------------------------END INIT----------------------------------------------------------        
          function makeRatings(svg){
+         console.log("makeratings");
 	         //Rating each season with average of the season's episodes rates
 		        for (var m=0;m<ep_data.seasons.length;m++){
 			        var totalOneSeason=0;
@@ -247,6 +276,7 @@ var theMinV;
          }
          
          function makeViewers(svg){
+         console.log("makeviewers");
 	         for (var m=0;m<ep_data.seasons.length;m++){
 		        	var totalOneSeason=0;
 			    	for (var n = 0; n<ep_data.seasons[m].length; n++){
@@ -264,24 +294,24 @@ var theMinV;
 			            var seasonsYear=format.parse(ep_data.seasons[i][l].airdate);
 			            var yearNameFormat = d3.time.format("%Y");
 			            seasonsYear=yearNameFormat(seasonsYear);
-			            d3.select("#seasonYear").text(seasonsYear+" | ")
-			            d3.select("#epInSeason").text(""+ep_data.seasons[i].length)
-			            d3.select("#prevseason").style("display","inline")
-			            d3.select("#nextseason").style("display","inline")
+			            d3.select("#seasonYear").text(seasonsYear+" | "+ep_data.seasons[i].length+" episodes")
+			            d3.select("#prevSeason").style("display","inline")
+			            d3.select("#nextSeason").style("display","inline")
 			            if(i==0){
-				            d3.select("#prevseason").style("display","none")
+				            d3.select("#prevSeason").style("display","none")
 			            }
 			            if(i+1==ep_data.seasons.length){
-				            d3.select("#nextseason").style("display","none")
+				            d3.select("#nextSeason").style("display","none")
 			            }
-			            d3.select("#prevseason").on("click",function () {
+			            d3.select("#prevSeason").on("click",function () {
 			            	i--;
 			            	check(d,i,l);      
 			            });
-			            d3.select("#nextseason").on("click",function () {
+			            d3.select("#nextSeason").on("click",function () {
 			            	i++;
 			            	check(d,i,l);     
 			            });
+			            tops(d,i,l);
          	if(isInSeason){
 	         	if(toggleRate){
 		         	showRatingsSeason(d,i,l);
@@ -368,19 +398,19 @@ d3.select("#currentSeason").text("Season "+(i+1));
 			            console.log(seasonsYear);
 			            d3.select("#seasonYear").text(seasonsYear+" | ")
 			            d3.select("#epInSeason").text(""+ep_data.seasons[i].length)
-			            d3.select("#prevseason").style("display","inline")
-			            d3.select("#nextseason").style("display","inline")
+			            d3.select("#prevSeason").style("display","inline")
+			            d3.select("#nextSeason").style("display","inline")
 			            if(i==0){
-				            d3.select("#prevseason").style("display","none")
+				            d3.select("#prevSeason").style("display","none")
 			            }
 			            if(i+1==ep_data.seasons.length){
-				            d3.select("#nextseason").style("display","none")
+				            d3.select("#nextSeason").style("display","none")
 			            }
-			            d3.select("#prevseason").on("click",function () {
+			            d3.select("#prevSeason").on("click",function () {
 			            	i--;
 			            	check(d,i,l);      
 			            });
-			            d3.select("#nextseason").on("click",function () {
+			            d3.select("#nextSeason").on("click",function () {
 			            	i++;
 			            	check(d,i,l);     
 			            });
@@ -540,19 +570,19 @@ d3.select("#currentSeason").text("Season "+(i+1));
                     seasonsYear=yearNameFormat(seasonsYear);
 			            d3.select("#seasonYear").text(seasonsYear+" | ")
 			            d3.select("#epInSeason").text(ep_data.seasons[i].length+" episodes")
-			            d3.select("#prevseason").style("display","inline")
-			            d3.select("#nextseason").style("display","inline")
+			            d3.select("#prevSeason").style("display","inline")
+			            d3.select("#nextSeason").style("display","inline")
 			            if(i==0){
-				            d3.select("#prevseason").style("display","none")
+				            d3.select("#prevSeason").style("display","none")
 			            }
 			            if(i+1==ep_data.seasons.length){
-				            d3.select("#nextseason").style("display","none")
+				            d3.select("#nextSeason").style("display","none")
 			            }
-			            d3.select("#prevseason").on("click",function () {
+			            d3.select("#prevSeason").on("click",function () {
 			            	i--;
 			            	check(d,i,l);   
 			            })
-			            d3.select("#nextseason").on("click",function () {
+			            d3.select("#nextSeason").on("click",function () {
 			            	i++;
 			            	check(d,i,l);      
 			            });

@@ -73,6 +73,11 @@ body {
 				 	display: inline-block;
 				 	height: 100%;
 
+				 	#homeButton img{
+				 		margin: 0 auto;
+				 		padding-bottom: 6px;
+				 	}
+
 					
 					&:nth-child(3) {
 						a {

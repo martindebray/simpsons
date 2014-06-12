@@ -16,7 +16,7 @@ define([
     routes: {
         '':'home', // la home
         'sections':'sections', // choix des sections
-        'audience': 'audience', // #audience 
+        'reviews': 'reviews', // #audience 
         'audience/:season': 'audience/season', // #audience/season
         'characters':'characters', // #characters   
         'characters/:name':'characters/name', // #characters/name
@@ -37,7 +37,7 @@ define([
       });
     });
 
-    router.on('route:audience', function(){ // effets audience page
+    router.on('route:reviews', function(){ // effets audience page
       // déclencheur de l'action
       $('.page').fadeOut(300, function() {
         var audienceView =  new AudienceView();
@@ -48,7 +48,7 @@ define([
     router.on('route:audience/seasons', function(season){ // effets audience page
       // déclencheur de l'action
 
-      console.log("On est sur la audience page seasons numero "+season);
+      
     });
 
     router.on('route:characters', function(){ // effets characters page

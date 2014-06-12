@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @font-face {
   font-family: 'Simpsonfont';
   src: url("fonts/simpsonfont-webfont.eot");
@@ -89,7 +89,7 @@ body #sections-menu {
         body #sections-menu ul li a:hover {
           background-color: rgba(255, 255, 255, 0.2); }
       body #sections-menu ul li:nth-child(1) {
-        background-color: #624b83; }
+        background-color: #8c81bf; }
       body #sections-menu ul li:nth-child(2) {
         background: url("../img/menu-characters-bg.jpg") no-repeat center;
         -webkit-background-size: cover;
@@ -107,76 +107,71 @@ body #sections-menu {
 
 body button:focus {
   outline: 0 !important; }
-body #audience-module {
+body #audience-module .axis path, body #audience-module .axis line {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  shape-rendering: crispEdges; }
+body #audience-module .axis text {
+  font-family: Simpsonfont;
+  font-size: 11px;
+  fill: white; }
+body #audience-module .xAxis line {
+  display: none; }
+body #audience-module #sidebar {
+  color: white;
+  border: 1px solid black;
   height: 100%;
-  width: 100%;
-  background: url("../img/tv.svg") no-repeat fixed center;
-  background-size: cover; }
-  body #audience-module svg {
-    margin-left: 15%;
-    margin-top: 4%; }
-  body #audience-module .axis path, body #audience-module .axis line {
-    fill: none;
-    stroke: white;
-    stroke-width: 2;
-    shape-rendering: crispEdges; }
-  body #audience-module .axis text {
-    font-family: Simpsonfont;
-    font-size: 11px;
-    fill: white; }
-  body #audience-module .xAxis line {
-    display: none; }
-  body #audience-module #sidebar {
+  width: 20%;
+  z-index: 1000;
+  float: right;
+  margin: auto; }
+  body #audience-module #sidebar #epInSeason, body #audience-module #sidebar #seasonYear {
+    display: inline; }
+  body #audience-module #sidebar button {
+    background: transparent;
+    border: 0; }
+  body #audience-module #sidebar button.round {
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    background-image: url(../img/button.svg);
+    background-repeat: no-repeat;
     color: white;
-    border: 1px solid black;
-    height: 100%;
-    width: 20%;
-    z-index: 1000;
-    float: right;
-    margin: auto; }
-    body #audience-module #sidebar #epInSeason, body #audience-module #sidebar #seasonYear {
-      display: inline; }
-    body #audience-module #sidebar button {
-      background: transparent;
-      border: 0; }
-    body #audience-module #sidebar button.round {
-      height: 120px;
-      width: 120px;
-      border-radius: 120px;
-      background-image: url(../img/button.svg);
-      background-repeat: no-repeat;
-      color: white;
-      font-family: "Langdon";
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: 10px;
-      -webkit-transform: rotate(0);
-      -webkit-transition: -webkit-transform, 0.5s; }
-    body #audience-module #sidebar button.round.selected {
-      -webkit-transform: rotate(-30deg);
-      -webkit-transition: -webkit-transform, 0.5s; }
-    body #audience-module #sidebar #prevseason, body #audience-module #sidebar #nextseason, body #audience-module #sidebar #clean {
-      margin: 10px;
-      height: 28px;
-      width: 36px;
-      color: transparent; }
-    body #audience-module #sidebar #prevseason {
-      background-image: url(../img/prev.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #prevseason:hover {
-      background-image: url(../img/prev_hover.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #clean {
-      background-image: url(../img/clean.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #nextseason {
-      background-image: url(../img/next.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #nextseason:hover {
-      background-image: url(../img/next_hover.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar h2 {
-      text-align: center; }
+    font-family: "Langdon";
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 10px;
+    -webkit-transform: rotate(0);
+    -webkit-transition: -webkit-transform, 0.5s; }
+  body #audience-module #sidebar #ratingsButton.selected {
+    -webkit-transform: rotate(-30deg);
+    -webkit-transition: -webkit-transform, 0.5s; }
+  body #audience-module #sidebar #epInSeason {
+    font-family: "Langdon";
+    color: red; }
+  body #audience-module #sidebar #prevseason, body #audience-module #sidebar #nextseason, body #audience-module #sidebar #clean {
+    margin: 10px;
+    height: 28px;
+    width: 36px;
+    color: transparent; }
+  body #audience-module #sidebar #prevseason {
+    background-image: url(../img/prev.svg);
+    background-repeat: no-repeat; }
+  body #audience-module #sidebar #prevseason:hover {
+    background-image: url(../img/prev_hover.svg);
+    background-repeat: no-repeat; }
+  body #audience-module #sidebar #clean {
+    background-image: url(../img/clean.svg);
+    background-repeat: no-repeat; }
+  body #audience-module #sidebar #nextseason {
+    background-image: url(../img/next.svg);
+    background-repeat: no-repeat; }
+  body #audience-module #sidebar #nextseason:hover {
+    background-image: url(../img/next_hover.svg);
+    background-repeat: no-repeat; }
+  body #audience-module #sidebar h2 {
+    text-align: center; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;

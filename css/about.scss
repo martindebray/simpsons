@@ -24,7 +24,7 @@ body {
 			margin-top: 50px; 
 		}
 
-		p>a, ul a {
+		a {
 			text-decoration: underline;
 			color: #000;
 
@@ -48,6 +48,7 @@ body {
 				font-family: $langdon;
 				font-size: 1.250em;
 				text-transform: uppercase;
+				text-decoration: none;
 				color: #000;
 				line-height: 1rem;
 
@@ -64,6 +65,33 @@ body {
 						transform:scale(1.1);
 					}
 				}
+
+				span {
+					display: block;
+					color: $blue;
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.contact-link {
+			display: block;
+			width: 180px;
+			text-align: center;
+			margin: 30px auto 0 auto;
+			padding: 10px 0 10px 0;
+			border: 3px solid $blue;
+			border-radius: 5px;
+			color: #000;
+			font-family: $langdon;
+			text-transform: uppercase;
+			text-decoration: none;
+			-webkit-transition: all 0.5s ease; 
+					transition: all 0.5s ease; 
+
+			&:hover {
+				background-color:$blue;
+				color: #fff;
 			}
 		}
 

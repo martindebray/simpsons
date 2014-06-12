@@ -66,7 +66,7 @@ body #home {
     text-transform: uppercase;
     font-size: 140%; }
   body #home #enter img {
-    width: 7%; }
+    width: 5%; }
 
 body #sections-menu {
   background-color: #fee13e;
@@ -116,75 +116,98 @@ body #sections-menu {
 body button:focus {
   outline: 0 !important; }
 body #audience-module {
-  height: 100%;
-  width: 100%;
-  background: url("../img/tv.svg") no-repeat fixed center;
-  background-size: cover; }
-  body #audience-module svg {
-    margin-left: 15%;
-    margin-top: 4%; }
+  		/*
+  #sidebar{
+  			color: white;
+  			border: 1px solid black;
+  			height: 100%;
+  			width: 20%;
+  			z-index: 1000;
+  			float: right;
+  			margin: auto;
+  			
+  			#epInSeason, #seasonYear{
+  				display: inline;
+  				//float: left;
+  			}
+  			button{
+  				background: transparent;
+  				border: 0;
+  			}
+  			button.round{
+  				height: 120px;
+  				width: 120px;
+  				border-radius: 120px;
+  				background-image:url(../img/button.svg);
+  				background-repeat: no-repeat;
+  				color: white;
+  				font-family: $langdon;
+  				text-transform: uppercase;
+  				font-size: 20px;
+  				line-height: 10px;
+  				-webkit-transform: rotate(0);
+  				-webkit-transition: -webkit-transform, 0.5s;
+  			}
+  			#ratingsButton.selected{
+  				-webkit-transform: rotate(-30deg);
+  				-webkit-transition: -webkit-transform, 0.5s;
+  			}
+  			
+  			#epInSeason{
+  				font-family: $langdon;
+  				color: red;
+  			}
+  			#prevseason,#nextseason,#clean{
+  				margin: 10px;
+  				height: 28px;
+  				width: 36px;
+  				color: transparent;
+  			}
+  			#prevseason{
+  				background-image:url(../img/prev.svg);
+  				background-repeat: no-repeat;
+  			}
+  			#prevseason:hover{
+  				background-image:url(../img/prev_hover.svg);
+  				background-repeat: no-repeat;
+  			}
+  			#clean{
+  				background-image:url(../img/clean.svg);
+  				background-repeat: no-repeat;
+  			}
+  			
+  			#nextseason{
+  				background-image:url(../img/next.svg);
+  				background-repeat: no-repeat;
+  			}
+  			#nextseason:hover{
+  				background-image:url(../img/next_hover.svg);
+  				background-repeat: no-repeat;
+  			}
+  			h2{
+  				text-align: center;
+  			}
+  			
+  			
+  		}
+  */ }
   body #audience-module .axis path, body #audience-module .axis line {
     fill: none;
     stroke: white;
     stroke-width: 2;
     shape-rendering: crispEdges; }
+  body #audience-module .yrAxis path, body #audience-module .yrAxis line {
+    stroke: #75c0e5; }
   body #audience-module .axis text {
     font-family: Simpsonfont;
     font-size: 11px;
     fill: white; }
+  body #audience-module .ylAxis text {
+    fill: #e57575; }
   body #audience-module .xAxis line {
     display: none; }
-  body #audience-module #sidebar {
-    color: white;
-    border: 1px solid black;
-    height: 100%;
-    width: 20%;
-    z-index: 1000;
-    float: right;
-    margin: auto; }
-    body #audience-module #sidebar #epInSeason, body #audience-module #sidebar #seasonYear {
-      display: inline; }
-    body #audience-module #sidebar button {
-      background: transparent;
-      border: 0; }
-    body #audience-module #sidebar button.round {
-      height: 120px;
-      width: 120px;
-      border-radius: 120px;
-      background-image: url(../img/button.svg);
-      background-repeat: no-repeat;
-      color: white;
-      font-family: "Langdon";
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: 10px;
-      -webkit-transform: rotate(0);
-      -webkit-transition: -webkit-transform, 0.5s; }
-    body #audience-module #sidebar button.round.selected {
-      -webkit-transform: rotate(-30deg);
-      -webkit-transition: -webkit-transform, 0.5s; }
-    body #audience-module #sidebar #prevseason, body #audience-module #sidebar #nextseason, body #audience-module #sidebar #clean {
-      margin: 10px;
-      height: 28px;
-      width: 36px;
-      color: transparent; }
-    body #audience-module #sidebar #prevseason {
-      background-image: url(../img/prev.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #prevseason:hover {
-      background-image: url(../img/prev_hover.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #clean {
-      background-image: url(../img/clean.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #nextseason {
-      background-image: url(../img/next.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar #nextseason:hover {
-      background-image: url(../img/next_hover.svg);
-      background-repeat: no-repeat; }
-    body #audience-module #sidebar h2 {
-      text-align: center; }
+  body #audience-module .pointers {
+    cursor: pointer; }
 
 body #characters-module {
   background: url("../img/characters-bg.jpg") no-repeat fixed center;
@@ -199,6 +222,7 @@ body #characters-module {
     text-shadow: 2px 1px 5px #7fb9db; }
 body #left-wrapper {
   width: 100%;
+  height: 100%;
   position: relative; }
   body #left-wrapper .graph-wrapper {
     width: 100%;
@@ -232,7 +256,7 @@ body #left-wrapper {
     display: none;
     right: 0;
     left: 0;
-    bottom: -5px;
+    bottom: 30%;
     text-align: center;
     font-family: "MuseoSlab700";
     color: #73bae5; }
@@ -455,7 +479,7 @@ body .list-opened {
     bottom: 5% !important; }
 
 body #contribute {
-  color: #464646;
+  color: #2d2d2d;
   overflow-y: auto;
   height: 100%;
   padding: 0 15% 70px 15%;
@@ -483,7 +507,8 @@ body #contribute {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     body #contribute .form-link:hover {
-      background-color: #fff; }
+      background-color: #75c0e5;
+      color: #fff; }
   body #contribute div > div {
     width: 60%; }
     body #contribute div > div span {
@@ -510,10 +535,10 @@ body #about {
     font-family: "Langdon";
     text-transform: uppercase;
     margin-top: 50px; }
-  body #about p > a, body #about ul a {
+  body #about a {
     text-decoration: underline;
     color: #000; }
-    body #about p > a:hover, body #about ul a:hover {
+    body #about a:hover {
       text-decoration: none; }
   body #about #team {
     margin: 0 auto 20px auto;
@@ -529,6 +554,7 @@ body #about {
       font-family: "Langdon";
       font-size: 1.250em;
       text-transform: uppercase;
+      text-decoration: none;
       color: #000;
       line-height: 1rem; }
       body #about #team a img {
@@ -538,6 +564,27 @@ body #about {
       body #about #team a:hover img {
         -webkit-transform: scale(1.1);
         transform: scale(1.1); }
+      body #about #team a span {
+        display: block;
+        color: #75c0e5;
+        font-size: 1rem; }
+  body #about .contact-link {
+    display: block;
+    width: 180px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    padding: 10px 0 10px 0;
+    border: 3px solid #75c0e5;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Langdon";
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    body #about .contact-link:hover {
+      background-color: #75c0e5;
+      color: #fff; }
 
 html {
   font-size: 1em;

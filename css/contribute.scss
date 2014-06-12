@@ -1,7 +1,7 @@
 body {
 
 	#contribute {
-		color: $dark-grey;
+		color: darken($dark-grey,10%);
 		overflow-y: auto;
 		height: 100%;
 		padding: 0 15% 70px 15%;
@@ -35,7 +35,8 @@ body {
 					transition: all 0.5s ease; 
 
 			&:hover {
-				background-color:#fff;
+				background-color:$blue;
+				color: #fff;
 			}
 		}
 		div > div {

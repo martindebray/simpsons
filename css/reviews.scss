@@ -5,16 +5,13 @@ body {
 	}
 
 	#audience-module{
-		height: 100%;
-		width: 100%;
-		background: url("../img/tv.svg") no-repeat fixed center;
-		background-size: cover;	
+		//height: 100%;
+		//width: 100%;
+		//background: url("../img/tv.svg") no-repeat fixed center;
+		//background-size: cover;	
 		
-		svg{
-			margin-left: 15%;
-			margin-top: 4%;
-			//width: 43%;
-			//height: 50%;
+		#courbe{
+			
 		}
 	
 		.axis path, .axis line {
@@ -23,6 +20,12 @@ body {
 		    stroke-width:2;
 		    shape-rendering: crispEdges;
 	    }
+	    
+	    
+	    
+	    .yrAxis path, .yrAxis line{
+		    stroke: rgb(117, 192, 229);
+	    }
 	
 		.axis text {
 		    font-family: Simpsonfont;
@@ -30,10 +33,20 @@ body {
 		    fill: white;
 		}	
 		
-		.xAxis line{
-		display: none;} 
+		.ylAxis text{
+		    fill: #e57575;
+	    }
 		
-		#sidebar{
+		.xAxis line{
+		display: none;
+		}
+		
+		.pointers {
+			cursor: pointer;
+		} 
+		
+		/*
+#sidebar{
 			color: white;
 			border: 1px solid black;
 			height: 100%;
@@ -64,9 +77,14 @@ body {
 				-webkit-transform: rotate(0);
 				-webkit-transition: -webkit-transform, 0.5s;
 			}
-			button.round.selected{
+			#ratingsButton.selected{
 				-webkit-transform: rotate(-30deg);
 				-webkit-transition: -webkit-transform, 0.5s;
+			}
+			
+			#epInSeason{
+				font-family: $langdon;
+				color: red;
 			}
 			#prevseason,#nextseason,#clean{
 				margin: 10px;
@@ -101,6 +119,7 @@ body {
 			
 			
 		}
+*/
 
 	
 	}

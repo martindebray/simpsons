@@ -15,6 +15,20 @@ body {
 			 	display: block;
 			 	height: 34%;
 			 	position: relative;
+			 	-webkit-background-size:  100% !important;
+					-moz-background-size:  100% !important; 
+					-o-background-size:  100% !important; 
+					background-size: 100% !important;
+			 	-webkit-transition: all 0.5s ease; 
+						transition: all 0.5s ease; 
+
+				&:hover {
+					-webkit-background-size:  105% !important;
+					-moz-background-size:  105% !important; 
+					-o-background-size:  105% !important; 
+					background-size: 105% !important;
+				}  
+
 
 				a {
 					display: block;
@@ -23,7 +37,7 @@ body {
 					width: 100%;
 					height: 100%;
 					padding-top: 7%;
-					font-size: 1.75em;
+					font-size: 2em;
 					color:#000;
 					text-align: center; 
 
@@ -34,30 +48,18 @@ body {
 
 				&:nth-child(1) {
 					background: url("../img/menu-reviews-bg.jpg") no-repeat center;
-					-webkit-background-size: cover;
-					-moz-background-size: cover; 
-					-o-background-size: cover; 
-					background-size: cover;
 					background-color: $purplee;
 				}
 
 				&:nth-child(2) {
 					background: url("../img/menu-characters-bg.jpg") no-repeat center;
-					-webkit-background-size: cover;
-					-moz-background-size: cover; 
-					-o-background-size: cover; 
-					background-size: cover;
 					background-color: $blue;
 				}
 
 				&:nth-child(3) {
 					background: url("../img/menu-facts-bg.jpg") no-repeat center;
-					-webkit-background-size: cover;
-					-moz-background-size: cover; 
-					-o-background-size: cover; 
-					background-size: cover;
 					background-color: $pink;
-				}		  
+				}
 
 			}
 		}

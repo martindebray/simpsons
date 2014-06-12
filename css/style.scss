@@ -72,6 +72,7 @@ body {
 				li {
 				 	display: inline-block;
 				 	height: 100%;
+				 	width:170px;
 
 				 	#homeButton img{
 				 		margin: 0 auto;
@@ -88,7 +89,7 @@ body {
 					 a {
 						 display:block;
 						 float:left;   
-						 width:170px;
+						 width:100%;
 						 height: 100%;
 						 padding-top: 20px;
 						 color:$dark-grey;

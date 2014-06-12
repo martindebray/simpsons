@@ -26,7 +26,7 @@
 	  width: 40%;
 	  height: 75%;
 	  margin-left: 8%;
-	  margin-top: 3%;
+	  margin-top: 1%;
 	  float: left;
 	  position: relative;
 
@@ -50,6 +50,7 @@
 
 	#menuRight{
 		width:28%;
+		height:100%;
 		margin-left: 50%;
 		font-family: $langdon;
 		font-size: 2em;
@@ -99,6 +100,8 @@
 		#picture{
 			background-color:white;
 			margin-top: 25px;
+			height: 30%;
+			overflow: hidden;
 		}
 
 		#picture img {
@@ -118,56 +121,75 @@
 			margin-top: 25px;
 
 		}
+		#totalNumber{
+			position:absolute;
+			text-align: left;
+			margin-left: -60%;
+		}
 	}
 
-	#seasons{
+	.seasons{
 		background-color: rgba(255, 255, 255, 0.6);
 		text-transform: uppercase;
 		width: 100%;
 		position: fixed;
-		bottom: 8%;
+		bottom: -8%;
 		height: 19%;
 		z-index: 10;
 		text-align: center;
 		margin:0 auto;	
 		color:#464646;
+		-webkit-transition: all 1s ease; 
+		transition: all 1s ease; 
 
-		#season{
-			display: block;
-			position:absolute;
-			font-size: 1.5em;
-			padding-top: 18px;
-			padding-left: 2%;
-			}
+		#contentSeason{
+			top:30%;
+			text-align: center;
+			margin:0 auto;
+			position:relative;
+			font-size: 2em;
+		}
 
-			#contentUl{
-				width:100%;
-				height:100%;
-				margin-left: 3%;
+		// #season{
+		// 	display: block;
+		// 	position:absolute;
+		// 	font-size: 1.5em;
+		// 	padding-top: 18px;
+		// 	padding-left: 2%;
+		// 	}
+
+		// 	#contentUl{
+		// 		width:100%;
+		// 		height:100%;
+		// 		margin-left: 3%;
 				
-			}
+		// 	}
 
 
-			ul {
-				list-style: none;
-				float: left;
-				position:relative;
-				width: 18%;
+		// 	ul {
+		// 		list-style: none;
+		// 		float: left;
+		// 		position:relative;
+		// 		width: 18%;
 
 				
-				li {
-					margin-top: 10px;
-					position:relative;
-				}
-				// .ronds{
-				// 		width:10px;
-				// 		height:10px;
-				// 		background-color: black;
-				// 		position:relative;
-				// 	}
-			}
+		// 		li {
+		// 			margin-top: 10px;
+		// 			position:relative;
+		// 		}
+		// 		// .ronds{
+		// 		// 		width:10px;
+		// 		// 		height:10px;
+		// 		// 		background-color: black;
+		// 		// 		position:relative;
+		// 		// 	}
+		// 	}
 
 
+		}
+
+		.seasons-open{
+			bottom:5% !important;
 		}
 
 	// path.slice{

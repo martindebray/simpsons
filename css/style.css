@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> FETCH_HEAD
 @font-face {
   font-family: 'Simpsonfont';
   src: url("fonts/simpsonfont-webfont.eot");
@@ -19,9 +22,12 @@
   font-family: 'MuseoSlab700';
   src: url("fonts/museo_slab_700.eot");
   src: url("fonts/museo_slab_700.eot") format("embedded-opentype"), url("fonts/museo_slab_700.woff") format("woff"), url("fonts/museo_slab_700.ttf") format("truetype"), url("fonts/museo_slab_700.svg#MuseoSlab700") format("svg"); }
+@font-face {
+  font-family: 'Museo500';
+  src: url("fonts/museo500-regular.eot");
+  src: url("fonts/museo500-regular.eot") format("embedded-opentype"), url("fonts/museo500-regular.woff") format("woff"), url("fonts/museo500-regular.ttf") format("truetype"), url("fonts/museo500-regular.svg#Museo500") format("svg"); }
 /**
  ** fonts **/
-/* à remplacer par la vraie font du corps du texte quand on aura les maquettes */
 /**
  ** colors **/
 body #home {
@@ -49,7 +55,9 @@ body #home {
   body #home h1 {
     font-family: "Simpsonfont";
     padding-top: 4%;
-    margin-bottom: 4%; }
+    margin-bottom: 3%;
+    text-transform: none;
+    font-size: 2.75em; }
   body #home > img {
     text-align: center;
     margin: 0 auto;
@@ -58,7 +66,7 @@ body #home {
   body #home span {
     display: block;
     margin-bottom: 20px;
-    font-family: "Arial";
+    font-family: "Museo500";
     text-transform: uppercase;
     font-size: 140%; }
   body #home #enter img {
@@ -75,7 +83,18 @@ body #sections-menu {
     body #sections-menu ul li {
       display: block;
       height: 34%;
-      position: relative; }
+      position: relative;
+      -webkit-background-size: 100% !important;
+      -moz-background-size: 100% !important;
+      -o-background-size: 100% !important;
+      background-size: 100% !important;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      body #sections-menu ul li:hover {
+        -webkit-background-size: 105% !important;
+        -moz-background-size: 105% !important;
+        -o-background-size: 105% !important;
+        background-size: 105% !important; }
       body #sections-menu ul li a {
         display: block;
         font-family: "Simpsonfont";
@@ -83,26 +102,23 @@ body #sections-menu {
         width: 100%;
         height: 100%;
         padding-top: 7%;
-        font-size: 1.75em;
+        font-size: 2em;
         color: #000;
         text-align: center; }
         body #sections-menu ul li a:hover {
           background-color: rgba(255, 255, 255, 0.2); }
       body #sections-menu ul li:nth-child(1) {
+<<<<<<< HEAD
         background-color: #8c81bf; }
+=======
+        background: url("../img/menu-reviews-bg.jpg") no-repeat center;
+        background-color: #624b83; }
+>>>>>>> FETCH_HEAD
       body #sections-menu ul li:nth-child(2) {
         background: url("../img/menu-characters-bg.jpg") no-repeat center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         background-color: #75c0e5; }
       body #sections-menu ul li:nth-child(3) {
         background: url("../img/menu-facts-bg.jpg") no-repeat center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
         background-color: #fcb2bf; }
 
 body button:focus {
@@ -353,7 +369,7 @@ body .list-opened {
     width: 40%;
     height: 75%;
     margin-left: 8%;
-    margin-top: 3%;
+    margin-top: 1%;
     float: left;
     position: relative; }
     #facts #diagram .contenuDiagram {
@@ -362,6 +378,7 @@ body .list-opened {
       color: rgba(0, 255, 255, 0.8); }
   #facts #menuRight {
     width: 28%;
+    height: 100%;
     margin-left: 50%;
     font-family: "Langdon";
     font-size: 2em;
@@ -394,7 +411,9 @@ body .list-opened {
       float: left; }
     #facts #menuRight #picture {
       background-color: white;
-      margin-top: 25px; }
+      margin-top: 25px;
+      height: 30%;
+      overflow: hidden; }
     #facts #menuRight #picture img {
       width: 100%; }
     #facts #menuRight #total {
@@ -406,58 +425,68 @@ body .list-opened {
       padding-top: 15px;
       padding-right: 15px;
       margin-top: 25px; }
-  #facts #seasons {
+    #facts #menuRight #totalNumber {
+      position: absolute;
+      text-align: left;
+      margin-left: -60%; }
+  #facts .seasons {
     background-color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     width: 100%;
     position: fixed;
-    bottom: 8%;
+    bottom: -8%;
     height: 19%;
     z-index: 10;
     text-align: center;
     margin: 0 auto;
-    color: #464646; }
-    #facts #seasons #season {
-      display: block;
-      position: absolute;
-      font-size: 1.5em;
-      padding-top: 18px;
-      padding-left: 2%; }
-    #facts #seasons #contentUl {
-      width: 100%;
-      height: 100%;
-      margin-left: 3%; }
-    #facts #seasons ul {
-      list-style: none;
-      float: left;
+    color: #464646;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    #facts .seasons #contentSeason {
+      top: 30%;
+      text-align: center;
+      margin: 0 auto;
       position: relative;
-      width: 18%; }
-      #facts #seasons ul li {
-        margin-top: 10px;
-        position: relative; }
+      font-size: 2em; }
+  #facts .seasons-open {
+    bottom: 5% !important; }
 
 body #contribute {
+  color: #464646;
   overflow-y: auto;
   height: 100%;
   padding: 0 15% 70px 15%;
   background-color: #f7d100;
-  background: url("../img/lisa-bg.png") no-repeat 10% bottom, url("../img/homer-bg.png") no-repeat 95% 110%, url("../img/bart-bg.png") no-repeat -10% top, #f7d100; }
+  background: url("../img/bg-contribute.png") no-repeat 80% 105% #f7d100;
+  line-height: 1.750em; }
+  body #contribute h2 {
+    font-size: 1.5em;
+    font-family: "Langdon";
+    text-transform: uppercase; }
+  body #contribute ul {
+    list-style-type: none;
+    list-style-image: url("../img/puce.png"); }
   body #contribute .form-link {
     display: block;
-    width: 240px;
+    width: 180px;
     text-align: center;
-    margin: 40px auto 0 auto;
-    padding: 15px 20px;
-    border: 2px solid #000;
+    margin: 30px auto 0 auto;
+    padding: 10px 0 10px 0;
+    border: 3px solid #75c0e5;
+    border-radius: 5px;
     color: #000;
     font-family: "Langdon";
     text-transform: uppercase;
-    font-size: 1.250rem;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
     body #contribute .form-link:hover {
-      background-color: #000;
-      color: #f7d100; }
+      background-color: #75c0e5; }
+  body #contribute div > div {
+    width: 60%; }
+    body #contribute div > div span {
+      font-family: "Langdon";
+      text-transform: uppercase;
+      font-size: 1.250em; }
 
 body #about {
   overflow-y: auto;
@@ -515,7 +544,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: "Arial";
+  font-family: "Museo500";
   overflow: hidden;
   position: relative; }
   body a {
@@ -543,13 +572,17 @@ body {
         height: 100%; }
         body #menu nav ul li {
           display: inline-block;
-          height: 100%; }
+          height: 100%;
+          width: 170px; }
+          body #menu nav ul li #homeButton img {
+            margin: 0 auto;
+            padding-bottom: 6px; }
           body #menu nav ul li:nth-child(3) a {
             padding-top: 8px; }
           body #menu nav ul li a {
             display: block;
             float: left;
-            width: 170px;
+            width: 100%;
             height: 100%;
             padding-top: 20px;
             color: #464646;

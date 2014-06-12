@@ -68,6 +68,27 @@ body {
 			}
 		}
 
+		.contact-link {
+			display: block;
+			width: 180px;
+			text-align: center;
+			margin: 30px auto 0 auto;
+			padding: 10px 0 10px 0;
+			border: 3px solid $blue;
+			border-radius: 5px;
+			color: #000;
+			font-family: $langdon;
+			text-transform: uppercase;
+			text-decoration: none;
+			-webkit-transition: all 0.5s ease; 
+					transition: all 0.5s ease; 
+
+			&:hover {
+				background-color:$blue;
+				color: #fff;
+			}
+		}
+
 	}
 
 }

@@ -1,7 +1,7 @@
 body {
 
 	#contribute {
-		color: $dark-grey;
+		color: darken($dark-grey,10%);
 		overflow-y: auto;
 		height: 100%;
 		padding: 0 15% 70px 15%;

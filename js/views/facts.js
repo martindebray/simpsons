@@ -34,6 +34,11 @@ define([
         var width = 140,
             height = 120,
           radius = Math.min($(window).width()/width*100, $(window).height()/height*100) / 2;
+        
+        var circularBg = svg.append("g")
+            .append("circle")
+            .attr("r", (radius*0.65)+20)
+            .style("fill","rgba(255,255,255,0.6)");
 
         var pie = d3.layout.pie()
           .sort(null)
@@ -50,7 +55,7 @@ define([
           .outerRadius(radius * 0.9);
 
            // Positionnement
-         svg.attr("transform", "translate(" + $(window).width()/width*100/3 + "," + $(window).height()/height*100/3+ ")")
+         svg.attr("transform", "translate(" + $(window).width()/width*100/3 + "," + $(window).height()/height*100/2.7+ ")")
             .attr("class","contenuDiagram");
 
         var i=0;
@@ -62,6 +67,8 @@ define([
         svg.append("g")
           .attr("class", "labels")
           .style("z-index","-1000");
+
+        var firstData = 0;
 
         function getData(i){
 
@@ -76,6 +83,9 @@ define([
           });
 
           $(".seasons").addClass("seasons-open");
+          totalFact = 0;
+          totalFact = totalFacts;
+          firstData = data;
 
         // slices
 
@@ -86,11 +96,10 @@ define([
               .insert("path")
               .attr("d", arc)
               .style("fill", function(d) { return color[d.data.season]; })
-              .style("stroke","white")
               .style("z-index","1000")
               .style("cursor","pointer")
               .attr("class", "slice")
-              .on("mouseover", function (d){ d3.select(this).style("fill-opacity",0.6); return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
+              .on("mouseover", function (d){d3.select(this).style("fill-opacity",0.6); return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
               .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); })
@@ -113,45 +122,47 @@ define([
 
         // label
 
-          var text = svg.select(".labels").selectAll("text.label")
-            .data(pie(data.type[i]));
+          // var text = svg.select(".labels").selectAll("text.label")
+          //   .data(pie(data.type[i]));
 
-          text.enter()
-              .append("text")
-              .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-              .attr("dy", ".35em")
-              .style("text-anchor", "middle")
-              .style("font-size","14px")
-              .style("cursor","pointer")
-              .text(function(d) {
-                var number =  d.data.season;
-                number = d.data.number/totalFacts*100;
-                return number.toFixed(1)+"%"; })
-              .style("fill", "#f7f7f7")
-              .attr("class","label")
-              .on("mouseover", function (d){ return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Saison "+d.data.season+" : "+d.data.number); }) //show label and title episode
-              .on("mousemove", function (){ return tooltip.style("top",
-                (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
-              .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }) 
-              .on("click", function(d){
-            animateNumbers("#numberFacts",(d.data.number),750);$("#season").html(d.data.season);});  ;
+          // text.enter()
+          //     .append("text")
+          //     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+          //     .attr("dy", ".35em")
+          //     .style("text-anchor", "middle")
+          //     .style("font-size","14px")
+          //     .style("cursor","pointer")
+          //     .text(function(d) {             
+          //       number = d.data.number/totalFacts*100;
+          //       return number.toFixed(1)+"%"; })
+          //     .style("fill", "#f7f7f7")
+          //     .attr("class","label")
+          //     .on("mouseover", function (d){ return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text(function(e) {
+               
+          //       number = e.data.number/totalFacts*100;
+          //       return number.toFixed(1)+"%"; }); }) //show label and title episode
+          //     .on("mousemove", function (){ return tooltip.style("top",
+          //       (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
+          //     .on("mouseout", function (){ return tooltip.style("visibility", "hidden"); }) 
+          //     .on("click", function(d){
+          //   animateNumbers("#numberFacts",(d.data.number),750);$("#season").html(d.data.season);});  ;
 
              
 
-                        // Transition des textes --- changement des nombres
+          //               // Transition des textes --- changement des nombres
 
-          text.transition().duration(1500) // On ajoute pas de append on rajoute juste le nombre et sa position
-              .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-              .attr("dy", ".35em")
-              .style("text-anchor", "middle")
-              .text(function(d) {
-              var number =  d.data.season;
-              number = d.data.number/totalFacts*100;
-              return number.toFixed(1)+"%"; })
+          // text.transition().duration(1500) // On ajoute pas de append on rajoute juste le nombre et sa position
+          //     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+          //     .attr("dy", ".35em")
+          //     .style("text-anchor", "middle")
+          //     .text(function(d) {
+          //     var number =  d.data.season;
+          //     number = d.data.number/totalFacts*100;
+          //     return number.toFixed(1)+"%"; })
               
                  
-                  text.exit()
-                    .remove();
+          //         text.exit()
+          //           .remove();
 
             function animateNumbers(el,number,d) {
                 jQuery({someValue: 0}).animate({someValue: number}, {
@@ -163,6 +174,11 @@ define([
                 });
               }
 
+            function arrondisP(nb){
+              nb = nb/totalFact*100;
+              return nb.toFixed(1)+"%";
+            }
+
         // the label that is displaying the title of an episode when the mouse is over a dot (episode)
         var tooltip = d3.select("#facts")
           .append("div")
@@ -172,7 +188,8 @@ define([
           .style("padding", "5px 10px")
           .style("font-size","12px")
           .style("font-family","arial")
-          .style("visibility", "hidden");
+          .style("visibility", "hidden")
+          ;
             // On affiche le total
             animateNumbers("#number",(totalFacts),1000);
 
@@ -180,12 +197,15 @@ define([
 
 
         });
-                //var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
+
+     // var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
       var color = ["#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085"]; 
+    // var color = ["#AD646A", "#B06A6F", "#B37075", "#B6767B", "#BA7C81", "#BD8387", "#C0898D", "#C38F93","#C79599", "#CA9B9F", "#CDA2A5", "#D1A8AB", "#D4AEB1", "#D7B4B7", "#DABABD", "#DEC1C3", "#E1C7C9", "#E4CDCF","#E8D3D5", "#EBD9DB", "#EEE0E1", "#F1E6E7", "#F5ECED", "#F8F2F3"]; 
+ 
     }
 
-var Facts = ["homer said doh", "Itchy and Scratchy appear", "Homer strangles Bart", "Bart phone's prank", "Presence of Church", "Moleman close to death"];
-var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.png", "Church-message.png", ""];
+var Facts = ["homer said doh", "Itchy and Scratchy appear", "Homer strangles Bart", "Bart phone's prank", "Church marquees", "Moleman close to death"];
+var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.png", "Church-message.png", "hans.png"];
 
 
 
@@ -203,10 +223,11 @@ var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.p
                 $(this).html(Facts[i]).fadeIn(750);
             });
 
+
             $("#contentSeason").fadeOut(function() {
                  $("#typeFacts").html(Facts[i]);
-                 $("#numberFacts").html(0);
-                 $("#season").html(0);
+                 $("#numberFacts").html(firstData.type[i][0].number);
+                 $("#season").html(firstData.type[i][0].season);
 
                 $(this).fadeIn();
             });
@@ -237,8 +258,8 @@ var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.p
 
             $("#contentSeason").fadeOut(function() {
                  $("#typeFacts").html(Facts[i]);
-                 $("#numberFacts").html(0);
-                 $("#season").html(0);
+                 $("#numberFacts").html(firstData.type[i][0].number);
+                 $("#season").html(firstData.type[i][0].season);
 
                 $(this).fadeIn();
             });

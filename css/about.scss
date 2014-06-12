@@ -5,11 +5,23 @@ body {
 		height: 100%;
 		padding: 0 15% 70px 15%;
 		background-color: $yellow;
-		/*background: url("../img/about-bg.gif") no-repeat fixed center;*/
+		background: url("../img/about-bg.jpg") no-repeat fixed center;
+		-webkit-background-size:  cover;
+		-moz-background-size:  cover; 
+		-o-background-size:  cover; 
+		background-size: cover;
+		line-height: 1.750em;
+
+		> div {
+			background-color: rgba(255,255,255,0.9);
+			padding: 10px 70px;
+			margin-top: 20px;
+		}
 
 		h2 {
 			font-family: $langdon;
 			text-transform: uppercase;
+			margin-top: 50px; 
 		}
 
 		p>a, ul a {
@@ -24,11 +36,11 @@ body {
 		#team {
 			margin: 0 auto 20px auto;
 			width: 95%;
-			background-color: $yellow;
+			text-align: center;
 
 			a {
 				display: inline-block;
-				width: 16%;
+				width: 30%;
 				padding: 10px;
 				text-align: center;
 				-webkit-transition: all 0.5s ease; 
@@ -37,6 +49,7 @@ body {
 				font-size: 1.250em;
 				text-transform: uppercase;
 				color: #000;
+				line-height: 1rem;
 
 				img {
 					width: 90%;

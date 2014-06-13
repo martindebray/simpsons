@@ -37,8 +37,13 @@ define([
         
         var circularBg = svg.append("g")
             .append("circle")
+            .attr("r", (radius*0.58)+20)
+            .style("fill","rgba(255,255,255,1)");
+
+        var circularBgT = svg.append("g")
+            .append("circle")
             .attr("r", (radius*0.65)+20)
-            .style("fill","rgba(255,255,255,0.6)");
+            .style("fill","rgba(255,255,255,0.6)");    
 
         var pie = d3.layout.pie()
           .sort(null)
@@ -101,7 +106,7 @@ define([
               .style("z-index","1000")
               .style("cursor","pointer")
               .attr("class", "slice")
-              .on("mouseover", function (d){d3.select(this).style("fill-opacity",0.2); return tooltip.style("visibility", "visible").style("fill-opacity","0.5").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
+              .on("mouseover", function (d){d3.select(this).style("fill-opacity",0.4); return tooltip.style("visibility", "visible").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
               .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); })

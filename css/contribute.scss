@@ -24,7 +24,7 @@ body {
 			display: block;
 			width: 180px;
 			text-align: center;
-			margin: 30px auto 0 auto;
+			margin: 30px auto 60px auto;
 			padding: 10px 0 10px 0;
 			border: 3px solid $blue;
 			border-radius: 5px;
@@ -39,7 +39,7 @@ body {
 				color: #fff;
 			}
 		}
-		div > div {
+		div > div:nth-child(2) {
 
 			width: 60%;
 
@@ -52,5 +52,22 @@ body {
 		}
 	
 	}
+
+	#share-buttons {
+			position: fixed;
+			bottom: 100px;
+			right: 50px;
+			text-align: left;
+			width: auto;
+
+			.twitter-share-button {
+				display: block;
+				margin: 0 auto;
+			}
+
+			.fb-share-button {
+				margin: 0 auto;
+			}
+		}
 
 }

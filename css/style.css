@@ -191,6 +191,15 @@ body #audience-module {
   			
   		}
   */ }
+  body #audience-module #mainTitle {
+    font-family: "Langdon";
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal;
+    text-align: center; }
   body #audience-module .axis path, body #audience-module .axis line {
     fill: none;
     stroke: white;

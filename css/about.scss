@@ -50,7 +50,7 @@ body {
 				text-transform: uppercase;
 				text-decoration: none;
 				color: #000;
-				line-height: 1rem;
+				line-height: 1.4rem;
 
 				img {
 					width: 90%;
@@ -69,12 +69,15 @@ body {
 				span {
 					display: block;
 					color: $blue;
+					font-family: $bodytext;
+					text-transform: none;
 					font-size: 1rem;
 				}
 			}
 		}
 
 		.contact-link {
+			clear: both;
 			display: block;
 			width: 180px;
 			text-align: center;

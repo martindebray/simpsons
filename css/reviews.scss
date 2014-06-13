@@ -33,9 +33,11 @@ body {
 	    
 	    
 	    
-	    .yrAxis path, .yrAxis line{
-		    stroke: rgb(117, 192, 229);
+	    /*
+.yrAxis path, .yrAxis line{
+		    stroke: #75C0E5;
 	    }
+*/
 	
 		.axis text {
 		    font-family: Simpsonfont;
@@ -45,6 +47,10 @@ body {
 		
 		.ylAxis text{
 		    fill: #e57575;
+	    }
+	    
+	    .yrAxis text{
+		    fill: #75C0E5;
 	    }
 		
 		.xAxis line{

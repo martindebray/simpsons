@@ -116,6 +116,11 @@ body #sections-menu {
 body button:focus {
   outline: 0 !important; }
 body #audience-module {
+  	    /*
+  .yrAxis path, .yrAxis line{
+  		    stroke: #75C0E5;
+  	    }
+  */
   		/*
   #sidebar{
   			color: white;
@@ -205,14 +210,14 @@ body #audience-module {
     stroke: white;
     stroke-width: 2;
     shape-rendering: crispEdges; }
-  body #audience-module .yrAxis path, body #audience-module .yrAxis line {
-    stroke: #75c0e5; }
   body #audience-module .axis text {
     font-family: Simpsonfont;
     font-size: 11px;
     fill: white; }
   body #audience-module .ylAxis text {
     fill: #e57575; }
+  body #audience-module .yrAxis text {
+    fill: #75C0E5; }
   body #audience-module .xAxis line {
     display: none; }
   body #audience-module .pointers {
@@ -231,7 +236,6 @@ body #characters-module {
     text-shadow: 2px 1px 5px #7fb9db; }
 body #left-wrapper {
   width: 100%;
-  height: 100%;
   position: relative; }
   body #left-wrapper .graph-wrapper {
     width: 100%;
@@ -265,7 +269,7 @@ body #left-wrapper {
     display: none;
     right: 0;
     left: 0;
-    bottom: 30%;
+    bottom: -20px;
     text-align: center;
     font-family: "MuseoSlab700";
     color: #73bae5; }
@@ -381,13 +385,13 @@ body .list-opened {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  padding-top: 1%;
   height: 100%;
   font-family: "Langdon"; }
   #facts h1 {
     width: 13%;
-    padding: 3px 0px 7px 0px;
+    padding: 7px 0px 7px 0px;
     color: #464646;
-    top: 5px;
     margin-bottom: 66px;
     position: relative;
     border-radius: 3px;
@@ -399,7 +403,7 @@ body .list-opened {
     width: 40%;
     height: 75%;
     margin-left: 8%;
-    margin-top: 1%;
+    margin-top: 3%;
     float: left;
     position: relative; }
     #facts #diagram .contenuDiagram {
@@ -415,7 +419,7 @@ body .list-opened {
     text-transform: uppercase;
     position: relative;
     color: #464646;
-    margin-top: 2%; }
+    margin-top: 5%; }
     #facts #menuRight #nav {
       background-color: #FBFBFB;
       border-radius: 3px;
@@ -465,7 +469,7 @@ body .list-opened {
     width: 100%;
     position: fixed;
     bottom: -8%;
-    height: 19%;
+    height: 17%;
     z-index: 10;
     text-align: center;
     margin: 0 auto;
@@ -473,13 +477,13 @@ body .list-opened {
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
     #facts .seasons #contentSeason {
-      top: 30%;
+      top: 28%;
       text-align: center;
       margin: 0 auto;
       position: relative;
       font-size: 2em; }
     #facts .seasons #introSeason {
-      top: 30%;
+      top: 28%;
       text-align: center;
       margin: 0 auto;
       position: relative;
@@ -506,7 +510,7 @@ body #contribute {
     display: block;
     width: 180px;
     text-align: center;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 60px auto;
     padding: 10px 0 10px 0;
     border: 3px solid #75c0e5;
     border-radius: 5px;
@@ -518,12 +522,23 @@ body #contribute {
     body #contribute .form-link:hover {
       background-color: #75c0e5;
       color: #fff; }
-  body #contribute div > div {
+  body #contribute div > div:nth-child(2) {
     width: 60%; }
-    body #contribute div > div span {
+    body #contribute div > div:nth-child(2) span {
       font-family: "Langdon";
       text-transform: uppercase;
       font-size: 1.250em; }
+body #share-buttons {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  text-align: left;
+  width: auto; }
+  body #share-buttons .twitter-share-button {
+    display: block;
+    margin: 0 auto; }
+  body #share-buttons .fb-share-button {
+    margin: 0 auto; }
 
 body #about {
   overflow-y: auto;
@@ -565,7 +580,7 @@ body #about {
       text-transform: uppercase;
       text-decoration: none;
       color: #000;
-      line-height: 1rem; }
+      line-height: 1.4rem; }
       body #about #team a img {
         width: 90%;
         -webkit-transition: all 0.5s ease;
@@ -576,8 +591,11 @@ body #about {
       body #about #team a span {
         display: block;
         color: #75c0e5;
+        font-family: "Museo500";
+        text-transform: none;
         font-size: 1rem; }
   body #about .contact-link {
+    clear: both;
     display: block;
     width: 180px;
     text-align: center;

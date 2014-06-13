@@ -60,7 +60,7 @@ define([
           .outerRadius(radius * 0.9);
 
            // Positionnement
-         svg.attr("transform", "translate(" + $(window).width()/width*100/3.1 + "," + $(window).height()/height*100/2.7+ ")")
+         svg.attr("transform", "translate(" + $(window).width()/width*100/3 + "," + $(window).height()/height*100/2.7+ ")")
             .attr("class","contenuDiagram");
 
         var i=0;

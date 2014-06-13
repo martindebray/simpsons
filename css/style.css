@@ -116,6 +116,11 @@ body #sections-menu {
 body button:focus {
   outline: 0 !important; }
 body #audience-module {
+  	    /*
+  .yrAxis path, .yrAxis line{
+  		    stroke: #75C0E5;
+  	    }
+  */
   		/*
   #sidebar{
   			color: white;
@@ -205,14 +210,14 @@ body #audience-module {
     stroke: white;
     stroke-width: 2;
     shape-rendering: crispEdges; }
-  body #audience-module .yrAxis path, body #audience-module .yrAxis line {
-    stroke: #75c0e5; }
   body #audience-module .axis text {
     font-family: Simpsonfont;
     font-size: 11px;
     fill: white; }
   body #audience-module .ylAxis text {
     fill: #e57575; }
+  body #audience-module .yrAxis text {
+    fill: #75C0E5; }
   body #audience-module .xAxis line {
     display: none; }
   body #audience-module .pointers {

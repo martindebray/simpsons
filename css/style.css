@@ -381,13 +381,13 @@ body .list-opened {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  padding-top: 1%;
   height: 100%;
   font-family: "Langdon"; }
   #facts h1 {
     width: 13%;
-    padding: 3px 0px 7px 0px;
+    padding: 7px 0px 7px 0px;
     color: #464646;
-    top: 5px;
     margin-bottom: 66px;
     position: relative;
     border-radius: 3px;
@@ -399,7 +399,7 @@ body .list-opened {
     width: 40%;
     height: 75%;
     margin-left: 8%;
-    margin-top: 1%;
+    margin-top: 3%;
     float: left;
     position: relative; }
     #facts #diagram .contenuDiagram {
@@ -415,7 +415,7 @@ body .list-opened {
     text-transform: uppercase;
     position: relative;
     color: #464646;
-    margin-top: 2%; }
+    margin-top: 5%; }
     #facts #menuRight #nav {
       background-color: #FBFBFB;
       border-radius: 3px;
@@ -465,7 +465,7 @@ body .list-opened {
     width: 100%;
     position: fixed;
     bottom: -8%;
-    height: 19%;
+    height: 17%;
     z-index: 10;
     text-align: center;
     margin: 0 auto;
@@ -473,13 +473,13 @@ body .list-opened {
     -webkit-transition: all 1s ease;
     transition: all 1s ease; }
     #facts .seasons #contentSeason {
-      top: 30%;
+      top: 28%;
       text-align: center;
       margin: 0 auto;
       position: relative;
       font-size: 2em; }
     #facts .seasons #introSeason {
-      top: 30%;
+      top: 28%;
       text-align: center;
       margin: 0 auto;
       position: relative;

@@ -33,17 +33,19 @@ define([
 
         var width = 140,
             height = 120,
-          radius = Math.min($(window).width()/width*100, $(window).height()/height*100) / 2;
-        
+          radius = Math.min($(window).width()/width*100, $(window).height()/height*100) / 2;7
+
+        var circularBgT = svg.append("g")
+            .append("circle")
+            .attr("r", (radius*0.65)+20)
+            .style("fill","rgba(255,255,255,0.6)");         
+
         var circularBg = svg.append("g")
             .append("circle")
             .attr("r", (radius*0.58)+20)
             .style("fill","rgba(255,255,255,1)");
 
-        var circularBgT = svg.append("g")
-            .append("circle")
-            .attr("r", (radius*0.65)+20)
-            .style("fill","rgba(255,255,255,0.6)");    
+
 
         var pie = d3.layout.pie()
           .sort(null)
@@ -100,16 +102,17 @@ define([
           slice.enter()
               .insert("path")
               .attr("d", arc)
+              .attr("shape-rendering","optimizeSpeed")
               .style("fill", function(d) { return color[d.data.season]; })
-              .style("fill-opacity",1)
+              .style("fill-opacity",0.7)
               .style("stroke","#464646")
               .style("z-index","1000")
               .style("cursor","pointer")
               .attr("class", "slice")
-              .on("mouseover", function (d){d3.select(this).style("fill-opacity",0.4); return tooltip.style("visibility", "visible").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
+              .on("mouseover", function (d){d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "visible").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
-              .on("mouseout", function (){ d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "hidden"); })
+              .on("mouseout", function (){ d3.select(this).style("fill-opacity",0.7); return tooltip.style("visibility", "hidden"); })
               .on("click", function(d){
                 $("#introSeason").hide();
                 $("#contentSeason").show();
@@ -207,14 +210,14 @@ define([
 
         });
 
-     // var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
-     // var color = ["#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085"]; 
+     var color = ["#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "rgb(138, 124, 255)", "#563284", "#03664b", "#00af9e", "#930000", "rgb(164, 229, 112)","#d1b270", "#66cff6", "#ec842e", "#de3831", "#6aade1", "#ffd90f", "#2c327e", "#0f8e44", "#d38bbc", "#bcb4ff", "#563284", "#03664b", "#00af9e", "#930000", "#d5e6a7"]; // , "#ff8cFF", "#ff0000","#008c00","#ffAA00","#AA8c00","#ff8cAA","#AAFF00"
+      //var color = ["#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085", "#f1c40f", "#f39c12", "#e67e22", "#d35400", "#e74c3c", "#c0392b", "#9b59b6", "#8e44ad", "#3498db", "#2980b9", "#2ecc71", "#16a085"]; 
     // var color = ["#AD646A", "#B06A6F", "#B37075", "#B6767B", "#BA7C81", "#BD8387", "#C0898D", "#C38F93","#C79599", "#CA9B9F", "#CDA2A5", "#D1A8AB", "#D4AEB1", "#D7B4B7", "#DABABD", "#DEC1C3", "#E1C7C9", "#E4CDCF","#E8D3D5", "#EBD9DB", "#EEE0E1", "#F1E6E7", "#F5ECED", "#F8F2F3"]; 
-      var color = ["#fddadc", "#afe2eb", "#f39967", "#5abeeb", "#e6a45f", "#d57bbb", "#64d0b4", "#e4b1da","#d8d1e5", "#b7c9d8", "#6fc9c7", "#d57bbb", "#91c4d5", "#f6926f", "#e6a560","#fddadc", "#afe2eb", "#f39967", "#5abeeb", "#e6a45f", "#d57bbb", "#64d0b4", "#e4b1da","#d8d1e5", "#b7c9d8"]; 
+     // var color = ["#fddadc", "#afe2eb", "#f39967", "#5abeeb", "#e6a45f", "#d57bbb", "#64d0b4", "#e4b1da","#d8d1e5", "#b7c9d8", "#6fc9c7", "#d57bbb", "#91c4d5", "#f6926f", "#e6a560","#fddadc", "#afe2eb", "#f39967", "#5abeeb", "#e6a45f", "#d57bbb", "#64d0b4", "#e4b1da","#d8d1e5", "#b7c9d8"]; 
 
     }
 
-var Facts = ["homer said doh", "Itchy and Scratchy appear", "Homer strangles Bart", "Bart phone's prank", "Church marquees", "Moleman close to death"];
+var Facts = ["homer says doh", "Itchy & Scratchy appear", "Homer strangles Bart", "Bart prank calls", "Church marquees appear", "Moleman (almost) dies"];
 var imgFacts =["doh.png","Itchy-Scratchy.png","Homer-Struggle.png", "Moe-Prank.png", "Church-message.png", "hans.png"];
 
 $("#contentSeason").hide();

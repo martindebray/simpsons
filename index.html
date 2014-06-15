@@ -13,6 +13,15 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/donutSimpsons.png" />
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51954315-1', 'simpsonsmuseum.com');
+      ga('send', 'pageview');
+    </script>
 
   </head>
 
@@ -21,7 +30,7 @@
     <header id="menu" class="hidden">
       <nav>
         <ul>
-          <li><a id="audienceButton" href="#/reviews">Ratings & viewers</a></li><!--      
+          <li><a id="audienceButton" href="#/reviews">Ratings & viewers</a></li><!--
           --><li><a id="charactersButton" href="#/characters">Characters</a></li><!--
           --><li><div id="homeButton"><img src="img/donut.svg" /></div></li><!--
           --><li><a id="factsButton" href="#/facts">Facts</a></li><!--
@@ -45,7 +54,7 @@
   <!-- Affichage des Views -->
     </section>
 
-          
+
 
   <!-- === Appel du module RequireJs === -->
   <script data-main="js/main" src="js/libs/require/require.js"></script>
@@ -57,5 +66,3 @@
 
   </body>
 </html>
-
-

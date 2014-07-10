@@ -98,12 +98,17 @@ body {
 						transition: all 0.2s ease; 
 						 }
 
-
+					 #homeButton a:hover {
+						 background-color:#fff;
+						 color:#fff;
+					 } 	
 
 					 a:hover {
 						 background-color:$blue;
 						 color:#fff;
 					 }  
+
+				 
 
 					 .selected {
 						 background-color:$blue;

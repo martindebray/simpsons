@@ -677,6 +677,9 @@ body {
             text-align: center;
             -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease; }
+          body #menu nav ul li #homeButton a:hover {
+            background-color: #fff;
+            color: #fff; }
           body #menu nav ul li a:hover {
             background-color: #75c0e5;
             color: #fff; }

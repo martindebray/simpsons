@@ -408,6 +408,9 @@ body .list-opened {
     position: relative; }
     #facts #diagram .contenuDiagram {
       margin-left: -100px; }
+    #facts #diagram svg {
+      height: 100%;
+      width: 100%; }
     #facts #diagram svg g .labels {
       color: rgba(0, 255, 255, 0.8); }
   #facts #menuRight {

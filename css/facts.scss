@@ -34,9 +34,14 @@
 	  	margin-left: -100px;
 	  }
 
-	  svg g .labels {
-	  	color:rgba(0,255,255,0.8);
-	  }
+	   svg {
+		   height:100%;
+		   width:100%;	
+	   }
+
+	   svg g .labels {
+	  	color:rgba(0,255,255,0.8); 
+	  	}
 
 	  // path.slice{
 	  	

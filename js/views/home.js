@@ -111,7 +111,7 @@ define([
     }
 
     $('#home').on('click', 'a#enter', function(){      
-      $('body').animate({
+      $('body,html').animate({
         scrollTop: $('#sections-menu').offset().top
       }, 1000);
       return false;

@@ -21,7 +21,12 @@ body {
 
 		.graph-wrapper {
 			width: 100%;
-			height: 70%;
+			height: 50%;
+
+			svg {
+				height:40%;
+				width:90%;
+			}
 		}
 
 		#character-info {

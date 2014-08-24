@@ -28,7 +28,8 @@ define([
           
           $.getJSON( "json/characters.json", function( data ) {
             for(var i=0; i<data.length; i++){
-              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+data[i].name+'</span></a>');
+              var name = data[i].name.replace(/_/g,' ');
+              $("#display-character-list div").append('<a href="#/characters/'+data[i].name+'" class="change-character" data-character="'+data[i].name+'"><img src="img/characters/'+data[i].name+'.svg" /><span>'+name+'</span></a>');
             }
 
           });
@@ -57,6 +58,7 @@ define([
             if (error) return console.warn(error);
             character_data = json;
             var currentCharName = Backbone.history.fragment.substring(11);
+
             if(currentCharName) { 
               index = _this.findIndexOf(character_data, currentCharName); 
             } else { 
@@ -158,6 +160,7 @@ define([
       }, //end visualizeit
       checkAppearances: function(d,j) { 
         for (var i=0; i<(character_data[index].appearances).length; i++){
+         
           if(d.number==character_data[index].appearances[i]){ 
             return true;
           } 
@@ -174,7 +177,8 @@ define([
       displayInformation: function(index) {
         $("#character-info").addClass("character-info-open");
         $("#character-name-wrapper").fadeIn(1500);
-        $("#character-name").text(character_data[index].name);
+        var name = character_data[index].name.replace(/_/g,' ');
+        $("#character-name").text(name);
         if(character_data[index].catchphrase.length!=0) {
           $("#character-catchphrase span").text('"'+character_data[index].catchphrase+'"');
         } else {

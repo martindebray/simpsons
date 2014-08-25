@@ -109,7 +109,7 @@ define([
               .style("z-index","1000")
               .style("cursor","pointer")
               .attr("class", "slice")
-              .on("mouseover", function (d){d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "visible").text("Season "+d.data.season+" "+arrondisP(d.data.number)); }) //show label and title episode
+              .on("mouseover", function (d){d3.select(this).style("fill-opacity",1); return tooltip.style("visibility", "visible").text("Season "+d.data.season+" : "+arrondisP(d.data.number)); }) //show label and title episode
               .on("mousemove", function (){ return tooltip.style("top",
                 (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px"); })
               .on("mouseout", function (){ d3.select(this).style("fill-opacity",0.7); return tooltip.style("visibility", "hidden"); })

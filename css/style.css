@@ -714,15 +714,16 @@ body {
       body #menu nav #custom-tweet-button {
         display: block;
         margin-top: -51px;
+        padding-top: 12px;
         height: 50px;
         float: right;
         width: 40px;
-        background: url("https://twitter.com/favicons/favicon.ico") 1px center no-repeat;
-        border: 1px solid #ccc;
         margin-right: 154px;
         list-style: none;
-        border: 0;
-        cursor: pointer; }
+        border: 0; }
+        body #menu nav #custom-tweet-button img {
+          height: 24px;
+          cursor: pointer; }
       body #menu nav #custom-fb-button {
         display: block;
         margin-top: -51px;

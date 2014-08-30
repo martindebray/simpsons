@@ -142,16 +142,18 @@ body {
 			}
           #custom-tweet-button {
             display: block;
-            margin-top: -51px;
-            height:50px;
-            float: right;
-            width:40px;
-            background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
-            border: 1px solid #ccc;
-            margin-right: 154px;
+			margin-top: -51px;
+			padding-top: 12px;
+			height: 50px;
+			float: right;
+			width: 40px;
+			margin-right: 154px;
             list-style: none;
             border: 0;
-            cursor: pointer;
+            img {
+            	height:24px;
+            	cursor: pointer;
+            }
           }
 
           #custom-fb-button{

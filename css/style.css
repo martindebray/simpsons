@@ -711,6 +711,37 @@ body {
           height: 40px; }
         body #menu nav ul + a:hover path {
           fill: #fee13e; }
+      body #menu nav #custom-tweet-button {
+        display: block;
+        margin-top: -51px;
+        height: 50px;
+        float: right;
+        width: 40px;
+        background: url("https://twitter.com/favicons/favicon.ico") 1px center no-repeat;
+        border: 1px solid #ccc;
+        margin-right: 154px;
+        list-style: none;
+        border: 0;
+        cursor: pointer; }
+      body #menu nav #custom-fb-button {
+        display: block;
+        margin-top: -51px;
+        padding-top: 7px;
+        height: 50px;
+        float: right;
+        width: 40px;
+        margin-right: 110px;
+        list-style: none;
+        border: 0; }
+        body #menu nav #custom-fb-button img {
+          height: 30px;
+          cursor: pointer; }
+      body #menu nav #aboutButton {
+        margin-top: -51px;
+        margin-right: 10px;
+        text-align: right; }
+        body #menu nav #aboutButton img {
+          height: 45px; }
   body .hidden {
     display: none; }
   body h1 {

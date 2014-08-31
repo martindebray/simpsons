@@ -4,15 +4,21 @@
 body {
 
 overflow: auto; height: 100%; 
-	
+
+// 
+@media screen and (min-width: 992px) // Version desktop
+{
 	#home {
 		text-align: center;
 		margin: 0 auto;
 		background-color: $yellow;
 		height: 100%;
-
+		#mobile{
+			display:none;
+		}
 
 		#chargement {
+			display:block;
 			font-size: 10px;
 			text-align: center;
 			margin: 0 auto;
@@ -61,10 +67,88 @@ overflow: auto; height: 100%;
 			font-size: 140%;
 		}
 
+		#enter{
+			display: block;
+		}
+
 		#enter img {
 			width: 5%;
 		}
 	}
 
+}
+	@media screen and (max-width: 992px) // Version tablette et mobile
+	{
 
+					#mobile{
+						display:block;
+					}
+					#donuts {
+						height:300px;
+					}
+			    	#home {
+					text-align: center;
+					margin: 0 auto;
+					background-color:$yellow;
+					height: 100%;
+					}
+
+					#chargement {
+						display: none;
+						font-size: 10px;
+						text-align: center;
+						margin: 0 auto;
+						right: 41%;
+						width: 62%;
+						top: 60%;
+					}
+					
+					#chargement-infos {
+						text-align: right;
+						white-space: nowrap;
+						display: block;
+						border-bottom: 4px solid #000;
+						width: 0%;
+					}
+					
+					#container {
+						visibility: hidden;
+
+						a {
+							color: #000;
+						}
+					}
+
+					
+					h1 {
+						padding-top: 4%;
+						margin-bottom: 3%;
+						text-transform: none;
+						font-size: 2.75em;
+					}
+
+					> img {
+						text-align: center;
+						margin: 0 auto;
+						height: 50%;
+						margin-bottom: 4%;
+					}
+
+					span {
+						display: block;
+						margin-bottom: 20px;
+						text-transform: uppercase;
+						font-size: 140%;
+					}
+
+					#enter{
+						display:none;
+					}
+
+					#enter img {
+						width: 5%;
+					}
+
+			
+		  }
 }

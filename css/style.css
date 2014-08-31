@@ -33,47 +33,100 @@
 body {
   overflow: auto;
   height: 100%; }
-  body #home {
-    text-align: center;
-    margin: 0 auto;
-    background-color: #fee13e;
-    height: 100%; }
-    body #home #chargement {
+  @media screen and (min-width: 992px) {
+    body #home {
+      text-align: center;
+      margin: 0 auto;
+      background-color: #fee13e;
+      height: 100%; }
+      body #home #mobile {
+        display: none; }
+      body #home #chargement {
+        display: block;
+        font-size: 10px;
+        text-align: center;
+        margin: 0 auto;
+        right: 41%;
+        width: 62%;
+        top: 60%; }
+      body #home #chargement-infos {
+        text-align: right;
+        white-space: nowrap;
+        display: block;
+        border-bottom: 4px solid #000;
+        width: 0%; }
+      body #home #container {
+        visibility: hidden; }
+        body #home #container a {
+          color: #000; }
+      body #home h1 {
+        font-family: "Simpsonfont";
+        padding-top: 4%;
+        margin-bottom: 3%;
+        text-transform: none;
+        font-size: 2.75em; }
+      body #home > img {
+        text-align: center;
+        margin: 0 auto;
+        height: 50%;
+        margin-bottom: 4%; }
+      body #home span {
+        display: block;
+        margin-bottom: 20px;
+        font-family: "Museo500";
+        text-transform: uppercase;
+        font-size: 140%; }
+      body #home #enter {
+        display: block; }
+      body #home #enter img {
+        width: 5%; } }
+  @media screen and (max-width: 992px) {
+    body #mobile {
+      display: block; }
+    body #donuts {
+      height: 300px; }
+    body #home {
+      text-align: center;
+      margin: 0 auto;
+      background-color: #fee13e;
+      height: 100%; }
+    body #chargement {
+      display: none;
       font-size: 10px;
       text-align: center;
       margin: 0 auto;
       right: 41%;
       width: 62%;
       top: 60%; }
-    body #home #chargement-infos {
+    body #chargement-infos {
       text-align: right;
       white-space: nowrap;
       display: block;
       border-bottom: 4px solid #000;
       width: 0%; }
-    body #home #container {
+    body #container {
       visibility: hidden; }
-      body #home #container a {
+      body #container a {
         color: #000; }
-    body #home h1 {
-      font-family: "Simpsonfont";
+    body h1 {
       padding-top: 4%;
       margin-bottom: 3%;
       text-transform: none;
       font-size: 2.75em; }
-    body #home > img {
+    body > img {
       text-align: center;
       margin: 0 auto;
       height: 50%;
       margin-bottom: 4%; }
-    body #home span {
+    body span {
       display: block;
       margin-bottom: 20px;
-      font-family: "Museo500";
       text-transform: uppercase;
       font-size: 140%; }
-    body #home #enter img {
-      width: 5%; }
+    body #enter {
+      display: none; }
+    body #enter img {
+      width: 5%; } }
 
 body #sections-menu {
   background-color: #fee13e;
